@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774646494
+timestamp 1774721386
 << error_p >>
 rect -722 1743 -650 1817
 rect -526 1743 -454 1817
@@ -328,6 +328,5 @@ port 17 nsew
 string FIXED_BBOX -848 -1930 848 1930
 string gencell rhigh
 string library sg13cmos5l
-string MASKHINTS_CONTBAR
 string parameters w 0.5 l 17.32 m 1 nx 8 wmin 0.50 lmin 0.50 class resistor rho 1360 val 47.11k dummy 0 dw 0.0 term 0.0 sterm 0.0 caplen 0 bar 1 guard 1 glc 1 grc 1 gtc 1 gbc 1 snake 0 full_metal 1 n_guard 0 hv_guard 0 vias 1 viagb 0 viagt 0 viagl 0 viagr 0 doports 1
 << end >>
