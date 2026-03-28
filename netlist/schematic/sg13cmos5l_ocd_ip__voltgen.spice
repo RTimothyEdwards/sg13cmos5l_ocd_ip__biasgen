@@ -1,0 +1,194 @@
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__voltgen.sch
+.subckt sg13cmos5l_ocd_ip__voltgen dvdd dvss vdd s[2] s[1] s[0] vbg vss ibias1u_1 vout2 ibias1u_2 ena vout1 ena1 ena2 ibias1u_3
++ high
+*.PININFO vdd:B vss:B vbg:I vout1:O ibias1u_1:B s[2:0]:I ibias1u_2:B dvdd:B dvss:B ena:I vout2:O ibias1u_3:B ena1:I ena2:I high:I
+C1 vdd net1 1.6p m=1
+XM1 vref7 net1 vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=1
+XR1 vref7 vref6 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR2 vref6 vref5 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR3 vref5 vref4 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR4 vref4 vref3 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR5 vref3 vref2 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR6 vref2 vref1 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR7 vref1 vref0 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR8 vref0 vss vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+x2 v7b vdd vref7 vpre vss v7 xgate
+x3 vdd v0 v0b vss hv_inv_1
+x4 v6b vdd vref6 vpre vss v6 xgate
+x5 v5b vdd vref5 vpre vss v5 xgate
+x6 v4b vdd vref4 vpre vss v4 xgate
+x7 v3b vdd vref3 vpre vss v3 xgate
+x8 v2b vdd vref2 vpre vss v2 xgate
+x9 v1b vdd vref1 vpre vss v1 xgate
+x10 v0b vdd vref0 vpre vss v0 xgate
+x11 net3 net2 v0 vdd vss level_shift
+x12 net2 net3 dvdd dvss sg13cmos5l_inv_2
+x13 net3 s0b s1b s2b dvdd dvss sg13cmos5l_nand3_1
+x14 s0b s[0] dvdd dvss sg13cmos5l_inv_2
+x15 s1b s[1] dvdd dvss sg13cmos5l_inv_2
+x16 s2b s[2] dvdd dvss sg13cmos5l_inv_2
+x17 s0 s0b dvdd dvss sg13cmos5l_inv_2
+x18 s1 s1b dvdd dvss sg13cmos5l_inv_2
+x19 s2 s2b dvdd dvss sg13cmos5l_inv_2
+x20 vdd v1 v1b vss hv_inv_1
+x21 net5 net4 v1 vdd vss level_shift
+x22 net4 net5 dvdd dvss sg13cmos5l_inv_2
+x23 net5 s0 s1b s2b dvdd dvss sg13cmos5l_nand3_1
+x24 vdd v2 v2b vss hv_inv_1
+x25 net7 net6 v2 vdd vss level_shift
+x26 net6 net7 dvdd dvss sg13cmos5l_inv_2
+x27 net7 s0b s1 s2b dvdd dvss sg13cmos5l_nand3_1
+x28 vdd v3 v3b vss hv_inv_1
+x29 net9 net8 v3 vdd vss level_shift
+x30 net8 net9 dvdd dvss sg13cmos5l_inv_2
+x31 net9 s0 s1 s2b dvdd dvss sg13cmos5l_nand3_1
+x32 vdd v4 v4b vss hv_inv_1
+x33 net11 net10 v4 vdd vss level_shift
+x34 net10 net11 dvdd dvss sg13cmos5l_inv_2
+x35 net11 s0b s1b s2 dvdd dvss sg13cmos5l_nand3_1
+x36 vdd v5 v5b vss hv_inv_1
+x37 net13 net12 v5 vdd vss level_shift
+x38 net12 net13 dvdd dvss sg13cmos5l_inv_2
+x39 net13 s0 s1b s2 dvdd dvss sg13cmos5l_nand3_1
+x40 vdd v6 v6b vss hv_inv_1
+x41 net15 net14 v6 vdd vss level_shift
+x42 net14 net15 dvdd dvss sg13cmos5l_inv_2
+x43 net15 s0b s1 s2 dvdd dvss sg13cmos5l_nand3_1
+x44 vdd v7 v7b vss hv_inv_1
+x45 net17 net16 v7 vdd vss level_shift
+x46 net16 net17 dvdd dvss sg13cmos5l_inv_2
+x47 net17 s0 s1 s2 dvdd dvss sg13cmos5l_nand3_1
+x50 vdd vout1 vout1 vpre ibias1u_2 vss vgen_ena1_b_h p_amp_large
+x1 net19 ena vgen_ena_h vdd vss level_shift
+x51 net19 ena dvdd dvss sg13cmos5l_inv_2
+x48 vdd net1 vbg net18 ibias1u_1 vss vgen_ena_h n_amp_large
+x52 vdd vout2 vpre vout2 vss ibias1u_3 vgen_ena2_b_h se_folded_cascode_p
+x49 ena1 net20 vgen_ena1_b_h vdd vss level_shift
+x53 net20 ena1 dvdd dvss sg13cmos5l_inv_2
+x54 ena2 net21 vgen_ena2_b_h vdd vss level_shift
+x55 net21 ena2 dvdd dvss sg13cmos5l_inv_2
+x56 high_h vdd net18 vref3 vss low_h xgate
+x57 low_h vdd net18 vref2 vss high_h xgate
+x58 net22 high high_h vdd vss level_shift
+x59 net22 high dvdd dvss sg13cmos5l_inv_2
+x60 vdd high_h low_h vss hv_inv_1
+XR9 vss vss vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+XR10 vss vss vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
+x67 s[0] dvdd dvss sg13cmos5l_antennanp
+x68[11] dvdd dvss sg13cmos5l_decap_4
+x68[10] dvdd dvss sg13cmos5l_decap_4
+x68[9] dvdd dvss sg13cmos5l_decap_4
+x68[8] dvdd dvss sg13cmos5l_decap_4
+x68[7] dvdd dvss sg13cmos5l_decap_4
+x68[6] dvdd dvss sg13cmos5l_decap_4
+x68[5] dvdd dvss sg13cmos5l_decap_4
+x68[4] dvdd dvss sg13cmos5l_decap_4
+x68[3] dvdd dvss sg13cmos5l_decap_4
+x68[2] dvdd dvss sg13cmos5l_decap_4
+x68[1] dvdd dvss sg13cmos5l_decap_4
+x68[0] dvdd dvss sg13cmos5l_decap_4
+x61 s[1] dvdd dvss sg13cmos5l_antennanp
+x62 s[2] dvdd dvss sg13cmos5l_antennanp
+x63 high dvdd dvss sg13cmos5l_antennanp
+x64 ena dvdd dvss sg13cmos5l_antennanp
+x65 ena1 dvdd dvss sg13cmos5l_antennanp
+x66 ena2 dvdd dvss sg13cmos5l_antennanp
+.ends
+
+* expanding   symbol:  xgate.sym # of pins=6
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/xgate.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/xgate.sch
+.subckt xgate ena_b vdd in out vss ena
+*.PININFO out:B in:B vdd:B vss:B ena_b:I ena:I
+XM1 in ena_b out vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=1
+XM2 in ena out vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  hv_inv_1.sym # of pins=4
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/hv_inv_1.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/hv_inv_1.sch
+.subckt hv_inv_1 vdd A X vss
+*.PININFO A:I vdd:B vss:B X:O
+XM1 X A vdd vdd sg13_hv_pmos w=2.0u l=0.4u ng=1 m=1
+XM2 X A vss vss sg13_hv_nmos w=1.0u l=0.45u ng=1 m=1
+.ends
+
+
+* expanding   symbol:  level_shift.sym # of pins=3
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/level_shift.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/level_shift.sch
+.subckt level_shift in_n in_p out vdd vss
+*.PININFO in_n:I in_p:I out:O
+XM1 net1 in_p vss vss sg13_hv_nmos w=4u l=0.5u ng=1 m=2
+XM2 net1 S1_N vdd vdd sg13_hv_pmos w=1u l=0.5u ng=1 m=2
+XM3 S1_N in_n vss vss sg13_hv_nmos w=4u l=0.5u ng=1 m=2
+XM4 S1_N net1 vdd vdd sg13_hv_pmos w=1u l=0.5u ng=1 m=2
+XM5 S2_N S1_N vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=2
+XM6 S2_N S1_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=2
+XM7 out S2_N vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=4
+XM8 out S2_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=4
+.ends
+
+
+* expanding   symbol:  p_amp_large.sym # of pins=7
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/p_amp_large.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/p_amp_large.sch
+.subckt p_amp_large avdd out inn inp ibias avss ena_b
+*.PININFO avdd:B avss:B ena_b:I inp:I inn:I out:O ibias:B
+XM7 net3 net2 avdd avdd sg13_hv_pmos w=20u l=1u ng=20 m=1
+XM9 outn inp net1 avdd sg13_hv_pmos w=20u l=0.5u ng=20 m=1
+XM10 out inn net1 avdd sg13_hv_pmos w=20u l=0.5u ng=20 m=1
+XM11 out outn avss avss sg13_hv_nmos w=10u l=0.5u ng=10 m=1
+XM12 outn outn avss avss sg13_hv_nmos w=10u l=0.5u ng=10 m=1
+XM1 net2 net2 avdd avdd sg13_hv_pmos w=20u l=1u ng=20 m=1
+XM2 ibias ena_b net2 avdd sg13_hv_pmos w=20u l=0.5u ng=20 m=1
+Vmeas net3 net1 0
+.save i(vmeas)
+XM3 avss avss avss avss sg13_hv_nmos w=10u l=0.5u ng=10 m=1
+.ends
+
+
+* expanding   symbol:  n_amp_large.sym # of pins=7
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/n_amp_large.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/n_amp_large.sch
+.subckt n_amp_large avdd out inn inp ibias avss ena
+*.PININFO inp:I inn:I out:O avdd:B avss:B ena:I ibias:B
+XM1 vcom net1 avss avss sg13_hv_nmos w=20u l=1u ng=20 m=1
+XM2 out outn avdd avdd sg13_hv_pmos w=10u l=0.5u ng=10 m=1
+XM3 outn outn avdd avdd sg13_hv_pmos w=10u l=0.5u ng=10 m=1
+XM4 outn inp vcom avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1
+XM5 out inn vcom avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1
+XM6 ibias ena net1 avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1
+XM7 net1 net1 avss avss sg13_hv_nmos w=20u l=1u ng=20 m=1
+XM8 avdd avdd avdd avdd sg13_hv_pmos w=10u l=0.5u ng=10 m=2
+.ends
+
+
+* expanding   symbol:  se_folded_cascode_p.sym # of pins=7
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/se_folded_cascode_p.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/se_folded_cascode_p.sch
+.subckt se_folded_cascode_p vdd out inp inn vss bias ena_b
+*.PININFO inn:I inp:I out:O bias:B vdd:B vss:B ena_b:I
+XM3 out1p inn diff vdd sg13_hv_pmos w=4u l=1u ng=1 m=8
+XM2 out1n inp diff vdd sg13_hv_pmos w=4u l=1u ng=1 m=8
+XM1 diff vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=16
+XM4 out1n vbn1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=16
+XM5 out1p vbn1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=16
+XM6 mirr vbn2 out1n vss sg13_hv_nmos w=1u l=4u ng=1 m=8
+XM7 out vbn2 out1p vss sg13_hv_nmos w=1u l=4u ng=1 m=8
+XM8 mirr vbp2 nd10 vdd sg13_hv_pmos w=2u l=4u ng=1 m=8
+XM9 out vbp2 nd11 vdd sg13_hv_pmos w=2u l=4u ng=1 m=8
+XM10 nd10 mirr vdd vdd sg13_hv_pmos w=2u l=4u ng=1 m=8
+XM11 nd11 mirr vdd vdd sg13_hv_pmos w=2u l=4u ng=1 m=8
+XMB1 vbp2 vbp2 vbp1 vdd sg13_hv_pmos w=2u l=4u ng=1 m=4
+XMB2 vbp1 vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=4
+XMB3 vbn2 vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=4
+XMB4 vbn2 vbn2 vbn1 vss sg13_hv_nmos w=1u l=4u ng=1 m=4
+XMB5 vbn1 vbn1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=4
+XMB6 bias ena_b vbp2 vdd sg13_hv_pmos w=2u l=4u ng=1 m=4
+XM12 vdd vdd vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=8
+XM13 vdd vdd vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=2
+XMB7 vss vss vss vss sg13_hv_nmos w=1u l=1u ng=1 m=16
+.ends
+

@@ -1,0 +1,61 @@
+magic
+tech ihp-sg13cmos5l
+magscale 1 2
+timestamp 1774623097
+<< metal1 >>
+rect 567 -300 972 -241
+rect 1248 -300 1659 -241
+rect 1376 -339 1533 -338
+rect 748 -824 784 -348
+rect 1376 -379 1385 -339
+rect 1524 -379 1533 -339
+rect 1376 -380 1533 -379
+rect 689 -825 846 -824
+rect 689 -865 698 -825
+rect 837 -865 846 -825
+rect 1437 -857 1473 -380
+rect 689 -866 846 -865
+rect 566 -963 971 -904
+rect 1248 -963 1660 -904
+<< via1 >>
+rect 1385 -379 1524 -339
+rect 698 -865 837 -825
+<< metal2 >>
+rect 506 -291 1708 -193
+rect 508 -379 1385 -339
+rect 1524 -379 1710 -339
+rect 508 -526 1706 -428
+rect 509 -776 1711 -678
+rect 510 -865 698 -825
+rect 837 -865 1710 -825
+rect 510 -1011 1712 -913
+use via_Y6ZG8N  via_Y6ZG8N_0 paramcells
+timestamp 1774449753
+transform 1 0 773 0 1 -262
+box -173 -29 173 29
+use via_Y6ZG8N  via_Y6ZG8N_1
+timestamp 1774449753
+transform 1 0 1457 0 1 -942
+box -173 -29 173 29
+use sg13_hv_pmos_XLVYT6  XM1 paramcells
+timestamp 1774449753
+transform 1 0 766 0 1 -602
+box -344 -472 344 472
+use sg13_hv_nmos_MRZNPN  XM2 paramcells
+timestamp 1774449753
+transform 1 0 1454 0 1 -602
+box -282 -410 282 410
+<< labels >>
+flabel metal2 506 -291 706 -202 0 FreeSans 640 0 0 0 vdd
+port 1 nsew
+flabel metal2 510 -1011 710 -924 0 FreeSans 640 0 0 0 vss
+port 4 nsew
+flabel metal2 508 -526 708 -442 0 FreeSans 640 0 0 0 in
+port 2 nsew
+flabel metal2 1511 -776 1711 -687 0 FreeSans 640 0 0 0 out
+port 3 nsew
+flabel metal2 510 -865 710 -825 0 FreeSans 640 0 0 0 ena
+port 5 nsew
+flabel metal2 508 -379 708 -339 0 FreeSans 640 0 0 0 ena_b
+port 0 nsew
+<< end >>

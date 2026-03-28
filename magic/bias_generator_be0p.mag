@@ -1,0 +1,389 @@
+magic
+tech ihp-sg13cmos5l
+magscale 1 2
+timestamp 1774648309
+<< digisub >>
+rect -1592 1851 13784 2234
+<< metal1 >>
+rect -1531 2624 13779 2724
+rect -1531 2524 -1331 2624
+rect -582 2216 -293 2282
+rect 2987 2216 3276 2282
+rect 4996 2216 5285 2282
+rect 8469 2216 8758 2282
+rect 10518 2219 10775 2277
+rect -1531 1956 -1331 2055
+rect -1531 1856 13779 1956
+rect -1531 1855 -1331 1856
+rect -1532 1759 -1332 1763
+rect -1532 1602 13779 1759
+rect -1531 1601 13779 1602
+rect 17 1456 2613 1601
+rect 5583 1444 8179 1601
+rect -1523 -40 -1323 -37
+rect 2826 -40 5370 60
+rect 8392 -40 10936 64
+rect -1524 -198 13782 -40
+rect -1523 -199 -1323 -198
+rect -149 -1803 51 -1692
+rect -158 -2934 42 -2820
+<< metal2 >>
+rect -416 2774 -344 2974
+rect -389 1577 -344 2774
+rect 2945 2767 3026 2967
+rect 5172 2776 5245 2976
+rect 8510 2780 8579 2980
+rect -225 1578 -180 2268
+rect 2798 1578 2843 2268
+rect 2962 1577 3007 2767
+rect 5189 1577 5234 2776
+rect 5353 1578 5398 2268
+rect 8356 1578 8401 2268
+rect 8520 1577 8565 2780
+rect 10734 2768 10808 2968
+rect 10747 1577 10792 2768
+rect 10911 1578 10956 2268
+rect -47 29 -3 308
+rect 2637 287 2681 307
+rect 2637 146 2683 287
+rect -214 -15 -3 29
+rect 1694 102 2683 146
+rect -214 -869 -170 -15
+rect 1694 -52 1738 102
+rect 5497 42 5541 287
+rect 128 -96 1738 -52
+rect 1794 -2 5541 42
+rect 8208 39 8252 301
+rect 11078 47 11122 284
+rect 128 -871 172 -96
+rect 1794 -139 1838 -2
+rect 5703 -5 8252 39
+rect 8497 3 11122 47
+rect 5703 -45 5747 -5
+rect 754 -183 1838 -139
+rect 1962 -89 5747 -45
+rect 8497 -47 8541 3
+rect 754 -870 798 -183
+rect 1962 -870 2006 -89
+rect 5821 -91 8541 -47
+rect 5821 -131 5866 -91
+rect 4325 -175 5866 -131
+rect 4325 -872 4369 -175
+<< metal3 >>
+rect -402 1509 -324 1728
+rect -243 1509 -167 1728
+rect 2797 1509 2873 1728
+rect 2954 1509 3032 1728
+rect 5164 1509 5242 1728
+rect 5323 1509 5399 1728
+rect 8363 1509 8439 1728
+rect 8520 1509 8598 1728
+rect 10730 1509 10808 1728
+rect 10889 1509 10965 1728
+rect 8753 -296 8953 -292
+rect -8 -391 8954 -296
+<< metal4 >>
+rect -1592 2575 13784 2725
+rect -1592 1851 13784 2001
+rect -1594 1377 13780 1764
+rect -1538 170 -1363 1263
+rect 1189 276 1435 1377
+rect 3994 170 4209 1279
+rect 6768 286 6983 1377
+rect 9557 170 9772 1305
+rect 12333 268 12548 1377
+rect -1594 -217 13780 170
+use bias_pstack  bias_pstack_0
+array 0 7 288 0 0 3881
+timestamp 1774624117
+transform 1 0 954 0 -1 -1709
+box 898 -1502 1500 2379
+use bias_pstack  bias_pstack_1
+array 0 3 288 0 0 3881
+timestamp 1774624117
+transform 1 0 -256 0 -1 -1709
+box 898 -1502 1500 2379
+use bias_pstack  bias_pstack_2
+array 0 1 288 0 0 3881
+timestamp 1774624117
+transform 1 0 -890 0 -1 -1709
+box 898 -1502 1500 2379
+use bias_pstack  bias_pstack_3
+timestamp 1774624117
+transform 1 0 -1236 0 -1 -1709
+box 898 -1502 1500 2379
+use bias_pstack  bias_pstack_4
+array 0 15 288 0 0 3881
+timestamp 1774624117
+transform 1 0 3316 0 -1 -1709
+box 898 -1502 1500 2379
+use level_shift  level_shift_0
+timestamp 1774630862
+transform 0 -1 2176 -1 0 1524
+box -12 -1978 1519 1064
+use level_shift  level_shift_1
+timestamp 1774630862
+transform 0 1 6020 -1 0 1524
+box -12 -1978 1519 1064
+use level_shift  level_shift_2
+timestamp 1774630862
+transform 0 -1 7742 -1 0 1524
+box -12 -1978 1519 1064
+use level_shift  level_shift_3
+timestamp 1774630862
+transform 0 1 11586 -1 0 1524
+box -12 -1978 1519 1064
+use level_shift  level_shift_4
+timestamp 1774630862
+transform 0 1 454 -1 0 1524
+box -12 -1978 1519 1064
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
+timestamp 1774624117
+transform -1 0 3326 0 1 1912
+box -48 -56 336 834
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_1
+timestamp 1774624117
+transform -1 0 8884 0 1 1912
+box -48 -56 336 834
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_2
+timestamp 1774624117
+transform 1 0 10428 0 1 1912
+box -48 -56 336 834
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_3
+timestamp 1774624117
+transform 1 0 -708 0 1 1912
+box -48 -56 336 834
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_4
+timestamp 1774624117
+transform 1 0 4870 0 1 1912
+box -48 -56 336 834
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
+timestamp 1774624117
+transform -1 0 2654 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_1
+timestamp 1774624117
+transform -1 0 8212 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_2
+timestamp 1774624117
+transform 1 0 11100 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_3
+timestamp 1774624117
+transform 1 0 -36 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_4
+timestamp 1774624117
+transform 1 0 5542 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
+timestamp 1774624117
+transform -1 0 3038 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_1
+timestamp 1774624117
+transform -1 0 8596 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_2
+timestamp 1774624117
+transform 1 0 10716 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_3
+timestamp 1774624117
+transform 1 0 -420 0 1 1912
+box -48 -56 432 834
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_4
+timestamp 1774624117
+transform 1 0 5158 0 1 1912
+box -48 -56 432 834
+use via_Y6HC2N  via_Y6HC2N_0 paramcells
+timestamp 1774624117
+transform 1 0 -191 0 1 -808
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_1
+timestamp 1774624117
+transform 1 0 149 0 1 -808
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_2
+timestamp 1774624117
+transform 1 0 774 0 1 -807
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_3
+timestamp 1774624117
+transform 1 0 1984 0 1 -807
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_4
+timestamp 1774624117
+transform 1 0 4345 0 1 -808
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_5
+timestamp 1774624117
+transform 0 -1 8343 -1 0 2246
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_6
+timestamp 1774624117
+transform 0 -1 8613 -1 0 2248
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_7
+timestamp 1774624117
+transform 0 1 -167 -1 0 2246
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_8
+timestamp 1774624117
+transform 0 1 -437 -1 0 2248
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_9
+timestamp 1774624117
+transform 0 1 10969 -1 0 2246
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_10
+timestamp 1774624117
+transform 0 1 10699 -1 0 2248
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_11
+timestamp 1774624117
+transform 0 1 5411 -1 0 2246
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_12
+timestamp 1774624117
+transform 0 1 5141 -1 0 2248
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_13
+timestamp 1774624117
+transform 0 -1 3055 -1 0 2248
+box -29 -70 29 70
+use via_Y6HC2N  via_Y6HC2N_14
+timestamp 1774624117
+transform 0 -1 2785 -1 0 2246
+box -29 -70 29 70
+use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
+timestamp 1774624117
+transform 0 -1 2989 -1 0 1648
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_1
+timestamp 1774624117
+transform 0 -1 -202 -1 0 1646
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_2
+timestamp 1774624117
+transform 0 -1 -364 -1 0 1645
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_3
+timestamp 1774624117
+transform 0 -1 8560 -1 0 1650
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_4
+timestamp 1774624117
+transform 0 -1 8398 -1 0 1649
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_5
+timestamp 1774624117
+transform 0 -1 5360 -1 0 1648
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_6
+timestamp 1774624117
+transform 0 -1 2827 -1 0 1647
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_7
+timestamp 1774624117
+transform 0 -1 5198 -1 0 1647
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_8
+timestamp 1774624117
+transform 0 -1 10927 -1 0 1648
+box -70 -29 70 29
+use via_Y6Z2DQ  via_Y6Z2DQ_9
+timestamp 1774624117
+transform 0 -1 10765 -1 0 1647
+box -70 -29 70 29
+use via_Z2RFBL  via_Z2RFBL_0 paramcells
+timestamp 1774624117
+transform 1 0 4096 0 1 794
+box -70 -461 70 461
+use via_Z2RFBL  via_Z2RFBL_1
+timestamp 1774624117
+transform 1 0 6878 0 1 794
+box -70 -461 70 461
+use via_Z2RFBL  via_Z2RFBL_2
+timestamp 1774624117
+transform 1 0 9660 0 1 794
+box -70 -461 70 461
+use via_Z2RFBL  via_Z2RFBL_3
+timestamp 1774624117
+transform 1 0 1314 0 1 794
+box -70 -461 70 461
+use via_Z2RFBL  via_Z2RFBL_4
+timestamp 1774624117
+transform 1 0 12442 0 1 794
+box -70 -461 70 461
+use via_Z2RFXH  via_Z2RFXH_1 paramcells
+timestamp 1774624117
+transform 1 0 -1413 0 1 779
+box -29 -461 29 461
+use via_Z29PWH  via_Z29PWH_0 paramcells
+timestamp 1774624712
+transform 1 0 1775 0 1 2679
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_1
+timestamp 1774624712
+transform 1 0 1755 0 1 1895
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_2
+timestamp 1774624712
+transform 1 0 6997 0 1 1903
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_3
+timestamp 1774624712
+transform 1 0 4145 0 1 2673
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_4
+timestamp 1774624712
+transform 1 0 4147 0 1 1907
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_5
+timestamp 1774624712
+transform 1 0 6975 0 1 2675
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_6
+timestamp 1774624712
+transform 1 0 9759 0 1 1895
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_7
+timestamp 1774624712
+transform 1 0 9763 0 1 2673
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_8
+timestamp 1774624712
+transform 1 0 12371 0 1 2673
+box -461 -29 461 29
+use via_Z29PWH  via_Z29PWH_9
+timestamp 1774624712
+transform 1 0 12371 0 1 1895
+box -461 -29 461 29
+<< labels >>
+flabel metal1 -1531 1855 -1331 2055 0 FreeSans 1600 180 0 0 dvss
+port 1 nsew
+flabel metal1 -1531 2524 -1331 2724 0 FreeSans 1600 180 0 0 dvdd
+port 0 nsew
+flabel metal1 -1532 1602 -1332 1763 0 FreeSans 1600 180 0 0 avdd
+port 2 nsew
+flabel metal1 -1523 -199 -1323 -37 0 FreeSans 1600 180 0 0 avss
+port 13 nsew
+flabel metal1 -149 -1803 51 -1692 0 FreeSans 1600 180 0 0 pcasc
+port 3 nsew
+flabel metal1 -158 -2934 42 -2820 0 FreeSans 1600 180 0 0 pbias
+port 4 nsew
+flabel metal3 8753 -391 8953 -292 0 FreeSans 1600 180 0 0 source_ibias
+port 11 nsew
+flabel metal2 -416 2774 -344 2974 0 FreeSans 1600 180 0 0 source_ena[0]
+port 9 nsew
+flabel metal2 2945 2767 3026 2967 0 FreeSans 1600 180 0 0 source_ena[1]
+port 8 nsew
+flabel metal2 5172 2776 5245 2976 0 FreeSans 1600 180 0 0 source_ena[2]
+port 7 nsew
+flabel metal2 8510 2780 8579 2980 0 FreeSans 1600 180 0 0 source_ena[3]
+port 6 nsew
+flabel metal2 10734 2768 10808 2968 0 FreeSans 1600 180 0 0 source_ena[4]
+port 5 nsew
+<< end >>

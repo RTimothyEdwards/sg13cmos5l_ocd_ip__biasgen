@@ -1,0 +1,666 @@
+
+Circuit 1 cell sg13_hv_pmos and Circuit 2 cell sg13_hv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_pmos                                                      |Circuit 2: sg13_hv_pmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_pmos and sg13_hv_pmos are equivalent.
+
+Circuit 1 cell sg13_hv_nmos and Circuit 2 cell sg13_hv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_nmos                                                      |Circuit 2: sg13_hv_nmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_nmos and sg13_hv_nmos are equivalent.
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                                                      |Circuit 2: sg13_lv_nmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                                                      |Circuit 2: sg13_lv_pmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+
+Circuit 1 cell rhigh and Circuit 2 cell rhigh are black boxes.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: rhigh                                                             |Circuit 2: rhigh                                                             
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rhigh and rhigh are equivalent.
+
+Circuit 1 cell dpantenna and Circuit 2 cell dpantenna are black boxes.
+Warning: Equate pins:  cell dpantenna is a placeholder, treated as a black box.
+Warning: Equate pins:  cell dpantenna is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: dpantenna                                                         |Circuit 2: dpantenna                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dpantenna and dpantenna are equivalent.
+
+Circuit 1 cell dantenna and Circuit 2 cell dantenna are black boxes.
+Warning: Equate pins:  cell dantenna is a placeholder, treated as a black box.
+Warning: Equate pins:  cell dantenna is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: dantenna                                                          |Circuit 2: dantenna                                                          
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dantenna and dantenna are equivalent.
+
+Class sg13cmos5l_inv_2 (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: sg13cmos5l_inv_2                                                  |Circuit 2: sg13cmos5l_inv_2                                                  
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_lv_nmos (2->1)                                                          |sg13_lv_nmos (1)                                                             
+sg13_lv_pmos (2->1)                                                          |sg13_lv_pmos (1)                                                             
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 4                                                            |Number of nets: 4                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_inv_2                                                  |Circuit 2: sg13cmos5l_inv_2                                                  
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+Y                                                                            |Y                                                                            
+A                                                                            |A                                                                            
+VSS                                                                          |VSS                                                                          
+VDD                                                                          |VDD                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_inv_2 and sg13cmos5l_inv_2 are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_CVGX38 in circuit hv_inv_1 (0)(1 instance)
+Flattening unmatched subcell sg13_hv_nmos_83DLAQ in circuit hv_inv_1 (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: hv_inv_1                                                          |Circuit 2: hv_inv_1                                                          
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (1)                                                             |sg13_hv_pmos (1)                                                             
+sg13_hv_nmos (1)                                                             |sg13_hv_nmos (1)                                                             
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 4                                                            |Number of nets: 4                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: hv_inv_1                                                          |Circuit 2: hv_inv_1                                                          
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+X                                                                            |X                                                                            
+A                                                                            |A                                                                            
+vdd                                                                          |vdd                                                                          
+vss                                                                          |vss                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes hv_inv_1 and hv_inv_1 are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_NNMDLU in circuit se_folded_cascode_p (0)(2 instances)
+Flattening unmatched subcell sg13_hv_pmos_ZKTCY2 in circuit se_folded_cascode_p (0)(1 instance)
+Flattening unmatched subcell sg13_hv_pmos_NWNELU in circuit se_folded_cascode_p (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_XAAXMC in circuit se_folded_cascode_p (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_TYJME3 in circuit se_folded_cascode_p (0)(2 instances)
+Flattening unmatched subcell sg13_hv_pmos_H5F6DG in circuit se_folded_cascode_p (0)(2 instances)
+Flattening unmatched subcell sg13_hv_pmos_HLS6DG in circuit se_folded_cascode_p (0)(4 instances)
+Flattening unmatched subcell sg13_hv_pmos_NQUDLU in circuit se_folded_cascode_p (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_TGUME3 in circuit se_folded_cascode_p (0)(1 instance)
+Flattening unmatched subcell sg13_hv_nmos_BE9VUZ in circuit se_folded_cascode_p (0)(1 instance)
+Flattening unmatched subcell sg13_hv_nmos_BEMUUZ in circuit se_folded_cascode_p (0)(1 instance)
+Flattening unmatched subcell sg13_hv_pmos_N8UDLU in circuit se_folded_cascode_p (0)(1 instance)
+Flattening unmatched subcell sg13_hv_nmos_BEDTUZ in circuit se_folded_cascode_p (0)(1 instance)
+
+Class se_folded_cascode_p (0):  Merged 143 parallel devices.
+Class se_folded_cascode_p (1):  Merged 1 parallel devices.
+Subcircuit summary:
+Circuit 1: se_folded_cascode_p                                               |Circuit 2: se_folded_cascode_p                                               
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (90->12)                                                        |sg13_hv_pmos (90->12)                                                        
+sg13_hv_nmos (72->7)                                                         |sg13_hv_nmos (72->7)                                                         
+Number of devices: 19                                                        |Number of devices: 19                                                        
+Number of nets: 17                                                           |Number of nets: 17                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: se_folded_cascode_p                                               |Circuit 2: se_folded_cascode_p                                               
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+out                                                                          |out                                                                          
+vss                                                                          |vss                                                                          
+inn                                                                          |inn                                                                          
+inp                                                                          |inp                                                                          
+bias                                                                         |bias                                                                         
+ena_b                                                                        |ena_b                                                                        
+vdd                                                                          |vdd                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes se_folded_cascode_p and se_folded_cascode_p are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_XLVYT6 in circuit xgate (0)(1 instance)
+Flattening unmatched subcell sg13_hv_nmos_MRZNPN in circuit xgate (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: xgate                                                             |Circuit 2: xgate                                                             
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (1)                                                             |sg13_hv_pmos (1)                                                             
+sg13_hv_nmos (1)                                                             |sg13_hv_nmos (1)                                                             
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 6                                                            |Number of nets: 6                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: xgate                                                             |Circuit 2: xgate                                                             
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+out                                                                          |out                                                                          
+in                                                                           |in                                                                           
+ena                                                                          |ena_b **Mismatch**                                                           
+vdd                                                                          |vdd                                                                          
+ena_b                                                                        |ena **Mismatch**                                                             
+vss                                                                          |vss                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists for xgate and xgate altered to match.
+Device classes xgate and xgate are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_antennanp                                              |Circuit 2: sg13cmos5l_antennanp                                              
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+dpantenna (1)                                                                |dpantenna (1)                                                                
+dantenna (1)                                                                 |dantenna (1)                                                                 
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 3                                                            |Number of nets: 3                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_antennanp                                              |Circuit 2: sg13cmos5l_antennanp                                              
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+VSS                                                                          |VSS                                                                          
+VDD                                                                          |VDD                                                                          
+A                                                                            |A                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_antennanp and sg13cmos5l_antennanp are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_nand3_1                                                |Circuit 2: sg13cmos5l_nand3_1                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_lv_pmos (3)                                                             |sg13_lv_pmos (3)                                                             
+sg13_lv_nmos (3)                                                             |sg13_lv_nmos (3)                                                             
+Number of devices: 6                                                         |Number of devices: 6                                                         
+Number of nets: 8                                                            |Number of nets: 8                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_nand3_1                                                |Circuit 2: sg13cmos5l_nand3_1                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+VDD                                                                          |VDD                                                                          
+B                                                                            |B                                                                            
+A                                                                            |A                                                                            
+C                                                                            |C                                                                            
+Y                                                                            |Y                                                                            
+VSS                                                                          |VSS                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_nand3_1 and sg13cmos5l_nand3_1 are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_MW6CUW in circuit p_amp_large (0)(3 instances)
+Flattening unmatched subcell sg13_hv_nmos_6DERAL in circuit p_amp_large (0)(2 instances)
+Flattening unmatched subcell sg13_hv_pmos_W338R3 in circuit p_amp_large (0)(2 instances)
+
+Removing zero-valued device vsrc from cell p_amp_large (1) makes a better match
+Making another compare attempt.
+
+Class p_amp_large (0):  Merged 116 parallel devices.
+Subcircuit summary:
+Circuit 1: p_amp_large                                                       |Circuit 2: p_amp_large                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (100->5)                                                        |sg13_hv_pmos (5)                                                             
+sg13_hv_nmos (24->3)                                                         |sg13_hv_nmos (3)                                                             
+Number of devices: 8                                                         |Number of devices: 8                                                         
+Number of nets: 10                                                           |Number of nets: 10                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sg13_hv_nmos_6DERAL_0/sg13_hv_nmos:3 vs. sg13_hv_nmos:M3:
+ w circuit1: 4e-06   circuit2: 1e-05   (delta=85.7%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: p_amp_large                                                       |Circuit 2: p_amp_large                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+avss                                                                         |avss                                                                         
+avdd                                                                         |avdd                                                                         
+out                                                                          |out                                                                          
+inp                                                                          |inp                                                                          
+inn                                                                          |inn                                                                          
+ibias                                                                        |ibias                                                                        
+ena_b                                                                        |ena_b                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes p_amp_large and p_amp_large are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_DNCZKC in circuit level_shift (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_QHASHE in circuit level_shift (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_QBGVHE in circuit level_shift (0)(3 instances)
+Flattening unmatched subcell sg13_hv_pmos_ZPCZKC in circuit level_shift (0)(2 instances)
+
+Cell level_shift (0) disconnected node: vdd_uq0
+Class level_shift (0):  Merged 12 parallel devices.
+Cell level_shift (0) disconnected node: vdd_uq0
+Subcircuit summary:
+Circuit 1: level_shift                                                       |Circuit 2: level_shift                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (10->4)                                                         |sg13_hv_pmos (10->4)                                                         
+sg13_hv_nmos (10->4)                                                         |sg13_hv_nmos (10->4)                                                         
+Number of devices: 8                                                         |Number of devices: 8                                                         
+Number of nets: 8                                                            |Number of nets: 8                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: level_shift                                                       |Circuit 2: level_shift                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+out                                                                          |out                                                                          
+in_p                                                                         |in_p                                                                         
+in_n                                                                         |in_n                                                                         
+vss                                                                          |vss                                                                          
+vdd                                                                          |vdd                                                                          
+vdd_uq0                                                                      |(no matching pin)                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes level_shift and level_shift are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_decap_4                                                |Circuit 2: sg13cmos5l_decap_4                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_lv_pmos (1)                                                             |sg13_lv_pmos (1)                                                             
+sg13_lv_nmos (1)                                                             |sg13_lv_nmos (1)                                                             
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 2                                                            |Number of nets: 2                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_decap_4                                                |Circuit 2: sg13cmos5l_decap_4                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+VSS                                                                          |VSS                                                                          
+VDD                                                                          |VDD                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_decap_4 and sg13cmos5l_decap_4 are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_7A8CUW in circuit n_amp_large (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_XVVFQX in circuit n_amp_large (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_666RAL in circuit n_amp_large (0)(3 instances)
+
+Class n_amp_large (0):  Merged 116 parallel devices.
+Subcircuit summary:
+Circuit 1: n_amp_large                                                       |Circuit 2: n_amp_large                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (24->3)                                                         |sg13_hv_pmos (4->3)                                                          
+sg13_hv_nmos (100->5)                                                        |sg13_hv_nmos (5)                                                             
+Number of devices: 8                                                         |Number of devices: 8                                                         
+Number of nets: 10                                                           |Number of nets: 10                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely with property errors.
+sg13_hv_pmos_7A8CUW_0/sg13_hv_pmos:3 vs. sg13_hv_pmos:M8:
+ w circuit1: 4e-06   circuit2: 2e-05   (delta=133%, cutoff=1%)
+
+Subcircuit pins:
+Circuit 1: n_amp_large                                                       |Circuit 2: n_amp_large                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+inp                                                                          |inp                                                                          
+inn                                                                          |inn                                                                          
+ibias                                                                        |ibias                                                                        
+ena                                                                          |ena                                                                          
+avss                                                                         |avss                                                                         
+out                                                                          |out                                                                          
+avdd                                                                         |avdd                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes n_amp_large and n_amp_large are equivalent.
+Flattening unmatched subcell rhigh_NFPZ4T in circuit sg13cmos5l_ocd_ip__voltgen (0)(1 instance)
+Flattening unmatched subcell sg13_hv_pmos_QH8WBX in circuit sg13cmos5l_ocd_ip__voltgen (0)(1 instance)
+Flattening unmatched subcell capacitor_78Y85C in circuit sg13cmos5l_ocd_ip__voltgen (0)(1 instance)
+
+Flattening instances of sg13cmos5l_decap_4 in cell sg13cmos5l_ocd_ip__voltgen (0) makes a better match
+Flattening instances of sg13cmos5l_decap_4 in cell sg13cmos5l_ocd_ip__voltgen (1) makes a better match
+Making another compare attempt.
+
+Class sg13cmos5l_ocd_ip__voltgen (0):  Merged 1 parallel devices.
+Class sg13cmos5l_ocd_ip__voltgen (1):  Merged 23 parallel devices.
+Subcircuit summary:
+Circuit 1: sg13cmos5l_ocd_ip__voltgen                                        |Circuit 2: sg13cmos5l_ocd_ip__voltgen                                        
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13cmos5l_inv_2 (18)                                                        |sg13cmos5l_inv_2 (18)                                                        
+hv_inv_1 (9)                                                                 |hv_inv_1 (9)                                                                 
+se_folded_cascode_p (1)                                                      |se_folded_cascode_p (1)                                                      
+xgate (10)                                                                   |xgate (10)                                                                   
+rhigh (10->9)                                                                |rhigh (10->9)                                                                
+sg13_hv_pmos (1)                                                             |sg13_hv_pmos (1)                                                             
+sg13cmos5l_antennanp (7)                                                     |sg13cmos5l_antennanp (7)                                                     
+sg13cmos5l_nand3_1 (8)                                                       |sg13cmos5l_nand3_1 (8)                                                       
+c (1)                                                                        |c (1)                                                                        
+p_amp_large (1)                                                              |p_amp_large (1)                                                              
+level_shift (12)                                                             |level_shift (12)                                                             
+sg13_lv_pmos (1)                                                             |sg13_lv_pmos (12->1)                                                         
+sg13_lv_nmos (1)                                                             |sg13_lv_nmos (12->1)                                                         
+n_amp_large (1)                                                              |n_amp_large (1)                                                              
+Number of devices: 80                                                        |Number of devices: 80                                                        
+Number of nets: 78 **Mismatch**                                              |Number of nets: 75 **Mismatch**                                              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: sg13cmos5l_ocd_ip__voltgen                                        |Circuit 2: sg13cmos5l_ocd_ip__voltgen                                        
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: xgate_1/ena                                                             |Net: vref7                                                                   
+  hv_inv_1/A = 1                                                             |  sg13_hv_pmos/(1|3) = 1                                                     
+  xgate/ena = 1                                                              |  rhigh/(1|2) = 1                                                            
+  level_shift/out = 1                                                        |  xgate/in = 1                                                               
+                                                                             |                                                                             
+Net: xgate_3/ena                                                             |Net: vref6                                                                   
+  hv_inv_1/A = 1                                                             |  rhigh/(1|2) = 2                                                            
+  xgate/ena = 1                                                              |  xgate/in = 1                                                               
+  level_shift/out = 1                                                        |                                                                             
+                                                                             |                                                                             
+Net: XR1/R2_8                                                                |Net: vref5                                                                   
+  rhigh/(1|2) = 2                                                            |  rhigh/(1|2) = 2                                                            
+  xgate/in = 1                                                               |  xgate/in = 1                                                               
+                                                                             |                                                                             
+Net: xgate_6/ena                                                             |Net: vref4                                                                   
+  hv_inv_1/A = 1                                                             |  rhigh/(1|2) = 2                                                            
+  xgate/ena = 1                                                              |  xgate/in = 1                                                               
+  level_shift/out = 1                                                        |                                                                             
+                                                                             |                                                                             
+Net: XR1/R2_6                                                                |Net: vref1                                                                   
+  rhigh/(1|2) = 2                                                            |  rhigh/(1|2) = 2                                                            
+  xgate/in = 1                                                               |  xgate/in = 1                                                               
+                                                                             |                                                                             
+Net: xgate_7/ena                                                             |Net: vref0                                                                   
+  hv_inv_1/A = 1                                                             |  rhigh/(1|2) = 2                                                            
+  xgate/ena = 1                                                              |  xgate/in = 1                                                               
+  level_shift/out = 1                                                        |                                                                             
+                                                                             |                                                                             
+Net: v7                                                                      |Net: v7                                                                      
+  hv_inv_1/A = 1                                                             |  hv_inv_1/A = 1                                                             
+  xgate/ena = 1                                                              |  xgate/ena = 1                                                              
+  level_shift/out = 1                                                        |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: XR1/R2_2                                                                |Net: v0                                                                      
+  rhigh/(1|2) = 2                                                            |  hv_inv_1/A = 1                                                             
+  xgate/in = 1                                                               |  xgate/ena = 1                                                              
+                                                                             |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: x6/out                                                                  |Net: v6                                                                      
+  xgate/out = 2                                                              |  xgate/ena = 1                                                              
+  n_amp_large/inp = 1                                                        |  hv_inv_1/A = 1                                                             
+                                                                             |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: v5                                                                      |Net: v5                                                                      
+  hv_inv_1/A = 1                                                             |  hv_inv_1/A = 1                                                             
+  xgate/ena = 1                                                              |  xgate/ena = 1                                                              
+  level_shift/out = 1                                                        |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: XR1/R1_3                                                                |Net: v4                                                                      
+  rhigh/(1|2) = 2                                                            |  xgate/ena = 1                                                              
+  xgate/in = 1                                                               |  hv_inv_1/A = 1                                                             
+                                                                             |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: v3                                                                      |Net: v3                                                                      
+  hv_inv_1/A = 1                                                             |  hv_inv_1/A = 1                                                             
+  xgate/ena = 1                                                              |  xgate/ena = 1                                                              
+  level_shift/out = 1                                                        |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: XR1/R1_7                                                                |Net: v2                                                                      
+  rhigh/(1|2) = 2                                                            |  xgate/ena = 1                                                              
+  xgate/in = 1                                                               |  hv_inv_1/A = 1                                                             
+                                                                             |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: v1                                                                      |Net: v1                                                                      
+  hv_inv_1/A = 1                                                             |  hv_inv_1/A = 1                                                             
+  xgate/ena = 1                                                              |  xgate/ena = 1                                                              
+  level_shift/out = 1                                                        |  level_shift/out = 1                                                        
+                                                                             |                                                                             
+Net: XM1/D                                                                   |Net: net18                                                                   
+  rhigh/(1|2) = 1                                                            |  n_amp_large/inp = 1                                                        
+  sg13_hv_pmos/(1|3) = 1                                                     |  xgate/in = 2                                                               
+  xgate/in = 1                                                               |                                                                             
+                                                                             |                                                                             
+Net: XR1/R2_4                                                                |Net: vref3                                                                   
+  rhigh/(1|2) = 2                                                            |  rhigh/(1|2) = 2                                                            
+  xgate/in = 2                                                               |  xgate/in = 1                                                               
+                                                                             |  xgate/out = 1                                                              
+                                                                             |                                                                             
+Net: x6/in                                                                   |Net: vref2                                                                   
+  xgate/in = 2                                                               |  rhigh/(1|2) = 2                                                            
+  rhigh/(1|2) = 2                                                            |  xgate/in = 1                                                               
+                                                                             |  xgate/out = 1                                                              
+                                                                             |                                                                             
+Net: s1                                                                      |Net: s1                                                                      
+  sg13cmos5l_nand3_1/B = 2                                                   |  sg13cmos5l_nand3_1/B = 4                                                   
+  sg13cmos5l_inv_2/Y = 1                                                     |  sg13cmos5l_inv_2/Y = 1                                                     
+                                                                             |                                                                             
+Net: s0                                                                      |Net: s2                                                                      
+  sg13cmos5l_inv_2/Y = 1                                                     |  sg13cmos5l_inv_2/Y = 1                                                     
+  sg13cmos5l_nand3_1/C = 3                                                   |  sg13cmos5l_nand3_1/C = 4                                                   
+                                                                             |                                                                             
+Net: x13/B                                                                   |(no matching net)                                                            
+  sg13cmos5l_nand3_1/B = 1                                                   |                                                                             
+                                                                             |                                                                             
+Net: x35/B                                                                   |(no matching net)                                                            
+  sg13cmos5l_nand3_1/B = 1                                                   |                                                                             
+                                                                             |                                                                             
+Net: x35/C                                                                   |(no matching net)                                                            
+  sg13cmos5l_nand3_1/C = 1                                                   |                                                                             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: x50/inp                                                                 |Net: vpre                                                                    
+  se_folded_cascode_p/inp = 1                                                |  se_folded_cascode_p/inp = 1                                                
+  xgate/out = 8                                                              |  xgate/out = 8                                                              
+  p_amp_large/inp = 1                                                        |  p_amp_large/inp = 1                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: vss                                                                     |Net: vss                                                                     
+  hv_inv_1/vss = 9                                                           |  hv_inv_1/vss = 9                                                           
+  se_folded_cascode_p/vss = 1                                                |  se_folded_cascode_p/vss = 1                                                
+  xgate/vss = 10                                                             |  xgate/vss = 10                                                             
+  rhigh/3 = 9                                                                |  rhigh/3 = 9                                                                
+  rhigh/(1|2) = 3                                                            |  rhigh/(1|2) = 3                                                            
+  p_amp_large/avss = 1                                                       |  p_amp_large/avss = 1                                                       
+  level_shift/vss = 12                                                       |  level_shift/vss = 12                                                       
+  n_amp_large/avss = 1                                                       |  n_amp_large/avss = 1                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: vdd                                                                     |Net: vdd                                                                     
+  hv_inv_1/vdd = 9                                                           |  hv_inv_1/vdd = 9                                                           
+  se_folded_cascode_p/vdd = 1                                                |  se_folded_cascode_p/vdd = 1                                                
+  xgate/vdd = 10                                                             |  xgate/vdd = 10                                                             
+  sg13_hv_pmos/(1|3) = 1                                                     |  sg13_hv_pmos/(1|3) = 1                                                     
+  sg13_hv_pmos/4 = 1                                                         |  sg13_hv_pmos/4 = 1                                                         
+  c/(top|bottom) = 1                                                         |  c/(top|bottom) = 1                                                         
+  p_amp_large/avdd = 1                                                       |  p_amp_large/avdd = 1                                                       
+  level_shift/vdd = 12                                                       |  level_shift/vdd = 12                                                       
+  n_amp_large/avdd = 1                                                       |  n_amp_large/avdd = 1                                                       
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: hv_inv_1_8/X                                                            |Net: v1b                                                                     
+  hv_inv_1/X = 1                                                             |  xgate/ena_b = 1                                                            
+  xgate/ena_b = 1                                                            |  hv_inv_1/X = 1                                                             
+                                                                             |                                                                             
+Net: hv_inv_1_7/X                                                            |Net: v2b                                                                     
+  hv_inv_1/X = 1                                                             |  xgate/ena_b = 1                                                            
+  xgate/ena_b = 1                                                            |  hv_inv_1/X = 1                                                             
+                                                                             |                                                                             
+Net: hv_inv_1_6/X                                                            |Net: v3b                                                                     
+  hv_inv_1/X = 1                                                             |  xgate/ena_b = 1                                                            
+  xgate/ena_b = 1                                                            |  hv_inv_1/X = 1                                                             
+                                                                             |                                                                             
+Net: hv_inv_1_5/X                                                            |Net: v4b                                                                     
+  hv_inv_1/X = 1                                                             |  xgate/ena_b = 1                                                            
+  xgate/ena_b = 1                                                            |  hv_inv_1/X = 1                                                             
+                                                                             |                                                                             
+Net: hv_inv_1_4/X                                                            |Net: v5b                                                                     
+  hv_inv_1/X = 1                                                             |  xgate/ena_b = 1                                                            
+  xgate/ena_b = 1                                                            |  hv_inv_1/X = 1                                                             
+                                                                             |                                                                             
+Net: hv_inv_1_3/X                                                            |Net: v6b                                                                     
+  hv_inv_1/X = 1                                                             |  xgate/ena_b = 1                                                            
+  xgate/ena_b = 1                                                            |  hv_inv_1/X = 1                                                             
+                                                                             |                                                                             
+Net: hv_inv_1_2/X                                                            |Net: v0b                                                                     
+  hv_inv_1/X = 1                                                             |  hv_inv_1/X = 1                                                             
+  xgate/ena_b = 1                                                            |  xgate/ena_b = 1                                                            
+                                                                             |                                                                             
+Net: hv_inv_1_1/X                                                            |Net: v7b                                                                     
+  hv_inv_1/X = 1                                                             |  xgate/ena_b = 1                                                            
+  xgate/ena_b = 1                                                            |  hv_inv_1/X = 1                                                             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: sg13cmos5l_ocd_ip__voltgen                                        |Circuit 2: sg13cmos5l_ocd_ip__voltgen                                        
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Instance: xgate_8                                                            |Instance: xgate:10                                                           
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 3                                                                     |  in = 3                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+                                                                             |                                                                             
+Instance: xgate_7                                                            |Instance: xgate:9                                                            
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 3                                                                     |  in = 3                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+                                                                             |                                                                             
+Instance: xgate_6                                                            |Instance: xgate:8                                                            
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 3                                                                     |  in = 4                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+                                                                             |                                                                             
+Instance: xgate_5                                                            |Instance: xgate:7                                                            
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 3                                                                     |  in = 4                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+                                                                             |                                                                             
+Instance: xgate_4                                                            |Instance: xgate:6                                                            
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 4                                                                     |  in = 3                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+                                                                             |                                                                             
+Instance: xgate_3                                                            |Instance: xgate:5                                                            
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 4                                                                     |  in = 3                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+                                                                             |                                                                             
+Instance: xgate_2                                                            |Instance: xgate:4                                                            
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 3                                                                     |  in = 3                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+                                                                             |                                                                             
+Instance: xgate_1                                                            |Instance: xgate:2                                                            
+  ena_b = 2                                                                  |  ena = 3                                                                    
+  in = 3                                                                     |  in = 3                                                                     
+  out = 10                                                                   |  out = 10                                                                   
+  ena = 3                                                                    |  ena_b = 2                                                                  
+  vss = 46                                                                   |  vss = 46                                                                   
+  vdd = 37                                                                   |  vdd = 37                                                                   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_ocd_ip__voltgen                                        |Circuit 2: sg13cmos5l_ocd_ip__voltgen                                        
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+ibias1u_1                                                                    |ibias1u_1                                                                    
+vbg                                                                          |vbg                                                                          
+ibias1u_2                                                                    |ibias1u_2                                                                    
+ibias1u_3                                                                    |ibias1u_3                                                                    
+high                                                                         |high                                                                         
+ena                                                                          |ena                                                                          
+ena2                                                                         |ena1 **Mismatch**                                                            
+ena1                                                                         |ena2 **Mismatch**                                                            
+vss                                                                          |vss                                                                          
+vdd                                                                          |vdd                                                                          
+dvdd                                                                         |dvdd                                                                         
+dvss                                                                         |dvss                                                                         
+s[1]                                                                         |s[1]                                                                         
+s[2]                                                                         |s[0] **Mismatch**                                                            
+s[0]                                                                         |s[2] **Mismatch**                                                            
+vout1                                                                        |vout1                                                                        
+vout2                                                                        |vout2                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists for sg13cmos5l_ocd_ip__voltgen and sg13cmos5l_ocd_ip__voltgen altered to match.
+Device classes sg13cmos5l_ocd_ip__voltgen and sg13cmos5l_ocd_ip__voltgen are equivalent.
+
+Final result: Top level cell failed pin matching.
+
+The following cells had property errors:
+ p_amp_large
+ n_amp_large

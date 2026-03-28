@@ -1,0 +1,1784 @@
+* NGSPICE file created from sg13cmos5l_ocd_ip__biasgen1.ext - technology: ihp-sg13cmos5l
+
+.subckt sg13_hv_nmos_2RYP69 D S G sub
+X0 S G D sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+.ends
+
+.subckt bias_nstack m4_1015_n1208# m4_1015_n71# avss a_1030_2157# nbias ena ncasc
++ itail
+Xsg13_hv_nmos_2RYP69_0[0] sg13_hv_nmos_2RYP69_0[5]/D itail ena avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[1] sg13_hv_nmos_2RYP69_0[5]/D itail ena avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[2] sg13_hv_nmos_2RYP69_0[5]/D itail ena avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[3] sg13_hv_nmos_2RYP69_0[5]/D sg13_hv_nmos_2RYP69_0[8]/S ncasc
++ avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[4] sg13_hv_nmos_2RYP69_0[5]/D sg13_hv_nmos_2RYP69_0[8]/S ncasc
++ avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[5] sg13_hv_nmos_2RYP69_0[5]/D sg13_hv_nmos_2RYP69_0[8]/S ncasc
++ avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[6] avss sg13_hv_nmos_2RYP69_0[8]/S nbias avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[7] avss sg13_hv_nmos_2RYP69_0[8]/S nbias avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[8] avss sg13_hv_nmos_2RYP69_0[8]/S nbias avss sg13_hv_nmos_2RYP69
+.ends
+
+.subckt sg13cmos5l_inv_2 Y A VDD VSS
+X0 Y A VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X1 Y A VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X2 VSS A Y VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X3 VDD A Y VDD sg13_lv_pmos ad=0.3864p pd=2.93u as=0.2128p ps=1.5u w=1.12u l=0.13u
+.ends
+
+.subckt sg13_hv_pmos_7A8CUW D0 S0 G0 D1 S1 G1 D2 S2 G2 D3 S3 G3 D4 S4 G4 D5 S5 G5
++ D6 S6 G6 D7 S7 G7 D8 S8 G8 D9 S9 G9 D10 S10 G10 D11 S11 G11 w_n1771_n224#
+X0 S6 G6 D6 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X1 S8 G8 D8 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X2 D1 G1 S1 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X3 S0 G0 D0 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X4 D5 G5 S5 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X5 D9 G9 S9 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X6 S4 G4 D4 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X7 D3 G3 S3 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X8 S10 G10 D10 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X9 D11 G11 S11 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X10 S2 G2 D2 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+X11 D7 G7 S7 w_n1771_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=0.5u
+.ends
+
+.subckt sg13_hv_nmos_XVVFQX D0_0 S0_0 G0_0 D0_1 S0_1 G0_1 D1_0 S1_0 G1_0 D1_1 S1_1
++ G1_1 D2_0 S2_0 G2_0 D2_1 S2_1 G2_1 D3_0 S3_0 G3_0 D3_1 S3_1 G3_1 D4_0 S4_0 G4_0
++ D4_1 S4_1 G4_1 D5_0 S5_0 G5_0 D5_1 S5_1 G5_1 D6_0 S6_0 G6_0 D6_1 S6_1 G6_1 D7_0
++ S7_0 G7_0 D7_1 S7_1 G7_1 D8_0 S8_0 G8_0 D8_1 S8_1 G8_1 D9_0 S9_0 G9_0 D9_1 S9_1
++ G9_1 sub
+X0 D7_1 G7_1 S7_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X1 S2_0 G2_0 D2_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X2 D1_0 G1_0 S1_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X3 S6_0 G6_0 D6_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X4 D1_1 G1_1 S1_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X5 D9_1 G9_1 S9_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X6 S0_0 G0_0 D0_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X7 D7_0 G7_0 S7_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X8 S6_1 G6_1 D6_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X9 D3_1 G3_1 S3_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X10 S8_0 G8_0 D8_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X11 S2_1 G2_1 D2_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X12 D9_0 G9_0 S9_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X13 S8_1 G8_1 D8_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X14 D5_0 G5_0 S5_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X15 S4_1 G4_1 D4_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X16 S4_0 G4_0 D4_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X17 D3_0 G3_0 S3_0 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X18 S0_1 G0_1 D0_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+X19 D5_1 G5_1 S5_1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+.ends
+
+.subckt sg13_hv_nmos_666RAL D0 G0 S1 G1 D2 G2 S3 G3 D4 G4 S5 G5 D6 G6 S7 G7 D8 G8
++ S9 G9 D10 G10 S11 G11 D12 G12 S13 G13 D14 G14 S15 G15 D16 G16 S17 G17 D18 G18 S19
++ G19 a_1722_n100# sub
+X0 D4 G3 S3 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X1 S19 G18 D18 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X2 S5 G4 D4 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X3 S11 G10 D10 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X4 D14 G13 S13 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X5 a_1722_n100# G19 S19 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.5u
+X6 S3 G2 D2 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X7 D10 G9 S9 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X8 S15 G14 D14 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X9 D2 G1 S1 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X10 D8 G7 S7 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X11 S9 G8 D8 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X12 D16 G15 S15 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X13 S17 G16 D16 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X14 S1 G0 D0 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.5u
+X15 S7 G6 D6 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X16 D18 G17 S17 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X17 S13 G12 D12 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X18 D6 G5 S5 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X19 D12 G11 S11 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+.ends
+
+.subckt bias_amp_large avdd out inn inp nbias ena avss
+Xsg13_hv_pmos_7A8CUW_0 avdd avdd avdd XM6/S7 avdd XM6/S7 avdd out XM6/S7 XM6/S7 avdd
++ XM6/S7 avdd out XM6/S7 XM6/S7 avdd XM6/S7 avdd out XM6/S7 XM6/S7 avdd XM6/S7 avdd
++ out XM6/S7 XM6/S7 avdd XM6/S7 avdd out XM6/S7 avdd avdd avdd avdd sg13_hv_pmos_7A8CUW
+XXM1 avss XM1/S8_1 nbias avss XM1/S8_1 nbias XM1/S8_1 avss nbias XM1/S8_1 avss nbias
++ avss XM1/S8_1 nbias avss XM1/S8_1 nbias XM1/S8_1 avss nbias XM1/S8_1 avss nbias
++ avss XM1/S8_1 nbias avss XM1/S8_1 nbias XM1/S8_1 avss nbias XM1/S8_1 avss nbias
++ avss XM1/S8_1 nbias avss XM1/S8_1 nbias XM1/S8_1 avss nbias XM1/S8_1 avss nbias
++ avss XM1/S8_1 nbias avss XM1/S8_1 nbias XM1/S8_1 avss nbias XM1/S8_1 avss nbias
++ avss sg13_hv_nmos_XVVFQX
+XXM2 avdd avdd avdd out avdd XM6/S7 avdd XM6/S7 XM6/S7 out avdd XM6/S7 avdd XM6/S7
++ XM6/S7 out avdd XM6/S7 avdd XM6/S7 XM6/S7 out avdd XM6/S7 avdd XM6/S7 XM6/S7 out
++ avdd XM6/S7 avdd XM6/S7 XM6/S7 avdd avdd avdd avdd sg13_hv_pmos_7A8CUW
+XXM5 XM6/D8 inp XM6/S7 inp XM6/D8 inn out inn XM6/D8 inp XM6/S7 inp XM6/D8 inn out
++ inn XM6/D8 inp XM6/S7 inp XM6/D8 inn out inn XM6/D8 inp XM6/S7 inp XM6/D8 inn out
++ inn XM6/D8 inp XM6/S7 inp XM6/D8 inn out inn XM6/D8 avss sg13_hv_nmos_666RAL
+XXM6 XM6/D8 inn out inn XM6/D8 inp XM6/S7 inp XM6/D8 inn out inn XM6/D8 inp XM6/S7
++ inp XM6/D8 inn out inn XM6/D8 inp XM6/S7 inp XM6/D8 inn out inn XM6/D8 inp XM6/S7
++ inp XM6/D8 inn out inn XM6/D8 inp XM6/S7 inp XM6/D8 avss sg13_hv_nmos_666RAL
+Xsg13_hv_nmos_666RAL_0 XM1/S8_1 ena XM6/D8 ena XM1/S8_1 ena XM6/D8 ena XM1/S8_1 ena
++ XM6/D8 ena XM1/S8_1 ena XM6/D8 ena XM1/S8_1 ena XM6/D8 ena XM1/S8_1 ena XM6/D8 ena
++ XM1/S8_1 ena XM6/D8 ena XM1/S8_1 ena XM6/D8 ena XM1/S8_1 ena XM6/D8 ena XM1/S8_1
++ ena XM6/D8 ena XM1/S8_1 avss sg13_hv_nmos_666RAL
+.ends
+
+.subckt sg13_hv_pmos_KGSGVN D S G w_n292_n205#
+X0 S G D w_n292_n205# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+.ends
+
+.subckt bias_pset pbias pcasc enb itail m4_1028_n1214# avdd
+Xsg13_hv_pmos_KGSGVN_0[0] pcasc itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[1] pcasc itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[2] pcasc itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[3] pcasc pbias pcasc avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[4] pcasc pbias pcasc avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[5] pcasc pbias pcasc avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[6] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[7] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[8] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
+.ends
+
+.subckt rhigh_GJN3VD B R1_0 R2_0 R1_1 R2_1 R1_2 R2_2 R1_3 R2_3 R1_4 R2_4 R1_5 R2_5
++ R1_6 R2_6 R1_7 R2_7
+X0 R1_5 R2_5 B rhigh l=17.32u w=0.5u
+X1 R1_6 R2_6 B rhigh l=17.32u w=0.5u
+X2 R1_3 R2_3 B rhigh l=17.32u w=0.5u
+X3 R1_2 R2_2 B rhigh l=17.32u w=0.5u
+X4 R1_7 R2_7 B rhigh l=17.32u w=0.5u
+X5 R1_4 R2_4 B rhigh l=17.32u w=0.5u
+X6 R1_1 R2_1 B rhigh l=17.32u w=0.5u
+X7 R1_0 R2_0 B rhigh l=17.32u w=0.5u
+.ends
+
+.subckt sg13cmos5l_antennanp A VDD VSS
+X0 A VDD dpantenna l=1.34u w=1.05u
+X1 VSS A dantenna l=0.78u w=0.78u
+.ends
+
+.subckt bias_pstack avdd itail m4_1029_n1215# m4_1029_n78# enb pbias pcasc
+Xsg13_hv_pmos_KGSGVN_0[0] sg13_hv_pmos_KGSGVN_0[5]/D itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[1] sg13_hv_pmos_KGSGVN_0[5]/D itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[2] sg13_hv_pmos_KGSGVN_0[5]/D itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[3] sg13_hv_pmos_KGSGVN_0[5]/D sg13_hv_pmos_KGSGVN_0[8]/S pcasc
++ avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[4] sg13_hv_pmos_KGSGVN_0[5]/D sg13_hv_pmos_KGSGVN_0[8]/S pcasc
++ avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[5] sg13_hv_pmos_KGSGVN_0[5]/D sg13_hv_pmos_KGSGVN_0[8]/S pcasc
++ avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[6] avdd sg13_hv_pmos_KGSGVN_0[8]/S pbias avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[7] avdd sg13_hv_pmos_KGSGVN_0[8]/S pbias avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[8] avdd sg13_hv_pmos_KGSGVN_0[8]/S pbias avdd sg13_hv_pmos_KGSGVN
+.ends
+
+.subckt bias_pset2 pbias pcasc enb itail m4_1028_n1214# m4_1028_n78# avdd
+Xsg13_hv_pmos_KGSGVN_0[0] pcasc itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[1] pcasc itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[2] pcasc itail enb avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[3] pcasc pbias pcasc avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[4] pcasc pbias pcasc avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[5] pcasc pbias pcasc avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[6] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[7] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
+Xsg13_hv_pmos_KGSGVN_0[8] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
+.ends
+
+.subckt capacitor_2JEBXB c1 c2
+C0 c1 c2 0.22481p
+.ends
+
+.subckt sg13_hv_pmos_DNCZKC D0 G0 S1 G1 w_n330_n224# a_138_n100#
+X0 a_138_n100# G1 S1 w_n330_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.5u
+X1 S1 G0 D0 w_n330_n224# sg13_hv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.5u
+.ends
+
+.subckt sg13_hv_nmos_QHASHE D0 G0 S1 G1 a_138_n400# sub
+X0 S1 G0 D0 sub sg13_hv_nmos ad=0.76p pd=4.38u as=1.36p ps=8.68u w=4u l=0.5u
+X1 a_138_n400# G1 S1 sub sg13_hv_nmos ad=1.36p pd=8.68u as=0.76p ps=4.38u w=4u l=0.5u
+.ends
+
+.subckt sg13_hv_nmos_QBGVHE D0 G0 S1 G1 a_138_n100# sub
+X0 a_138_n100# G1 S1 sub sg13_hv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.5u
+X1 S1 G0 D0 sub sg13_hv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.5u
+.ends
+
+.subckt sg13_hv_pmos_ZPCZKC D0 G0 S1 G1 D2 S2 G2 w_n418_n324#
+X0 S1 G0 D0 w_n418_n324# sg13_hv_pmos ad=0.38p pd=2.38u as=0.68p ps=4.68u w=2u l=0.5u
+X1 S2 G2 D2 w_n418_n324# sg13_hv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l=0.5u
+X2 D2 G1 S1 w_n418_n324# sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
+.ends
+
+.subckt level_shift in_n in_p vdd_uq0 vdd vss out
+Xsg13_hv_pmos_DNCZKC_0 XM2/G1 XM7/G0 vdd XM2/G1 vdd XM7/G0 sg13_hv_pmos_DNCZKC
+XXM1 XM2/G1 in_p vss in_p XM2/G1 vss sg13_hv_nmos_QHASHE
+XXM2 XM2/G1 XM7/G0 vdd XM2/G1 vdd XM7/G0 sg13_hv_pmos_DNCZKC
+XXM3 XM7/G0 in_n vss in_n XM7/G0 vss sg13_hv_nmos_QHASHE
+XXM6 vss XM7/G0 XM7/G2 XM7/G0 vss vss sg13_hv_nmos_QBGVHE
+XXM7 XM7/G2 XM7/G0 vdd XM7/G2 out vdd XM7/G2 vdd sg13_hv_pmos_ZPCZKC
+Xsg13_hv_nmos_QBGVHE_0 vss XM7/G2 out XM7/G2 vss vss sg13_hv_nmos_QBGVHE
+Xsg13_hv_nmos_QBGVHE_1 vss XM7/G2 out XM7/G2 vss vss sg13_hv_nmos_QBGVHE
+Xsg13_hv_pmos_ZPCZKC_0 XM7/G2 XM7/G0 vdd XM7/G2 out vdd XM7/G2 vdd sg13_hv_pmos_ZPCZKC
+.ends
+
+.subckt sg13cmos5l_decap_4 VDD VSS
+X0 VDD VSS VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=1u
+X1 VSS VDD VSS VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
+.ends
+
+.subckt rhigh_AFSZTU B R1_0 R2_0 R1_1 R2_1 R1_2 R2_2 R1_3 R2_3 R1_4 R2_4 R1_5 R2_5
++ R1_6 R2_6 R1_7 R2_7 R1_8 R2_8 R1_9 R2_9 R1_10 R2_10 R1_11 R2_11 R1_12 R2_12 R1_13
++ R2_13 R1_14 R2_14 R1_15 R2_15 R1_16 R2_16 R1_17 R2_17 R1_18 R2_18 R1_19 R2_19
+X0 R1_18 R2_18 B rhigh l=16.86u w=0.5u
+X1 R1_19 R2_19 B rhigh l=16.86u w=0.5u
+X2 R1_4 R2_4 B rhigh l=16.86u w=0.5u
+X3 R1_3 R2_3 B rhigh l=16.86u w=0.5u
+X4 R1_2 R2_2 B rhigh l=16.86u w=0.5u
+X5 R1_11 R2_11 B rhigh l=16.86u w=0.5u
+X6 R1_12 R2_12 B rhigh l=16.86u w=0.5u
+X7 R1_0 R2_0 B rhigh l=16.86u w=0.5u
+X8 R1_1 R2_1 B rhigh l=16.86u w=0.5u
+X9 R1_9 R2_9 B rhigh l=16.86u w=0.5u
+X10 R1_8 R2_8 B rhigh l=16.86u w=0.5u
+X11 R1_13 R2_13 B rhigh l=16.86u w=0.5u
+X12 R1_14 R2_14 B rhigh l=16.86u w=0.5u
+X13 R1_10 R2_10 B rhigh l=16.86u w=0.5u
+X14 R1_15 R2_15 B rhigh l=16.86u w=0.5u
+X15 R1_16 R2_16 B rhigh l=16.86u w=0.5u
+X16 R1_17 R2_17 B rhigh l=16.86u w=0.5u
+X17 R1_7 R2_7 B rhigh l=16.86u w=0.5u
+X18 R1_5 R2_5 B rhigh l=16.86u w=0.5u
+X19 R1_6 R2_6 B rhigh l=16.86u w=0.5u
+.ends
+
+.subckt bias_nset itail m4_1027_n71# a_1043_n1378# avss nbias m4_1027_n1208# ncasc
++ ena
+Xsg13_hv_nmos_2RYP69_0[0] ncasc itail ena avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[1] ncasc itail ena avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[2] ncasc itail ena avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[3] ncasc nbias ncasc avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[4] ncasc nbias ncasc avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[5] ncasc nbias ncasc avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[6] avss nbias nbias avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[7] avss nbias nbias avss sg13_hv_nmos_2RYP69
+Xsg13_hv_nmos_2RYP69_0[8] avss nbias nbias avss sg13_hv_nmos_2RYP69
+.ends
+
+.subckt sg13cmos5l_nand2_1 Y A B VDD VSS
+X0 a_154_118# B VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X1 Y A a_154_118# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X2 Y B VDD VDD sg13_lv_pmos ad=0.2128p pd=1.5u as=0.3808p ps=2.92u w=1.12u l=0.13u
+X3 VDD A Y VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.2128p ps=1.5u w=1.12u l=0.13u
+.ends
+
+.subckt sg13cmos5l_nor2_1 Y A B VDD VSS
+X0 Y A VSS VSS sg13_lv_nmos ad=0.1406p pd=1.12u as=0.2516p ps=2.16u w=0.74u l=0.13u
+X1 VSS B Y VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.74u l=0.13u
+X2 a_170_412# A VDD VDD sg13_lv_pmos ad=0.1176p pd=1.33u as=0.4032p ps=2.96u w=1.12u l=0.13u
+X3 Y B a_170_412# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.1176p ps=1.33u w=1.12u l=0.13u
+.ends
+
+.subckt bias_generator_fe ena vbg src_test0 ena_src_test0 ref_sel_vbg ref_in pcasc
++ pbias snk_test0 ena_snk_test0 ref_sel_fine ref_sel_coarse nbias x13[9]/m4_1029_n78#
++ ncasc dvdd sub dvss avdd
+Xbias_nstack_0 sub sub sub bias_nstack_0/a_1030_2157# nbias ena_3v3 ncasc bias_pset_1/itail
++ bias_nstack
+Xsg13cmos5l_inv_2_0 level_shift_6/in_n level_shift_6/in_p dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_1[0] sub sub sub bias_nstack_1[1]/a_1030_2157# nbias sub ncasc XR4/R2_0
++ bias_nstack
+Xbias_nstack_1[1] sub sub sub bias_nstack_1[1]/a_1030_2157# nbias sub ncasc XR4/R2_0
++ bias_nstack
+Xsg13cmos5l_inv_2_1 x12/in_n ena_snk_test0 dvdd dvss sg13cmos5l_inv_2
+Xx3 avdd pbias vbg C2/c2 nbias ena_vbg_3v3 sub bias_amp_large
+Xsg13cmos5l_inv_2_2 level_shift_0/in_n ena dvdd dvss sg13cmos5l_inv_2
+Xx4[0] sub sub sub x4[1]/a_1030_2157# nbias ena_test0_3v3 ncasc snk_test0 bias_nstack
+Xx4[1] sub sub sub x4[1]/a_1030_2157# nbias ena_test0_3v3 ncasc snk_test0 bias_nstack
+Xsg13cmos5l_inv_2_3 level_shift_3/in_p ena_src_test0 dvdd dvss sg13cmos5l_inv_2
+Xbias_pset_1 pbias pcasc ena_vbg_3v3 bias_pset_1/itail avdd avdd bias_pset
+Xsg13cmos5l_inv_2_4 level_shift_2/in_n ref_sel_vbg dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_5 level_shift_5/in_n level_shift_5/in_p dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_6 level_shift_4/in_n level_shift_4/in_p dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_7 sg13cmos5l_inv_2_7/Y ref_sel_fine dvdd dvss sg13cmos5l_inv_2
+XXR4 sub XR4/R1_1 XR4/R2_0 XR4/R1_1 XR4/R2_2 XR4/R1_3 XR4/R2_2 XR4/R1_3 XR4/R2_4 XR4/R1_5
++ XR4/R2_4 XR4/R1_5 XR4/R2_6 XR4/R1_7 XR4/R2_6 XR4/R1_7 ref_in rhigh_GJN3VD
+Xsg13cmos5l_antennanp_0 ref_sel_coarse dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_0[0] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_std_3v3 pbias pcasc bias_pstack
+Xbias_pstack_0[1] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_std_3v3 pbias pcasc bias_pstack
+Xbias_pstack_0[2] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_std_3v3 pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_1 ena_snk_test0 dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_1 avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_coarse_3v3 pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_2 ena dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_2[0] avdd src_test0 avdd x13[9]/m4_1029_n78# level_shift_3/out pbias
++ pcasc bias_pstack
+Xbias_pstack_2[1] avdd src_test0 avdd x13[9]/m4_1029_n78# level_shift_3/out pbias
++ pcasc bias_pstack
+Xsg13cmos5l_antennanp_3 ena_src_test0 dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_3[0] avdd C2/c2 avdd pbias avdd bias_pset2_0/pbias pcasc bias_pstack
+Xbias_pstack_3[1] avdd C2/c2 avdd pbias avdd bias_pset2_0/pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_4 ref_sel_vbg dvdd dvss sg13cmos5l_antennanp
+Xbias_pset2_0 bias_pset2_0/pbias pcasc enb_vbg_3v3 bias_pset_1/itail avdd pbias avdd
++ bias_pset2
+Xsg13cmos5l_antennanp_5 ref_sel_fine dvdd dvss sg13cmos5l_antennanp
+XC2 pbias C2/c2 capacitor_2JEBXB
+Xlevel_shift_0 level_shift_0/in_n ena level_shift_0/vdd_uq0 avdd sub ena_3v3 level_shift
+Xlevel_shift_1 ref_sel_vbg level_shift_2/in_n level_shift_1/vdd_uq0 avdd sub enb_vbg_3v3
++ level_shift
+Xlevel_shift_2 level_shift_2/in_n ref_sel_vbg level_shift_2/vdd_uq0 avdd sub ena_vbg_3v3
++ level_shift
+Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_3 ena_src_test0 level_shift_3/in_p level_shift_3/vdd_uq0 avdd sub level_shift_3/out
++ level_shift
+Xsg13cmos5l_decap_4_1 dvdd dvss sg13cmos5l_decap_4
+Xrhigh_AFSZTU_0 sub C2/c2 rhigh_AFSZTU_0/R2_1 rhigh_AFSZTU_0/R1_2 rhigh_AFSZTU_0/R2_1
++ rhigh_AFSZTU_0/R1_2 rhigh_AFSZTU_0/R2_3 rhigh_AFSZTU_0/R1_4 rhigh_AFSZTU_0/R2_3
++ rhigh_AFSZTU_0/R1_4 rhigh_AFSZTU_0/R2_5 rhigh_AFSZTU_0/R1_6 rhigh_AFSZTU_0/R2_5
++ rhigh_AFSZTU_0/R1_6 rhigh_AFSZTU_0/R2_7 rhigh_AFSZTU_0/R1_8 rhigh_AFSZTU_0/R2_7
++ rhigh_AFSZTU_0/R1_8 rhigh_AFSZTU_0/R2_9 rhigh_AFSZTU_0/R1_9 rhigh_AFSZTU_0/R2_9
++ rhigh_AFSZTU_0/R1_9 rhigh_AFSZTU_0/R2_11 rhigh_AFSZTU_0/R1_12 rhigh_AFSZTU_0/R2_11
++ rhigh_AFSZTU_0/R1_12 rhigh_AFSZTU_0/R2_13 rhigh_AFSZTU_0/R1_14 rhigh_AFSZTU_0/R2_13
++ rhigh_AFSZTU_0/R1_14 rhigh_AFSZTU_0/R2_15 rhigh_AFSZTU_0/R1_16 rhigh_AFSZTU_0/R2_15
++ rhigh_AFSZTU_0/R1_16 rhigh_AFSZTU_0/R2_17 rhigh_AFSZTU_0/R1_18 rhigh_AFSZTU_0/R2_17
++ rhigh_AFSZTU_0/R1_18 rhigh_AFSZTU_0/R2_19 sub rhigh_AFSZTU_0/R2_19 rhigh_AFSZTU
+Xx12 x12/in_n ena_snk_test0 x12/vdd_uq0 avdd sub ena_test0_3v3 level_shift
+Xlevel_shift_4 level_shift_4/in_n level_shift_4/in_p level_shift_4/vdd_uq0 avdd sub
++ enb_fine_3v3 level_shift
+Xbias_nset_0[0] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[1] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[2] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[3] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[4] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[5] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[6] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[7] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[8] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[9] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[10] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[11] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[12] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[13] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[14] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xbias_nset_0[15] XR4/R2_0 sub sub sub nbias sub ncasc ena_3v3 bias_nset
+Xsg13cmos5l_decap_4_2 dvdd dvss sg13cmos5l_decap_4
+Xx13[0] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[1] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[2] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[3] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[4] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[5] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[6] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[7] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[8] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[9] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[10] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[11] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[12] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[13] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[14] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[15] avdd C2/c2 avdd x13[9]/m4_1029_n78# enb_fine_3v3 pbias pcasc bias_pstack
+Xsg13cmos5l_nand2_1_0 level_shift_6/in_p sg13cmos5l_nand2_1_3/Y ref_sel_vbg dvdd dvss
++ sg13cmos5l_nand2_1
+Xlevel_shift_5 level_shift_5/in_n level_shift_5/in_p level_shift_5/vdd_uq0 avdd sub
++ enb_coarse_3v3 level_shift
+Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_nand2_1_1 level_shift_5/in_p sg13cmos5l_nand2_1_4/Y ref_sel_vbg dvdd dvss
++ sg13cmos5l_nand2_1
+Xlevel_shift_6 level_shift_6/in_n level_shift_6/in_p level_shift_6/vdd_uq0 avdd sub
++ enb_std_3v3 level_shift
+Xsg13cmos5l_nor2_1_1 sg13cmos5l_nor2_1_1/Y ref_sel_coarse sg13cmos5l_inv_2_7/Y dvdd
++ dvss sg13cmos5l_nor2_1
+Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_nand2_1_2 level_shift_4/in_p sg13cmos5l_nor2_1_1/Y ref_sel_vbg dvdd dvss
++ sg13cmos5l_nand2_1
+Xsg13cmos5l_decap_4_5 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_nand2_1_3 sg13cmos5l_nand2_1_3/Y sg13cmos5l_inv_2_7/Y ref_sel_coarse dvdd
++ dvss sg13cmos5l_nand2_1
+Xsg13cmos5l_decap_4_6 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_nand2_1_4 sg13cmos5l_nand2_1_4/Y ref_sel_coarse ref_sel_fine dvdd dvss
++ sg13cmos5l_nand2_1
+.ends
+
+.subckt bias_generator_be0n avdd avss dvdd sink_ena[3] sink_ena[2] bias_nstack_3/a_1030_2157#
++ sink_ibias sink_ena[0] nbias sink_ena[1] ncasc level_shift_4/vdd bias_nstack_3/m4_1015_n71#
++ sub sink_ena[4] bias_nstack_3/m4_1015_n1208# dvss
+Xbias_nstack_0[0] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[1] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[2] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[3] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[4] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[5] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[6] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[7] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_0 level_shift_2/in_n sink_ena[3] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_1[0] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[1] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[2] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[3] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_1 level_shift_0/in_n sink_ena[1] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_2[0] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub bias_nstack_2[1]/a_1030_2157#
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[1] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub bias_nstack_2[1]/a_1030_2157#
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_2 level_shift_1/in_n sink_ena[2] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_3 bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub bias_nstack_3/a_1030_2157#
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_3 level_shift_3/in_n sink_ena[4] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_4[0] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[1] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[2] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[3] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[4] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[5] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[6] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[7] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[8] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[9] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[10] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[11] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[12] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[13] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[14] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[15] bias_nstack_3/m4_1015_n1208# bias_nstack_3/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_4 level_shift_4/in_n sink_ena[0] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_antennanp_0 sink_ena[3] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_1 sink_ena[1] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_2 sink_ena[2] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_3 sink_ena[4] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_4 sink_ena[0] dvdd dvss sg13cmos5l_antennanp
+Xlevel_shift_0 level_shift_0/in_n sink_ena[1] level_shift_0/vdd_uq0 level_shift_4/vdd
++ sub level_shift_0/out level_shift
+Xlevel_shift_1 level_shift_1/in_n sink_ena[2] level_shift_1/vdd_uq0 level_shift_4/vdd
++ sub level_shift_1/out level_shift
+Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_2 level_shift_2/in_n sink_ena[3] level_shift_2/vdd_uq0 level_shift_4/vdd
++ sub level_shift_2/out level_shift
+Xlevel_shift_3 level_shift_3/in_n sink_ena[4] level_shift_3/vdd_uq0 level_shift_4/vdd
++ sub level_shift_3/out level_shift
+Xsg13cmos5l_decap_4_1 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_4 level_shift_4/in_n sink_ena[0] level_shift_4/vdd_uq0 level_shift_4/vdd
++ sub level_shift_4/out level_shift
+Xsg13cmos5l_decap_4_2 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
+.ends
+
+.subckt bias_generator_be1n avdd avss sink_ena[7] sink_ena[5] sink_ena[3] sink_ena[4]
++ sink_ena[0] sink_ibias nbias sink_ena[1] sink_ena[6] sub bias_nstack_6/m4_1015_n1208#
++ sink_ena[2] ncasc dvdd level_shift_7/vdd bias_nstack_6/m4_1015_n71# dvss
+Xbias_nstack_0[0] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[1] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[2] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[3] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[4] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[5] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[6] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[7] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[8] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[9] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[10] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[11] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[12] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[13] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[14] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[15] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[16] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[17] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[18] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[19] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[20] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[21] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[22] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[23] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[24] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[25] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[26] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[27] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[28] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[29] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[30] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[31] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[32] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[33] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[34] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[35] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[36] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[37] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[38] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[39] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[40] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[41] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[42] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[43] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[44] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[45] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[46] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[47] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[48] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[49] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[50] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[51] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[52] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[53] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[54] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[55] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[56] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[57] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[58] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[59] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[60] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[61] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[62] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xbias_nstack_0[63] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_1/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_0 level_shift_4/in_n sink_ena[3] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_1[0] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[1] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[2] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[3] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[4] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[5] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[6] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[7] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[8] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[9] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[10] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[11] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[12] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[13] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[14] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[15] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[16] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[17] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[18] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[19] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[20] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[21] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[22] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[23] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[24] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[25] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[26] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[27] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[28] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[29] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[30] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xbias_nstack_1[31] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_2/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_1 level_shift_7/in_n sink_ena[0] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_2[0] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[1] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[2] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[3] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[4] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[5] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[6] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[7] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[8] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[9] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[10] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[11] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[12] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[13] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[14] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xbias_nstack_2[15] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_3/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_2 level_shift_2/in_n sink_ena[5] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_3[0] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xbias_nstack_3[1] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xbias_nstack_3[2] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xbias_nstack_3[3] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xbias_nstack_3[4] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xbias_nstack_3[5] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xbias_nstack_3[6] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xbias_nstack_3[7] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_4/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_3 level_shift_6/in_n sink_ena[1] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_4[0] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_5/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[1] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_5/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[2] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_5/out ncasc sink_ibias bias_nstack
+Xbias_nstack_4[3] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_5/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_4 level_shift_0/in_n sink_ena[7] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_5[0] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub bias_nstack_5[1]/a_1030_2157#
++ nbias level_shift_6/out ncasc sink_ibias bias_nstack
+Xbias_nstack_5[1] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub bias_nstack_5[1]/a_1030_2157#
++ nbias level_shift_6/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_5 level_shift_1/in_n sink_ena[6] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_6 bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub bias_nstack_6/a_1030_2157#
++ nbias level_shift_7/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_6 level_shift_3/in_n sink_ena[4] dvdd dvss sg13cmos5l_inv_2
+Xbias_nstack_7[0] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[1] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[2] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[3] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[4] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[5] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[6] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[7] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[8] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[9] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[10] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[11] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[12] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[13] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[14] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[15] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[16] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[17] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[18] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[19] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[20] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[21] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[22] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[23] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[24] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[25] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[26] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[27] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[28] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[29] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[30] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[31] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[32] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[33] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[34] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[35] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[36] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[37] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[38] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[39] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[40] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[41] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[42] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[43] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[44] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[45] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[46] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[47] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[48] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[49] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[50] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[51] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[52] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[53] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[54] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[55] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[56] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[57] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[58] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[59] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[60] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[61] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[62] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[63] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[64] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[65] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[66] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[67] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[68] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[69] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[70] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[71] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[72] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[73] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[74] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[75] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[76] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[77] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[78] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[79] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[80] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[81] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[82] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[83] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[84] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[85] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[86] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[87] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[88] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[89] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[90] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[91] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[92] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[93] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[94] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[95] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[96] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[97] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[98] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[99] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[100] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[101] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[102] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[103] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[104] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[105] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[106] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[107] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[108] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[109] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[110] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[111] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[112] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[113] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[114] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[115] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[116] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[117] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[118] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[119] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[120] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[121] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[122] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[123] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[124] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[125] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[126] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xbias_nstack_7[127] bias_nstack_6/m4_1015_n1208# bias_nstack_6/m4_1015_n71# sub sub
++ nbias level_shift_0/out ncasc sink_ibias bias_nstack
+Xsg13cmos5l_inv_2_7 level_shift_5/in_n sink_ena[2] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_antennanp_0 sink_ena[3] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_1 sink_ena[0] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_2 sink_ena[5] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_3 sink_ena[1] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_4 sink_ena[7] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_5 sink_ena[6] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_6 sink_ena[4] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_7 sink_ena[2] dvdd dvss sg13cmos5l_antennanp
+Xlevel_shift_0 level_shift_0/in_n sink_ena[7] level_shift_0/vdd_uq0 level_shift_7/vdd
++ sub level_shift_0/out level_shift
+Xlevel_shift_1 level_shift_1/in_n sink_ena[6] level_shift_1/vdd_uq0 level_shift_7/vdd
++ sub level_shift_1/out level_shift
+Xlevel_shift_2 level_shift_2/in_n sink_ena[5] level_shift_2/vdd_uq0 level_shift_7/vdd
++ sub level_shift_2/out level_shift
+Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_1 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_3 level_shift_3/in_n sink_ena[4] level_shift_3/vdd_uq0 level_shift_7/vdd
++ sub level_shift_3/out level_shift
+Xlevel_shift_4 level_shift_4/in_n sink_ena[3] level_shift_4/vdd_uq0 level_shift_7/vdd
++ sub level_shift_4/out level_shift
+Xsg13cmos5l_decap_4_2 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_5 level_shift_5/in_n sink_ena[2] level_shift_5/vdd_uq0 level_shift_7/vdd
++ sub level_shift_5/out level_shift
+Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_6 level_shift_6/in_n sink_ena[1] level_shift_6/vdd_uq0 level_shift_7/vdd
++ sub level_shift_6/out level_shift
+Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_7 level_shift_7/in_n sink_ena[0] level_shift_7/vdd_uq0 level_shift_7/vdd
++ sub level_shift_7/out level_shift
+Xsg13cmos5l_decap_4_5 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_6 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_7 dvdd dvss sg13cmos5l_decap_4
+.ends
+
+.subckt bias_generator_be0p pcasc source_ibias dvdd source_ena[1] bias_pstack_3/avdd
++ source_ena[4] source_ena[2] sub avdd bias_pstack_3/m4_1029_n78# source_ena[3] pbias
++ source_ena[0] dvss bias_pstack_3/m4_1029_n1215#
+Xsg13cmos5l_inv_2_0 level_shift_0/in_n source_ena[1] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_1 level_shift_2/in_n source_ena[3] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_2 level_shift_3/in_n source_ena[4] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_4 level_shift_1/in_n source_ena[2] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_3 level_shift_4/in_n source_ena[0] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_antennanp_0 source_ena[1] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_1 source_ena[3] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_0[0] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_0[1] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_0[2] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_0[3] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_0[4] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_0[5] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_0[6] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_0[7] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_2 source_ena[4] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_1[0] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_1[1] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_1[2] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_1[3] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_2[0] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_2[1] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_3 source_ena[0] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_4[0] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[1] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[2] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[3] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[4] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[5] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[6] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[7] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[8] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[9] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[10] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[11] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[12] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[13] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[14] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_4[15] bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_4 source_ena[2] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_3 bias_pstack_3/avdd source_ibias bias_pstack_3/m4_1029_n1215# bias_pstack_3/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xlevel_shift_0 level_shift_0/in_n source_ena[1] level_shift_0/vdd_uq0 avdd sub level_shift_0/out
++ level_shift
+Xlevel_shift_1 level_shift_1/in_n source_ena[2] level_shift_1/vdd_uq0 avdd sub level_shift_1/out
++ level_shift
+Xlevel_shift_2 level_shift_2/in_n source_ena[3] level_shift_2/vdd_uq0 avdd sub level_shift_2/out
++ level_shift
+Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_3 level_shift_3/in_n source_ena[4] level_shift_3/vdd_uq0 avdd sub level_shift_3/out
++ level_shift
+Xsg13cmos5l_decap_4_1 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_2 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_4 level_shift_4/in_n source_ena[0] level_shift_4/vdd_uq0 avdd sub level_shift_4/out
++ level_shift
+Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
+.ends
+
+.subckt bias_generator_be1p pcasc source_ena[7] source_ena[5] source_ena[1] source_ibias
++ source_ena[4] sub source_ena[3] dvdd bias_pstack_6/m4_1029_n1215# source_ena[6]
++ avdd source_ena[2] dvss source_ena[0] pbias bias_pstack_6/m4_1029_n78# bias_pstack_6/avdd
+Xsg13cmos5l_inv_2_0 level_shift_2/in_n source_ena[5] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_1 level_shift_4/in_n source_ena[3] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_2 level_shift_6/in_n source_ena[1] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_3 level_shift_7/in_n source_ena[0] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_4 level_shift_0/in_n source_ena[7] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_5 level_shift_1/in_n source_ena[6] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_6 level_shift_3/in_n source_ena[4] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_inv_2_7 level_shift_5/in_n source_ena[2] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_antennanp_0 source_ena[5] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_0[0] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[1] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[2] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[3] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[4] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[5] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[6] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[7] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[8] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[9] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[10] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[11] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[12] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[13] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[14] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[15] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[16] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[17] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[18] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[19] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[20] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[21] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[22] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[23] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[24] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[25] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[26] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[27] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[28] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[29] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[30] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[31] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[32] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[33] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[34] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[35] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[36] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[37] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[38] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[39] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[40] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[41] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[42] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[43] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[44] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[45] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[46] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[47] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[48] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[49] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[50] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[51] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[52] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[53] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[54] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[55] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[56] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[57] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[58] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[59] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[60] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[61] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[62] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xbias_pstack_0[63] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_1/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_1 source_ena[3] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_1[0] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[1] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[2] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[3] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[4] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[5] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[6] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[7] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[8] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[9] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[10] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[11] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[12] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[13] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[14] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[15] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[16] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[17] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[18] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[19] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[20] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[21] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[22] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[23] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[24] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[25] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[26] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[27] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[28] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[29] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[30] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xbias_pstack_1[31] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_2/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_2 source_ena[1] dvdd dvss sg13cmos5l_antennanp
+Xsg13cmos5l_antennanp_3 source_ena[0] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_2[0] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[1] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[2] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[3] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[4] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[5] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[6] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[7] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[8] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[9] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[10] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[11] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[12] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[13] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[14] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xbias_pstack_2[15] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_3/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_4 source_ena[7] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_3[0] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_3[1] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_3[2] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_3[3] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_3[4] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_3[5] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_3[6] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_3[7] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_4/out pbias pcasc bias_pstack
+Xbias_pstack_4[0] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_5/out pbias pcasc bias_pstack
+Xbias_pstack_4[1] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_5/out pbias pcasc bias_pstack
+Xbias_pstack_4[2] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_5/out pbias pcasc bias_pstack
+Xbias_pstack_4[3] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_5/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_5 source_ena[6] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_5[0] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_6/out pbias pcasc bias_pstack
+Xbias_pstack_5[1] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_6/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_6 source_ena[4] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_6 bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_7/out pbias pcasc bias_pstack
+Xsg13cmos5l_antennanp_7 source_ena[2] dvdd dvss sg13cmos5l_antennanp
+Xbias_pstack_7[0] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[1] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[2] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[3] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[4] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[5] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[6] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[7] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[8] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[9] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[10] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[11] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[12] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[13] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[14] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[15] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[16] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[17] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[18] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[19] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[20] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[21] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[22] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[23] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[24] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[25] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[26] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[27] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[28] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[29] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[30] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[31] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[32] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[33] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[34] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[35] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[36] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[37] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[38] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[39] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[40] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[41] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[42] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[43] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[44] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[45] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[46] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[47] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[48] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[49] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[50] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[51] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[52] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[53] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[54] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[55] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[56] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[57] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[58] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[59] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[60] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[61] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[62] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[63] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[64] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[65] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[66] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[67] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[68] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[69] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[70] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[71] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[72] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[73] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[74] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[75] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[76] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[77] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[78] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[79] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[80] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[81] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[82] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[83] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[84] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[85] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[86] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[87] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[88] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[89] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[90] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[91] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[92] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[93] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[94] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[95] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[96] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[97] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[98] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[99] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[100] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[101] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[102] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[103] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[104] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[105] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[106] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[107] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[108] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[109] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[110] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[111] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[112] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[113] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[114] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[115] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[116] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[117] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[118] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[119] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[120] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[121] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[122] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[123] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[124] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[125] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[126] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xbias_pstack_7[127] bias_pstack_6/avdd source_ibias bias_pstack_6/m4_1029_n1215# bias_pstack_6/m4_1029_n78#
++ level_shift_0/out pbias pcasc bias_pstack
+Xlevel_shift_0 level_shift_0/in_n source_ena[7] level_shift_0/vdd_uq0 avdd sub level_shift_0/out
++ level_shift
+Xlevel_shift_1 level_shift_1/in_n source_ena[6] level_shift_1/vdd_uq0 avdd sub level_shift_1/out
++ level_shift
+Xlevel_shift_2 level_shift_2/in_n source_ena[5] level_shift_2/vdd_uq0 avdd sub level_shift_2/out
++ level_shift
+Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_1 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_3 level_shift_3/in_n source_ena[4] level_shift_3/vdd_uq0 avdd sub level_shift_3/out
++ level_shift
+Xlevel_shift_4 level_shift_4/in_n source_ena[3] level_shift_4/vdd_uq0 avdd sub level_shift_4/out
++ level_shift
+Xsg13cmos5l_decap_4_2 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_5 level_shift_5/in_n source_ena[2] level_shift_5/vdd_uq0 avdd sub level_shift_5/out
++ level_shift
+Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_6 level_shift_6/in_n source_ena[1] level_shift_6/vdd_uq0 avdd sub level_shift_6/out
++ level_shift
+Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
+Xlevel_shift_7 level_shift_7/in_n source_ena[0] level_shift_7/vdd_uq0 avdd sub level_shift_7/out
++ level_shift
+Xsg13cmos5l_decap_4_5 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_6 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_decap_4_7 dvdd dvss sg13cmos5l_decap_4
+.ends
+
+.subckt sg13cmos5l_ocd_ip__biasgen1 ena avdd avss ref_in dvdd vbg ref_sel_vbg dvss
++ bandgap_source_ibias bandgap_source[4] bandgap_source[3] bandgap_source[2] bandgap_source[1]
++ bandgap_source[0] bandgap_sink[4] bandgap_sink[3] bandgap_sink[2] bandgap_sink[1]
++ bandgap_sink[0] voltgen_source1[4] voltgen_source1[3] voltgen_source1[2] voltgen_source1[1]
++ voltgen_source1[0] voltgen_source2[4] voltgen_source2[3] voltgen_source2[2] voltgen_source2[1]
++ voltgen_source2[0] voltgen_sink[4] voltgen_sink[3] voltgen_sink[2] voltgen_sink[1]
++ voltgen_sink[0] voltgen_source1_ibias test_sink[4] test_sink[3] test_sink[2] test_sink[1]
++ test_sink[0] voltgen_source2_ibias idac1_source[7] idac1_source[6] idac1_source[5]
++ idac1_source[4] idac1_source[3] idac1_source[2] idac1_source[1] idac1_source[0]
++ voltgen_sink_ibias test_sink_ibias idac1_source idac2_source idac1_sink[7] idac1_sink[6]
++ idac1_sink[5] idac1_sink[4] idac1_sink[3] idac1_sink[2] idac1_sink[1] idac1_sink[0]
++ idac2_source[7] idac2_source[6] idac2_source[5] idac2_source[4] idac2_source[3]
++ idac2_source[2] idac2_source[1] idac2_source[0] idac2_sink[7] idac2_sink[6] idac2_sink[5]
++ idac2_sink[4] idac2_sink[3] idac2_sink[2] idac2_sink[1] idac2_sink[0] idac1_sink
++ idac2_sink ref_sel_coarse ref_sel_fine
+Xbias_nstack_0[0] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[1] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[2] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[3] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[4] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[5] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[6] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[7] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[8] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[9] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[10] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xbias_nstack_0[11] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
++ bias_nstack_0[9]/itail bias_nstack
+Xx1 ena vbg x1/src_test0 dvss ref_sel_vbg ref_in x1/pcasc x1/pbias x1/snk_test0 dvss
++ ref_sel_fine ref_sel_coarse x6/nbias m4_230043_2543# x6/ncasc dvdd avss dvss avdd
++ bias_generator_fe
+Xx2 x6/avdd avss dvdd voltgen_sink[3] voltgen_sink[2] avss voltgen_sink_ibias voltgen_sink[0]
++ x6/nbias voltgen_sink[1] x6/ncasc avdd avss avss voltgen_sink[4] avss dvss bias_generator_be0n
+Xx3 x6/avdd avss idac2_sink[7] idac2_sink[5] idac2_sink[3] idac2_sink[4] idac2_sink[0]
++ idac2_sink x6/nbias idac2_sink[1] idac2_sink[6] avss avss idac2_sink[2] x6/ncasc
++ dvdd avdd avss dvss bias_generator_be1n
+Xx4 x6/avdd avss dvdd test_sink[3] test_sink[2] avss test_sink_ibias test_sink[0]
++ x6/nbias test_sink[1] x6/ncasc avdd avss avss test_sink[4] avss dvss bias_generator_be0n
+Xx5 x6/avdd avss dvdd bandgap_sink[3] bandgap_sink[2] avss x5/sink_ibias bandgap_sink[0]
++ x6/nbias bandgap_sink[1] x6/ncasc avdd avss avss bandgap_sink[4] avss dvss bias_generator_be0n
+Xx6 x6/avdd avss idac1_sink[7] idac1_sink[5] idac1_sink[3] idac1_sink[4] idac1_sink[0]
++ idac1_sink x6/nbias idac1_sink[1] idac1_sink[6] avss avss idac1_sink[2] x6/ncasc
++ dvdd avdd avss dvss bias_generator_be1n
+Xbias_generator_be0p_0 x1/pcasc voltgen_source2_ibias dvdd voltgen_source2[1] avdd
++ voltgen_source2[4] voltgen_source2[2] avss avdd m4_230043_2543# voltgen_source2[3]
++ x1/pbias voltgen_source2[0] dvss avdd bias_generator_be0p
+Xbias_generator_be0p_1 x1/pcasc bandgap_source_ibias dvdd bandgap_source[1] avdd bandgap_source[4]
++ bandgap_source[2] avss avdd m4_230043_2543# bandgap_source[3] x1/pbias bandgap_source[0]
++ dvss avdd bias_generator_be0p
+Xbias_generator_be0p_2 x1/pcasc voltgen_source1_ibias dvdd voltgen_source1[1] avdd
++ voltgen_source1[4] voltgen_source1[2] avss avdd m4_230043_2543# voltgen_source1[3]
++ x1/pbias voltgen_source1[0] dvss avdd bias_generator_be0p
+Xbias_pstack_0[0] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[1] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[2] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[3] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[4] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[5] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[6] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[7] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[8] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[9] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias x1/pcasc
++ bias_pstack
+Xbias_pstack_0[10] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias
++ x1/pcasc bias_pstack
+Xbias_pstack_0[11] avdd bias_pstack_0[9]/itail avdd m4_230043_2543# avdd x1/pbias
++ x1/pcasc bias_pstack
+Xbias_generator_be1p_0 x1/pcasc idac1_source[7] idac1_source[5] idac1_source[1] idac1_source
++ idac1_source[4] avss idac1_source[3] dvdd avdd idac1_source[6] avdd idac1_source[2]
++ dvss idac1_source[0] x1/pbias m4_230043_2543# avdd bias_generator_be1p
+Xbias_generator_be1p_1 x1/pcasc idac2_source[7] idac2_source[5] idac2_source[1] idac2_source
++ idac2_source[4] avss idac2_source[3] dvdd avdd idac2_source[6] avdd idac2_source[2]
++ dvss idac2_source[0] x1/pbias m4_230043_2543# avdd bias_generator_be1p
+.ends
+
