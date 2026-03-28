@@ -5,6 +5,8 @@ V {}
 S {}
 E {}
 T {250nA} 200 -210 0 0 0.4 0.4 {}
+T {These pins represent the m4 shields over the top
+which should be connected to avdd externally.} 330 -600 0 0 0.3 0.3 {}
 N 190 -510 230 -510 {
 lab=avdd}
 N 190 -570 190 -540 {
@@ -35,6 +37,8 @@ N 190 -400 190 -360 {
 lab=#net2}
 N 100 -330 150 -330 {
 lab=enb}
+N 470 -490 510 -490 {lab=shld2}
+N 470 -460 510 -460 {lab=shld3}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 170 -510 0 0 {name=M13
 w=3u
 l=1u
@@ -64,3 +68,7 @@ spiceprefix=X
 }
 C {devices/ipin.sym} 60 -430 0 0 {name=p1 lab=pcasc}
 C {devices/ipin.sym} 60 -510 0 0 {name=p3 lab=pbias}
+C {devices/iopin.sym} 470 -490 0 1 {name=p4 lab=shld2}
+C {devices/iopin.sym} 470 -460 0 1 {name=p5 lab=shld3}
+C {lab_pin.sym} 510 -490 0 1 {name=p9 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} 510 -460 0 1 {name=p10 sig_type=std_logic lab=shld3}

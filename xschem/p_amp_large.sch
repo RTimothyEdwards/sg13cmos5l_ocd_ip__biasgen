@@ -135,10 +135,10 @@ spiceprefix=X
 C {devices/iopin.sym} 400 110 0 1 {name=p1 lab=ibias}
 C {ammeter.sym} 630 10 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1010 270 0 0 {name=M3
-w=10u
+w=2u
 l=0.5u
-ng=10
-m=1
+ng=2
+m=2
 model=sg13_hv_nmos
 spiceprefix=X
 }

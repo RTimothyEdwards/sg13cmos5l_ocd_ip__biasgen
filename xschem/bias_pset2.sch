@@ -47,6 +47,8 @@ lab=pcasc}
 N 130 -430 130 -390 {lab=pcasc}
 N 60 -430 130 -430 {
 lab=pcasc}
+N 420 -490 460 -490 {lab=shld2}
+N 420 -460 460 -460 {lab=shld3}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 170 -510 0 0 {name=M13
 w=3u
 l=1u
@@ -76,3 +78,7 @@ spiceprefix=X
 }
 C {opin.sym} 60 -430 0 1 {name=p5 lab=pcasc}
 C {devices/iopin.sym} 60 -570 0 1 {name=p1 lab=avdd}
+C {devices/iopin.sym} 420 -490 0 1 {name=p3 lab=shld2}
+C {devices/iopin.sym} 420 -460 0 1 {name=p4 lab=shld3}
+C {lab_pin.sym} 460 -490 0 1 {name=p9 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} 460 -460 0 1 {name=p10 sig_type=std_logic lab=shld3}

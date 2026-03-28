@@ -160,9 +160,9 @@ spiceprefix=X
 }
 C {devices/iopin.sym} -220 20 1 1 {name=p10 lab=ibias}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 500 -70 0 0 {name=M8
-w=10u
+w=2u
 l=0.5u
-ng=10
+ng=2
 m=2
 model=sg13_hv_pmos
 spiceprefix=X

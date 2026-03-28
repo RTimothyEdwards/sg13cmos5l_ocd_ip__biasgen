@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774648183
+timestamp 1774719137
 << digisub >>
 rect 8708 4142 77342 4542
 << metal1 >>
@@ -143,75 +143,75 @@ rect 29962 2557 30137 3669
 rect 7737 2075 78405 2462
 use bias_nstack  bias_nstack_0
 array 0 63 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 21977 0 -1 589
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_1
 array 0 31 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 12703 0 -1 589
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_2
 array 0 15 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 8037 0 -1 589
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_3
 array 0 7 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 5675 0 -1 589
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_4
 array 0 3 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 4465 0 -1 589
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_5
 array 0 1 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 3831 0 -1 589
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_6
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 3485 0 -1 589
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_7
 array 0 127 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 40467 0 -1 589
 box 1015 -1385 1389 2293
 use level_shift  level_shift_0
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 29222 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_1
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 25378 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_2
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 23656 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_3
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 19812 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_4
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 18090 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_5
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 14246 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_6
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 12524 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_7
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 8680 -1 0 3816
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
 timestamp 1774624117
 transform 1 0 16929 0 1 4204

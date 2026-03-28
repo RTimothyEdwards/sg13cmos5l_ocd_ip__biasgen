@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774631179
+timestamp 1774719137
 << digisub >>
 rect -2876 1658 12206 2058
 << metal1 >>
@@ -84,39 +84,48 @@ rect 10477 109 10710 1182
 rect -3414 -412 12214 -25
 use bias_nstack  bias_nstack_0
 array 0 7 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 -771 0 -1 -1898
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_1
 array 0 3 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 -1981 0 -1 -1898
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_2
 array 0 1 288 0 0 3678
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 -2615 0 -1 -1898
 box 1015 -1385 1389 2293
 use bias_nstack  bias_nstack_3
-timestamp 1774624117
+timestamp 1774715201
 transform 1 0 -2961 0 -1 -1898
 box 1015 -1385 1389 2293
+use bias_nstack  bias_nstack_4
+array 0 15 288 0 0 3678
+timestamp 1774715201
+transform 1 0 1591 0 -1 -1898
+box 1015 -1385 1389 2293
 use level_shift  level_shift_0
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 320 -1 0 1329
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_1
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 4164 -1 0 1329
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_2
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 5886 -1 0 1329
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_3
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 9730 -1 0 1329
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
+use level_shift  level_shift_4
+timestamp 1774719060
+transform 0 1 -1402 -1 0 1329
+box -12 -1978 1519 918
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
 timestamp 1774624117
 transform -1 0 7051 0 1 1717
@@ -289,10 +298,6 @@ use via_Z2RFBL  via_Z2RFBL_2
 timestamp 1774624117
 transform -1 0 5023 0 1 600
 box -70 -461 70 461
-use via_Z2RFBL  via_Z2RFBL_3
-timestamp 1774624117
-transform -1 0 10587 0 1 600
-box -70 -461 70 461
 use via_Z2RFBL  via_Z2RFBL_4
 timestamp 1774624117
 transform -1 0 7805 0 1 600
@@ -300,6 +305,10 @@ box -70 -461 70 461
 use via_Z2RFXH  via_Z2RFXH_0 paramcells
 timestamp 1774624117
 transform -1 0 -3281 0 1 601
+box -29 -461 29 461
+use via_Z2RFXH  via_Z2RFXH_1
+timestamp 1774624117
+transform -1 0 10528 0 1 569
 box -29 -461 29 461
 use via_Z29PWH  via_Z29PWH_0 paramcells
 timestamp 1774624712
@@ -341,15 +350,6 @@ use via_Z29PWH  via_Z29PWH_9
 timestamp 1774624712
 transform -1 0 10785 0 1 1698
 box -461 -29 461 29
-use level_shift  level_shift_4
-timestamp 1774630862
-transform 0 1 -1402 -1 0 1329
-box -12 -1978 1519 1064
-use bias_nstack  bias_nstack_4
-array 0 15 288 0 0 3678
-timestamp 1774624117
-transform 1 0 1591 0 -1 -1898
-box 1015 -1385 1389 2293
 << labels >>
 flabel metal1 -3391 1661 -3191 1767 0 FreeSans 1600 180 0 0 dvss
 port 1 nsew

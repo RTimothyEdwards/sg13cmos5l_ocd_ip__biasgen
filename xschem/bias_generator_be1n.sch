@@ -18,45 +18,29 @@ N -2190 510 -2150 510 {lab=avss}
 N -2190 480 -2150 480 {lab=avdd}
 N -1070 630 -1020 630 {lab=nbias}
 N -1050 650 -1020 650 {lab=ncasc}
-N -1070 710 -1020 710 {lab=nbias}
-N -1070 630 -1070 710 {lab=nbias}
-N -1070 790 -1020 790 {lab=nbias}
-N -1070 710 -1070 790 {lab=nbias}
-N -1070 870 -1020 870 {lab=nbias}
-N -1070 790 -1070 870 {lab=nbias}
-N -1070 950 -1020 950 {lab=nbias}
-N -1070 870 -1070 950 {lab=nbias}
-N -1050 970 -1020 970 {lab=ncasc}
-N -1050 890 -1050 970 {lab=ncasc}
-N -1050 890 -1020 890 {lab=ncasc}
-N -1050 810 -1050 890 {lab=ncasc}
-N -1050 810 -1020 810 {lab=ncasc}
-N -1050 730 -1050 810 {lab=ncasc}
-N -1050 730 -1020 730 {lab=ncasc}
-N -1050 650 -1050 730 {lab=ncasc}
+N -1070 730 -1020 730 {lab=nbias}
+N -1070 830 -1020 830 {lab=nbias}
+N -1070 930 -1020 930 {lab=nbias}
+N -1070 1030 -1020 1030 {lab=nbias}
+N -1050 1050 -1020 1050 {lab=ncasc}
+N -1050 950 -1020 950 {lab=ncasc}
+N -1050 850 -1020 850 {lab=ncasc}
+N -1050 750 -1020 750 {lab=ncasc}
 N -1100 610 -1020 610 {lab=sink_ena_3v3[0]}
-N -1100 690 -1020 690 {lab=sink_ena_3v3[1]}
-N -1100 770 -1020 770 {lab=sink_ena_3v3[2]}
-N -1100 850 -1020 850 {lab=sink_ena_3v3[3]}
-N -1100 930 -1020 930 {lab=sink_ena_3v3[4]}
+N -1100 710 -1020 710 {lab=sink_ena_3v3[1]}
+N -1100 810 -1020 810 {lab=sink_ena_3v3[2]}
+N -1100 910 -1020 910 {lab=sink_ena_3v3[3]}
+N -1100 1010 -1020 1010 {lab=sink_ena_3v3[4]}
 N -720 650 -680 650 {lab=avss}
-N -720 970 -680 970 {lab=avss}
-N -680 890 -680 970 {lab=avss}
-N -720 890 -680 890 {lab=avss}
-N -680 810 -680 890 {lab=avss}
-N -720 810 -680 810 {lab=avss}
-N -680 730 -680 810 {lab=avss}
-N -720 730 -680 730 {lab=avss}
-N -680 650 -680 730 {lab=avss}
+N -720 1050 -680 1050 {lab=avss}
+N -720 950 -680 950 {lab=avss}
+N -720 850 -680 850 {lab=avss}
+N -720 750 -680 750 {lab=avss}
 N -720 610 -580 610 {lab=sink_ibias}
-N -720 930 -580 930 {lab=sink_ibias}
-N -580 850 -580 930 {lab=sink_ibias}
-N -720 850 -580 850 {lab=sink_ibias}
-N -580 770 -580 850 {lab=sink_ibias}
-N -720 770 -580 770 {lab=sink_ibias}
-N -580 690 -580 770 {lab=sink_ibias}
-N -720 690 -580 690 {lab=sink_ibias}
-N -580 610 -580 690 {lab=sink_ibias}
+N -720 1010 -580 1010 {lab=sink_ibias}
+N -720 910 -580 910 {lab=sink_ibias}
+N -720 810 -580 810 {lab=sink_ibias}
+N -720 710 -580 710 {lab=sink_ibias}
 N -1700 630 -1650 630 {
 lab=sink_ena_3v3[7:0]}
 N -2030 650 -2000 650 {lab=sink_ena[7:0]}
@@ -67,36 +51,70 @@ N -2000 670 -1900 670 {lab=sink_ena[7:0]}
 N -2000 650 -2000 670 {lab=sink_ena[7:0]}
 N -1900 650 -1900 670 {lab=sink_ena[7:0]}
 N -1900 650 -1850 650 {lab=sink_ena[7:0]}
-N -1070 1030 -1020 1030 {lab=nbias}
-N -1070 1110 -1020 1110 {lab=nbias}
-N -1070 1030 -1070 1110 {lab=nbias}
-N -1070 1190 -1020 1190 {lab=nbias}
-N -1070 1110 -1070 1190 {lab=nbias}
-N -1050 1210 -1020 1210 {lab=ncasc}
-N -1050 1130 -1050 1210 {lab=ncasc}
-N -1050 1130 -1020 1130 {lab=ncasc}
-N -1050 1050 -1050 1130 {lab=ncasc}
-N -1050 1050 -1020 1050 {lab=ncasc}
-N -1100 1010 -1020 1010 {lab=sink_ena_3v3[5]}
-N -1100 1090 -1020 1090 {lab=sink_ena_3v3[6]}
-N -1100 1170 -1020 1170 {lab=sink_ena_3v3[7]}
-N -720 1210 -680 1210 {lab=avss}
-N -680 1130 -680 1210 {lab=avss}
-N -720 1130 -680 1130 {lab=avss}
-N -680 1050 -680 1130 {lab=avss}
-N -720 1050 -680 1050 {lab=avss}
-N -720 1170 -580 1170 {lab=sink_ibias}
-N -580 1090 -580 1170 {lab=sink_ibias}
-N -720 1090 -580 1090 {lab=sink_ibias}
-N -580 1010 -580 1090 {lab=sink_ibias}
-N -720 1010 -580 1010 {lab=sink_ibias}
-N -1070 950 -1070 1030 {lab=nbias}
-N -1050 970 -1050 1050 {lab=ncasc}
-N -680 970 -680 1050 {lab=avss}
-N -580 930 -580 1010 {lab=sink_ibias}
-N -680 1210 -680 1270 {lab=avss}
-N -1050 1210 -1050 1270 {lab=ncasc}
-N -1070 1190 -1070 1270 {lab=nbias}
+N -1070 1130 -1020 1130 {lab=nbias}
+N -1070 1230 -1020 1230 {lab=nbias}
+N -1070 1330 -1020 1330 {lab=nbias}
+N -1050 1350 -1020 1350 {lab=ncasc}
+N -1050 1250 -1020 1250 {lab=ncasc}
+N -1050 1150 -1020 1150 {lab=ncasc}
+N -1100 1110 -1020 1110 {lab=sink_ena_3v3[5]}
+N -1100 1210 -1020 1210 {lab=sink_ena_3v3[6]}
+N -1100 1310 -1020 1310 {lab=sink_ena_3v3[7]}
+N -720 1350 -680 1350 {lab=avss}
+N -720 1250 -680 1250 {lab=avss}
+N -720 1150 -680 1150 {lab=avss}
+N -720 1310 -580 1310 {lab=sink_ibias}
+N -720 1210 -580 1210 {lab=sink_ibias}
+N -720 1110 -580 1110 {lab=sink_ibias}
+N -1050 1350 -1050 1410 {lab=ncasc}
+N -1070 1330 -1070 1410 {lab=nbias}
+N -580 1210 -580 1310 {lab=sink_ibias}
+N -580 910 -580 1010 {lab=sink_ibias}
+N -580 810 -580 910 {lab=sink_ibias}
+N -580 710 -580 810 {lab=sink_ibias}
+N -580 610 -580 710 {lab=sink_ibias}
+N -580 1110 -580 1210 {lab=sink_ibias}
+N -580 1010 -580 1110 {lab=sink_ibias}
+N -1070 1230 -1070 1330 {lab=nbias}
+N -1070 630 -1070 730 {lab=nbias}
+N -1070 730 -1070 830 {lab=nbias}
+N -1070 830 -1070 930 {lab=nbias}
+N -1070 930 -1070 1030 {lab=nbias}
+N -1070 1030 -1070 1130 {lab=nbias}
+N -1070 1130 -1070 1230 {lab=nbias}
+N -1050 1250 -1050 1350 {lab=ncasc}
+N -1050 950 -1050 1050 {lab=ncasc}
+N -1050 850 -1050 950 {lab=ncasc}
+N -1050 750 -1050 850 {lab=ncasc}
+N -1050 650 -1050 750 {lab=ncasc}
+N -1050 1150 -1050 1250 {lab=ncasc}
+N -1050 1050 -1050 1150 {lab=ncasc}
+N -680 650 -680 750 {lab=avss}
+N -680 750 -680 850 {lab=avss}
+N -680 850 -680 950 {lab=avss}
+N -680 950 -680 1050 {lab=avss}
+N -680 1050 -680 1150 {lab=avss}
+N -680 1150 -680 1250 {lab=avss}
+N -680 1250 -680 1350 {lab=avss}
+N -680 1350 -680 1410 {lab=avss}
+N -910 680 -870 680 {lab=shld2}
+N -850 680 -810 680 {lab=shld3}
+N -910 780 -870 780 {lab=shld2}
+N -850 780 -810 780 {lab=shld3}
+N -910 880 -870 880 {lab=shld2}
+N -850 880 -810 880 {lab=shld3}
+N -910 980 -870 980 {lab=shld2}
+N -850 980 -810 980 {lab=shld3}
+N -910 1080 -870 1080 {lab=shld2}
+N -850 1080 -810 1080 {lab=shld3}
+N -910 1180 -870 1180 {lab=shld2}
+N -850 1180 -810 1180 {lab=shld3}
+N -910 1280 -870 1280 {lab=shld2}
+N -850 1280 -810 1280 {lab=shld3}
+N -910 1380 -870 1380 {lab=shld2}
+N -850 1380 -810 1380 {lab=shld3}
+N -880 1430 -850 1430 {lab=shld2}
+N -880 1460 -850 1460 {lab=shld3}
 C {devices/iopin.sym} -2190 510 0 1 {name=p39 lab=avss}
 C {devices/iopin.sym} -2190 480 0 1 {name=p42 lab=avdd}
 C {devices/iopin.sym} -2190 550 0 1 {name=p98 lab=dvdd}
@@ -112,26 +130,46 @@ C {lab_pin.sym} -2150 400 0 1 {name=p7 sig_type=std_logic lab=ncasc}
 C {lab_pin.sym} -2150 510 0 1 {name=p9 sig_type=std_logic lab=avss}
 C {lab_pin.sym} -2150 480 0 1 {name=p41 sig_type=std_logic lab=avdd}
 C {bias_nstack.sym} -870 630 0 0 {name=x1}
-C {bias_nstack.sym} -870 710 0 0 {name=x6[1:0]}
-C {bias_nstack.sym} -870 790 0 0 {name=x7[3:0]}
-C {bias_nstack.sym} -870 870 0 0 {name=x8[7:0]}
-C {bias_nstack.sym} -870 950 0 0 {name=x11[15:0]}
-C {lab_pin.sym} -1050 1270 3 0 {name=p23 sig_type=std_logic lab=ncasc}
-C {lab_pin.sym} -1070 1270 3 0 {name=p24 sig_type=std_logic lab=nbias}
+C {bias_nstack.sym} -870 730 0 0 {name=x6[1:0]}
+C {bias_nstack.sym} -870 830 0 0 {name=x7[3:0]}
+C {bias_nstack.sym} -870 930 0 0 {name=x8[7:0]}
+C {bias_nstack.sym} -870 1030 0 0 {name=x11[15:0]}
+C {lab_pin.sym} -1050 1410 3 0 {name=p23 sig_type=std_logic lab=ncasc}
+C {lab_pin.sym} -1070 1410 3 0 {name=p24 sig_type=std_logic lab=nbias}
 C {lab_wire.sym} -1100 610 0 0 {name=p25 sig_type=std_logic lab=sink_ena_3v3[0]}
-C {lab_wire.sym} -1100 690 0 0 {name=p26 sig_type=std_logic lab=sink_ena_3v3[1]}
-C {lab_wire.sym} -1100 770 0 0 {name=p30 sig_type=std_logic lab=sink_ena_3v3[2]}
-C {lab_wire.sym} -1100 850 0 0 {name=p31 sig_type=std_logic lab=sink_ena_3v3[3]}
-C {lab_wire.sym} -1100 930 0 0 {name=p32 sig_type=std_logic lab=sink_ena_3v3[4]}
-C {lab_pin.sym} -680 1270 1 1 {name=p33 sig_type=std_logic lab=avss}
+C {lab_wire.sym} -1100 710 0 0 {name=p26 sig_type=std_logic lab=sink_ena_3v3[1]}
+C {lab_wire.sym} -1100 810 0 0 {name=p30 sig_type=std_logic lab=sink_ena_3v3[2]}
+C {lab_wire.sym} -1100 910 0 0 {name=p31 sig_type=std_logic lab=sink_ena_3v3[3]}
+C {lab_wire.sym} -1100 1010 0 0 {name=p32 sig_type=std_logic lab=sink_ena_3v3[4]}
+C {lab_pin.sym} -680 1410 1 1 {name=p33 sig_type=std_logic lab=avss}
 C {devices/iopin.sym} -580 610 0 0 {name=p12 lab=sink_ibias}
 C {devices/ipin.sym} -2030 650 0 0 {name=p13 lab=sink_ena[7:0]}
 C {level_shift.sym} -1700 670 0 0 {name=x4[7:0] vdd=avdd vss=avss }
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -1960 630 0 0 {name=x5[7:0] VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {lab_pin.sym} -1650 630 0 1 {name=p17 sig_type=std_logic lab=sink_ena_3v3[7:0]}
-C {bias_nstack.sym} -870 1030 0 0 {name=x15[31:0]}
-C {bias_nstack.sym} -870 1110 0 0 {name=x16[63:0]}
-C {bias_nstack.sym} -870 1190 0 0 {name=x17[127:0]}
-C {lab_wire.sym} -1100 1010 0 0 {name=p22 sig_type=std_logic lab=sink_ena_3v3[5]}
-C {lab_wire.sym} -1100 1090 0 0 {name=p28 sig_type=std_logic lab=sink_ena_3v3[6]}
-C {lab_wire.sym} -1100 1170 0 0 {name=p29 sig_type=std_logic lab=sink_ena_3v3[7]}
+C {bias_nstack.sym} -870 1130 0 0 {name=x15[31:0]}
+C {bias_nstack.sym} -870 1230 0 0 {name=x16[63:0]}
+C {bias_nstack.sym} -870 1330 0 0 {name=x17[127:0]}
+C {lab_wire.sym} -1100 1110 0 0 {name=p22 sig_type=std_logic lab=sink_ena_3v3[5]}
+C {lab_wire.sym} -1100 1210 0 0 {name=p28 sig_type=std_logic lab=sink_ena_3v3[6]}
+C {lab_wire.sym} -1100 1310 0 0 {name=p29 sig_type=std_logic lab=sink_ena_3v3[7]}
+C {lab_pin.sym} -910 680 0 0 {name=p3 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 680 0 1 {name=p4 sig_type=std_logic lab=shld3}
+C {lab_pin.sym} -910 780 0 0 {name=p8 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 780 0 1 {name=p10 sig_type=std_logic lab=shld3}
+C {lab_pin.sym} -910 880 0 0 {name=p11 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 880 0 1 {name=p14 sig_type=std_logic lab=shld3}
+C {lab_pin.sym} -910 980 0 0 {name=p15 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 980 0 1 {name=p16 sig_type=std_logic lab=shld3}
+C {lab_pin.sym} -910 1080 0 0 {name=p18 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 1080 0 1 {name=p19 sig_type=std_logic lab=shld3}
+C {lab_pin.sym} -910 1180 0 0 {name=p20 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 1180 0 1 {name=p21 sig_type=std_logic lab=shld3}
+C {lab_pin.sym} -910 1280 0 0 {name=p27 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 1280 0 1 {name=p34 sig_type=std_logic lab=shld3}
+C {lab_pin.sym} -910 1380 0 0 {name=p35 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -810 1380 0 1 {name=p36 sig_type=std_logic lab=shld3}
+C {devices/iopin.sym} -880 1430 0 1 {name=p37 lab=shld2}
+C {devices/iopin.sym} -880 1460 0 1 {name=p38 lab=shld3}
+C {lab_pin.sym} -850 1430 0 1 {name=p40 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} -850 1460 0 1 {name=p43 sig_type=std_logic lab=shld3}

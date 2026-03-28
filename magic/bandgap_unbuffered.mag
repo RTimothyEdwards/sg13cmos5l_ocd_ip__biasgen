@@ -1,13 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774635087
-<< error_s >>
-rect -6500 -16542 -6485 -15112
-rect -6458 -15218 -6443 -15154
-rect -6458 -15300 -6443 -15260
-rect -6458 -16374 -6437 -15300
-rect -6458 -16554 -6443 -16374
+timestamp 1774719096
 << digisub >>
 rect -9868 -16599 -9462 -3181
 << nwell >>
@@ -381,7 +375,8 @@ rect -1503 -13174 -1459 -10250
 rect -772 -12968 1347 -12955
 rect -6719 -14926 -6699 -14358
 rect -6512 -14926 -6485 -14358
-rect -6719 -16542 -6485 -14926
+rect -6719 -15074 -6485 -14926
+rect -6719 -16542 -6524 -15074
 rect -1098 -16341 -1041 -12981
 rect -772 -13028 -754 -12968
 rect 1321 -13028 1347 -12968
@@ -753,9 +748,9 @@ transform -1 0 -1172 0 1 -16554
 box 0 0 2470 3220
 use level_shift  level_shift_0
 array 0 7 1471 0 0 -2896
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 -5741 1 0 -15079
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
 timestamp 1774624117
 transform 0 -1 -9518 -1 0 -15207
@@ -1426,9 +1421,9 @@ transform 0 1 -3480 -1 0 -12989
 box -70 -29 70 29
 use level_shift  x1
 array 0 8 1471 0 0 2896
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 -7463 1 0 -16550
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use se_folded_cascode_p  xamp
 timestamp 1774630862
 transform 0 1 6125 1 0 -17718

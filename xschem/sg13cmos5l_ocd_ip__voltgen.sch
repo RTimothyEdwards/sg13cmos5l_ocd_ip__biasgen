@@ -385,7 +385,7 @@ N -530 120 -500 120 {lab=s[0]}
 N -530 170 -500 170 {lab=s[0]}
 C {capa.sym} 440 -30 0 0 {name=C1
 m=1
-value=1.6p
+value=1.64p
 footprint=1206
 device="ceramic capacitor"}
 C {iopin.sym} 140 -110 0 1 {name=p1 lab=vdd}
@@ -536,9 +536,9 @@ C {lab_pin.sym} -660 90 0 1 {name=p39 sig_type=std_logic lab=s2}
 C {lab_pin.sym} -840 -30 0 0 {name=p40 sig_type=std_logic lab=s0b}
 C {lab_pin.sym} -840 30 0 0 {name=p41 sig_type=std_logic lab=s1b}
 C {lab_pin.sym} -840 90 0 0 {name=p42 sig_type=std_logic lab=s2b}
-C {lab_pin.sym} -1230 230 0 0 {name=p43 sig_type=std_logic lab=s0b}
+C {lab_pin.sym} -1230 310 0 0 {name=p43 sig_type=std_logic lab=s0b}
 C {lab_pin.sym} -1230 270 0 0 {name=p44 sig_type=std_logic lab=s1b}
-C {lab_pin.sym} -1230 310 0 0 {name=p45 sig_type=std_logic lab=s2b}
+C {lab_pin.sym} -1230 230 0 0 {name=p45 sig_type=std_logic lab=s2b}
 C {hv_inv_1.sym} -590 420 0 0 {name=x20}
 C {level_shift.sym} -710 460 0 0 {name=x21 vdd=vdd vss=vss}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -970 440 0 0 {name=x22 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
@@ -547,9 +547,9 @@ C {lab_pin.sym} -600 360 0 0 {name=p47 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -460 510 0 1 {name=p48 sig_type=std_logic lab=v1}
 C {lab_pin.sym} -460 420 0 1 {name=p49 sig_type=std_logic lab=v1b}
 C {sg13cmos5l_stdcells/sg13cmos5l_nand3_1.sym} -1120 440 0 0 {name=x23 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {lab_pin.sym} -1230 400 0 0 {name=p50 sig_type=std_logic lab=s0}
+C {lab_pin.sym} -1230 480 0 0 {name=p50 sig_type=std_logic lab=s0}
 C {lab_pin.sym} -1230 440 0 0 {name=p51 sig_type=std_logic lab=s1b}
-C {lab_pin.sym} -1230 480 0 0 {name=p52 sig_type=std_logic lab=s2b}
+C {lab_pin.sym} -1230 400 0 0 {name=p52 sig_type=std_logic lab=s2b}
 C {hv_inv_1.sym} -590 590 0 0 {name=x24}
 C {level_shift.sym} -710 630 0 0 {name=x25 vdd=vdd vss=vss}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -970 610 0 0 {name=x26 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
@@ -558,9 +558,9 @@ C {lab_pin.sym} -600 530 0 0 {name=p54 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -460 680 0 1 {name=p55 sig_type=std_logic lab=v2}
 C {lab_pin.sym} -460 590 0 1 {name=p56 sig_type=std_logic lab=v2b}
 C {sg13cmos5l_stdcells/sg13cmos5l_nand3_1.sym} -1120 610 0 0 {name=x27 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {lab_pin.sym} -1230 570 0 0 {name=p57 sig_type=std_logic lab=s0b}
+C {lab_pin.sym} -1230 650 0 0 {name=p57 sig_type=std_logic lab=s0b}
 C {lab_pin.sym} -1230 610 0 0 {name=p58 sig_type=std_logic lab=s1}
-C {lab_pin.sym} -1230 650 0 0 {name=p59 sig_type=std_logic lab=s2b}
+C {lab_pin.sym} -1230 570 0 0 {name=p59 sig_type=std_logic lab=s2b}
 C {hv_inv_1.sym} -590 760 0 0 {name=x28}
 C {level_shift.sym} -710 800 0 0 {name=x29 vdd=vdd vss=vss}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -970 780 0 0 {name=x30 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
@@ -569,9 +569,9 @@ C {lab_pin.sym} -600 700 0 0 {name=p61 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -460 850 0 1 {name=p62 sig_type=std_logic lab=v3}
 C {lab_pin.sym} -460 760 0 1 {name=p63 sig_type=std_logic lab=v3b}
 C {sg13cmos5l_stdcells/sg13cmos5l_nand3_1.sym} -1120 780 0 0 {name=x31 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {lab_pin.sym} -1230 740 0 0 {name=p64 sig_type=std_logic lab=s0}
+C {lab_pin.sym} -1230 820 0 0 {name=p64 sig_type=std_logic lab=s0}
 C {lab_pin.sym} -1230 780 0 0 {name=p65 sig_type=std_logic lab=s1}
-C {lab_pin.sym} -1230 820 0 0 {name=p66 sig_type=std_logic lab=s2b}
+C {lab_pin.sym} -1230 740 0 0 {name=p66 sig_type=std_logic lab=s2b}
 C {hv_inv_1.sym} -590 930 0 0 {name=x32}
 C {level_shift.sym} -710 970 0 0 {name=x33 vdd=vdd vss=vss}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -970 950 0 0 {name=x34 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
@@ -580,9 +580,9 @@ C {lab_pin.sym} -600 870 0 0 {name=p68 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -460 1020 0 1 {name=p69 sig_type=std_logic lab=v4}
 C {lab_pin.sym} -460 930 0 1 {name=p70 sig_type=std_logic lab=v4b}
 C {sg13cmos5l_stdcells/sg13cmos5l_nand3_1.sym} -1120 950 0 0 {name=x35 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {lab_pin.sym} -1230 910 0 0 {name=p71 sig_type=std_logic lab=s0b}
+C {lab_pin.sym} -1230 990 0 0 {name=p71 sig_type=std_logic lab=s0b}
 C {lab_pin.sym} -1230 950 0 0 {name=p72 sig_type=std_logic lab=s1b}
-C {lab_pin.sym} -1230 990 0 0 {name=p73 sig_type=std_logic lab=s2}
+C {lab_pin.sym} -1230 910 0 0 {name=p73 sig_type=std_logic lab=s2}
 C {hv_inv_1.sym} -590 1100 0 0 {name=x36}
 C {level_shift.sym} -710 1140 0 0 {name=x37 vdd=vdd vss=vss}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -970 1120 0 0 {name=x38 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
@@ -591,9 +591,9 @@ C {lab_pin.sym} -600 1040 0 0 {name=p75 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -460 1190 0 1 {name=p76 sig_type=std_logic lab=v5}
 C {lab_pin.sym} -460 1100 0 1 {name=p77 sig_type=std_logic lab=v5b}
 C {sg13cmos5l_stdcells/sg13cmos5l_nand3_1.sym} -1120 1120 0 0 {name=x39 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {lab_pin.sym} -1230 1080 0 0 {name=p78 sig_type=std_logic lab=s0}
+C {lab_pin.sym} -1230 1160 0 0 {name=p78 sig_type=std_logic lab=s0}
 C {lab_pin.sym} -1230 1120 0 0 {name=p79 sig_type=std_logic lab=s1b}
-C {lab_pin.sym} -1230 1160 0 0 {name=p80 sig_type=std_logic lab=s2}
+C {lab_pin.sym} -1230 1080 0 0 {name=p80 sig_type=std_logic lab=s2}
 C {hv_inv_1.sym} -590 1270 0 0 {name=x40}
 C {level_shift.sym} -710 1310 0 0 {name=x41 vdd=vdd vss=vss}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -970 1290 0 0 {name=x42 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
@@ -602,9 +602,9 @@ C {lab_pin.sym} -600 1210 0 0 {name=p82 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -460 1360 0 1 {name=p83 sig_type=std_logic lab=v6}
 C {lab_pin.sym} -460 1270 0 1 {name=p84 sig_type=std_logic lab=v6b}
 C {sg13cmos5l_stdcells/sg13cmos5l_nand3_1.sym} -1120 1290 0 0 {name=x43 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {lab_pin.sym} -1230 1250 0 0 {name=p85 sig_type=std_logic lab=s0b}
+C {lab_pin.sym} -1230 1330 0 0 {name=p85 sig_type=std_logic lab=s0b}
 C {lab_pin.sym} -1230 1290 0 0 {name=p86 sig_type=std_logic lab=s1}
-C {lab_pin.sym} -1230 1330 0 0 {name=p87 sig_type=std_logic lab=s2}
+C {lab_pin.sym} -1230 1250 0 0 {name=p87 sig_type=std_logic lab=s2}
 C {hv_inv_1.sym} -590 1440 0 0 {name=x44}
 C {level_shift.sym} -710 1480 0 0 {name=x45 vdd=vdd vss=vss}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -970 1460 0 0 {name=x46 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
@@ -613,9 +613,9 @@ C {lab_pin.sym} -600 1380 0 0 {name=p89 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} -460 1530 0 1 {name=p90 sig_type=std_logic lab=v7}
 C {lab_pin.sym} -460 1440 0 1 {name=p91 sig_type=std_logic lab=v7b}
 C {sg13cmos5l_stdcells/sg13cmos5l_nand3_1.sym} -1120 1460 0 0 {name=x47 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {lab_pin.sym} -1230 1420 0 0 {name=p92 sig_type=std_logic lab=s0}
+C {lab_pin.sym} -1230 1500 0 0 {name=p92 sig_type=std_logic lab=s0}
 C {lab_pin.sym} -1230 1460 0 0 {name=p93 sig_type=std_logic lab=s1}
-C {lab_pin.sym} -1230 1500 0 0 {name=p94 sig_type=std_logic lab=s2}
+C {lab_pin.sym} -1230 1420 0 0 {name=p94 sig_type=std_logic lab=s2}
 C {iopin.sym} 1600 660 3 1 {name=p95 lab=ibias1u_2}
 C {lab_pin.sym} 1620 550 3 0 {name=p96 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1650 330 2 0 {name=p97 sig_type=std_logic lab=vdd}
@@ -697,7 +697,7 @@ C {lab_pin.sym} -530 20 0 0 {name=p137 sig_type=std_logic lab=high}
 C {lab_pin.sym} -530 70 0 0 {name=p138 sig_type=std_logic lab=ena}
 C {lab_pin.sym} -530 120 0 0 {name=p139 sig_type=std_logic lab=ena1}
 C {lab_pin.sym} -530 170 0 0 {name=p140 sig_type=std_logic lab=ena2}
-C {sg13cmos5l_stdcells/sg13cmos5l_decap_4.sym} -410 -200 0 0 {name=x68[11:0] VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
+C {sg13cmos5l_stdcells/sg13cmos5l_decap_4.sym} -410 -200 0 0 {name=x68 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -410 -80 0 0 {name=x61 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -410 -30 0 0 {name=x62 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -410 20 0 0 {name=x63 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }

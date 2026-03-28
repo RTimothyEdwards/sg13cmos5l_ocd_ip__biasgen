@@ -154,7 +154,7 @@ C {sg13cmos5l_pr/sg13_hv_pmos.sym} 560 -70 0 0 {name=M7
 w=2u
 l=0.5u
 ng=2
-m=1
+m=2
 model=sg13_hv_pmos
 spiceprefix=X
 }

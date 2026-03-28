@@ -3330,22 +3330,22 @@ use sg13_hv_pmos_N8UDLU  XM1DUM paramcells
 timestamp 1774369900
 transform 1 0 4825 0 1 3080
 box -481 -224 481 224
-use sg13_hv_pmos_NWNELU  XM2 paramcells
-timestamp 1774369900
-transform 1 0 3051 0 1 556
-box -481 -2006 481 2006
 use sg13_hv_pmos_NNMDLU  XM2DUM paramcells
 timestamp 1774369900
 transform 1 0 3618 0 1 556
 box -292 -2006 292 2006
-use sg13_hv_pmos_NWNELU  XM3
+use sg13_hv_pmos_NWNELU  XM2 paramcells
 timestamp 1774369900
-transform 1 0 2295 0 1 556
+transform 1 0 3051 0 1 556
 box -481 -2006 481 2006
 use sg13_hv_pmos_NNMDLU  XM3DUM
 timestamp 1774369900
 transform 1 0 1728 0 1 555
 box -292 -2006 292 2006
+use sg13_hv_pmos_NWNELU  XM3
+timestamp 1774369900
+transform 1 0 2295 0 1 556
+box -481 -2006 481 2006
 use sg13_hv_nmos_BEDTUZ  XM4DUM paramcells
 timestamp 1774369900
 transform 1 0 5396 0 1 -1604

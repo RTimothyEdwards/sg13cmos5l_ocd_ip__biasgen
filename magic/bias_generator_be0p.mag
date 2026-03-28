@@ -1,17 +1,17 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774648309
+timestamp 1774719137
 << digisub >>
 rect -1592 1851 13784 2234
 << metal1 >>
 rect -1531 2624 13779 2724
 rect -1531 2524 -1331 2624
-rect -582 2216 -293 2282
-rect 2987 2216 3276 2282
-rect 4996 2216 5285 2282
-rect 8469 2216 8758 2282
-rect 10518 2219 10775 2277
+rect -277 2216 12 2282
+rect 2530 2216 2819 2282
+rect 5286 2216 5575 2282
+rect 8184 2216 8473 2282
+rect 10917 2219 11174 2277
 rect -1531 1956 -1331 2055
 rect -1531 1856 13779 1956
 rect -1531 1855 -1331 1856
@@ -28,21 +28,21 @@ rect -1523 -199 -1323 -198
 rect -149 -1803 51 -1692
 rect -158 -2934 42 -2820
 << metal2 >>
-rect -416 2774 -344 2974
-rect -389 1577 -344 2774
-rect 2945 2767 3026 2967
-rect 5172 2776 5245 2976
-rect 8510 2780 8579 2980
-rect -225 1578 -180 2268
-rect 2798 1578 2843 2268
-rect 2962 1577 3007 2767
-rect 5189 1577 5234 2776
-rect 5353 1578 5398 2268
-rect 8356 1578 8401 2268
-rect 8520 1577 8565 2780
-rect 10734 2768 10808 2968
-rect 10747 1577 10792 2768
-rect 10911 1578 10956 2268
+rect -226 2774 -154 2974
+rect -390 1578 -345 2268
+rect -226 1577 -181 2774
+rect 2780 2767 2861 2967
+rect 5326 2776 5399 2976
+rect 8363 2780 8432 2980
+rect 2799 1577 2844 2767
+rect 2963 1578 3008 2268
+rect 5173 1578 5218 2268
+rect 5337 1577 5382 2776
+rect 8377 1577 8422 2780
+rect 10884 2768 10958 2968
+rect 8541 1578 8586 2268
+rect 10736 1578 10781 2268
+rect 10900 1577 10945 2768
 rect -47 29 -3 308
 rect 2637 287 2681 307
 rect 2637 146 2683 287
@@ -95,107 +95,107 @@ rect 12333 268 12548 1377
 rect -1594 -217 13780 170
 use bias_pstack  bias_pstack_0
 array 0 7 288 0 0 3881
-timestamp 1774624117
+timestamp 1774713617
 transform 1 0 954 0 -1 -1709
 box 898 -1502 1500 2379
 use bias_pstack  bias_pstack_1
 array 0 3 288 0 0 3881
-timestamp 1774624117
+timestamp 1774713617
 transform 1 0 -256 0 -1 -1709
 box 898 -1502 1500 2379
 use bias_pstack  bias_pstack_2
 array 0 1 288 0 0 3881
-timestamp 1774624117
+timestamp 1774713617
 transform 1 0 -890 0 -1 -1709
 box 898 -1502 1500 2379
 use bias_pstack  bias_pstack_3
-timestamp 1774624117
+timestamp 1774713617
 transform 1 0 -1236 0 -1 -1709
 box 898 -1502 1500 2379
 use bias_pstack  bias_pstack_4
 array 0 15 288 0 0 3881
-timestamp 1774624117
+timestamp 1774713617
 transform 1 0 3316 0 -1 -1709
 box 898 -1502 1500 2379
 use level_shift  level_shift_0
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 2176 -1 0 1524
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_1
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 6020 -1 0 1524
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_2
-timestamp 1774630862
+timestamp 1774719060
 transform 0 -1 7742 -1 0 1524
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_3
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 11586 -1 0 1524
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use level_shift  level_shift_4
-timestamp 1774630862
+timestamp 1774719060
 transform 0 1 454 -1 0 1524
-box -12 -1978 1519 1064
+box -12 -1978 1519 918
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
 timestamp 1774624117
-transform -1 0 3326 0 1 1912
+transform 1 0 2480 0 1 1912
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_1
 timestamp 1774624117
-transform -1 0 8884 0 1 1912
+transform 1 0 8058 0 1 1912
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_2
 timestamp 1774624117
-transform 1 0 10428 0 1 1912
+transform -1 0 11264 0 1 1912
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_3
 timestamp 1774624117
-transform 1 0 -708 0 1 1912
+transform -1 0 138 0 1 1912
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_4
 timestamp 1774624117
-transform 1 0 4870 0 1 1912
+transform -1 0 5701 0 1 1912
 box -48 -56 336 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
 timestamp 1774624117
-transform -1 0 2654 0 1 1912
+transform 1 0 3152 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_1
 timestamp 1774624117
-transform -1 0 8212 0 1 1912
+transform 1 0 8730 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_2
 timestamp 1774624117
-transform 1 0 11100 0 1 1912
+transform -1 0 10592 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_3
 timestamp 1774624117
-transform 1 0 -36 0 1 1912
+transform -1 0 -534 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_4
 timestamp 1774624117
-transform 1 0 5542 0 1 1912
+transform -1 0 5029 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 ../../sg13cmos5l_ocd_openframe/magic/sg13cmos5l_stdcell
 timestamp 1774624117
-transform -1 0 3038 0 1 1912
+transform 1 0 2768 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_1
 timestamp 1774624117
-transform -1 0 8596 0 1 1912
+transform 1 0 8346 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_2
 timestamp 1774624117
-transform 1 0 10716 0 1 1912
+transform -1 0 10976 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_3
 timestamp 1774624117
-transform 1 0 -420 0 1 1912
+transform -1 0 -150 0 1 1912
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_4
 timestamp 1774624117
-transform 1 0 5158 0 1 1912
+transform -1 0 5413 0 1 1912
 box -48 -56 432 834
 use via_Y6HC2N  via_Y6HC2N_0 paramcells
 timestamp 1774624117
@@ -219,43 +219,43 @@ transform 1 0 4345 0 1 -808
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_5
 timestamp 1774624117
-transform 0 -1 8343 -1 0 2246
+transform 0 1 8599 -1 0 2246
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_6
 timestamp 1774624117
-transform 0 -1 8613 -1 0 2248
+transform 0 1 8329 -1 0 2248
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_7
 timestamp 1774624117
-transform 0 1 -167 -1 0 2246
+transform 0 -1 -403 -1 0 2246
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_8
 timestamp 1774624117
-transform 0 1 -437 -1 0 2248
+transform 0 -1 -133 -1 0 2248
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_9
 timestamp 1774624117
-transform 0 1 10969 -1 0 2246
+transform 0 -1 10723 -1 0 2246
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_10
 timestamp 1774624117
-transform 0 1 10699 -1 0 2248
+transform 0 -1 10993 -1 0 2248
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_11
 timestamp 1774624117
-transform 0 1 5411 -1 0 2246
+transform 0 -1 5160 -1 0 2246
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_12
 timestamp 1774624117
-transform 0 1 5141 -1 0 2248
+transform 0 -1 5430 -1 0 2248
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_13
 timestamp 1774624117
-transform 0 -1 3055 -1 0 2248
+transform 0 1 2751 -1 0 2248
 box -29 -70 29 70
 use via_Y6HC2N  via_Y6HC2N_14
 timestamp 1774624117
-transform 0 -1 2785 -1 0 2246
+transform 0 1 3021 -1 0 2246
 box -29 -70 29 70
 use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
 timestamp 1774624117
@@ -313,11 +313,11 @@ use via_Z2RFBL  via_Z2RFBL_3
 timestamp 1774624117
 transform 1 0 1314 0 1 794
 box -70 -461 70 461
-use via_Z2RFBL  via_Z2RFBL_4
+use via_Z2RFXH  via_Z2RFXH_0 paramcells
 timestamp 1774624117
-transform 1 0 12442 0 1 794
-box -70 -461 70 461
-use via_Z2RFXH  via_Z2RFXH_1 paramcells
+transform 1 0 12398 0 1 792
+box -29 -461 29 461
+use via_Z2RFXH  via_Z2RFXH_1
 timestamp 1774624117
 transform 1 0 -1413 0 1 779
 box -29 -461 29 461
@@ -376,14 +376,14 @@ flabel metal1 -158 -2934 42 -2820 0 FreeSans 1600 180 0 0 pbias
 port 4 nsew
 flabel metal3 8753 -391 8953 -292 0 FreeSans 1600 180 0 0 source_ibias
 port 11 nsew
-flabel metal2 -416 2774 -344 2974 0 FreeSans 1600 180 0 0 source_ena[0]
+flabel metal2 -226 2774 -154 2974 0 FreeSans 1600 0 0 0 source_ena[0]
 port 9 nsew
-flabel metal2 2945 2767 3026 2967 0 FreeSans 1600 180 0 0 source_ena[1]
+flabel metal2 2780 2767 2861 2967 0 FreeSans 1600 0 0 0 source_ena[1]
 port 8 nsew
-flabel metal2 5172 2776 5245 2976 0 FreeSans 1600 180 0 0 source_ena[2]
+flabel metal2 5326 2776 5399 2976 0 FreeSans 1600 0 0 0 source_ena[2]
 port 7 nsew
-flabel metal2 8510 2780 8579 2980 0 FreeSans 1600 180 0 0 source_ena[3]
+flabel metal2 8363 2780 8432 2980 0 FreeSans 1600 0 0 0 source_ena[3]
 port 6 nsew
-flabel metal2 10734 2768 10808 2968 0 FreeSans 1600 180 0 0 source_ena[4]
+flabel metal2 10884 2768 10958 2968 0 FreeSans 1600 0 0 0 source_ena[4]
 port 5 nsew
 << end >>

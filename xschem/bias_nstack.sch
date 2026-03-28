@@ -35,6 +35,8 @@ N -180 -130 -180 -90 {
 lab=#net2}
 N -140 -160 70 -160 {lab=ena}
 N -140 -60 -120 -60 {lab=ncasc}
+N 260 -250 300 -250 {lab=shld2}
+N 260 -220 300 -220 {lab=shld3}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} -160 60 0 1 {name=M3
 w=3u
 l=1u
@@ -64,3 +66,7 @@ spiceprefix=X
 C {devices/ipin.sym} -40 60 0 1 {name=p1 lab=nbias}
 C {devices/iopin.sym} -110 -280 0 0 {name=p2 lab=itail}
 C {devices/ipin.sym} -120 -60 0 1 {name=p7 lab=ncasc}
+C {devices/iopin.sym} 260 -250 0 1 {name=p6 lab=shld2}
+C {devices/iopin.sym} 260 -220 0 1 {name=p8 lab=shld3}
+C {lab_pin.sym} 300 -250 0 1 {name=p10 sig_type=std_logic lab=shld2}
+C {lab_pin.sym} 300 -220 0 1 {name=p11 sig_type=std_logic lab=shld3}
