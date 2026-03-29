@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774803102
+timestamp 1774816855
 << digisub >>
 rect 2244 -11190 2648 -9364
 rect 3460 -11188 4160 -9364
@@ -295,8 +295,9 @@ rect 7813 -12750 7856 -12148
 rect 9712 -12248 9752 -10338
 rect 9880 -11001 9920 -10421
 rect 9970 -12971 10114 -5660
-rect 12699 -12953 13034 -5646
-rect 15602 -12971 15756 -5659
+rect 12699 -12953 13027 -5646
+rect 15611 -12819 15756 -5659
+rect 15602 -12971 15756 -12819
 << metal3 >>
 rect 11364 64 11483 264
 rect 1685 -5947 1734 -1643
@@ -622,20 +623,20 @@ transform -1 0 9789 0 -1 -8627
 box 423 -1003 1115 266
 use level_shift  level_shift_0
 array 0 4 -1471 0 0 2896
-timestamp 1774803102
+timestamp 1774816172
 transform 0 1 11948 1 0 -7077
 box -12 -1978 1519 918
 use level_shift  level_shift_1
 array 0 4 -1471 0 0 -2896
-timestamp 1774803102
+timestamp 1774816172
 transform 0 -1 13778 1 0 -7077
 box -12 -1978 1519 918
 use level_shift  level_shift_2
-timestamp 1774803102
+timestamp 1774816172
 transform 0 1 3563 -1 0 -11493
 box -12 -1978 1519 918
 use level_shift  level_shift_3
-timestamp 1774803102
+timestamp 1774816172
 transform 0 -1 5393 -1 0 -11493
 box -12 -1978 1519 918
 use se_folded_cascode_p  se_folded_cascode_p_0

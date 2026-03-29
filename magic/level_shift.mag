@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774803102
+timestamp 1774816172
 << nwell >>
 rect -4 -550 1516 916
 << hvpsubdiff >>
@@ -99,7 +99,7 @@ rect 596 -722 640 304
 rect 688 -615 738 608
 rect 798 -496 838 686
 rect 888 -266 928 750
-rect 976 656 1194 702
+rect 976 656 1194 699
 rect 976 -615 1016 656
 rect 1064 -460 1104 610
 rect 1154 -322 1194 656
@@ -174,7 +174,7 @@ transform 0 1 850 -1 0 -508
 box -29 -70 29 70
 use via_Y6HE6N  via_Y6HE6N_0 paramcells
 timestamp 1774721386
-transform 0 1 1212 -1 0 -1761
+transform 0 1 1212 -1 0 -1759
 box -29 -70 29 70
 use via_Y6HE6N  via_Y6HE6N_1
 timestamp 1774721386
@@ -235,4 +235,6 @@ flabel metal2 8 766 160 912 0 FreeSans 640 0 0 0 vdd
 port 3 nsew
 flabel metal3 1235 -566 1435 -416 0 FreeSans 640 0 0 0 out
 port 2 nsew
+<< properties >>
+string MASKHINTS_THKOX -72 -2038 1579 978
 << end >>
