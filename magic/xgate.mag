@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774709860
+timestamp 1774790409
 << metal1 >>
 rect 567 -300 972 -241
 rect 1248 -300 1659 -241
@@ -35,12 +35,12 @@ rect 1376 -867 1385 -865
 rect 1524 -865 1710 -827
 rect 1524 -867 1534 -865
 rect 510 -1011 1712 -913
-use via_Y6ZG8N  via_Y6ZG8N_0 paramcells
-timestamp 1774449753
+use via_Y6ZG8N  via_Y6ZG8N_0 sg13cmos5l_ocd_ip__analog_switches/magic/paramcells
+timestamp 1772659690
 transform 1 0 773 0 1 -262
 box -173 -29 173 29
 use via_Y6ZG8N  via_Y6ZG8N_1
-timestamp 1774449753
+timestamp 1772659690
 transform 1 0 1457 0 1 -942
 box -173 -29 173 29
 use sg13_hv_pmos_XLVYT6  XM1 paramcells

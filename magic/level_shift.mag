@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774748448
+timestamp 1774803102
 << nwell >>
 rect -4 -550 1516 916
 << hvpsubdiff >>
@@ -133,8 +133,7 @@ rect -10 -1950 143 -1894
 rect 1393 -1950 1418 -1894
 rect -10 -1978 1418 -1950
 << metal3 >>
-rect 1283 -538 1516 -416
-rect 1316 -570 1516 -538
+rect 1235 -570 1435 -416
 rect 8 -669 540 -621
 rect 1008 -661 1437 -615
 rect 8 -697 208 -669
@@ -185,20 +184,20 @@ use via_Y6HW5N  via_Y6HW5N_0 paramcells
 timestamp 1774721386
 transform 1 0 1173 0 1 -477
 box -111 -70 111 70
-use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
-timestamp 1774721386
+use via_Y6Z2DQ  via_Y6Z2DQ_0 sg13cmos5l_ocd_ip__analog_switches/magic/paramcells
+timestamp 1772657197
 transform 1 0 691 0 1 -837
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_1
-timestamp 1774721386
+timestamp 1772657197
 transform 1 0 1366 0 1 -638
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_2
-timestamp 1774721386
+timestamp 1772657197
 transform 1 0 1074 0 1 -633
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_8
-timestamp 1774721386
+timestamp 1772657197
 transform 0 1 930 -1 0 -1635
 box -70 -29 70 29
 use via_Y6ZS5N  via_Y6ZS5N_0 paramcells
@@ -226,8 +225,6 @@ timestamp 1774721386
 transform 1 0 995 0 1 -68
 box -418 -324 418 324
 << labels >>
-flabel metal3 1316 -566 1516 -416 0 FreeSans 640 0 0 0 out
-port 2 nsew
 flabel metal3 8 -856 208 -778 0 FreeSans 640 0 0 0 in_p
 port 1 nsew
 flabel metal3 8 -697 208 -621 0 FreeSans 640 0 0 0 in_n
@@ -236,4 +233,6 @@ flabel metal2 -10 -1978 142 -1824 0 FreeSans 640 0 0 0 vss
 port 4 nsew
 flabel metal2 8 766 160 912 0 FreeSans 640 0 0 0 vdd
 port 3 nsew
+flabel metal3 1235 -566 1435 -416 0 FreeSans 640 0 0 0 out
+port 2 nsew
 << end >>

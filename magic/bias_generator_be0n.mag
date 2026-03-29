@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774748448
+timestamp 1774803102
 << digisub >>
 rect -2876 1658 12206 2058
 << metal1 >>
@@ -107,26 +107,26 @@ timestamp 1774748448
 transform 1 0 1591 0 -1 -1898
 box 1015 -1385 1389 2293
 use level_shift  level_shift_0
-timestamp 1774748448
+timestamp 1774803102
 transform 0 -1 320 -1 0 1329
 box -12 -1978 1519 918
 use level_shift  level_shift_1
-timestamp 1774748448
+timestamp 1774803102
 transform 0 1 4164 -1 0 1329
 box -12 -1978 1519 918
 use level_shift  level_shift_2
-timestamp 1774748448
+timestamp 1774803102
 transform 0 -1 5886 -1 0 1329
 box -12 -1978 1519 918
 use level_shift  level_shift_3
-timestamp 1774748448
+timestamp 1774803102
 transform 0 1 9730 -1 0 1329
 box -12 -1978 1519 918
 use level_shift  level_shift_4
-timestamp 1774748448
+timestamp 1774803102
 transform 0 1 -1402 -1 0 1329
 box -12 -1978 1519 918
-use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_ocd_ip__analog_switches/magic/../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 7051 0 1 1717
 box -48 -56 336 834
@@ -146,7 +146,7 @@ use sg13cmos5l_antennanp  sg13cmos5l_antennanp_4
 timestamp 1774721386
 transform 1 0 -2555 0 1 1717
 box -48 -56 336 834
-use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 sg13cmos5l_ocd_ip__analog_switches/magic/../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 6379 0 1 1717
 box -48 -56 432 834
@@ -246,44 +246,44 @@ use via_Y6HC2N  via_Y6HC2N_14
 timestamp 1774721386
 transform 0 1 -2284 -1 0 2053
 box -29 -70 29 70
-use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
-timestamp 1774721386
+use via_Y6Z2DQ  via_Y6Z2DQ_0 sg13cmos5l_ocd_ip__analog_switches/magic/paramcells
+timestamp 1772657197
 transform 0 -1 6706 -1 0 1453
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_1
-timestamp 1774721386
+timestamp 1772657197
 transform 0 -1 6544 -1 0 1452
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_2
-timestamp 1774721386
+timestamp 1772657197
 transform 0 -1 978 -1 0 1452
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_3
-timestamp 1774721386
+timestamp 1772657197
 transform 0 -1 1140 -1 0 1453
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_4
-timestamp 1774721386
+timestamp 1772657197
 transform 0 1 3348 -1 0 1453
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_5
-timestamp 1774721386
+timestamp 1772657197
 transform 0 1 3510 -1 0 1452
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_6
-timestamp 1774721386
+timestamp 1772657197
 transform 0 1 8906 -1 0 1453
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_7
-timestamp 1774721386
+timestamp 1772657197
 transform 0 1 9068 -1 0 1452
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_8
-timestamp 1774721386
+timestamp 1772657197
 transform 0 1 -2210 -1 0 1453
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_9
-timestamp 1774721386
+timestamp 1772657197
 transform 0 1 -2048 -1 0 1452
 box -70 -29 70 29
 use via_Z2RFBL  via_Z2RFBL_0 paramcells
