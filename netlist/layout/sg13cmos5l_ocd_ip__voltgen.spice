@@ -407,7 +407,7 @@ X1 S2 G2 D2 w_n418_n324# sg13_hv_pmos ad=0.68p pd=4.68u as=0.38p ps=2.38u w=2u l
 X2 D2 G1 S1 w_n418_n324# sg13_hv_pmos ad=0.38p pd=2.38u as=0.38p ps=2.38u w=2u l=0.5u
 .ends
 
-.subckt level_shift in_n in_p out vdd_uq0 vss vdd
+.subckt level_shift in_n in_p out vss vdd
 Xsg13_hv_pmos_DNCZKC_0 XM2/G1 XM7/G0 vdd XM2/G1 vdd XM7/G0 sg13_hv_pmos_DNCZKC
 XXM1 XM2/G1 in_p vss in_p XM2/G1 vss sg13_hv_nmos_QHASHE
 XXM2 XM2/G1 XM7/G0 vdd XM2/G1 vdd XM7/G0 sg13_hv_pmos_DNCZKC
@@ -573,28 +573,19 @@ Xsg13cmos5l_antennanp_7 high dvdd dvss sg13cmos5l_antennanp
 Xsg13cmos5l_nand3_1_4 sg13cmos5l_inv_2_3/A s2b s1b s0 dvdd dvss sg13cmos5l_nand3_1
 Xx50 vss vout1 vout1 x50/inp vdd x50/ena_b ibias1u_2 p_amp_large
 Xsg13cmos5l_nand3_1_5 sg13cmos5l_inv_2_14/A s2 s1b s0 dvdd dvss sg13cmos5l_nand3_1
-Xlevel_shift_0[0] x14/A x14/Y v7 level_shift_0[0]/vdd_uq0 vss vdd level_shift
-Xlevel_shift_0[1] sg13cmos5l_inv_2_4/A sg13cmos5l_inv_2_4/Y v4 level_shift_0[1]/vdd_uq0
-+ vss vdd level_shift
-Xlevel_shift_0[2] sg13cmos5l_inv_2_0/A sg13cmos5l_inv_2_0/Y v2 level_shift_0[2]/vdd_uq0
-+ vss vdd level_shift
-Xlevel_shift_0[3] sg13cmos5l_inv_2_2/A sg13cmos5l_inv_2_2/Y v0 level_shift_0[3]/vdd_uq0
-+ vss vdd level_shift
-Xlevel_shift_0[4] sg13cmos5l_inv_2_7/Y ena x48/ena level_shift_0[4]/vdd_uq0 vss vdd
-+ level_shift
-Xlevel_shift_1[0] sg13cmos5l_inv_2_1/A sg13cmos5l_inv_2_1/Y v6 level_shift_1[0]/vdd_uq0
-+ vss vdd level_shift
-Xlevel_shift_1[1] sg13cmos5l_inv_2_14/A sg13cmos5l_inv_2_14/Y v5 level_shift_1[1]/vdd_uq0
-+ vss vdd level_shift
-Xlevel_shift_1[2] x35/Y x34/Y v3 level_shift_1[2]/vdd_uq0 vss vdd level_shift
-Xlevel_shift_1[3] sg13cmos5l_inv_2_3/A sg13cmos5l_inv_2_3/Y v1 level_shift_1[3]/vdd_uq0
-+ vss vdd level_shift
-Xlevel_shift_1[4] sg13cmos5l_inv_2_15/Y high x6/ena_b level_shift_1[4]/vdd_uq0 vss
-+ vdd level_shift
-Xlevel_shift_2 ena2 level_shift_2/in_p level_shift_2/out level_shift_2/vdd_uq0 vss
-+ vdd level_shift
+Xlevel_shift_0[0] x14/A x14/Y v7 vss vdd level_shift
+Xlevel_shift_0[1] sg13cmos5l_inv_2_4/A sg13cmos5l_inv_2_4/Y v4 vss vdd level_shift
+Xlevel_shift_0[2] sg13cmos5l_inv_2_0/A sg13cmos5l_inv_2_0/Y v2 vss vdd level_shift
+Xlevel_shift_0[3] sg13cmos5l_inv_2_2/A sg13cmos5l_inv_2_2/Y v0 vss vdd level_shift
+Xlevel_shift_0[4] sg13cmos5l_inv_2_7/Y ena x48/ena vss vdd level_shift
+Xlevel_shift_1[0] sg13cmos5l_inv_2_1/A sg13cmos5l_inv_2_1/Y v6 vss vdd level_shift
+Xlevel_shift_1[1] sg13cmos5l_inv_2_14/A sg13cmos5l_inv_2_14/Y v5 vss vdd level_shift
+Xlevel_shift_1[2] x35/Y x34/Y v3 vss vdd level_shift
+Xlevel_shift_1[3] sg13cmos5l_inv_2_3/A sg13cmos5l_inv_2_3/Y v1 vss vdd level_shift
+Xlevel_shift_1[4] sg13cmos5l_inv_2_15/Y high x6/ena_b vss vdd level_shift
+Xlevel_shift_2 ena2 level_shift_2/in_p level_shift_2/out vss vdd level_shift
 Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
-Xlevel_shift_3 ena1 level_shift_3/in_p x50/ena_b level_shift_3/vdd_uq0 vss vdd level_shift
+Xlevel_shift_3 ena1 level_shift_3/in_p x50/ena_b vss vdd level_shift
 Xx34 x34/Y x35/Y dvdd dvss sg13cmos5l_inv_2
 Xx13 x14/A s2 s1 s0 dvdd dvss sg13cmos5l_nand3_1
 Xx35 x35/Y s2b s1 s0 dvdd dvss sg13cmos5l_nand3_1

@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774719096
+timestamp 1774748448
 << metal1 >>
 rect -10318 -12898 -10118 -12698
 rect -9707 -12887 -9507 -12687
@@ -98,19 +98,19 @@ timestamp 1774369900
 transform -1 0 -10115 0 -1 -26270
 box -221 -70 221 70
 use via_Y6ZX9Q  via_Y6ZX9Q_0 paramcells
-timestamp 1774641594
+timestamp 1774721386
 transform 1 0 -10288 0 1 -28054
 box -29 -111 29 111
 use via_Y6ZX9Q  via_Y6ZX9Q_1
-timestamp 1774641594
+timestamp 1774721386
 transform 1 0 -7920 0 1 -25734
 box -29 -111 29 111
 use bandgap_unbuffered  x1
-timestamp 1774719096
+timestamp 1774748448
 transform 1 0 0 0 1 -9600
 box -10352 -16605 9888 -3073
 use se_folded_cascode_np_ab  x2
-timestamp 1774633498
+timestamp 1774748448
 transform 1 0 -11832 0 1 -30638
 box 1460 -3434 26037 4230
 << labels >>

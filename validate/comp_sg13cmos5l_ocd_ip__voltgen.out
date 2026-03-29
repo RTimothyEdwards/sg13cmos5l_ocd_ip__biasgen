@@ -288,9 +288,7 @@ Flattening unmatched subcell sg13_hv_nmos_QHASHE in circuit level_shift (0)(2 in
 Flattening unmatched subcell sg13_hv_nmos_QBGVHE in circuit level_shift (0)(3 instances)
 Flattening unmatched subcell sg13_hv_pmos_ZPCZKC in circuit level_shift (0)(2 instances)
 
-Cell level_shift (0) disconnected node: vdd_uq0
 Class level_shift (0):  Merged 12 parallel devices.
-Cell level_shift (0) disconnected node: vdd_uq0
 Subcircuit summary:
 Circuit 1: level_shift                                                       |Circuit 2: level_shift                                                       
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
@@ -299,7 +297,7 @@ sg13_hv_nmos (10->4)                                                         |sg
 Number of devices: 8                                                         |Number of devices: 8                                                         
 Number of nets: 8                                                            |Number of nets: 8                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: level_shift                                                       |Circuit 2: level_shift                                                       
@@ -309,7 +307,6 @@ in_p                                                                         |in
 in_n                                                                         |in_n                                                                         
 vss                                                                          |vss                                                                          
 vdd                                                                          |vdd                                                                          
-vdd_uq0                                                                      |(no matching pin)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes level_shift and level_shift are equivalent.
