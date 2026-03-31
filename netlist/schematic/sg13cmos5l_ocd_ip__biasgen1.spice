@@ -1,4 +1,4 @@
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__biasgen1.sch
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__biasgen1.sch
 .subckt sg13cmos5l_ocd_ip__biasgen1 ena avdd avss ref_in dvdd vbg ref_sel_vbg dvss bandgap_source_ibias bandgap_source[4]
 + bandgap_source[3] bandgap_source[2] bandgap_source[1] bandgap_source[0] bandgap_sink[4] bandgap_sink[3] bandgap_sink[2] bandgap_sink[1]
 + bandgap_sink[0] voltgen_source1[4] voltgen_source1[3] voltgen_source1[2] voltgen_source1[1] voltgen_source1[0] bandgap_sink_ibias
@@ -66,8 +66,8 @@ x9[0] avdd pbias pcasc avdd net3 avdd avdd bias_pstack
 .ends
 
 * expanding   symbol:  bias_generator_fe.sym # of pins=19
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_fe.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_fe.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_fe.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_fe.sch
 .subckt bias_generator_fe avdd ena vbg src_test0 avss dvdd ena_src_test0 ref_sel_vbg ref_in dvss nbias pcasc pbias snk_test0
 + ena_snk_test0 ncasc ref_sel_fine ref_sel_coarse shld2
 *.PININFO ref_in:I avss:B ref_sel_vbg:I avdd:B ena_src_test0:I ena_snk_test0:I src_test0:B snk_test0:B vbg:I ena:I dvdd:B dvss:B
@@ -168,8 +168,8 @@ x3[0] nset avss ncasc nbias avss avss avss bias_nstack
 
 
 * expanding   symbol:  bias_generator_be0n.sym # of pins=10
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0n.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0n.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0n.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0n.sch
 .subckt bias_generator_be0n dvdd dvss avdd nbias avss sink_ena[4] sink_ena[3] sink_ena[2] sink_ena[1] sink_ena[0] sink_ibias ncasc
 + shld2 shld3
 *.PININFO avss:B avdd:B dvdd:B dvss:B nbias:I ncasc:I sink_ibias:B sink_ena[4:0]:I shld2:B shld3:B
@@ -228,8 +228,8 @@ x5[0] net1[0] sink_ena[0] dvdd dvss sg13cmos5l_inv_2
 
 
 * expanding   symbol:  bias_generator_be0p.sym # of pins=11
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0p.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0p.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0p.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be0p.sch
 .subckt bias_generator_be0p dvdd dvss avdd pcasc pbias source_ena[4] source_ena[3] source_ena[2] source_ena[1] source_ena[0]
 + source_ibias avss shld2 shld3 shld_vdd
 *.PININFO avss:B avdd:B dvdd:B dvss:B pcasc:I pbias:I source_ena[4:0]:I source_ibias:B shld2:B shld3:B shld_vdd:B
@@ -288,8 +288,8 @@ x3[0] shld_vdd pbias pcasc source_ena_b_3v3[4] source_ibias shld2 shld3 bias_pst
 
 
 * expanding   symbol:  bias_generator_be1n.sym # of pins=10
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1n.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1n.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1n.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1n.sch
 .subckt bias_generator_be1n dvdd dvss avdd nbias avss sink_ena[7] sink_ena[6] sink_ena[5] sink_ena[4] sink_ena[3] sink_ena[2]
 + sink_ena[1] sink_ena[0] sink_ibias ncasc shld2 shld3
 *.PININFO avss:B avdd:B dvdd:B dvss:B nbias:I ncasc:I sink_ibias:B sink_ena[7:0]:I shld2:B shld3:B
@@ -584,8 +584,8 @@ x17[0] sink_ibias sink_ena_3v3[7] ncasc nbias avss shld2 shld3 bias_nstack
 
 
 * expanding   symbol:  bias_generator_be1p.sym # of pins=11
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1p.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1p.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1p.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_generator_be1p.sch
 .subckt bias_generator_be1p dvdd dvss avdd pcasc pbias source_ena[7] source_ena[6] source_ena[5] source_ena[4] source_ena[3]
 + source_ena[2] source_ena[1] source_ena[0] source_ibias avss shld2 shld3 shld_vdd
 *.PININFO avss:B avdd:B dvdd:B dvss:B pcasc:I pbias:I source_ena[7:0]:I source_ibias:B shld2:B shld3:B shld_vdd:B
@@ -880,8 +880,8 @@ x14[0] shld_vdd pbias pcasc source_ena_b_3v3[7] source_ibias shld2 shld3 bias_ps
 
 
 * expanding   symbol:  bias_nstack.sym # of pins=7
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nstack.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nstack.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nstack.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nstack.sch
 .subckt bias_nstack itail ena ncasc nbias avss shld2 shld3
 *.PININFO avss:B ena:I nbias:I itail:B ncasc:I shld2:B shld3:B
 XM3 net1 nbias avss avss sg13_hv_nmos w=3u l=1u ng=1 m=1
@@ -891,8 +891,8 @@ XM12 itail ena net2 avss sg13_hv_nmos w=3u l=1u ng=1 m=1
 
 
 * expanding   symbol:  bias_pstack.sym # of pins=7
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pstack.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pstack.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pstack.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pstack.sch
 .subckt bias_pstack avdd pbias pcasc enb itail shld2 shld3
 *.PININFO avdd:B itail:B enb:I pcasc:I pbias:I shld2:B shld3:B
 XM13 net1 pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
@@ -902,8 +902,8 @@ XM14 net2 pcasc net1 avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
 
 
 * expanding   symbol:  level_shift.sym # of pins=3
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/level_shift.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/level_shift.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/level_shift.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/level_shift.sch
 .subckt level_shift in_n in_p out vdd vss
 *.PININFO in_n:I in_p:I out:O
 XM1 net1 in_p vss vss sg13_hv_nmos w=4u l=0.5u ng=1 m=2
@@ -918,8 +918,8 @@ XM8 out S2_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=4
 
 
 * expanding   symbol:  bias_nset.sym # of pins=7
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nset.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nset.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nset.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nset.sch
 .subckt bias_nset itail ena ncasc nbias avss shld2 shld3
 *.PININFO avss:B ena:I itail:B nbias:O ncasc:O shld2:B shld3:B
 XM3 nbias nbias avss avss sg13_hv_nmos w=3u l=1u ng=1 m=1
@@ -929,8 +929,8 @@ XM12 itail ena ncasc avss sg13_hv_nmos w=3u l=1u ng=1 m=1
 
 
 * expanding   symbol:  bias_pset.sym # of pins=6
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset.sch
 .subckt bias_pset avdd pbias pcasc enb itail shld3
 *.PININFO pbias:B itail:B enb:I pcasc:O avdd:B shld3:B
 XM13 pbias pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
@@ -940,8 +940,8 @@ XM14 pcasc pcasc pbias avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
 
 
 * expanding   symbol:  bias_amp_large.sym # of pins=7
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_amp_large.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_amp_large.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_amp_large.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_amp_large.sch
 .subckt bias_amp_large avdd out inn inp nbias avss ena
 *.PININFO inp:I nbias:I inn:I out:O avdd:B avss:B ena:I
 XM1 net1 nbias avss avss sg13_hv_nmos w=20u l=1u ng=20 m=1
@@ -955,8 +955,8 @@ XM7 avdd avdd avdd avdd sg13_hv_pmos w=2u l=0.5u ng=2 m=2
 
 
 * expanding   symbol:  bias_pset2.sym # of pins=7
-** sym_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset2.sym
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset2.sch
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset2.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_openframe/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset2.sch
 .subckt bias_pset2 avdd pbias pcasc enb itail shld2 shld3
 *.PININFO pbias:B itail:B enb:I pcasc:O avdd:B shld2:B shld3:B
 XM13 pbias pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1

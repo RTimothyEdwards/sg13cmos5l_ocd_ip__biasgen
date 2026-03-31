@@ -11,110 +11,110 @@ N 130 -130 250 -130 { lab=vss}
 N 130 -180 130 -160 { lab=#net1}
 N 130 -180 270 -180 { lab=#net1}
 N 130 -100 130 -70 { lab=bot}
-N 20 -130 90 -130 { lab=ctl[0]}
+N 20 -130 90 -130 { lab=ctrl[0]}
 N 270 -180 270 -160 { lab=#net1}
 N 130 -250 250 -250 { lab=vss}
 N 130 -300 130 -280 { lab=#net2}
 N 130 -300 270 -300 { lab=#net2}
-N 20 -250 90 -250 { lab=ctl[1]}
+N 20 -250 90 -250 { lab=ctrl[1]}
 N 270 -220 270 -180 { lab=#net1}
 N 270 -300 270 -280 { lab=#net2}
 N 130 -220 130 -200 { lab=bot}
 N 130 -370 250 -370 { lab=vss}
 N 130 -420 130 -400 { lab=#net3}
 N 130 -420 270 -420 { lab=#net3}
-N 20 -370 90 -370 { lab=ctl[2]}
+N 20 -370 90 -370 { lab=ctrl[2]}
 N 270 -340 270 -300 { lab=#net2}
 N 270 -420 270 -400 { lab=#net3}
 N 130 -340 130 -320 { lab=bot}
 N 130 -490 250 -490 { lab=vss}
 N 130 -540 130 -520 { lab=#net4}
 N 130 -540 270 -540 { lab=#net4}
-N 20 -490 90 -490 { lab=ctl[3]}
+N 20 -490 90 -490 { lab=ctrl[3]}
 N 270 -460 270 -420 { lab=#net3}
 N 270 -540 270 -520 { lab=#net4}
 N 130 -460 130 -440 { lab=bot}
 N 130 -610 250 -610 { lab=vss}
 N 130 -660 130 -640 { lab=#net5}
 N 130 -660 270 -660 { lab=#net5}
-N 20 -610 90 -610 { lab=ctl[4]}
+N 20 -610 90 -610 { lab=ctrl[4]}
 N 270 -580 270 -540 { lab=#net4}
 N 270 -660 270 -640 { lab=#net5}
 N 130 -580 130 -560 { lab=bot}
 N 130 -730 250 -730 { lab=vss}
 N 130 -780 130 -760 { lab=#net6}
 N 130 -780 270 -780 { lab=#net6}
-N 20 -730 90 -730 { lab=ctl[5]}
+N 20 -730 90 -730 { lab=ctrl[5]}
 N 270 -700 270 -660 { lab=#net5}
 N 270 -780 270 -760 { lab=#net6}
 N 130 -700 130 -680 { lab=bot}
 N 130 -850 250 -850 { lab=vss}
 N 130 -900 130 -880 { lab=#net7}
 N 130 -900 270 -900 { lab=#net7}
-N 20 -850 90 -850 { lab=ctl[6]}
+N 20 -850 90 -850 { lab=ctrl[6]}
 N 270 -820 270 -780 { lab=#net6}
 N 270 -900 270 -880 { lab=#net7}
 N 130 -820 130 -800 { lab=bot}
 N 130 -970 250 -970 { lab=vss}
 N 130 -1020 130 -1000 { lab=#net8}
 N 130 -1020 270 -1020 { lab=#net8}
-N 20 -970 90 -970 { lab=ctl[7]}
+N 20 -970 90 -970 { lab=ctrl[7]}
 N 270 -940 270 -900 { lab=#net7}
 N 270 -1020 270 -1000 { lab=#net8}
 N 130 -940 130 -920 { lab=bot}
 N 130 -1570 250 -1570 { lab=vss}
 N 130 -1620 130 -1600 { lab=#net9}
 N 130 -1620 270 -1620 { lab=#net9}
-N 20 -1570 90 -1570 { lab=ctl[12]}
+N 20 -1570 90 -1570 { lab=ctrl[12]}
 N 270 -1540 270 -1500 { lab=#net10}
 N 270 -1620 270 -1600 { lab=#net9}
 N 130 -1540 130 -1520 { lab=bot}
 N 130 -1690 250 -1690 { lab=vss}
 N 130 -1740 130 -1720 { lab=#net11}
 N 130 -1740 270 -1740 { lab=#net11}
-N 20 -1690 90 -1690 { lab=ctl[13]}
+N 20 -1690 90 -1690 { lab=ctrl[13]}
 N 270 -1660 270 -1620 { lab=#net9}
 N 270 -1740 270 -1720 { lab=#net11}
 N 130 -1660 130 -1640 { lab=bot}
 N 130 -1810 250 -1810 { lab=vss}
 N 130 -1860 130 -1840 { lab=#net12}
 N 130 -1860 270 -1860 { lab=#net12}
-N 20 -1810 90 -1810 { lab=ctl[14]}
+N 20 -1810 90 -1810 { lab=ctrl[14]}
 N 270 -1780 270 -1740 { lab=#net11}
 N 270 -1860 270 -1840 { lab=#net12}
 N 130 -1780 130 -1760 { lab=bot}
 N 130 -1930 250 -1930 { lab=vss}
 N 130 -1980 130 -1960 { lab=top}
 N 130 -1980 270 -1980 { lab=top}
-N 20 -1930 90 -1930 { lab=ctl[15]}
+N 20 -1930 90 -1930 { lab=ctrl[15]}
 N 270 -1900 270 -1860 { lab=#net12}
 N 270 -1980 270 -1960 { lab=top}
 N 130 -1900 130 -1880 { lab=bot}
 N 130 -1090 250 -1090 { lab=vss}
 N 130 -1140 130 -1120 { lab=#net13}
 N 130 -1140 270 -1140 { lab=#net13}
-N 20 -1090 90 -1090 { lab=ctl[8]}
+N 20 -1090 90 -1090 { lab=ctrl[8]}
 N 270 -1060 270 -1020 { lab=#net8}
 N 270 -1140 270 -1120 { lab=#net13}
 N 130 -1060 130 -1040 { lab=bot}
 N 130 -1210 250 -1210 { lab=vss}
 N 130 -1260 130 -1240 { lab=#net14}
 N 130 -1260 270 -1260 { lab=#net14}
-N 20 -1210 90 -1210 { lab=ctl[9]}
+N 20 -1210 90 -1210 { lab=ctrl[9]}
 N 270 -1180 270 -1140 { lab=#net13}
 N 270 -1260 270 -1240 { lab=#net14}
 N 130 -1180 130 -1160 { lab=bot}
 N 130 -1330 250 -1330 { lab=vss}
 N 130 -1380 130 -1360 { lab=#net15}
 N 130 -1380 270 -1380 { lab=#net15}
-N 20 -1330 90 -1330 { lab=ctl[10]}
+N 20 -1330 90 -1330 { lab=ctrl[10]}
 N 270 -1300 270 -1260 { lab=#net14}
 N 270 -1380 270 -1360 { lab=#net15}
 N 130 -1300 130 -1280 { lab=bot}
 N 130 -1450 250 -1450 { lab=vss}
 N 130 -1500 130 -1480 { lab=#net10}
 N 130 -1500 270 -1500 { lab=#net10}
-N 20 -1450 90 -1450 { lab=ctl[11]}
+N 20 -1450 90 -1450 { lab=ctrl[11]}
 N 270 -1420 270 -1380 { lab=#net15}
 N 270 -1500 270 -1480 { lab=#net10}
 N 130 -1420 130 -1400 { lab=bot}
@@ -142,7 +142,7 @@ ng=1
 m=1
 }
 C {devices/lab_wire.sym} 130 -130 0 1 {name=l14 sig_type=std_logic lab=vss}
-C {devices/lab_wire.sym} 20 -130 0 1 {name=l16 sig_type=std_logic lab=ctl[0]
+C {devices/lab_wire.sym} 20 -130 0 1 {name=l16 sig_type=std_logic lab=ctrl[0]
 }
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 110 -250 0 0 {name=M1
 l=0.5u
@@ -251,41 +251,41 @@ m=1
 C {devices/lab_wire.sym} 130 -1450 0 1 {name=l46 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 130 -1880 0 0 {name=l62 sig_type=std_logic lab=bot
 }
-C {devices/ipin.sym} 100 -40 0 0 {name=p1 lab=ctl[15:0]
+C {devices/ipin.sym} 100 -40 0 0 {name=p1 lab=ctrl[15:0]
 }
 C {devices/iopin.sym} 270 -50 3 1 {name=p3 lab=bot
 }
 C {devices/iopin.sym} 270 -2000 1 1 {name=p4 lab=top
 }
-C {devices/lab_wire.sym} 20 -250 0 1 {name=l1 sig_type=std_logic lab=ctl[1]
+C {devices/lab_wire.sym} 20 -250 0 1 {name=l1 sig_type=std_logic lab=ctrl[1]
 }
-C {devices/lab_wire.sym} 20 -370 0 1 {name=l2 sig_type=std_logic lab=ctl[2]
+C {devices/lab_wire.sym} 20 -370 0 1 {name=l2 sig_type=std_logic lab=ctrl[2]
 }
-C {devices/lab_wire.sym} 20 -490 0 1 {name=l3 sig_type=std_logic lab=ctl[3]
+C {devices/lab_wire.sym} 20 -490 0 1 {name=l3 sig_type=std_logic lab=ctrl[3]
 }
-C {devices/lab_wire.sym} 20 -610 0 1 {name=l4 sig_type=std_logic lab=ctl[4]
+C {devices/lab_wire.sym} 20 -610 0 1 {name=l4 sig_type=std_logic lab=ctrl[4]
 }
-C {devices/lab_wire.sym} 20 -730 0 1 {name=l5 sig_type=std_logic lab=ctl[5]
+C {devices/lab_wire.sym} 20 -730 0 1 {name=l5 sig_type=std_logic lab=ctrl[5]
 }
-C {devices/lab_wire.sym} 20 -850 0 1 {name=l6 sig_type=std_logic lab=ctl[6]
+C {devices/lab_wire.sym} 20 -850 0 1 {name=l6 sig_type=std_logic lab=ctrl[6]
 }
-C {devices/lab_wire.sym} 20 -970 0 1 {name=l7 sig_type=std_logic lab=ctl[7]
+C {devices/lab_wire.sym} 20 -970 0 1 {name=l7 sig_type=std_logic lab=ctrl[7]
 }
-C {devices/lab_wire.sym} 20 -1090 0 1 {name=l8 sig_type=std_logic lab=ctl[8]
+C {devices/lab_wire.sym} 20 -1090 0 1 {name=l8 sig_type=std_logic lab=ctrl[8]
 }
-C {devices/lab_wire.sym} 20 -1210 0 1 {name=l9 sig_type=std_logic lab=ctl[9]
+C {devices/lab_wire.sym} 20 -1210 0 1 {name=l9 sig_type=std_logic lab=ctrl[9]
 }
-C {devices/lab_wire.sym} 20 -1330 0 1 {name=l10 sig_type=std_logic lab=ctl[10]
+C {devices/lab_wire.sym} 20 -1330 0 1 {name=l10 sig_type=std_logic lab=ctrl[10]
 }
-C {devices/lab_wire.sym} 20 -1450 0 1 {name=l11 sig_type=std_logic lab=ctl[11]
+C {devices/lab_wire.sym} 20 -1450 0 1 {name=l11 sig_type=std_logic lab=ctrl[11]
 }
-C {devices/lab_wire.sym} 20 -1570 0 1 {name=l12 sig_type=std_logic lab=ctl[12]
+C {devices/lab_wire.sym} 20 -1570 0 1 {name=l12 sig_type=std_logic lab=ctrl[12]
 }
-C {devices/lab_wire.sym} 20 -1690 0 1 {name=l13 sig_type=std_logic lab=ctl[13]
+C {devices/lab_wire.sym} 20 -1690 0 1 {name=l13 sig_type=std_logic lab=ctrl[13]
 }
-C {devices/lab_wire.sym} 20 -1810 0 1 {name=l15 sig_type=std_logic lab=ctl[14]
+C {devices/lab_wire.sym} 20 -1810 0 1 {name=l15 sig_type=std_logic lab=ctrl[14]
 }
-C {devices/lab_wire.sym} 20 -1930 0 1 {name=l19 sig_type=std_logic lab=ctl[15]
+C {devices/lab_wire.sym} 20 -1930 0 1 {name=l19 sig_type=std_logic lab=ctrl[15]
 }
 C {devices/lab_wire.sym} 130 -1760 0 0 {name=l20 sig_type=std_logic lab=bot
 }
