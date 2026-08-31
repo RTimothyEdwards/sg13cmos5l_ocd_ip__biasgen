@@ -369,7 +369,7 @@ C {devices/lab_wire.sym} 1630 -420 0 1 {name=l35 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 1630 10 0 1 {name=l36 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1360 -220 0 1 {name=l37 sig_type=std_logic lab=outs1
 }
-C {capa.sym} 1550 -220 1 0 {name=C1[1:0] value=1.30p
+C {capa.sym} 1550 -220 3 0 {name=C1[1:0] value=1.30p
 }
 C {devices/lab_wire.sym} 1140 -120 0 1 {name=l3 sig_type=std_logic lab=vbn2
 }

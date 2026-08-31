@@ -1,8 +1,8 @@
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__voltgen.sch
-.subckt sg13cmos5l_ocd_ip__voltgen dvdd dvss vdd s[2] s[1] s[0] vbg vss ibias1u_1 vout2 ibias1u_2 ena vout1 ena1 ena2 ibias1u_3
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__voltgen_v2.sch
+.subckt sg13cmos5l_ocd_ip__voltgen_v2 dvdd dvss vdd s[2] s[1] s[0] vbg vss ibias1u_1 vout2 ibias1u_2 ena vout1 ena1 ena2 ibias1u_3
 + high
 *.PININFO vdd:B vss:B vbg:I vout1:O ibias1u_1:B s[2:0]:I ibias1u_2:B dvdd:B dvss:B ena:I vout2:O ibias1u_3:B ena1:I ena2:I high:I
-C1 vdd net1 1.64p m=1
+C1 vdd net1 941.8f m=1
 XM1 vref7 net1 vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=1
 XR1 vref7 vref6 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
 XR2 vref6 vref5 vss rhigh w=0.5e-6 l=2.5e-6 m=1 b=0
@@ -82,6 +82,8 @@ x63 high dvdd dvss sg13cmos5l_antennanp
 x64 ena dvdd dvss sg13cmos5l_antennanp
 x65 ena1 dvdd dvss sg13cmos5l_antennanp
 x66 ena2 dvdd dvss sg13cmos5l_antennanp
+C2 vdd net1 483.9f m=1
+C3 vdd net1 233.3f m=1
 .ends
 
 * expanding   symbol:  xgate.sym # of pins=6

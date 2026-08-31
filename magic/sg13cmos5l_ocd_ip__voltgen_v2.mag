@@ -1,7 +1,22 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774816855
+timestamp 1788124612
+<< checkpaint >>
+rect 14169 -3558 24396 2227
+rect 7970 -9481 24396 -3558
+rect -415 -14973 24396 -9481
+rect -415 -15012 9371 -14973
+rect 14169 -15284 24396 -14973
+<< error_s >>
+rect 5791 -9817 5798 -9798
+rect 6355 -9817 6367 -9800
+rect 7303 -9817 7335 -9800
+rect 7863 -9817 7879 -9804
+rect 5791 -10683 5810 -10666
+rect 6342 -10681 6367 -10666
+rect 7303 -10681 7320 -10664
+rect 7872 -10681 7879 -10661
 << digisub >>
 rect 2244 -11190 2648 -9364
 rect 3460 -11188 4160 -9364
@@ -14,6 +29,10 @@ rect 2578 -8354 4327 -8223
 rect 4485 -8354 9366 -8223
 rect 2578 -8893 9366 -8354
 << metal1 >>
+rect 5948 212 6035 362
+rect 8660 220 8758 368
+rect 11184 353 11352 413
+rect 11028 223 11096 353
 rect 15588 -1076 16275 -79
 rect 1787 -4610 5816 -4426
 rect 11610 -4506 15588 -4426
@@ -91,6 +110,12 @@ rect 9769 -12968 10017 -5587
 rect 11513 -13118 14213 -12895
 rect 1623 -13281 15980 -13118
 << metal2 >>
+rect 5948 212 6035 362
+rect 8660 220 8758 368
+rect 11002 224 11101 354
+rect 11154 299 11417 430
+rect 11263 124 11417 299
+rect 11147 84 11417 124
 rect 11753 -1533 11804 -1009
 rect 1675 -1697 1933 -1640
 rect 11286 -1869 11747 -1816
@@ -299,13 +324,21 @@ rect 12699 -12953 13027 -5646
 rect 15611 -12819 15756 -5659
 rect 15602 -12971 15756 -12819
 << metal3 >>
-rect 11364 64 11483 264
+rect 5948 212 6035 362
+rect 8660 220 8758 368
+rect 11245 63 11306 1963
+rect 16002 1766 16202 1966
+rect 16002 193 16142 1766
+rect 11414 63 11475 64
+rect 11245 2 11476 63
+rect 15812 53 16142 193
+rect 15812 22 15952 53
 rect 1685 -5947 1734 -1643
-rect 11414 -2390 11475 64
-rect 15776 22 15976 222
-rect 15811 -1013 15951 22
+rect 11414 -2390 11475 2
+rect 15811 -1013 15952 22
 rect 11606 -1153 11741 -1013
-rect 15376 -1153 15951 -1013
+rect 15376 -1153 15952 -1013
+rect 15812 -1154 15952 -1153
 rect 16975 -1242 17172 -1241
 rect 11569 -1303 15939 -1242
 rect 11569 -1754 11630 -1303
@@ -504,6 +537,13 @@ rect 7524 -13132 14626 -13086
 rect 17932 -13280 18132 -13080
 rect 19972 -13283 20172 -13083
 << metal4 >>
+rect 11153 1907 11380 1953
+rect 5948 212 6035 362
+rect 8660 220 8758 368
+rect 11029 230 11092 360
+rect 11164 353 11358 443
+rect 11459 230 11532 357
+rect 11029 167 11532 230
 rect 15713 -1310 17012 -1241
 rect 2024 -4792 2462 -3064
 rect 2798 -4792 3236 -3064
@@ -581,10 +621,18 @@ rect 5835 -13015 16097 -12975
 rect 3033 -13120 15863 -13108
 rect 3033 -13148 18879 -13120
 rect 15804 -13160 18879 -13148
-use capacitor_78Y85C  C1 paramcells
-timestamp 1774397579
+use capacitor_BCZJG3  C1 paramcells
+timestamp 1788123741
 transform -1 0 11199 0 1 -5022
 box 0 0 5252 5252
+use capacitor_KK7B53  capacitor_KK7B53_0 paramcells
+timestamp 1788119166
+transform 0 1 11352 -1 0 1953
+box 0 0 1600 4600
+use capacitor_M46PNM  capacitor_M46PNM_0 paramcells
+timestamp 1788119166
+transform 0 -1 11199 -1 0 1953
+box 0 0 1600 9400
 use hv_inv_1  hv_inv_1_0
 timestamp 1774453470
 transform -1 0 3693 0 -1 -8627
@@ -623,24 +671,24 @@ transform -1 0 9789 0 -1 -8627
 box 423 -1003 1115 266
 use level_shift  level_shift_0
 array 0 4 -1471 0 0 2896
-timestamp 1774816172
+timestamp 1788124612
 transform 0 1 11948 1 0 -7077
 box -12 -1978 1519 918
 use level_shift  level_shift_1
 array 0 4 -1471 0 0 -2896
-timestamp 1774816172
+timestamp 1788124612
 transform 0 -1 13778 1 0 -7077
 box -12 -1978 1519 918
 use level_shift  level_shift_2
-timestamp 1774816172
+timestamp 1788124612
 transform 0 1 3563 -1 0 -11493
 box -12 -1978 1519 918
 use level_shift  level_shift_3
-timestamp 1774816172
+timestamp 1788124612
 transform 0 -1 5393 -1 0 -11493
 box -12 -1978 1519 918
 use se_folded_cascode_p  se_folded_cascode_p_0
-timestamp 1774790409
+timestamp 1788124612
 transform 0 1 18633 -1 0 1361
 box 1134 -2464 14645 3763
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_stdcell
@@ -1427,276 +1475,276 @@ use via_Y6HKGQ  via_Y6HKGQ_1
 timestamp 1774623097
 transform 1 0 9245 0 1 -5848
 box -173 -173 173 173
-use via_Y6Z2DQ  via_Y6Z2DQ_0 sg13cmos5l_ocd_ip__analog_switches/magic/paramcells
-timestamp 1772657197
+use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
+timestamp 1774721386
 transform 0 1 3731 -1 0 -10909
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_1
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3882 -1 0 -11010
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_2
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 4153 -1 0 -9661
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_3
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3732 -1 0 -9372
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_4
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3880 -1 0 -9850
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_5
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3990 -1 0 -10231
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_6
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3988 -1 0 -11174
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_7
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3616 -1 0 -10426
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_8
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3614 -1 0 -9294
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_9
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 5129 -1 0 -9656
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_10
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3990 -1 0 -10018
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_11
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 4849 -1 0 -9838
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_12
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 5308 -1 0 -10032
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_13
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3885 -1 0 -9650
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_14
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 4670 -1 0 -10219
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_15
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 5440 -1 0 -10426
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_16
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 4268 -1 0 -10040
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_17
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3303 -1 0 -10535
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_18
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6082 -1 0 -9755
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_19
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6250 -1 0 -9759
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_20
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6166 -1 0 -10124
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_21
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 5956 0 -1 -10761
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_22
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6414 -1 0 -9295
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_23
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 6706 0 -1 -10751
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_24
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 7461 0 -1 -10759
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_25
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 8218 0 -1 -10758
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_26
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 8332 0 -1 -9893
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_27
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 7557 0 -1 -9888
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_28
-timestamp 1772657197
+timestamp 1774721386
 transform 0 -1 6779 1 0 -9841
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_29
-timestamp 1772657197
+timestamp 1774721386
 transform 0 -1 6003 1 0 -9942
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_30
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6401 -1 0 -9482
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_31
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6403 -1 0 -10268
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_32
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6591 -1 0 -9574
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_33
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 6587 -1 0 -10478
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_34
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7274 -1 0 -9569
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_35
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7269 -1 0 -10466
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_36
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7162 -1 0 -9468
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_37
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7165 -1 0 -10342
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_38
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7838 -1 0 -9458
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_39
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7836 -1 0 -10326
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_40
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 8099 -1 0 -9574
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_41
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 8102 -1 0 -10437
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_42
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 3632 -1 0 -10618
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_43
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 4095 -1 0 -10640
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_44
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 3352 0 -1 -11328
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_45
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 4635 0 -1 -11327
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_46
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 4630 0 -1 -11210
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_47
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 4634 0 -1 -10764
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_48
-timestamp 1772657197
+timestamp 1774721386
 transform -1 0 4634 0 -1 -10463
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_49
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7550 -1 0 -12177
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_50
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7836 -1 0 -12173
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_51
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7549 -1 0 -12730
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_52
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 7839 -1 0 -12731
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_53
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9639 -1 0 -12077
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_54
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9899 -1 0 -10923
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_55
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 5751 -1 0 -9572
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_56
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9190 -1 0 -10778
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_57
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9897 -1 0 -10469
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_58
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9777 -1 0 -9969
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_59
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9880 -1 0 -9751
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_60
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9547 -1 0 -9847
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_61
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9630 -1 0 -9315
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_62
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9882 -1 0 -9337
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_63
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9898 -1 0 -8293
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_64
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9816 -1 0 -8455
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_65
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9724 -1 0 -8611
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_66
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 9716 -1 0 -7877
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_67
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 5750 -1 0 -10492
 box -70 -29 70 29
 use via_Y6Z8HQ  via_Y6Z8HQ_0 paramcells
@@ -1724,7 +1772,7 @@ timestamp 1774623097
 transform 1 0 6521 0 1 -11490
 box -221 -29 221 29
 use via_Y6ZD6N_x2  via_Y6ZD6N_0 paramcells
-timestamp 1774732395
+timestamp 1774454023
 transform 1 0 5491 0 1 -4696
 box -29 -111 29 111
 use via_Y6ZJGQ  via_Y6ZJGQ_0 paramcells
@@ -1968,7 +2016,7 @@ timestamp 1774623097
 transform 1 0 13695 0 1 -5159
 box -2141 -221 2141 221
 use xgate  x6
-timestamp 1774790409
+timestamp 1788119166
 transform 0 1 2761 -1 0 -5836
 box 422 -1074 1736 -130
 use sg13cmos5l_nand3_1  x13
@@ -1996,39 +2044,39 @@ timestamp 1774748448
 transform -1 0 16241 0 -1 -3736
 box 493 -3878 4748 892
 use xgate  xgate_0
-timestamp 1774790409
+timestamp 1788119166
 transform 0 -1 2319 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_1
-timestamp 1774790409
+timestamp 1788119166
 transform 0 1 4285 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_2
-timestamp 1774790409
+timestamp 1788119166
 transform 0 -1 3843 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_3
-timestamp 1774790409
+timestamp 1788119166
 transform 0 1 5809 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_4
-timestamp 1774790409
+timestamp 1788119166
 transform 0 -1 5367 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_5
-timestamp 1774790409
+timestamp 1788119166
 transform 0 -1 6891 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_6
-timestamp 1774790409
+timestamp 1788119166
 transform 0 1 7333 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_7
-timestamp 1774790409
+timestamp 1788119166
 transform 0 1 8857 -1 0 -5836
 box 422 -1074 1736 -130
 use xgate  xgate_8
-timestamp 1774790409
+timestamp 1788119166
 transform 0 -1 8415 -1 0 -5836
 box 422 -1074 1736 -130
 use sg13_hv_pmos_QH8WBX  XM1 paramcells
@@ -2080,10 +2128,6 @@ flabel metal1 2261 -9284 2461 -9148 0 FreeSans 1600 0 0 0 dvss
 port 1 nsew
 flabel metal1 2229 -11418 2429 -11288 0 FreeSans 1600 0 0 0 dvdd
 port 0 nsew
-flabel metal3 11364 64 11483 264 0 FreeSans 1600 0 0 0 ibias1u_2
-port 10 nsew
-flabel metal3 15776 22 15976 222 0 FreeSans 1600 0 0 0 vout1
-port 12 nsew
 flabel metal3 17932 -13280 18132 -13080 0 FreeSans 1600 0 0 0 vout2
 port 9 nsew
 flabel metal3 19972 -13283 20172 -13083 0 FreeSans 1600 0 0 0 ibias1u_3
@@ -2104,4 +2148,8 @@ flabel metal2 1713 -10973 1913 -10897 0 FreeSans 1600 0 0 0 ena1
 port 13 nsew
 flabel metal2 1713 -10685 1913 -10590 0 FreeSans 1600 0 0 0 ena2
 port 14 nsew
+flabel metal3 11245 1763 11306 1963 0 FreeSans 1600 0 0 0 ibias1u_2
+port 10 nsew
+flabel metal3 16002 1766 16202 1966 0 FreeSans 1600 0 0 0 vout1
+port 12 nsew
 << end >>

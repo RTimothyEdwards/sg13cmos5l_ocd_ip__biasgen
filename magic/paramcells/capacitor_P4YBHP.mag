@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774369900
+timestamp 1788134737
 << metal1 >>
 rect 0 3066 53 3220
 rect 97 3219 2470 3220
@@ -215,9 +215,9 @@ port 1 nsew
 rlabel via3 1235 3218 1235 3218 0 c2
 port 2 nsew
 << properties >>
-string device devcap None 0 0 1 1 440.3190 c1 0 0 c2 0 0
+string device devcap None 0 0 1 1 252.8469 c1 0 0 c2 0 0
 string FIXED_BBOX 0 0 2470 3220
 string gencell capacitor
 string library sg13cmos5l
-string parameters w 12.35 l 16.1 value 255.901 class capacitor mmin 1 mmax 4 square 1 subblock 0 lmin 2.00 wmin 2.00 lmax 100.0 wmax 100.0 val {}
+string parameters w 12.35 l 16.1 value 255.901 class capacitor mmin metal1 mmax metal4 square 0 subblock 0 lmin 2.00 wmin 2.00 lmax 100.0 wmax 100.0
 << end >>

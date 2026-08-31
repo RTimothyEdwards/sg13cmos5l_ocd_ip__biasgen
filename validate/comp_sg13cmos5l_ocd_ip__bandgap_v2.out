@@ -270,26 +270,26 @@ Subcircuit pins:
 Circuit 1: bg_trim                                                           |Circuit 2: bg_trim                                                           
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 top                                                                          |top                                                                          
-ctrl[15]                                                                     |ctl[15] **Mismatch**                                                         
-ctrl[14]                                                                     |ctl[14] **Mismatch**                                                         
-ctrl[1]                                                                      |ctl[1] **Mismatch**                                                          
-ctrl[13]                                                                     |ctl[13] **Mismatch**                                                         
-ctrl[12]                                                                     |ctl[12] **Mismatch**                                                         
-ctrl[3]                                                                      |ctl[3] **Mismatch**                                                          
-ctrl[10]                                                                     |ctl[10] **Mismatch**                                                         
-ctrl[5]                                                                      |ctl[5] **Mismatch**                                                          
-ctrl[8]                                                                      |ctl[8] **Mismatch**                                                          
-ctrl[7]                                                                      |ctl[7] **Mismatch**                                                          
-ctrl[6]                                                                      |ctl[6] **Mismatch**                                                          
-ctrl[9]                                                                      |ctl[9] **Mismatch**                                                          
-ctrl[4]                                                                      |ctl[4] **Mismatch**                                                          
-ctrl[11]                                                                     |ctl[11] **Mismatch**                                                         
-ctrl[2]                                                                      |ctl[2] **Mismatch**                                                          
-ctrl[0]                                                                      |ctl[0] **Mismatch**                                                          
+ctrl[15]                                                                     |ctrl[15]                                                                     
+ctrl[14]                                                                     |ctrl[14]                                                                     
+ctrl[1]                                                                      |ctrl[1]                                                                      
+ctrl[13]                                                                     |ctrl[13]                                                                     
+ctrl[12]                                                                     |ctrl[12]                                                                     
+ctrl[3]                                                                      |ctrl[3]                                                                      
+ctrl[10]                                                                     |ctrl[10]                                                                     
+ctrl[5]                                                                      |ctrl[5]                                                                      
+ctrl[8]                                                                      |ctrl[8]                                                                      
+ctrl[7]                                                                      |ctrl[7]                                                                      
+ctrl[6]                                                                      |ctrl[6]                                                                      
+ctrl[9]                                                                      |ctrl[9]                                                                      
+ctrl[4]                                                                      |ctrl[4]                                                                      
+ctrl[11]                                                                     |ctrl[11]                                                                     
+ctrl[2]                                                                      |ctrl[2]                                                                      
+ctrl[0]                                                                      |ctrl[0]                                                                      
 bot                                                                          |bot                                                                          
 vss                                                                          |vss                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Cell pin lists for bg_trim and bg_trim altered to match.
+Cell pin lists are equivalent.
 Device classes bg_trim and bg_trim are equivalent.
 
 Subcircuit summary:
@@ -310,18 +310,20 @@ VDD                                                                          |VD
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sg13cmos5l_decap_4 and sg13cmos5l_decap_4 are equivalent.
-Flattening unmatched subcell pnpMPA_9DZCCL in circuit bandgap_unbuffered (0)(9 instances)
-Flattening unmatched subcell sg13_hv_pmos_NWA9LU in circuit bandgap_unbuffered (0)(2 instances)
-Flattening unmatched subcell sg13_hv_nmos_BEVMZW in circuit bandgap_unbuffered (0)(2 instances)
-Flattening unmatched subcell sg13_hv_pmos_WYN5QB in circuit bandgap_unbuffered (0)(3 instances)
-Flattening unmatched subcell capacitor_KFUPMY in circuit bandgap_unbuffered (0)(1 instance)
-Flattening unmatched subcell capacitor_BC6V6V in circuit bandgap_unbuffered (0)(1 instance)
-Flattening unmatched subcell capacitor_SURZLD in circuit bandgap_unbuffered (0)(1 instance)
+Flattening unmatched subcell pnpMPA_9DZCCL in circuit bandgap_unbuffered_v2 (0)(9 instances)
+Flattening unmatched subcell sg13_hv_pmos_NWA9LU in circuit bandgap_unbuffered_v2 (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_BEVMZW in circuit bandgap_unbuffered_v2 (0)(2 instances)
+Flattening unmatched subcell sg13_hv_pmos_WYN5QB in circuit bandgap_unbuffered_v2 (0)(3 instances)
+Flattening unmatched subcell capacitor_UEBLR3 in circuit bandgap_unbuffered_v2 (0)(1 instance)
+Flattening unmatched subcell capacitor_77YAAU in circuit bandgap_unbuffered_v2 (0)(1 instance)
+Flattening unmatched subcell capacitor_C4E5CZ in circuit bandgap_unbuffered_v2 (0)(1 instance)
+Flattening unmatched subcell capacitor_P4YBHP in circuit bandgap_unbuffered_v2 (0)(1 instance)
+Flattening unmatched subcell capacitor_4HNWC9 in circuit bandgap_unbuffered_v2 (0)(1 instance)
 
-Class bandgap_unbuffered (0):  Merged 13 parallel devices.
-Class bandgap_unbuffered (1):  Merged 4 parallel devices.
+Class bandgap_unbuffered_v2 (0):  Merged 13 parallel devices.
+Class bandgap_unbuffered_v2 (1):  Merged 4 parallel devices.
 Subcircuit summary:
-Circuit 1: bandgap_unbuffered                                                |Circuit 2: bandgap_unbuffered                                                
+Circuit 1: bandgap_unbuffered_v2                                             |Circuit 2: bandgap_unbuffered_v2                                             
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 sg13cmos5l_antennanp (17)                                                    |sg13cmos5l_antennanp (17)                                                    
 pnpMPA (9->2)                                                                |pnpMPA (9->2)                                                                
@@ -331,67 +333,46 @@ sg13cmos5l_inv_2 (17)                                                        |sg
 bg_res (1)                                                                   |bg_res (1)                                                                   
 sg13_hv_pmos (7->5)                                                          |sg13_hv_pmos (7->5)                                                          
 sg13_hv_nmos (2)                                                             |sg13_hv_nmos (2)                                                             
-c (3)                                                                        |c (3)                                                                        
+c (5)                                                                        |c (5)                                                                        
 bg_trim (1)                                                                  |bg_trim (1)                                                                  
 sg13cmos5l_decap_4 (5->1)                                                    |sg13cmos5l_decap_4 (5->1)                                                    
-Number of devices: 67                                                        |Number of devices: 67                                                        
+Number of devices: 69                                                        |Number of devices: 69                                                        
 Number of nets: 65                                                           |Number of nets: 65                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: bandgap_unbuffered                                                |Circuit 2: bandgap_unbuffered                                                
+Resolving symmetries by property value.
+Netlists match uniquely with port errors.
 
+Subcircuit pins:
+Circuit 1: bandgap_unbuffered_v2                                             |Circuit 2: bandgap_unbuffered_v2                                             
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+bias                                                                         |bias                                                                         
+XM4/S                                                                        |(no pin, node is gate)                                                       
+vdd                                                                          |vdd                                                                          
+ena_b_h                                                                      |ena_b_h                                                                      
+vss                                                                          |vss                                                                          
+dvdd                                                                         |dvdd                                                                         
+dvss                                                                         |dvss                                                                         
+vbg                                                                          |vbg                                                                          
+trim[0]                                                                      |trim[0]                                                                      
+trim[2]                                                                      |trim[2]                                                                      
+trim[4]                                                                      |trim[4]                                                                      
+trim[6]                                                                      |trim[6]                                                                      
+trim[8]                                                                      |trim[8]                                                                      
+trim[10]                                                                     |trim[10]                                                                     
+trim[12]                                                                     |trim[12]                                                                     
+trim[14]                                                                     |trim[14]                                                                     
+trim[1]                                                                      |trim[1]                                                                      
+trim[3]                                                                      |trim[3]                                                                      
+trim[5]                                                                      |trim[5]                                                                      
+trim[7]                                                                      |trim[7]                                                                      
+trim[9]                                                                      |trim[9]                                                                      
+trim[11]                                                                     |trim[11]                                                                     
+trim[13]                                                                     |trim[13]                                                                     
+trim[15]                                                                     |trim[15]                                                                     
+ena                                                                          |ena                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: vs2                                                                     |Net: vs2                                                                     
-  sg13_hv_pmos/2 = 2                                                         |  sg13_hv_pmos/2 = 2                                                         
-  sg13_hv_pmos/(1|3) = 2                                                     |  sg13_hv_pmos/(1|3) = 2                                                     
-  sg13_hv_pmos/4 = 1                                                         |  sg13_hv_pmos/4 = 1                                                         
-  c/bottom = 2                                                               |  c/top = 2                                                                  
------------------------------------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: XM4/S                                                                   |Net: gate                                                                    
-  se_folded_cascode_p/out = 1                                                |  se_folded_cascode_p/out = 1                                                
-  sg13_hv_pmos/2 = 2                                                         |  sg13_hv_pmos/2 = 2                                                         
-  sg13_hv_nmos/(1|3) = 1                                                     |  sg13_hv_nmos/(1|3) = 1                                                     
-  c/bottom = 1                                                               |  c/top = 1                                                                  
------------------------------------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: vss                                                                     |Net: vss                                                                     
-  pnpMPA/1 = 2                                                               |  pnpMPA/1 = 2                                                               
-  pnpMPA/2 = 2                                                               |  pnpMPA/2 = 2                                                               
-  level_shift/vss = 17                                                       |  level_shift/vss = 17                                                       
-  se_folded_cascode_p/vss = 1                                                |  se_folded_cascode_p/vss = 1                                                
-  bg_res/vss = 1                                                             |  bg_res/vss = 1                                                             
-  bg_res/g = 1                                                               |  bg_res/g = 1                                                               
-  bg_res/h = 1                                                               |  bg_res/h = 1                                                               
-  bg_res/j = 1                                                               |  bg_res/j = 1                                                               
-  bg_res/k = 1                                                               |  bg_res/k = 1                                                               
-  sg13_hv_nmos/(1|3) = 2                                                     |  sg13_hv_nmos/(1|3) = 2                                                     
-  sg13_hv_nmos/4 = 2                                                         |  sg13_hv_nmos/4 = 2                                                         
-  c/top = 3                                                                  |  c/bottom = 3                                                               
-  sg13_hv_pmos/(1|3) = 1                                                     |  sg13_hv_pmos/(1|3) = 1                                                     
-  bg_trim/vss = 1                                                            |  bg_trim/vss = 1                                                            
------------------------------------------------------------------------------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: bandgap_unbuffered                                                |Circuit 2: bandgap_unbuffered                                                
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Instance: capacitor_SURZLD_0/c:0                                             |Instance: c:3                                                                
-  top = 36                                                                   |  top = 7                                                                    
-  bottom = 7                                                                 |  bottom = 36                                                                
-                                                                             |                                                                             
-Instance: capacitor_BC6V6V:C2/c:0                                            |Instance: c:2                                                                
-  top = 36                                                                   |  top = 7                                                                    
-  bottom = 7                                                                 |  bottom = 36                                                                
-                                                                             |                                                                             
-Instance: capacitor_KFUPMY:C1/c:0                                            |Instance: c:1                                                                
-  top = 36                                                                   |  top = 5                                                                    
-  bottom = 5                                                                 |  bottom = 36                                                                
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
-  Flattening non-matched subcircuits bandgap_unbuffered bandgap_unbuffered
+Cell pin lists for bandgap_unbuffered_v2 and bandgap_unbuffered_v2 altered to match.
+Device classes bandgap_unbuffered_v2 and bandgap_unbuffered_v2 are equivalent.
 Flattening unmatched subcell sg13_hv_pmos_QWE845 in circuit se_folded_cascode_np_ab (0)(1 instance)
 Flattening unmatched subcell sg13_hv_nmos_BEHQUZ in circuit se_folded_cascode_np_ab (0)(2 instances)
 Flattening unmatched subcell sg13_hv_nmos_BEZCVZ in circuit se_folded_cascode_np_ab (0)(2 instances)
@@ -418,159 +399,65 @@ c (2)                                                                        |c 
 Number of devices: 26                                                        |Number of devices: 26                                                        
 Number of nets: 19                                                           |Number of nets: 19                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: se_folded_cascode_np_ab                                           |Circuit 2: se_folded_cascode_np_ab                                           
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: XM9/S3_2                                                                |Net: outs1                                                                   
-  sg13_hv_pmos/2 = 1                                                         |  sg13_hv_pmos/2 = 1                                                         
-  sg13_hv_pmos/(1|3) = 1                                                     |  sg13_hv_pmos/(1|3) = 1                                                     
-  sg13_hv_nmos/(1|3) = 1                                                     |  sg13_hv_nmos/(1|3) = 1                                                     
-  c/top = 2                                                                  |  c/bottom = 2                                                               
-  sg13_hv_nmos/2 = 1                                                         |  sg13_hv_nmos/2 = 1                                                         
------------------------------------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: out                                                                     |Net: out                                                                     
-  sg13_hv_pmos/(1|3) = 1                                                     |  sg13_hv_pmos/(1|3) = 1                                                     
-  c/bottom = 2                                                               |  c/top = 2                                                                  
-  sg13_hv_nmos/(1|3) = 1                                                     |  sg13_hv_nmos/(1|3) = 1                                                     
------------------------------------------------------------------------------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: se_folded_cascode_np_ab                                           |Circuit 2: se_folded_cascode_np_ab                                           
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Instance: capacitor_W9X9FK:C1[0]/c:0                                         |Instance: c:1[0]                                                             
-  top = 6                                                                    |  top = 4                                                                    
-  bottom = 4                                                                 |  bottom = 6                                                                 
-                                                                             |                                                                             
-Instance: capacitor_W9X9FK:C1[1]/c:0                                         |Instance: c:1[1]                                                             
-  top = 6                                                                    |  top = 4                                                                    
-  bottom = 4                                                                 |  bottom = 6                                                                 
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
-  Flattening non-matched subcircuits se_folded_cascode_np_ab se_folded_cascode_np_ab
-
-Subcircuit summary:
-Circuit 1: sg13cmos5l_ocd_ip__bandgap                                        |Circuit 2: sg13cmos5l_ocd_ip__bandgap                                        
------------------------------------------------------------------------------|-----------------------------------------------------------------------------
-sg13cmos5l_antennanp (17)                                                    |sg13cmos5l_antennanp (17)                                                    
-pnpMPA (9->2)                                                                |pnpMPA (9->2)                                                                
-level_shift (17)                                                             |level_shift (17)                                                             
-se_folded_cascode_p (1)                                                      |se_folded_cascode_p (1)                                                      
-sg13cmos5l_inv_2 (17)                                                        |sg13cmos5l_inv_2 (17)                                                        
-bg_res (1)                                                                   |bg_res (1)                                                                   
-sg13_hv_pmos (115->17)                                                       |sg13_hv_pmos (115->17)                                                       
-sg13_hv_nmos (134->14)                                                       |sg13_hv_nmos (134->14)                                                       
-c (5)                                                                        |c (5)                                                                        
-bg_trim (1)                                                                  |bg_trim (1)                                                                  
-sg13cmos5l_decap_4 (5->1)                                                    |sg13cmos5l_decap_4 (5->1)                                                    
-Number of devices: 93                                                        |Number of devices: 93                                                        
-Number of nets: 79                                                           |Number of nets: 79                                                           
------------------------------------------------------------------------------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: sg13cmos5l_ocd_ip__bandgap                                        |Circuit 2: sg13cmos5l_ocd_ip__bandgap                                        
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: bandgap_unbuffered:x1/vs2                                               |Net: bandgap_unbuffered:1/vs2                                                
-  sg13_hv_pmos/2 = 2                                                         |  sg13_hv_pmos/2 = 2                                                         
-  sg13_hv_pmos/(1|3) = 2                                                     |  sg13_hv_pmos/(1|3) = 2                                                     
-  sg13_hv_pmos/4 = 1                                                         |  sg13_hv_pmos/4 = 1                                                         
-  c/bottom = 2                                                               |  c/top = 2                                                                  
------------------------------------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: se_folded_cascode_np_ab:x2/XM9/S3_2                                     |Net: se_folded_cascode_np_ab:2/outs1                                         
-  sg13_hv_pmos/2 = 1                                                         |  sg13_hv_pmos/(1|3) = 1                                                     
-  sg13_hv_pmos/(1|3) = 1                                                     |  sg13_hv_nmos/(1|3) = 1                                                     
-  sg13_hv_nmos/(1|3) = 1                                                     |  sg13_hv_nmos/2 = 1                                                         
-  c/top = 2                                                                  |  sg13_hv_pmos/2 = 1                                                         
-  sg13_hv_nmos/2 = 1                                                         |  c/bottom = 2                                                               
-                                                                             |                                                                             
-Net: vbg                                                                     |Net: vbg                                                                     
-  sg13_hv_pmos/(1|3) = 1                                                     |  sg13_hv_pmos/(1|3) = 1                                                     
-  sg13_hv_pmos/2 = 1                                                         |  sg13_hv_pmos/2 = 1                                                         
-  sg13_hv_nmos/2 = 1                                                         |  sg13_hv_nmos/2 = 1                                                         
-  c/bottom = 2                                                               |  c/top = 2                                                                  
-  sg13_hv_nmos/(1|3) = 1                                                     |  sg13_hv_nmos/(1|3) = 1                                                     
------------------------------------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: vss                                                                     |Net: vss                                                                     
-  pnpMPA/1 = 2                                                               |  pnpMPA/1 = 2                                                               
-  pnpMPA/2 = 2                                                               |  pnpMPA/2 = 2                                                               
-  level_shift/vss = 17                                                       |  level_shift/vss = 17                                                       
-  se_folded_cascode_p/vss = 1                                                |  se_folded_cascode_p/vss = 1                                                
-  bg_res/vss = 1                                                             |  bg_res/vss = 1                                                             
-  bg_res/g = 1                                                               |  bg_res/g = 1                                                               
-  bg_res/h = 1                                                               |  bg_res/h = 1                                                               
-  bg_res/j = 1                                                               |  bg_res/j = 1                                                               
-  bg_res/k = 1                                                               |  bg_res/k = 1                                                               
-  sg13_hv_nmos/(1|3) = 11                                                    |  sg13_hv_nmos/(1|3) = 11                                                    
-  sg13_hv_nmos/4 = 14                                                        |  sg13_hv_nmos/4 = 14                                                        
-  c/top = 3                                                                  |  c/bottom = 3                                                               
-  sg13_hv_pmos/(1|3) = 1                                                     |  sg13_hv_pmos/(1|3) = 1                                                     
-  bg_trim/vss = 1                                                            |  bg_trim/vss = 1                                                            
-  sg13_hv_nmos/2 = 1                                                         |  sg13_hv_nmos/2 = 1                                                         
------------------------------------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Net: bandgap_unbuffered:x1/XM4/S                                             |Net: bandgap_unbuffered:1/gate                                               
-  se_folded_cascode_p/out = 1                                                |  se_folded_cascode_p/out = 1                                                
-  sg13_hv_pmos/2 = 2                                                         |  sg13_hv_pmos/2 = 2                                                         
-  sg13_hv_nmos/(1|3) = 1                                                     |  sg13_hv_nmos/(1|3) = 1                                                     
-  c/bottom = 1                                                               |  c/top = 1                                                                  
------------------------------------------------------------------------------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: sg13cmos5l_ocd_ip__bandgap                                        |Circuit 2: sg13cmos5l_ocd_ip__bandgap                                        
-
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Instance: bandgap_unbuffered:x1//capacitor_SURZLD_0/c:0                      |Instance: bandgap_unbuffered:1/c:3                                           
-  top = 58                                                                   |  top = 7                                                                    
-  bottom = 7                                                                 |  bottom = 58                                                                
-                                                                             |                                                                             
-Instance: bandgap_unbuffered:x1/capacitor_BC6V6V:C2/c:0                      |Instance: bandgap_unbuffered:1/c:2                                           
-  top = 58                                                                   |  top = 7                                                                    
-  bottom = 7                                                                 |  bottom = 58                                                                
-                                                                             |                                                                             
-Instance: bandgap_unbuffered:x1/capacitor_KFUPMY:C1/c:0                      |Instance: bandgap_unbuffered:1/c:1                                           
-  top = 58                                                                   |  top = 5                                                                    
-  bottom = 5                                                                 |  bottom = 58                                                                
------------------------------------------------------------------------------------------------------------------------------------------------------------
-Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
 
 Subcircuit pins:
-Circuit 1: sg13cmos5l_ocd_ip__bandgap                                        |Circuit 2: sg13cmos5l_ocd_ip__bandgap                                        
+Circuit 1: se_folded_cascode_np_ab                                           |Circuit 2: se_folded_cascode_np_ab                                           
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
-vbg                                                                          |vbg                                                                          
+inn                                                                          |inn                                                                          
+inp                                                                          |inp                                                                          
+bias                                                                         |bias                                                                         
+ena_b                                                                        |ena_b                                                                        
 vss                                                                          |vss                                                                          
 vdd                                                                          |vdd                                                                          
-dvss                                                                         |dvss                                                                         
-dvdd                                                                         |dvdd                                                                         
-trim[12]                                                                     |trim[12]                                                                     
-trim[0]                                                                      |trim[0]                                                                      
-trim[1]                                                                      |trim[1]                                                                      
-trim[2]                                                                      |trim[2]                                                                      
-trim[3]                                                                      |trim[3]                                                                      
-trim[4]                                                                      |trim[4]                                                                      
-trim[5]                                                                      |trim[5]                                                                      
-trim[6]                                                                      |trim[6]                                                                      
-trim[7]                                                                      |trim[7]                                                                      
-trim[8]                                                                      |trim[8]                                                                      
-trim[9]                                                                      |trim[9]                                                                      
-trim[10]                                                                     |trim[10]                                                                     
-trim[11]                                                                     |trim[11]                                                                     
-trim[13]                                                                     |trim[13]                                                                     
-trim[14]                                                                     |trim[14]                                                                     
-trim[15]                                                                     |trim[15]                                                                     
-ena                                                                          |ena                                                                          
-ibias1_250n                                                                  |ibias1_250n                                                                  
-ibias2_1u                                                                    |ibias2_1u                                                                    
+out                                                                          |out                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
-Device classes sg13cmos5l_ocd_ip__bandgap and sg13cmos5l_ocd_ip__bandgap are equivalent.
+Device classes se_folded_cascode_np_ab and se_folded_cascode_np_ab are equivalent.
 
-Final result: Netlists do not match.
-Port matching may fail to disambiguate symmetries.
+Subcircuit summary:
+Circuit 1: sg13cmos5l_ocd_ip__bandgap_v2                                     |Circuit 2: sg13cmos5l_ocd_ip__bandgap_v2                                     
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+bandgap_unbuffered_v2 (1)                                                    |bandgap_unbuffered_v2 (1)                                                    
+se_folded_cascode_np_ab (1)                                                  |se_folded_cascode_np_ab (1)                                                  
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 27                                                           |Number of nets: 27                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_ocd_ip__bandgap_v2                                     |Circuit 2: sg13cmos5l_ocd_ip__bandgap_v2                                     
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+ibias1_250n                                                                  |ibias1_250n                                                                  
+trim[15]                                                                     |trim[15]                                                                     
+trim[14]                                                                     |trim[14]                                                                     
+trim[13]                                                                     |trim[13]                                                                     
+trim[12]                                                                     |trim[12]                                                                     
+trim[11]                                                                     |trim[11]                                                                     
+trim[10]                                                                     |trim[10]                                                                     
+trim[9]                                                                      |trim[9]                                                                      
+trim[8]                                                                      |trim[8]                                                                      
+trim[7]                                                                      |trim[7]                                                                      
+trim[6]                                                                      |trim[6]                                                                      
+trim[5]                                                                      |trim[5]                                                                      
+trim[4]                                                                      |trim[4]                                                                      
+trim[3]                                                                      |trim[3]                                                                      
+trim[2]                                                                      |trim[2]                                                                      
+trim[1]                                                                      |trim[1]                                                                      
+trim[0]                                                                      |trim[0]                                                                      
+dvss                                                                         |dvss                                                                         
+dvdd                                                                         |dvdd                                                                         
+ena                                                                          |ena                                                                          
+ibias2_1u                                                                    |ibias2_1u                                                                    
+vdd                                                                          |vdd                                                                          
+vss                                                                          |vss                                                                          
+vbg                                                                          |vbg                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_ocd_ip__bandgap_v2 and sg13cmos5l_ocd_ip__bandgap_v2 are equivalent.
+
+Final result: Circuits match uniquely.
+.

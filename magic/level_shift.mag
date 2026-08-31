@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774816172
+timestamp 1788122513
 << nwell >>
 rect -4 -550 1516 916
 << hvpsubdiff >>
@@ -184,20 +184,20 @@ use via_Y6HW5N  via_Y6HW5N_0 paramcells
 timestamp 1774721386
 transform 1 0 1173 0 1 -477
 box -111 -70 111 70
-use via_Y6Z2DQ  via_Y6Z2DQ_0 sg13cmos5l_ocd_ip__analog_switches/magic/paramcells
-timestamp 1772657197
+use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
+timestamp 1774721386
 transform 1 0 691 0 1 -837
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_1
-timestamp 1772657197
+timestamp 1774721386
 transform 1 0 1366 0 1 -638
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_2
-timestamp 1772657197
+timestamp 1774721386
 transform 1 0 1074 0 1 -633
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_8
-timestamp 1772657197
+timestamp 1774721386
 transform 0 1 930 -1 0 -1635
 box -70 -29 70 29
 use via_Y6ZS5N  via_Y6ZS5N_0 paramcells

@@ -1,0 +1,681 @@
+
+Circuit 1 cell sg13_hv_nmos and Circuit 2 cell sg13_hv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_nmos                                                      |Circuit 2: sg13_hv_nmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_nmos and sg13_hv_nmos are equivalent.
+
+Circuit 1 cell sg13_hv_pmos and Circuit 2 cell sg13_hv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_hv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_hv_pmos                                                      |Circuit 2: sg13_hv_pmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_hv_pmos and sg13_hv_pmos are equivalent.
+
+Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_nmos                                                      |Circuit 2: sg13_lv_nmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_nmos and sg13_lv_nmos are equivalent.
+
+Circuit 1 cell sg13_lv_pmos and Circuit 2 cell sg13_lv_pmos are black boxes.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sg13_lv_pmos is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sg13_lv_pmos                                                      |Circuit 2: sg13_lv_pmos                                                      
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+4                                                                            |4                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
+
+Circuit 1 cell dpantenna and Circuit 2 cell dpantenna are black boxes.
+Warning: Equate pins:  cell dpantenna is a placeholder, treated as a black box.
+Warning: Equate pins:  cell dpantenna is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: dpantenna                                                         |Circuit 2: dpantenna                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dpantenna and dpantenna are equivalent.
+
+Circuit 1 cell dantenna and Circuit 2 cell dantenna are black boxes.
+Warning: Equate pins:  cell dantenna is a placeholder, treated as a black box.
+Warning: Equate pins:  cell dantenna is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: dantenna                                                          |Circuit 2: dantenna                                                          
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes dantenna and dantenna are equivalent.
+
+Circuit 1 cell rhigh and Circuit 2 cell rhigh are black boxes.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+Warning: Equate pins:  cell rhigh is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: rhigh                                                             |Circuit 2: rhigh                                                             
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+3                                                                            |3                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes rhigh and rhigh are equivalent.
+Flattening unmatched subcell sg13_hv_nmos_2RYP69 in circuit bias_nstack (0)(9 instances)
+
+Cell bias_nstack (0) disconnected node: shld2
+Cell bias_nstack (0) disconnected node: shld3
+Cell bias_nstack (0) disconnected node: a_1030_2157#
+Cell bias_nstack (1) disconnected node: shld2
+Cell bias_nstack (1) disconnected node: shld3
+Class bias_nstack (0):  Merged 6 parallel devices.
+Cell bias_nstack (0) disconnected node: shld2
+Cell bias_nstack (0) disconnected node: shld3
+Cell bias_nstack (0) disconnected node: a_1030_2157#
+Cell bias_nstack (1) disconnected node: shld2
+Cell bias_nstack (1) disconnected node: shld3
+Subcircuit summary:
+Circuit 1: bias_nstack                                                       |Circuit 2: bias_nstack                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_nmos (9->3)                                                          |sg13_hv_nmos (3)                                                             
+Number of devices: 3                                                         |Number of devices: 3                                                         
+Number of nets: 7                                                            |Number of nets: 7                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: bias_nstack                                                       |Circuit 2: bias_nstack                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+avss                                                                         |avss                                                                         
+nbias                                                                        |nbias                                                                        
+ncasc                                                                        |ncasc                                                                        
+itail                                                                        |itail                                                                        
+ena                                                                          |ena                                                                          
+shld2                                                                        |shld2                                                                        
+shld3                                                                        |shld3                                                                        
+a_1030_2157#                                                                 |(no matching pin)                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_nstack and bias_nstack are equivalent.
+
+Class sg13cmos5l_inv_2 (0):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: sg13cmos5l_inv_2                                                  |Circuit 2: sg13cmos5l_inv_2                                                  
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_lv_nmos (2->1)                                                          |sg13_lv_nmos (1)                                                             
+sg13_lv_pmos (2->1)                                                          |sg13_lv_pmos (1)                                                             
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 4                                                            |Number of nets: 4                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_inv_2                                                  |Circuit 2: sg13cmos5l_inv_2                                                  
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+Y                                                                            |Y                                                                            
+A                                                                            |A                                                                            
+VSS                                                                          |VSS                                                                          
+VDD                                                                          |VDD                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_inv_2 and sg13cmos5l_inv_2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_antennanp                                              |Circuit 2: sg13cmos5l_antennanp                                              
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+dpantenna (1)                                                                |dpantenna (1)                                                                
+dantenna (1)                                                                 |dantenna (1)                                                                 
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 3                                                            |Number of nets: 3                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_antennanp                                              |Circuit 2: sg13cmos5l_antennanp                                              
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+VSS                                                                          |VSS                                                                          
+VDD                                                                          |VDD                                                                          
+A                                                                            |A                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_antennanp and sg13cmos5l_antennanp are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_DNCZKC in circuit level_shift (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_QHASHE in circuit level_shift (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_QBGVHE in circuit level_shift (0)(3 instances)
+Flattening unmatched subcell sg13_hv_pmos_ZPCZKC in circuit level_shift (0)(2 instances)
+
+Class level_shift (0):  Merged 12 parallel devices.
+Subcircuit summary:
+Circuit 1: level_shift                                                       |Circuit 2: level_shift                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (10->4)                                                         |sg13_hv_pmos (10->4)                                                         
+sg13_hv_nmos (10->4)                                                         |sg13_hv_nmos (10->4)                                                         
+Number of devices: 8                                                         |Number of devices: 8                                                         
+Number of nets: 8                                                            |Number of nets: 8                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: level_shift                                                       |Circuit 2: level_shift                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+out                                                                          |out                                                                          
+in_p                                                                         |in_p                                                                         
+in_n                                                                         |in_n                                                                         
+vss                                                                          |vss                                                                          
+vdd                                                                          |vdd                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes level_shift and level_shift are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_decap_4                                                |Circuit 2: sg13cmos5l_decap_4                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_lv_pmos (1)                                                             |sg13_lv_pmos (1)                                                             
+sg13_lv_nmos (1)                                                             |sg13_lv_nmos (1)                                                             
+Number of devices: 2                                                         |Number of devices: 2                                                         
+Number of nets: 2                                                            |Number of nets: 2                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_decap_4                                                |Circuit 2: sg13cmos5l_decap_4                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+VSS                                                                          |VSS                                                                          
+VDD                                                                          |VDD                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_decap_4 and sg13cmos5l_decap_4 are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_7A8CUW in circuit bias_amp_large (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_XVVFQX in circuit bias_amp_large (0)(1 instance)
+Flattening unmatched subcell sg13_hv_nmos_666RAL in circuit bias_amp_large (0)(3 instances)
+
+Class bias_amp_large (0):  Merged 97 parallel devices.
+Subcircuit summary:
+Circuit 1: bias_amp_large                                                    |Circuit 2: bias_amp_large                                                    
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (24->3)                                                         |sg13_hv_pmos (4->3)                                                          
+sg13_hv_nmos (80->4)                                                         |sg13_hv_nmos (4)                                                             
+Number of devices: 7                                                         |Number of devices: 7                                                         
+Number of nets: 10                                                           |Number of nets: 10                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bias_amp_large                                                    |Circuit 2: bias_amp_large                                                    
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+nbias                                                                        |nbias                                                                        
+inp                                                                          |inp                                                                          
+ena                                                                          |ena                                                                          
+inn                                                                          |inn                                                                          
+avss                                                                         |avss                                                                         
+out                                                                          |out                                                                          
+avdd                                                                         |avdd                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_amp_large and bias_amp_large are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_KGSGVN in circuit bias_pset (0)(9 instances)
+
+Cell bias_pset (0) disconnected node: shld3
+Cell bias_pset (1) disconnected node: shld3
+Class bias_pset (0):  Merged 6 parallel devices.
+Cell bias_pset (0) disconnected node: shld3
+Cell bias_pset (1) disconnected node: shld3
+Subcircuit summary:
+Circuit 1: bias_pset                                                         |Circuit 2: bias_pset                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (9->3)                                                          |sg13_hv_pmos (3)                                                             
+Number of devices: 3                                                         |Number of devices: 3                                                         
+Number of nets: 5                                                            |Number of nets: 5                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bias_pset                                                         |Circuit 2: bias_pset                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+avdd                                                                         |avdd                                                                         
+itail                                                                        |itail                                                                        
+enb                                                                          |enb                                                                          
+pbias                                                                        |pbias                                                                        
+pcasc                                                                        |pcasc                                                                        
+shld3                                                                        |shld3                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_pset and bias_pset are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_KGSGVN in circuit bias_pstack (0)(9 instances)
+
+Cell bias_pstack (0) disconnected node: shld2
+Cell bias_pstack (0) disconnected node: shld3
+Cell bias_pstack (1) disconnected node: shld2
+Cell bias_pstack (1) disconnected node: shld3
+Class bias_pstack (0):  Merged 6 parallel devices.
+Cell bias_pstack (0) disconnected node: shld2
+Cell bias_pstack (0) disconnected node: shld3
+Cell bias_pstack (1) disconnected node: shld2
+Cell bias_pstack (1) disconnected node: shld3
+Subcircuit summary:
+Circuit 1: bias_pstack                                                       |Circuit 2: bias_pstack                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (9->3)                                                          |sg13_hv_pmos (3)                                                             
+Number of devices: 3                                                         |Number of devices: 3                                                         
+Number of nets: 7                                                            |Number of nets: 7                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bias_pstack                                                       |Circuit 2: bias_pstack                                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+avdd                                                                         |avdd                                                                         
+pbias                                                                        |pbias                                                                        
+itail                                                                        |itail                                                                        
+enb                                                                          |enb                                                                          
+pcasc                                                                        |pcasc                                                                        
+shld2                                                                        |shld2                                                                        
+shld3                                                                        |shld3                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_pstack and bias_pstack are equivalent.
+Flattening unmatched subcell sg13_hv_pmos_KGSGVN in circuit bias_pset2 (0)(9 instances)
+
+Cell bias_pset2 (0) disconnected node: shld2
+Cell bias_pset2 (0) disconnected node: shld3
+Cell bias_pset2 (1) disconnected node: shld2
+Cell bias_pset2 (1) disconnected node: shld3
+Class bias_pset2 (0):  Merged 6 parallel devices.
+Cell bias_pset2 (0) disconnected node: shld2
+Cell bias_pset2 (0) disconnected node: shld3
+Cell bias_pset2 (1) disconnected node: shld2
+Cell bias_pset2 (1) disconnected node: shld3
+Subcircuit summary:
+Circuit 1: bias_pset2                                                        |Circuit 2: bias_pset2                                                        
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_pmos (9->3)                                                          |sg13_hv_pmos (3)                                                             
+Number of devices: 3                                                         |Number of devices: 3                                                         
+Number of nets: 5                                                            |Number of nets: 5                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: bias_pset2                                                        |Circuit 2: bias_pset2                                                        
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+avdd                                                                         |avdd                                                                         
+itail                                                                        |itail                                                                        
+enb                                                                          |enb                                                                          
+pbias                                                                        |pbias                                                                        
+pcasc                                                                        |pcasc                                                                        
+shld2                                                                        |shld2                                                                        
+shld3                                                                        |shld3                                                                        
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_pset2 and bias_pset2 are equivalent.
+Flattening unmatched subcell sg13_hv_nmos_2RYP69 in circuit bias_nset (0)(9 instances)
+
+Cell bias_nset (0) disconnected node: shld2
+Cell bias_nset (0) disconnected node: shld3
+Cell bias_nset (0) disconnected node: a_1043_n1378#
+Cell bias_nset (1) disconnected node: shld2
+Cell bias_nset (1) disconnected node: shld3
+Class bias_nset (0):  Merged 6 parallel devices.
+Cell bias_nset (0) disconnected node: shld2
+Cell bias_nset (0) disconnected node: shld3
+Cell bias_nset (0) disconnected node: a_1043_n1378#
+Cell bias_nset (1) disconnected node: shld2
+Cell bias_nset (1) disconnected node: shld3
+Subcircuit summary:
+Circuit 1: bias_nset                                                         |Circuit 2: bias_nset                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_hv_nmos (9->3)                                                          |sg13_hv_nmos (3)                                                             
+Number of devices: 3                                                         |Number of devices: 3                                                         
+Number of nets: 5                                                            |Number of nets: 5                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: bias_nset                                                         |Circuit 2: bias_nset                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+avss                                                                         |avss                                                                         
+itail                                                                        |itail                                                                        
+ena                                                                          |ena                                                                          
+nbias                                                                        |nbias                                                                        
+ncasc                                                                        |ncasc                                                                        
+shld2                                                                        |shld2                                                                        
+shld3                                                                        |shld3                                                                        
+a_1043_n1378#                                                                |(no matching pin)                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes bias_nset and bias_nset are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_nand2_1                                                |Circuit 2: sg13cmos5l_nand2_1                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_lv_nmos (2)                                                             |sg13_lv_nmos (2)                                                             
+sg13_lv_pmos (2)                                                             |sg13_lv_pmos (2)                                                             
+Number of devices: 4                                                         |Number of devices: 4                                                         
+Number of nets: 6                                                            |Number of nets: 6                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_nand2_1                                                |Circuit 2: sg13cmos5l_nand2_1                                                
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+VDD                                                                          |VDD                                                                          
+Y                                                                            |Y                                                                            
+VSS                                                                          |VSS                                                                          
+A                                                                            |A                                                                            
+B                                                                            |B                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_nand2_1 and sg13cmos5l_nand2_1 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_nor2_1                                                 |Circuit 2: sg13cmos5l_nor2_1                                                 
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13_lv_nmos (2)                                                             |sg13_lv_nmos (2)                                                             
+sg13_lv_pmos (2)                                                             |sg13_lv_pmos (2)                                                             
+Number of devices: 4                                                         |Number of devices: 4                                                         
+Number of nets: 6                                                            |Number of nets: 6                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_nor2_1                                                 |Circuit 2: sg13cmos5l_nor2_1                                                 
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+VSS                                                                          |VSS                                                                          
+B                                                                            |B                                                                            
+A                                                                            |A                                                                            
+Y                                                                            |Y                                                                            
+VDD                                                                          |VDD                                                                          
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_nor2_1 and sg13cmos5l_nor2_1 are equivalent.
+
+Cell bias_generator_ben1um (0) disconnected node: bias_nstack_2[2]/a_1030_2157#
+Class bias_generator_ben1um (0):  Merged 2 parallel devices.
+Class bias_generator_ben1um (1):  Merged 2 parallel devices.
+Cell bias_generator_ben1um (0) disconnected node: bias_nstack_2[2]/a_1030_2157#
+Subcircuit summary:
+Circuit 1: bias_generator_ben1um                                             |Circuit 2: bias_generator_ben1um                                             
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+bias_nstack (15)                                                             |bias_nstack (15)                                                             
+sg13cmos5l_inv_2 (3)                                                         |sg13cmos5l_inv_2 (3)                                                         
+sg13cmos5l_antennanp (3)                                                     |sg13cmos5l_antennanp (3)                                                     
+level_shift (3)                                                              |level_shift (3)                                                              
+sg13cmos5l_decap_4 (3->1)                                                    |sg13cmos5l_decap_4 (3->1)                                                    
+Number of devices: 25                                                        |Number of devices: 25                                                        
+Number of nets: 19                                                           |Number of nets: 19                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 2 symmetries.
+
+Subcircuit pins:
+Circuit 1: bias_generator_ben1um                                             |Circuit 2: bias_generator_ben1um                                             
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sink_ibias                                                                   |sink_ibias                                                                   
+dvdd                                                                         |dvdd                                                                         
+dvss                                                                         |dvss                                                                         
+sink_ena[2]                                                                  |sink_ena[2]                                                                  
+sink_ena[1]                                                                  |sink_ena[1]                                                                  
+sink_ena[0]                                                                  |sink_ena[0]                                                                  
+avdd                                                                         |avdd                                                                         
+sub                                                                          |avss **Mismatch**                                                            
+ncasc                                                                        |ncasc                                                                        
+nbias                                                                        |nbias                                                                        
+bias_nstack_3/shld2                                                          |shld2 **Mismatch**                                                           
+bias_nstack_3/shld3                                                          |shld3 **Mismatch**                                                           
+bias_nstack_0[9]/itail                                                       |(no pin, node is dummy_ibias)                                                
+bias_nstack_2[2]/a_1030_2157#                                                |(no matching pin)                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists for bias_generator_ben1um and bias_generator_ben1um altered to match.
+Device classes bias_generator_ben1um and bias_generator_ben1um are equivalent.
+Flattening unmatched subcell rhigh_GJN3VD in circuit bias_generator_fe_v2 (0)(1 instance)
+Flattening unmatched subcell capacitor_UPRECB in circuit bias_generator_fe_v2 (0)(1 instance)
+Flattening unmatched subcell rhigh_AFSZTU in circuit bias_generator_fe_v2 (0)(1 instance)
+
+Cell bias_generator_fe_v2 (0) disconnected node: x4[1]/a_1030_2157#
+Removing zero-valued device vsrc from cell bias_generator_fe_v2 (1) makes a better match
+Removing zero-valued device vsrc from cell bias_generator_fe_v2 (1) makes a better match
+Removing zero-valued device vsrc from cell bias_generator_fe_v2 (1) makes a better match
+Making another compare attempt.
+
+Cell bias_generator_fe_v2 (0) disconnected node: x4[1]/a_1030_2157#
+Class bias_generator_fe_v2 (0):  Merged 6 parallel devices.
+Class bias_generator_fe_v2 (0):  Merged 26 series devices.
+Class bias_generator_fe_v2 (1):  Merged 6 parallel devices.
+Cell bias_generator_fe_v2 (0) disconnected node: x4[1]/a_1030_2157#
+Subcircuit summary:
+Circuit 1: bias_generator_fe_v2                                              |Circuit 2: bias_generator_fe_v2                                              
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+bias_nstack (5)                                                              |bias_nstack (5)                                                              
+sg13cmos5l_inv_2 (8)                                                         |sg13cmos5l_inv_2 (8)                                                         
+bias_amp_large (1)                                                           |bias_amp_large (1)                                                           
+bias_pset (1)                                                                |bias_pset (1)                                                                
+rhigh (28->2)                                                                |rhigh (2)                                                                    
+sg13cmos5l_antennanp (6)                                                     |sg13cmos5l_antennanp (6)                                                     
+bias_pstack (24)                                                             |bias_pstack (24)                                                             
+bias_pset2 (1)                                                               |bias_pset2 (1)                                                               
+c (1)                                                                        |c (1)                                                                        
+level_shift (8)                                                              |level_shift (8)                                                              
+sg13cmos5l_decap_4 (7->1)                                                    |sg13cmos5l_decap_4 (7->1)                                                    
+bias_nset (16)                                                               |bias_nset (16)                                                               
+sg13cmos5l_nand2_1 (5)                                                       |sg13cmos5l_nand2_1 (5)                                                       
+sg13cmos5l_nor2_1 (1)                                                        |sg13cmos5l_nor2_1 (1)                                                        
+Number of devices: 80                                                        |Number of devices: 80                                                        
+Number of nets: 45                                                           |Number of nets: 45                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 7 symmetries.
+
+Subcircuit pins:
+Circuit 1: bias_generator_fe_v2                                              |Circuit 2: bias_generator_fe_v2                                              
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+ref_sel_coarse                                                               |ref_sel_coarse                                                               
+ref_sel_vbg                                                                  |ref_sel_vbg                                                                  
+pcasc                                                                        |pcasc                                                                        
+ref_in                                                                       |ref_in                                                                       
+vbg                                                                          |vbg                                                                          
+pbias                                                                        |pbias                                                                        
+avdd                                                                         |avdd                                                                         
+src_test0                                                                    |src_test0                                                                    
+snk_test0                                                                    |snk_test0                                                                    
+ncasc                                                                        |ncasc                                                                        
+dvdd                                                                         |dvdd                                                                         
+dvss                                                                         |dvss                                                                         
+nbias                                                                        |nbias                                                                        
+x13[9]/shld2                                                                 |shld2 **Mismatch**                                                           
+avss                                                                         |avss                                                                         
+ena_snk_test0                                                                |ena_snk_test0                                                                
+ena_src_test0                                                                |ena_src_test0                                                                
+ena                                                                          |ena                                                                          
+ref_sel_fine                                                                 |ref_sel_fine                                                                 
+x4[1]/a_1030_2157#                                                           |(no matching pin)                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists for bias_generator_fe_v2 and bias_generator_fe_v2 altered to match.
+Device classes bias_generator_fe_v2 and bias_generator_fe_v2 are equivalent.
+
+Cell bias_generator_ben250nm (0) disconnected node: bias_nstack_1/a_1030_2157#
+Class bias_generator_ben250nm (0):  Merged 1 parallel devices.
+Class bias_generator_ben250nm (1):  Merged 1 parallel devices.
+Cell bias_generator_ben250nm (0) disconnected node: bias_nstack_1/a_1030_2157#
+Subcircuit summary:
+Circuit 1: bias_generator_ben250nm                                           |Circuit 2: bias_generator_ben250nm                                           
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+bias_nstack (10)                                                             |bias_nstack (10)                                                             
+sg13cmos5l_inv_2 (2)                                                         |sg13cmos5l_inv_2 (2)                                                         
+sg13cmos5l_antennanp (2)                                                     |sg13cmos5l_antennanp (2)                                                     
+level_shift (2)                                                              |level_shift (2)                                                              
+sg13cmos5l_decap_4 (2->1)                                                    |sg13cmos5l_decap_4 (2->1)                                                    
+Number of devices: 17                                                        |Number of devices: 17                                                        
+Number of nets: 16                                                           |Number of nets: 16                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 1 symmetry.
+
+Subcircuit pins:
+Circuit 1: bias_generator_ben250nm                                           |Circuit 2: bias_generator_ben250nm                                           
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+dvdd                                                                         |dvdd                                                                         
+dvss                                                                         |dvss                                                                         
+sink_ena[0]                                                                  |sink_ena[0]                                                                  
+sink_ena[1]                                                                  |sink_ena[1]                                                                  
+sink_ibias                                                                   |sink_ibias                                                                   
+avdd                                                                         |avdd                                                                         
+sub                                                                          |avss **Mismatch**                                                            
+ncasc                                                                        |ncasc                                                                        
+nbias                                                                        |nbias                                                                        
+bias_nstack_3/shld2                                                          |shld2 **Mismatch**                                                           
+bias_nstack_3/shld3                                                          |shld3 **Mismatch**                                                           
+bias_nstack_1/a_1030_2157#                                                   |(no matching pin)                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists for bias_generator_ben250nm and bias_generator_ben250nm altered to match.
+Device classes bias_generator_ben250nm and bias_generator_ben250nm are equivalent.
+
+Class bias_generator_be0p_v2 (0):  Merged 4 parallel devices.
+Class bias_generator_be0p_v2 (1):  Merged 4 parallel devices.
+Subcircuit summary:
+Circuit 1: bias_generator_be0p_v2                                            |Circuit 2: bias_generator_be0p_v2                                            
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sg13cmos5l_inv_2 (5)                                                         |sg13cmos5l_inv_2 (5)                                                         
+sg13cmos5l_antennanp (5)                                                     |sg13cmos5l_antennanp (5)                                                     
+bias_pstack (31)                                                             |bias_pstack (31)                                                             
+sg13cmos5l_decap_4 (5->1)                                                    |sg13cmos5l_decap_4 (5->1)                                                    
+level_shift (5)                                                              |level_shift (5)                                                              
+Number of devices: 47                                                        |Number of devices: 47                                                        
+Number of nets: 24                                                           |Number of nets: 24                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 4 symmetries.
+
+Subcircuit pins:
+Circuit 1: bias_generator_be0p_v2                                            |Circuit 2: bias_generator_be0p_v2                                            
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+sub                                                                          |avss **Mismatch**                                                            
+pbias                                                                        |pbias                                                                        
+pcasc                                                                        |pcasc                                                                        
+source_ibias                                                                 |source_ibias                                                                 
+bias_pstack_3/shld2                                                          |shld2 **Mismatch**                                                           
+bias_pstack_3/shld3                                                          |shld3 **Mismatch**                                                           
+avdd                                                                         |avdd                                                                         
+dvdd                                                                         |dvdd                                                                         
+dvss                                                                         |dvss                                                                         
+source_ena[4]                                                                |source_ena[4]                                                                
+source_ena[3]                                                                |source_ena[3]                                                                
+source_ena[2]                                                                |source_ena[2]                                                                
+source_ena[1]                                                                |source_ena[1]                                                                
+source_ena[0]                                                                |source_ena[0]                                                                
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists for bias_generator_be0p_v2 and bias_generator_be0p_v2 altered to match.
+Device classes bias_generator_be0p_v2 and bias_generator_be0p_v2 are equivalent.
+
+Subcircuit summary:
+Circuit 1: sg13cmos5l_ocd_ip__biasgen2                                       |Circuit 2: sg13cmos5l_ocd_ip__biasgen2                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+bias_nstack (5)                                                              |bias_nstack (5)                                                              
+bias_pstack (5)                                                              |bias_pstack (5)                                                              
+bias_generator_ben1um (3)                                                    |bias_generator_ben1um (3)                                                    
+bias_generator_fe_v2 (1)                                                     |bias_generator_fe_v2 (1)                                                     
+bias_generator_ben250nm (1)                                                  |bias_generator_ben250nm (1)                                                  
+bias_generator_be0p_v2 (3)                                                   |bias_generator_be0p_v2 (3)                                                   
+Number of devices: 18                                                        |Number of devices: 18                                                        
+Number of nets: 54                                                           |Number of nets: 54                                                           
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 2 symmetries.
+
+Subcircuit pins:
+Circuit 1: sg13cmos5l_ocd_ip__biasgen2                                       |Circuit 2: sg13cmos5l_ocd_ip__biasgen2                                       
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+dvdd                                                                         |dvdd                                                                         
+ena                                                                          |ena                                                                          
+vbg                                                                          |vbg                                                                          
+ref_sel_vbg                                                                  |ref_sel_vbg                                                                  
+ref_in                                                                       |ref_in                                                                       
+ref_sel_fine                                                                 |ref_sel_fine                                                                 
+ref_sel_coarse                                                               |ref_sel_coarse                                                               
+bandgap_sink1[2]                                                             |bandgap_sink1[2]                                                             
+voltgen_sink1[2]                                                             |voltgen_sink1[2]                                                             
+voltgen_sink2[2]                                                             |voltgen_sink2[2]                                                             
+bandgap_sink1[1]                                                             |bandgap_sink1[1]                                                             
+voltgen_sink1[1]                                                             |voltgen_sink1[1]                                                             
+voltgen_sink2[1]                                                             |voltgen_sink2[1]                                                             
+bandgap_sink1[0]                                                             |bandgap_sink1[0]                                                             
+voltgen_sink1[0]                                                             |voltgen_sink1[0]                                                             
+voltgen_sink2[0]                                                             |voltgen_sink2[0]                                                             
+bandgap_sink1_ibias                                                          |bandgap_sink1_ibias                                                          
+voltgen_sink1_ibias                                                          |voltgen_sink1_ibias                                                          
+voltgen_sink2_ibias                                                          |voltgen_sink2_ibias                                                          
+bandgap_sink2[1]                                                             |bandgap_sink2[1]                                                             
+bandgap_sink2[0]                                                             |bandgap_sink2[0]                                                             
+bandgap_sink2_ibias                                                          |bandgap_sink2_ibias                                                          
+idac1_source[4]                                                              |idac1_source[4]                                                              
+idac2_source[4]                                                              |idac2_source[4]                                                              
+voltgen_source[4]                                                            |voltgen_source[4]                                                            
+idac1_source[3]                                                              |idac1_source[3]                                                              
+idac2_source[3]                                                              |idac2_source[3]                                                              
+voltgen_source[3]                                                            |voltgen_source[3]                                                            
+idac1_source[2]                                                              |idac1_source[2]                                                              
+idac2_source[2]                                                              |idac2_source[2]                                                              
+voltgen_source[2]                                                            |voltgen_source[2]                                                            
+idac1_source[1]                                                              |idac1_source[1]                                                              
+idac2_source[1]                                                              |idac2_source[1]                                                              
+voltgen_source[1]                                                            |voltgen_source[1]                                                            
+idac1_source[0]                                                              |idac1_source[0]                                                              
+idac2_source[0]                                                              |idac2_source[0]                                                              
+voltgen_source[0]                                                            |voltgen_source[0]                                                            
+idac1_source_ibias                                                           |idac1_source_ibias                                                           
+idac2_source_ibias                                                           |idac2_source_ibias                                                           
+voltgen_source_ibias                                                         |voltgen_source_ibias                                                         
+avdd                                                                         |avdd                                                                         
+dvss                                                                         |dvss                                                                         
+avss                                                                         |avss                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sg13cmos5l_ocd_ip__biasgen2 and sg13cmos5l_ocd_ip__biasgen2 are equivalent.
+
+Final result: Circuits match uniquely.
+.
