@@ -2,6 +2,9 @@ magic
 tech ihp-sg13cmos5l
 magscale 1 2
 timestamp 1788135531
+<< checkpaint >>
+rect -12352 -24408 16182 -10673
+rect -12372 -36072 16205 -24408
 << error_s >>
 rect -2461 -26134 -2249 -26098
 rect -2419 -26176 -2291 -26140
@@ -138,11 +141,11 @@ timestamp 1774721386
 transform 1 0 -7920 0 1 -25734
 box -29 -111 29 111
 use bandgap_unbuffered_v2  x1
-timestamp 1788135531
+timestamp 1788135158
 transform 1 0 0 0 1 -9600
 box -10352 -16605 14182 -3073
 use se_folded_cascode_np_ab  x2
-timestamp 1788135531
+timestamp 1788127702
 transform 1 0 -11832 0 1 -30638
 box 1460 -3434 26037 4230
 << labels >>

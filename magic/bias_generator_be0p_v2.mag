@@ -2,6 +2,8 @@ magic
 tech ihp-sg13cmos5l
 magscale 1 2
 timestamp 1788109305
+<< checkpaint >>
+rect -2084 -1995 10647 4901
 << digisub >>
 rect -392 3211 9184 3594
 << metal1 >>
@@ -137,10 +139,10 @@ transform 1 0 3316 0 -1 -1709
 box 898 -1502 1500 2379
 use level_shift  level_shift_4
 array 0 4 1800 0 0 -2896
-timestamp 1787966249
+timestamp 1788122513
 transform -1 0 8635 0 -1 923
 box -12 -1978 1519 918
-use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform 1 0 2491 0 1 3272
 box -48 -56 336 834
@@ -160,7 +162,7 @@ use sg13cmos5l_antennanp  sg13cmos5l_antennanp_4
 timestamp 1774721386
 transform 1 0 7891 0 1 3272
 box -48 -56 336 834
-use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform 1 0 3163 0 1 3272
 box -48 -56 432 834
@@ -180,7 +182,7 @@ use sg13cmos5l_decap_4  sg13cmos5l_decap_4_4
 timestamp 1774721386
 transform 1 0 8563 0 1 3272
 box -48 -56 432 834
-use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform 1 0 2779 0 1 3272
 box -48 -56 432 834
