@@ -1027,7 +1027,7 @@ array 0 15 288 0 0 86
 timestamp 1774748448
 transform 1 0 7999 0 -1 5579
 box 898 -1502 1500 2379
-use rhigh_GJN3VD  XR4
+use rhigh_GJN3VD  XR4 paramcells
 timestamp 1774721386
 transform 1 0 -4750 0 -1 5253
 box -940 -2022 940 2022

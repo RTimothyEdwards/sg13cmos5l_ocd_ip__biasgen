@@ -321,7 +321,7 @@ X3 Y B a_170_412# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.1176p ps=1.33u w=1.1
 
 .subckt bias_generator_fe_v2 ena vbg src_test0 dvdd ena_src_test0 ref_in nbias pcasc
 + pbias snk_test0 ena_snk_test0 ncasc ref_sel_fine ref_sel_coarse x13[9]/shld2 ref_sel_vbg
-+ x4[1]/a_1030_2157# avdd dvss avss
++ x4[1]/a_1030_2157# x3/avdd dvss avss
 Xbias_nstack_0 bias_pset_1/itail avss avss avss bias_nstack_0/a_1030_2157# nbias ncasc
 + ena_3v3 bias_nstack
 Xsg13cmos5l_inv_2_0 level_shift_4/in_n level_shift_4/in_p dvdd dvss sg13cmos5l_inv_2
@@ -330,12 +330,12 @@ Xbias_nstack_1[0] XR4/R2_0 avss avss avss bias_nstack_1[1]/a_1030_2157# nbias nc
 Xbias_nstack_1[1] XR4/R2_0 avss avss avss bias_nstack_1[1]/a_1030_2157# nbias ncasc
 + avss bias_nstack
 Xsg13cmos5l_inv_2_1 x12/in_n ena_snk_test0 dvdd dvss sg13cmos5l_inv_2
-Xx3 avdd pbias vbg C2/c2 nbias ena_vbg_3v3 avss bias_amp_large
+Xx3 x3/avdd pbias vbg C2/c2 nbias ena_vbg_3v3 avss bias_amp_large
 Xsg13cmos5l_inv_2_2 level_shift_0/in_n ena dvdd dvss sg13cmos5l_inv_2
 Xx4[0] snk_test0 avss avss avss x4[1]/a_1030_2157# nbias ncasc ena_test0_3v3 bias_nstack
 Xx4[1] snk_test0 avss avss avss x4[1]/a_1030_2157# nbias ncasc ena_test0_3v3 bias_nstack
 Xsg13cmos5l_inv_2_3 level_shift_6/in_p ena_src_test0 dvdd dvss sg13cmos5l_inv_2
-Xbias_pset_1 pcasc ena_vbg_3v3 bias_pset_1/itail avdd avdd pbias bias_pset
+Xbias_pset_1 pcasc ena_vbg_3v3 bias_pset_1/itail x3/avdd x3/avdd pbias bias_pset
 Xsg13cmos5l_inv_2_4 level_shift_2/in_n ref_sel_vbg dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_inv_2_5 level_shift_3/in_n level_shift_3/in_p dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_inv_2_6 level_shift_5/in_n level_shift_5/in_p dvdd dvss sg13cmos5l_inv_2
@@ -343,27 +343,28 @@ Xsg13cmos5l_inv_2_7 sg13cmos5l_inv_2_7/Y ref_sel_fine dvdd dvss sg13cmos5l_inv_2
 XXR4 avss XR4/R1_1 XR4/R2_0 XR4/R1_1 XR4/R2_2 XR4/R1_3 XR4/R2_2 XR4/R1_3 XR4/R2_4
 + XR4/R1_5 XR4/R2_4 XR4/R1_5 XR4/R2_6 XR4/R1_7 XR4/R2_6 XR4/R1_7 ref_in rhigh_GJN3VD
 Xsg13cmos5l_antennanp_0 ref_sel_coarse dvdd dvss sg13cmos5l_antennanp
-Xbias_pstack_0[0] avdd C2/c2 x13[9]/shld2 avdd enb_std_3v3 pbias pcasc bias_pstack
-Xbias_pstack_0[1] avdd C2/c2 x13[9]/shld2 avdd enb_std_3v3 pbias pcasc bias_pstack
-Xbias_pstack_0[2] avdd C2/c2 x13[9]/shld2 avdd enb_std_3v3 pbias pcasc bias_pstack
+Xbias_pstack_0[0] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_std_3v3 pbias pcasc bias_pstack
+Xbias_pstack_0[1] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_std_3v3 pbias pcasc bias_pstack
+Xbias_pstack_0[2] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_std_3v3 pbias pcasc bias_pstack
 Xsg13cmos5l_antennanp_1 ena_snk_test0 dvdd dvss sg13cmos5l_antennanp
-Xbias_pstack_1 avdd C2/c2 x13[9]/shld2 avdd enb_coarse_3v3 pbias pcasc bias_pstack
+Xbias_pstack_1 x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_coarse_3v3 pbias pcasc bias_pstack
 Xsg13cmos5l_antennanp_2 ena dvdd dvss sg13cmos5l_antennanp
 Xsg13cmos5l_antennanp_3 ena_src_test0 dvdd dvss sg13cmos5l_antennanp
-Xbias_pstack_2[0] avdd src_test0 x13[9]/shld2 avdd level_shift_6/out pbias pcasc bias_pstack
-Xbias_pstack_2[1] avdd src_test0 x13[9]/shld2 avdd level_shift_6/out pbias pcasc bias_pstack
-Xbias_pstack_3[0] avdd C2/c2 pbias avdd avdd bias_pset2_0/pbias pcasc bias_pstack
-Xbias_pstack_3[1] avdd C2/c2 pbias avdd avdd bias_pset2_0/pbias pcasc bias_pstack
+Xbias_pstack_2[0] x3/avdd src_test0 x13[9]/shld2 x3/avdd level_shift_6/out pbias pcasc
++ bias_pstack
+Xbias_pstack_2[1] x3/avdd src_test0 x13[9]/shld2 x3/avdd level_shift_6/out pbias pcasc
++ bias_pstack
+Xbias_pstack_3[0] x3/avdd C2/c2 pbias x3/avdd x3/avdd bias_pset2_0/pbias pcasc bias_pstack
+Xbias_pstack_3[1] x3/avdd C2/c2 pbias x3/avdd x3/avdd bias_pset2_0/pbias pcasc bias_pstack
 Xsg13cmos5l_antennanp_4 ref_sel_vbg dvdd dvss sg13cmos5l_antennanp
-Xbias_pset2_0 bias_pset2_0/pbias pcasc enb_vbg_3v3 bias_pset_1/itail pbias avdd avdd
-+ bias_pset2
+Xbias_pset2_0 bias_pset2_0/pbias pcasc enb_vbg_3v3 bias_pset_1/itail pbias x3/avdd
++ x3/avdd bias_pset2
 Xsg13cmos5l_antennanp_5 ref_sel_fine dvdd dvss sg13cmos5l_antennanp
 XC2 pbias C2/c2 capacitor_UPRECB
-Xlevel_shift_0 level_shift_0/in_n ena ena_3v3 avdd avss level_shift
-Xlevel_shift_1 ref_sel_vbg level_shift_2/in_n enb_vbg_3v3 avdd avss level_shift
-Xlevel_shift_2 level_shift_2/in_n ref_sel_vbg ena_vbg_3v3 avdd avss level_shift
+Xlevel_shift_0 level_shift_0/in_n ena ena_3v3 x3/avdd avss level_shift
+Xlevel_shift_1 ref_sel_vbg level_shift_2/in_n enb_vbg_3v3 x3/avdd avss level_shift
+Xlevel_shift_2 level_shift_2/in_n ref_sel_vbg ena_vbg_3v3 x3/avdd avss level_shift
 Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
-Xlevel_shift_3 level_shift_3/in_n level_shift_3/in_p enb_coarse_3v3 avdd avss level_shift
 Xrhigh_AFSZTU_0 avss C2/c2 rhigh_AFSZTU_0/R2_1 rhigh_AFSZTU_0/R1_2 rhigh_AFSZTU_0/R2_1
 + rhigh_AFSZTU_0/R1_2 rhigh_AFSZTU_0/R2_3 rhigh_AFSZTU_0/R1_4 rhigh_AFSZTU_0/R2_3
 + rhigh_AFSZTU_0/R1_4 rhigh_AFSZTU_0/R2_5 rhigh_AFSZTU_0/R1_6 rhigh_AFSZTU_0/R2_5
@@ -375,8 +376,9 @@ Xrhigh_AFSZTU_0 avss C2/c2 rhigh_AFSZTU_0/R2_1 rhigh_AFSZTU_0/R1_2 rhigh_AFSZTU_
 + rhigh_AFSZTU_0/R1_16 rhigh_AFSZTU_0/R2_17 rhigh_AFSZTU_0/R1_18 rhigh_AFSZTU_0/R2_17
 + rhigh_AFSZTU_0/R1_18 rhigh_AFSZTU_0/R2_19 avss rhigh_AFSZTU_0/R2_19 rhigh_AFSZTU
 Xsg13cmos5l_decap_4_1 dvdd dvss sg13cmos5l_decap_4
-Xx12 x12/in_n ena_snk_test0 ena_test0_3v3 avdd avss level_shift
-Xlevel_shift_4 level_shift_4/in_n level_shift_4/in_p enb_std_3v3 avdd avss level_shift
+Xlevel_shift_3 level_shift_3/in_n level_shift_3/in_p enb_coarse_3v3 x3/avdd avss level_shift
+Xx12 x12/in_n ena_snk_test0 ena_test0_3v3 x3/avdd avss level_shift
+Xlevel_shift_4 level_shift_4/in_n level_shift_4/in_p enb_std_3v3 x3/avdd avss level_shift
 Xbias_nset_0[0] XR4/R2_0 avss avss avss avss nbias ncasc ena_3v3 bias_nset
 Xbias_nset_0[1] XR4/R2_0 avss avss avss avss nbias ncasc ena_3v3 bias_nset
 Xbias_nset_0[2] XR4/R2_0 avss avss avss avss nbias ncasc ena_3v3 bias_nset
@@ -396,27 +398,27 @@ Xbias_nset_0[15] XR4/R2_0 avss avss avss avss nbias ncasc ena_3v3 bias_nset
 Xsg13cmos5l_decap_4_2 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_nand2_1_0 level_shift_4/in_p sg13cmos5l_nand2_1_3/Y ref_sel_vbg dvdd dvss
 + sg13cmos5l_nand2_1
-Xx13[0] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[1] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[2] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[3] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[4] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[5] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[6] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[7] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[8] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[9] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[10] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[11] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[12] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[13] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[14] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xx13[15] avdd C2/c2 x13[9]/shld2 avdd enb_fine_3v3 pbias pcasc bias_pstack
-Xlevel_shift_5 level_shift_5/in_n level_shift_5/in_p enb_fine_3v3 avdd avss level_shift
+Xx13[0] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[1] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[2] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[3] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[4] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[5] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[6] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[7] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[8] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[9] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[10] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[11] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[12] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[13] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[14] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xx13[15] x3/avdd C2/c2 x13[9]/shld2 x3/avdd enb_fine_3v3 pbias pcasc bias_pstack
+Xlevel_shift_5 level_shift_5/in_n level_shift_5/in_p enb_fine_3v3 x3/avdd avss level_shift
 Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_nand2_1_1 level_shift_3/in_p sg13cmos5l_nand2_1_4/Y ref_sel_vbg dvdd dvss
 + sg13cmos5l_nand2_1
-Xlevel_shift_6 ena_src_test0 level_shift_6/in_p level_shift_6/out avdd avss level_shift
+Xlevel_shift_6 ena_src_test0 level_shift_6/in_p level_shift_6/out x3/avdd avss level_shift
 Xsg13cmos5l_nor2_1_1 sg13cmos5l_nor2_1_1/Y ref_sel_coarse sg13cmos5l_inv_2_7/Y dvdd
 + dvss sg13cmos5l_nor2_1
 Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
@@ -553,14 +555,15 @@ Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
 .ends
 
-.subckt sg13cmos5l_ocd_ip__biasgen2 ena avdd avss ref_in dvdd vbg ref_sel_vbg dvss
-+ idac1_source_ibias idac2_source[4] idac2_source[3] idac2_source[2] idac2_source[1]
-+ idac2_source[0] idac2_source_ibias idac1_source[0] idac1_source[1] idac1_source[2]
-+ idac1_source[3] idac1_source[4] voltgen_source[4] voltgen_source[3] voltgen_source[2]
-+ voltgen_source[1] voltgen_source[0] voltgen_source_ibias ref_sel_coarse ref_sel_fine
-+ bandgap_sink2_ibias bandgap_sink2[0] bandgap_sink2[1] bandgap_sink1[0] bandgap_sink1[1]
-+ bandgap_sink1[2] voltgen_sink1[0] voltgen_sink1[1] voltgen_sink1[2] voltgen_sink2[0]
-+ voltgen_sink2[1] voltgen_sink2[2] voltgen_sink2_ibias voltgen_sink1_ibias bandgap_sink1_ibias
+.subckt sg13cmos5l_ocd_ip__biasgen2 ena ref_in dvdd vbg ref_sel_vbg dvss idac1_source_ibias
++ idac2_source[4] idac2_source[3] idac2_source[2] idac2_source[1] idac2_source[0]
++ idac2_source_ibias idac1_source[0] idac1_source[1] idac1_source[2] idac1_source[3]
++ idac1_source[4] voltgen_source[4] voltgen_source[3] voltgen_source[2] voltgen_source[1]
++ voltgen_source[0] voltgen_source_ibias ref_sel_coarse ref_sel_fine bandgap_sink2_ibias
++ bandgap_sink2[0] bandgap_sink2[1] bandgap_sink1[0] bandgap_sink1[1] bandgap_sink1[2]
++ voltgen_sink1[0] voltgen_sink1[1] voltgen_sink1[2] voltgen_sink2[0] voltgen_sink2[1]
++ voltgen_sink2[2] voltgen_sink2_ibias voltgen_sink1_ibias bandgap_sink1_ibias avdd
++ avss
 Xbias_nstack_0[0] bias_nstack_0[4]/itail avss avss avss bias_nstack_0[4]/a_1030_2157#
 + bias_nstack_0[4]/nbias bias_nstack_0[4]/ncasc avss bias_nstack
 Xbias_nstack_0[1] bias_nstack_0[4]/itail avss avss avss bias_nstack_0[4]/a_1030_2157#

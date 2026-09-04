@@ -514,7 +514,7 @@ pcasc                                                                        |pc
 ref_in                                                                       |ref_in                                                                       
 vbg                                                                          |vbg                                                                          
 pbias                                                                        |pbias                                                                        
-avdd                                                                         |avdd                                                                         
+x3/avdd                                                                      |avdd **Mismatch**                                                            
 src_test0                                                                    |src_test0                                                                    
 snk_test0                                                                    |snk_test0                                                                    
 ncasc                                                                        |ncasc                                                                        

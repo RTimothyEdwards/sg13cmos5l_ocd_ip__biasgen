@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1788116922
+timestamp 1788472377
 << metal1 >>
 rect 9345 4414 9377 4807
 << metal2 >>
@@ -63,20 +63,23 @@ rect 80784 4780 82034 4880
 << metal4 >>
 rect 27881 8880 28281 9237
 rect 27891 8393 28298 8734
-rect 8001 7904 10756 8291
-rect 80745 4950 83249 5337
+rect 8001 8200 10756 8291
+rect 7952 7904 10756 8200
+rect 7952 4671 9152 7904
+rect 80745 5335 83249 5337
+rect 80745 4950 83681 5335
+rect 82447 4673 83681 4950
 rect 7952 3669 9333 4671
 rect 82083 3829 83684 4673
 rect 82083 3671 83681 3829
+rect 7952 3534 9152 3669
+rect 82447 3536 83681 3671
 rect 7952 2532 9333 3534
 rect 82083 2534 83681 3536
+rect 7952 2397 9152 2532
+rect 82447 2399 83681 2534
 rect 7952 1174 9333 2397
 rect 82083 1165 83681 2399
-<< metal5 >>
-rect 7952 1174 9201 8325
-rect 34201 1652 34601 2052
-rect 40971 1530 41371 1930
-rect 82097 1137 83740 5427
 use bias_generator_be0p_v2  bias_generator_be0p_v2_0
 timestamp 1788109305
 transform 1 0 71573 0 1 5167
@@ -106,7 +109,7 @@ timestamp 1788107646
 transform 1 0 12763 0 1 5362
 box -2034 -4191 1134 4126
 use bias_generator_fe_v2  bias_generator_fe_v2_0
-timestamp 1788107151
+timestamp 1788472145
 transform 1 0 38602 0 1 -2120
 box -11127 3134 14453 11631
 use bias_nstack  bias_nstack_0
@@ -135,38 +138,6 @@ use via_Y6HC2N  via_Y6HC2N_7
 timestamp 1774721386
 transform 0 -1 29490 -1 0 8433
 box -29 -70 29 70
-use via_Y6HQLQ  via_Y6HQLQ_0 paramcells
-timestamp 1774721386
-transform 1 0 8555 0 1 1762
-box -546 -546 546 546
-use via_Y6HQLQ  via_Y6HQLQ_1
-timestamp 1774721386
-transform 1 0 82691 0 1 1735
-box -546 -546 546 546
-use via_Y6HSLQ  via_Y6HSLQ_0 paramcells
-timestamp 1774721386
-transform 1 0 8535 0 1 8114
-box -546 -210 546 210
-use via_Y6HSLQ  via_Y6HSLQ_1
-timestamp 1774721386
-transform 1 0 82696 0 1 5117
-box -546 -210 546 210
-use via_Y6Z4LQ  via_Y6Z4LQ_0 paramcells
-timestamp 1774721386
-transform 1 0 8544 0 1 3044
-box -546 -462 546 462
-use via_Y6Z4LQ  via_Y6Z4LQ_1
-timestamp 1774721386
-transform 1 0 8545 0 1 4186
-box -546 -462 546 462
-use via_Y6Z4LQ  via_Y6Z4LQ_2
-timestamp 1774721386
-transform 1 0 82681 0 1 4159
-box -546 -462 546 462
-use via_Y6Z4LQ  via_Y6Z4LQ_3
-timestamp 1774721386
-transform 1 0 82680 0 1 3017
-box -546 -462 546 462
 << labels >>
 flabel metal3 61899 7860 62099 8060 0 FreeSans 1120 90 0 0 idac1_source_ibias
 port 8 nsew
@@ -184,10 +155,6 @@ flabel metal2 50940 9276 51043 9476 0 FreeSans 1600 90 0 0 ref_sel_fine
 port 90 nsew
 flabel metal3 80468 7976 80668 8176 0 FreeSans 1120 90 0 0 voltgen_source_ibias
 port 45 nsew
-flabel metal5 34301 1752 34501 1952 0 FreeSans 1600 0 0 0 avss
-port 2 nsew
-flabel metal5 41071 1630 41271 1830 0 FreeSans 1600 0 0 0 avdd
-port 1 nsew
 flabel metal2 31906 9277 32005 9475 0 FreeSans 1600 90 0 0 ena
 port 0 nsew
 flabel metal2 35812 1031 35909 1231 0 FreeSans 1600 90 0 0 ref_in
@@ -254,4 +221,8 @@ flabel metal2 72554 9304 72664 9504 0 FreeSans 1120 0 0 0 voltgen_source[0]
 port 32 nsew
 flabel metal2 79768 9296 79838 9496 0 FreeSans 1120 0 0 0 voltgen_source[4]
 port 28 nsew
+flabel metal4 82447 1165 83681 5335 0 FreeSans 8000 90 0 0 avdd
+port 106 nsew
+flabel metal4 7952 1174 9152 4794 0 FreeSans 8000 90 0 0 avss
+port 107 nsew
 << end >>
