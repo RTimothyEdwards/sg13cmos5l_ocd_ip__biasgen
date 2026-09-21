@@ -129,11 +129,11 @@ N 40 -2150 40 -2120 {lab=vss}
 N 130 -2090 130 -2070 {lab=vss}
 N 40 -2070 130 -2070 {lab=vss}
 N 380 50 430 50 {lab=vss}
-N 380 -10 380 50 {lab=vss}
 N 380 -10 430 -10 {lab=vss}
-N 380 100 430 100 {lab=#net16}
-N 380 100 380 160 {lab=#net16}
-N 380 160 430 160 {lab=#net16}
+N 380 100 430 100 {lab=top}
+N 380 160 430 160 {lab=top}
+N 380 -10 380 50 {lab=vss}
+N 380 100 380 160 {lab=top}
 C {devices/iopin.sym} 100 -10 0 1 {name=p2 lab=vss}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 110 -130 0 0 {name=M0
 l=0.5u
@@ -317,102 +317,6 @@ C {devices/lab_wire.sym} 130 -200 0 0 {name=l45 sig_type=std_logic lab=bot
 }
 C {devices/lab_wire.sym} 130 -70 0 0 {name=l47 sig_type=std_logic lab=bot
 }
-C {sg13cmos5l_pr/rhigh.sym} 270 -1930 0 0 {name=R15
-l=3.4u
-w=1.41u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -250 0 0 {name=R1
-l=3.4u
-w=1.41u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -130 0 0 {name=R16
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -370 0 0 {name=R2
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -490 0 0 {name=R3
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -610 0 0 {name=R4
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -730 0 0 {name=R5
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -850 0 0 {name=R6
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -970 0 0 {name=R7
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -1090 0 0 {name=R8
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -1210 0 0 {name=R9
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -1330 0 0 {name=R10
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -1450 0 0 {name=R11
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -1570 0 0 {name=R12
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -1690 0 0 {name=R13
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 270 -1810 0 0 {name=R14
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 110 -2120 0 0 {name=M16
 l=0.5u
 w=2u
@@ -420,17 +324,203 @@ ng=1
 m=2
 }
 C {lab_pin.sym} 220 -2120 0 1 {name=p5 sig_type=std_logic lab=vss}
-C {sg13cmos5l_pr/rhigh.sym} 430 20 0 0 {name=R17
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
-C {sg13cmos5l_pr/rhigh.sym} 430 130 0 0 {name=R18
-w=1.41u
-l=3.4u
-body=vss
-m=1
-}
 C {lab_pin.sym} 380 50 0 0 {name=p6 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 380 160 0 0 {name=p7 sig_type=std_logic lab=top}
+C {sg13cmos5l_pr/rppd.sym} 270 -1930 0 0 {name=R19
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -1810 0 0 {name=R1
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -1690 0 0 {name=R2
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -1570 0 0 {name=R3
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -1450 0 0 {name=R4
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -1330 0 0 {name=R5
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -1210 0 0 {name=R6
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -1090 0 0 {name=R7
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -970 0 0 {name=R8
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -850 0 0 {name=R9
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -730 0 0 {name=R10
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -610 0 0 {name=R11
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -490 0 0 {name=R12
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -370 0 0 {name=R13
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -250 0 0 {name=R14
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 270 -130 0 0 {name=R15
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 430 20 0 0 {name=R16
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}
+C {sg13cmos5l_pr/rppd.sym} 430 130 0 0 {name=R17
+w=1.41u
+l=3.4u
+model=rppd
+body=vss
+spiceprefix=X
+b=0
+ m=1
+  mm_ok=1
+value="expr_eng(  ( 70.0e-6 / @w + 260.0 * ( (@b + 1)* @l + ( 1.081*( @w + 6.0e-9 ) + 0.18e-6 )*@b ) / ( @w + 6.0e-9 ) ) / @m  )"
+}

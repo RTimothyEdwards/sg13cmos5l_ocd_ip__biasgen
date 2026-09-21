@@ -1,5 +1,5 @@
-** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__bandgap_v2.sch
-.subckt sg13cmos5l_ocd_ip__bandgap_v2 vdd vbg vss ibias1_250n trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9]
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__bandgap_v3.sch
+.subckt sg13cmos5l_ocd_ip__bandgap_v3 vdd vbg vss ibias1_250n trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9]
 + trim[8] trim[7] trim[6] trim[5] trim[4] trim[3] trim[2] trim[1] trim[0] dvss dvdd ena ibias2_1u
 *.PININFO trim[15:0]:I ena:I vbg:O ibias2_1u:B ibias1_250n:B vdd:B dvdd:B dvss:B vss:B
 x1 vdd vbg_unbuf vss ibias1_250n trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9] trim[8] trim[7] trim[6] trim[5]
@@ -177,25 +177,25 @@ XM8 net13 ctrl[8] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM9 net14 ctrl[9] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM10 net15 ctrl[10] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM11 net10 ctrl[11] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
-XR15 top net12 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR1 net2 net1 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR16 net1 bot vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR2 net3 net2 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR3 net4 net3 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR4 net5 net4 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR5 net6 net5 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR6 net7 net6 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR7 net8 net7 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR8 net13 net8 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR9 net14 net13 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR10 net15 net14 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR11 net10 net15 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR12 net9 net10 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR13 net11 net9 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR14 net12 net11 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
 XM16 vss vss vss vss sg13_hv_nmos w=2u l=0.5u ng=1 m=2 mm_ok=1
-XR17 vss vss vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR18 top top vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR19 top net12 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR1 net12 net11 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR2 net11 net9 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR3 net9 net10 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR4 net10 net15 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR5 net15 net14 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR6 net14 net13 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR7 net13 net8 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR8 net8 net7 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR9 net7 net6 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR10 net6 net5 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR11 net5 net4 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR12 net4 net3 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR13 net3 net2 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR14 net2 net1 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR15 net1 bot vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR16 vss vss vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR17 top top vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
 .ends
 
 

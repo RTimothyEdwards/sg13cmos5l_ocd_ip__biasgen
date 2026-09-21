@@ -5,6 +5,7 @@ V {}
 S {}
 E {}
 T {Note:  Vtrim and ena are both in the digital 1.2V domain} -150 490 0 0 0.3 0.3 {}
+T {Testbench to measure temperature coefficient} -430 60 0 0 0.4 0.4 {}
 N 430 210 480 210 {lab=vbg}
 N 200 350 250 350 {lab=#net1}
 N 200 350 200 390 {lab=#net1}
@@ -26,13 +27,24 @@ N -330 450 200 450 {lab=GND}
 N -330 350 -330 390 {lab=vtrim[15:8]}
 C {devices/vsource.sym} -110 420 0 0 {name=Vvss value=0 savecurrent=false}
 C {devices/gnd.sym} -160 450 0 0 {name=l1 lab=GND}
-C {devices/code_shown.sym} -170 580 0 0 {name=s1 only_toplevel=false value=".option savecurrents
+C {devices/code_shown.sym} -380 750 0 0 {name=s1 only_toplevel=false value=".option savecurrents
 .control
 save all
-tran 1n 1u
-plot V(x3.vbg_unbuf) V(vbg)
+dc temp -40 125 1
+plot V(vbg)
+*** Calculate tempco
+meas dc vbgmax_m40to125 max v(vbg) from=-40 to=125
+meas dc vbgmin_m40to125 min v(vbg) from=-40 to=125
+meas dc vbgmin_m0to85 min v(vbg) from=0 to=85
+meas dc vbgmax_m0to85 max v(vbg) from=0 to=85
+**
+let tempco_m40_125_ppmC=1e6*(vbgmax_m40to125 - vbgmin_m40to125)/165/1.25
+let tempco_m0_85_ppmC=1e6*(vbgmax_m0to85 - vbgmin_m0to85)/85/1.25
+**
+print tempco_m40_125_ppmC
+print tempco_m0_85_ppmC
 .endc"}
-C {devices/code_shown.sym} -170 750 0 0 {name=s2 only_toplevel=false value=".lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerMOShv.lib mos_tt
+C {devices/code_shown.sym} -380 550 0 0 {name=s2 only_toplevel=false value=".lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerMOShv.lib mos_tt
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerPNP.lib typ
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerDIO.lib dio_tt

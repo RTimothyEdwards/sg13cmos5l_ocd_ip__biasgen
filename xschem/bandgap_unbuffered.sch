@@ -19,7 +19,6 @@ N 100 0 160 0 {lab=vss}
 N 160 0 390 -0 {lab=vss}
 N 340 -800 340 -740 {lab=vdd}
 N 160 -800 160 -740 {lab=vdd}
-N 160 -420 160 -140 {lab=vn}
 N 1550 -800 1710 -800 {lab=vdd}
 N 730 -410 730 0 {lab=vss}
 N 780 -450 880 -450 {lab=gate}
@@ -111,7 +110,6 @@ N 540 -640 540 -480 {lab=vp}
 N 340 -480 540 -480 {lab=vp}
 N 390 -640 540 -640 {lab=vp}
 N 390 -640 390 -600 {lab=vp}
-N 390 -500 390 -330 {lab=#net1}
 N 390 -330 450 -330 {lab=#net1}
 N 420 -500 500 -500 {lab=vss}
 N 420 -600 490 -600 {lab=vss}
@@ -119,6 +117,10 @@ N 1610 -460 1610 -310 {lab=vs2}
 N 1550 -460 1610 -460 {lab=vs2}
 N 1610 -250 1610 -0 {lab=vss}
 N 1550 0 1610 -0 {lab=vss}
+N 160 -340 160 -140 {lab=#net6}
+N 160 -420 160 -400 {lab=vn}
+N 390 -340 390 -330 {lab=#net1}
+N 390 -500 390 -400 {lab=#net7}
 C {sg13cmos5l_pr/pnpMPA.sym} 430 -110 0 0 {name=Q2
 m=8
 a=1.4p
@@ -224,3 +226,5 @@ C {devices/lab_wire.sym} 490 -600 0 1 {name=l9 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 500 -500 0 1 {name=l20 sig_type=std_logic lab=vss}
 C {capa.sym} 1610 -280 0 1 {name=C3 value=203.19f
 }
+C {ammeter.sym} 390 -370 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
+C {ammeter.sym} 160 -370 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
