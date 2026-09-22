@@ -281,15 +281,15 @@ X0 S G D w_n292_n224# sg13_hv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
 .ends
 
 .subckt capacitor_UEBLR3 c1 c2
-C0 c1 c2 1.76735p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=26.749u w=48u
 .ends
 
 .subckt capacitor_77YAAU c1 c2
-C0 c1 c2 0.53862p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=20u w=20u
 .ends
 
 .subckt capacitor_C4E5CZ c1 c2
-C0 c1 c2 0.11679p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=7u w=13.7u
 .ends
 
 .subckt sg13_hv_nmos_2UD3QN D S G sub
@@ -346,11 +346,11 @@ X1 VSS VDD VSS VSS sg13_lv_nmos ad=0.1428p pd=1.52u as=0 ps=0 w=0.42u l=1u
 .ends
 
 .subckt capacitor_P4YBHP c1 c2
-C0 c1 c2 0.25285p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=16.1u w=12.35u
 .ends
 
 .subckt capacitor_4HNWC9 c1 c2
-C0 c1 c2 0.30728p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=10.8u w=21.6u
 .ends
 
 .subckt bandgap_unbuffered_v2 vbg bias trim[15] trim[14] trim[13] trim[12] trim[11]
@@ -588,7 +588,7 @@ X7 S0_0 G0_0 D0_0 sub sg13_hv_nmos ad=0.68p pd=4.68u as=0.68p ps=4.68u w=2u l=1u
 .ends
 
 .subckt capacitor_W9X9FK sub c1 c2
-C0 c1 c2 1.29745p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=1 mmax=4 mmin=1 l=15.5u w=35.317u
 .ends
 
 .subckt sg13_hv_nmos_XAS6UC D0_0 S0_0 G0_0 D0_1 S0_1 G0_1 D1_0 S1_0 G1_0 D1_1 S1_1

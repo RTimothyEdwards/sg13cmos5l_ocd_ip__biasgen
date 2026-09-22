@@ -45,7 +45,7 @@ x6 dvdd dvss avdd pcasc pbias idac2_source[4] idac2_source[3] idac2_source[2] id
 + ena_snk_test0 ncasc ref_sel_fine ref_sel_coarse shld2
 *.PININFO ref_in:I avss:B ref_sel_vbg:I avdd:B ena_src_test0:I ena_snk_test0:I src_test0:B snk_test0:B vbg:I ena:I dvdd:B dvss:B
 *+ pcasc:O pbias:O nbias:O ncasc:O ref_sel_fine:I ref_sel_coarse:I shld2:B
-XR4 ref_in net7 avss rhigh w=0.5u l=138.57u m=1 b=0
+XR4 ref_in net7 avss rhigh w=0.5u l=138.57u m=1 b=0 mm_ok=1
 x4 net1 ena_3v3 ncasc nbias avss avss avss bias_nstack
 x13[1] avdd pbias pcasc enb_test0_3v3 src_test0 shld2 avdd bias_pstack
 x13[0] avdd pbias pcasc enb_test0_3v3 src_test0 shld2 avdd bias_pstack
@@ -56,7 +56,7 @@ x11 net5 ena_snk_test0 ena_test0_3v3 avdd avss level_shift
 x23 ena_src_test0 net4 enb_test0_3v3 avdd avss level_shift
 x24 net3 ena dvdd dvss sg13cmos5l_inv_2
 x35 net2 ref_sel_vbg dvdd dvss sg13cmos5l_inv_2
-XR1 net10 avss avss rhigh w=0.5u l=337.14u m=1 b=0
+XR1 net10 avss avss rhigh w=0.5u l=337.14u m=1 b=0 mm_ok=1
 x36 net3 ena ena_3v3 avdd avss level_shift
 Vmeas vfb net10 0
 .save i(vmeas)
@@ -74,7 +74,6 @@ x5 ref_sel_vbg dvdd dvss sg13cmos5l_antennanp
 x6 ena dvdd dvss sg13cmos5l_antennanp
 x7 ena_src_test0 dvdd dvss sg13cmos5l_antennanp
 x8 ena_snk_test0 dvdd dvss sg13cmos5l_antennanp
-C2 pbias vfb 228f m=1
 x9 net4 ena_src_test0 dvdd dvss sg13cmos5l_inv_2
 x10 net5 ena_snk_test0 dvdd dvss sg13cmos5l_inv_2
 x12 net2 ref_sel_vbg ena_vbg_3v3 avdd avss level_shift
@@ -137,6 +136,7 @@ x4[1] avdd dummypbias pcasc avdd vfb pbias avdd bias_pstack
 x4[0] avdd dummypbias pcasc avdd vfb pbias avdd bias_pstack
 x3[1] nset avss ncasc nbias avss avss avss bias_nstack
 x3[0] nset avss ncasc nbias avss avss avss bias_nstack
+XC1 pbias vfb cap_cmomf w=16e-6 l=11e-6 mmin=1 mmax=4 subblock=0 m=1 mm_ok=1
 .ends
 
 
@@ -205,9 +205,9 @@ x3[0] avdd pbias pcasc source_ena_b_3v3[4] source_ibias shld2 shld3 bias_pstack
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nstack.sch
 .subckt bias_nstack itail ena ncasc nbias avss shld2 shld3
 *.PININFO avss:B ena:I nbias:I itail:B ncasc:I shld2:B shld3:B
-XM3 net1 nbias avss avss sg13_hv_nmos w=3u l=1u ng=1 m=1
-XM6 net2 ncasc net1 avss sg13_hv_nmos w=3u l=1u ng=1 m=1
-XM12 itail ena net2 avss sg13_hv_nmos w=3u l=1u ng=1 m=1
+XM3 net1 nbias avss avss sg13_hv_nmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM6 net2 ncasc net1 avss sg13_hv_nmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM12 itail ena net2 avss sg13_hv_nmos w=3u l=1u ng=1 m=1 mm_ok=1
 .ends
 
 
@@ -216,9 +216,9 @@ XM12 itail ena net2 avss sg13_hv_nmos w=3u l=1u ng=1 m=1
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pstack.sch
 .subckt bias_pstack avdd pbias pcasc enb itail shld2 shld3
 *.PININFO avdd:B itail:B enb:I pcasc:I pbias:I shld2:B shld3:B
-XM13 net1 pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
-XM18 itail enb net2 avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
-XM14 net2 pcasc net1 avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
+XM13 net1 pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM18 itail enb net2 avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM14 net2 pcasc net1 avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
 .ends
 
 
@@ -288,14 +288,14 @@ x1[0] dummy_bias avss ncasc nbias avss shld2 shld3 bias_nstack
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/level_shift.sch
 .subckt level_shift in_n in_p out vdd vss
 *.PININFO in_n:I in_p:I out:O
-XM1 net1 in_p vss vss sg13_hv_nmos w=4u l=0.5u ng=1 m=2
-XM2 net1 S1_N vdd vdd sg13_hv_pmos w=1u l=0.5u ng=1 m=2
-XM3 S1_N in_n vss vss sg13_hv_nmos w=4u l=0.5u ng=1 m=2
-XM4 S1_N net1 vdd vdd sg13_hv_pmos w=1u l=0.5u ng=1 m=2
-XM5 S2_N S1_N vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=2
-XM6 S2_N S1_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=2
-XM7 out S2_N vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=4
-XM8 out S2_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=4
+XM1 net1 in_p vss vss sg13_hv_nmos w=4u l=0.5u ng=1 m=2 mm_ok=1
+XM2 net1 S1_N vdd vdd sg13_hv_pmos w=1u l=0.5u ng=1 m=2 mm_ok=1
+XM3 S1_N in_n vss vss sg13_hv_nmos w=4u l=0.5u ng=1 m=2 mm_ok=1
+XM4 S1_N net1 vdd vdd sg13_hv_pmos w=1u l=0.5u ng=1 m=2 mm_ok=1
+XM5 S2_N S1_N vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=2 mm_ok=1
+XM6 S2_N S1_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=2 mm_ok=1
+XM7 out S2_N vdd vdd sg13_hv_pmos w=2u l=0.5u ng=1 m=4 mm_ok=1
+XM8 out S2_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=4 mm_ok=1
 .ends
 
 
@@ -304,9 +304,9 @@ XM8 out S2_N vss vss sg13_hv_nmos w=1u l=0.5u ng=1 m=4
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_nset.sch
 .subckt bias_nset itail ena ncasc nbias avss shld2 shld3
 *.PININFO avss:B ena:I itail:B nbias:O ncasc:O shld2:B shld3:B
-XM3 nbias nbias avss avss sg13_hv_nmos w=3u l=1u ng=1 m=1
-XM6 ncasc ncasc nbias avss sg13_hv_nmos w=3u l=1u ng=1 m=1
-XM12 itail ena ncasc avss sg13_hv_nmos w=3u l=1u ng=1 m=1
+XM3 nbias nbias avss avss sg13_hv_nmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM6 ncasc ncasc nbias avss sg13_hv_nmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM12 itail ena ncasc avss sg13_hv_nmos w=3u l=1u ng=1 m=1 mm_ok=1
 .ends
 
 
@@ -315,9 +315,9 @@ XM12 itail ena ncasc avss sg13_hv_nmos w=3u l=1u ng=1 m=1
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset.sch
 .subckt bias_pset avdd pbias pcasc enb itail shld3
 *.PININFO pbias:B itail:B enb:I pcasc:O avdd:B shld3:B
-XM13 pbias pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
-XM18 itail enb pcasc avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
-XM14 pcasc pcasc pbias avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
+XM13 pbias pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM18 itail enb pcasc avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM14 pcasc pcasc pbias avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
 .ends
 
 
@@ -326,13 +326,13 @@ XM14 pcasc pcasc pbias avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_amp_large.sch
 .subckt bias_amp_large avdd out inn inp nbias avss ena
 *.PININFO inp:I nbias:I inn:I out:O avdd:B avss:B ena:I
-XM1 net1 nbias avss avss sg13_hv_nmos w=20u l=1u ng=20 m=1
-XM2 out outn avdd avdd sg13_hv_pmos w=10u l=0.5u ng=10 m=1
-XM3 outn outn avdd avdd sg13_hv_pmos w=10u l=0.5u ng=10 m=1
-XM4 outn inp vcom avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1
-XM5 out inn vcom avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1
-XM6 vcom ena net1 avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1
-XM7 avdd avdd avdd avdd sg13_hv_pmos w=2u l=0.5u ng=2 m=2
+XM1 net1 nbias avss avss sg13_hv_nmos w=20u l=1u ng=20 m=1 mm_ok=1
+XM2 out outn avdd avdd sg13_hv_pmos w=10u l=0.5u ng=10 m=1 mm_ok=1
+XM3 outn outn avdd avdd sg13_hv_pmos w=10u l=0.5u ng=10 m=1 mm_ok=1
+XM4 outn inp vcom avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1 mm_ok=1
+XM5 out inn vcom avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1 mm_ok=1
+XM6 vcom ena net1 avss sg13_hv_nmos w=20u l=0.5u ng=20 m=1 mm_ok=1
+XM7 avdd avdd avdd avdd sg13_hv_pmos w=2u l=0.5u ng=2 m=2 mm_ok=1
 .ends
 
 
@@ -341,8 +341,8 @@ XM7 avdd avdd avdd avdd sg13_hv_pmos w=2u l=0.5u ng=2 m=2
 ** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/bias_pset2.sch
 .subckt bias_pset2 avdd pbias pcasc enb itail shld2 shld3
 *.PININFO pbias:B itail:B enb:I pcasc:O avdd:B shld2:B shld3:B
-XM13 pbias pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
-XM18 itail enb pcasc avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
-XM14 pcasc pcasc pbias avdd sg13_hv_pmos w=3u l=1u ng=1 m=1
+XM13 pbias pbias avdd avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM18 itail enb pcasc avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
+XM14 pcasc pcasc pbias avdd sg13_hv_pmos w=3u l=1u ng=1 m=1 mm_ok=1
 .ends
 

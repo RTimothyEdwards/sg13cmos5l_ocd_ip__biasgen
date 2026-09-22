@@ -265,7 +265,7 @@ Xsg13_hv_pmos_KGSGVN_0[8] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
 .ends
 
 .subckt capacitor_UPRECB c1 c2
-C0 c1 c2 0.22798p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=11u w=16u
 .ends
 
 .subckt rhigh_AFSZTU B R1_0 R2_0 R1_1 R2_1 R1_2 R2_2 R1_3 R2_3 R1_4 R2_4 R1_5 R2_5
@@ -319,8 +319,8 @@ X2 a_170_412# A VDD VDD sg13_lv_pmos ad=0.1176p pd=1.33u as=0.4032p ps=2.96u w=1
 X3 Y B a_170_412# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.1176p ps=1.33u w=1.12u l=0.13u
 .ends
 
-.subckt bias_generator_fe_v2 ena vbg src_test0 dvdd ena_src_test0 ref_in nbias pcasc
-+ pbias snk_test0 ena_snk_test0 ncasc ref_sel_fine ref_sel_coarse x13[9]/shld2 ref_sel_vbg
+.subckt bias_generator_fe_v2 ena vbg src_test0 dvdd ena_src_test0 ref_sel_vbg ref_in
++ nbias pcasc pbias snk_test0 ena_snk_test0 ncasc ref_sel_fine ref_sel_coarse x13[9]/shld2
 + x4[1]/a_1030_2157# x3/avdd dvss avss
 Xbias_nstack_0 bias_pset_1/itail avss avss avss bias_nstack_0/a_1030_2157# nbias ncasc
 + ena_3v3 bias_nstack
@@ -593,10 +593,10 @@ Xbias_generator_ben1um_1 voltgen_sink1[2] voltgen_sink1[1] voltgen_sink1[0] volt
 Xbias_generator_ben1um_2 bandgap_sink1[2] bandgap_sink1[1] bandgap_sink1[0] bandgap_sink1_ibias
 + bias_nstack_0[4]/ncasc bias_generator_ben1um_2/bias_nstack_0[9]/itail avss dvdd
 + bias_nstack_0[4]/nbias avss avdd dvss avss avss bias_generator_ben1um
-Xbias_generator_fe_v2_0 ena vbg bias_generator_fe_v2_0/src_test0 dvdd dvss ref_in
-+ bias_nstack_0[4]/nbias bias_pstack_0[4]/pcasc bias_pstack_0[4]/pbias bias_generator_fe_v2_0/snk_test0
-+ dvss bias_nstack_0[4]/ncasc ref_sel_fine ref_sel_coarse avdd ref_sel_vbg avss avdd
-+ dvss avss bias_generator_fe_v2
+Xbias_generator_fe_v2_0 ena vbg bias_generator_fe_v2_0/src_test0 dvdd dvss ref_sel_vbg
++ ref_in bias_nstack_0[4]/nbias bias_pstack_0[4]/pcasc bias_pstack_0[4]/pbias bias_generator_fe_v2_0/snk_test0
++ dvss bias_nstack_0[4]/ncasc ref_sel_fine ref_sel_coarse avdd avss avdd dvss avss
++ bias_generator_fe_v2
 Xbias_generator_ben250nm_0 bandgap_sink2[1] bandgap_sink2[0] bandgap_sink2_ibias bias_nstack_0[4]/nbias
 + avss avss bias_nstack_0[4]/ncasc bias_nstack_0[4]/a_1030_2157# avdd dvdd dvss avss
 + bias_generator_ben250nm

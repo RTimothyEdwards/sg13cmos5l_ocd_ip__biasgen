@@ -383,11 +383,6 @@ N -530 20 -500 20 {lab=s[0]}
 N -530 70 -500 70 {lab=s[0]}
 N -530 120 -500 120 {lab=s[0]}
 N -530 170 -500 170 {lab=s[0]}
-C {capa.sym} 440 -30 0 0 {name=C1
-m=1
-value=1.64p
-footprint=1206
-device="ceramic capacitor"}
 C {iopin.sym} 140 -110 0 1 {name=p1 lab=vdd}
 C {iopin.sym} 210 80 0 0 {name=p2 lab=vss}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 570 30 0 0 {name=M1
@@ -704,3 +699,14 @@ C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -410 20 0 0 {name=x63 VDD=dvdd 
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -410 70 0 0 {name=x64 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -410 120 0 0 {name=x65 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -410 170 0 0 {name=x66 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
+C {sg13g2_pr/cap_cmomf.sym} 440 -30 0 0 {name=C2
+model=cap_cmomf
+w=26.26e-6
+l=26.26e-6
+mmin=1
+mmax=4
+subblock=0
+m=1
+mm_ok=1
+spiceprefix=X
+}

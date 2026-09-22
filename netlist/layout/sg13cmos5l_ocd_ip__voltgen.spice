@@ -254,7 +254,7 @@ X5 Y A a_248_122# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.7
 .ends
 
 .subckt capacitor_78Y85C c1 c2
-C0 c1 c2 1.64243p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=26.261u w=26.261u
 .ends
 
 .subckt sg13_hv_pmos_MW6CUW D0 G0 S1 G1 D2 G2 S3 G3 D4 G4 S5 G5 D6 G6 S7 G7 D8 G8

@@ -1427,7 +1427,7 @@ use via_Y6HKGQ  via_Y6HKGQ_1
 timestamp 1774623097
 transform 1 0 9245 0 1 -5848
 box -173 -173 173 173
-use via_Y6Z2DQ  via_Y6Z2DQ_0 sg13cmos5l_ocd_ip__analog_switches/magic/paramcells
+use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
 timestamp 1772657197
 transform 0 1 3731 -1 0 -10909
 box -70 -29 70 29

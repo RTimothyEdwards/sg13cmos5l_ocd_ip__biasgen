@@ -29,6 +29,19 @@ Circuit 1: sg13_hv_nmos                                                      |Ci
 Cell pin lists are equivalent.
 Device classes sg13_hv_nmos and sg13_hv_nmos are equivalent.
 
+Circuit 1 cell cap_cmomf and Circuit 2 cell cap_cmomf are black boxes.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_cmomf                                                         |Circuit 2: cap_cmomf                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_cmomf and cap_cmomf are equivalent.
+
 Circuit 1 cell sg13_lv_nmos and Circuit 2 cell sg13_lv_nmos are black boxes.
 Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
 Warning: Equate pins:  cell sg13_lv_nmos is a placeholder, treated as a black box.
@@ -363,12 +376,12 @@ Flattening unmatched subcell sg13_hv_pmos_QH8WBX in circuit sg13cmos5l_ocd_ip__v
 Flattening unmatched subcell capacitor_BCZJG3 in circuit sg13cmos5l_ocd_ip__voltgen_v2 (0)(1 instance)
 Flattening unmatched subcell capacitor_M46PNM in circuit sg13cmos5l_ocd_ip__voltgen_v2 (0)(1 instance)
 
-Class sg13cmos5l_ocd_ip__voltgen_v2 (0):  Merged 1 parallel devices.
-Class sg13cmos5l_ocd_ip__voltgen_v2 (1):  Merged 1 parallel devices.
+Class sg13cmos5l_ocd_ip__voltgen_v2 (0):  Merged 3 parallel devices.
+Class sg13cmos5l_ocd_ip__voltgen_v2 (1):  Merged 3 parallel devices.
 Subcircuit summary:
 Circuit 1: sg13cmos5l_ocd_ip__voltgen_v2                                     |Circuit 2: sg13cmos5l_ocd_ip__voltgen_v2                                     
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
-c (3)                                                                        |c (3)                                                                        
+cap_cmomf (3->1)                                                             |cap_cmomf (3->1)                                                             
 sg13cmos5l_inv_2 (18)                                                        |sg13cmos5l_inv_2 (18)                                                        
 hv_inv_1 (9)                                                                 |hv_inv_1 (9)                                                                 
 se_folded_cascode_p (1)                                                      |se_folded_cascode_p (1)                                                      
@@ -381,11 +394,14 @@ p_amp_large (1)                                                              |p_
 level_shift (12)                                                             |level_shift (12)                                                             
 sg13cmos5l_decap_4 (1)                                                       |sg13cmos5l_decap_4 (1)                                                       
 n_amp_large (1)                                                              |n_amp_large (1)                                                              
-Number of devices: 81                                                        |Number of devices: 81                                                        
+Number of devices: 79                                                        |Number of devices: 79                                                        
 Number of nets: 75                                                           |Number of nets: 75                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Netlists match uniquely.
+Netlists match uniquely with property errors.
+capacitor_KK7B53_0/cap_cmomf:0 vs. cap_cmomf:C4:
+ l circuit1: 4.7e-05   circuit2: 2.3e-05   (delta=68.6%, cutoff=1%)
+capacitor_KK7B53_0/cap_cmomf:0 vs. cap_cmomf:C4:
+ l circuit1: 2.3e-05   circuit2: 4.7e-05   (delta=68.6%, cutoff=1%)
 
 Subcircuit pins:
 Circuit 1: sg13cmos5l_ocd_ip__voltgen_v2                                     |Circuit 2: sg13cmos5l_ocd_ip__voltgen_v2                                     
@@ -397,19 +413,22 @@ ibias1u_3                                                                    |ib
 vss                                                                          |vss                                                                          
 dvdd                                                                         |dvdd                                                                         
 dvss                                                                         |dvss                                                                         
-ena                                                                          |ena                                                                          
-ena2                                                                         |ena2                                                                         
-ena1                                                                         |ena1                                                                         
-high                                                                         |high                                                                         
 s[1]                                                                         |s[1]                                                                         
 s[2]                                                                         |s[2]                                                                         
 s[0]                                                                         |s[0]                                                                         
 vout1                                                                        |vout1                                                                        
 vout2                                                                        |vout2                                                                        
+ena                                                                          |ena                                                                          
+ena2                                                                         |ena2                                                                         
+ena1                                                                         |ena1                                                                         
+high                                                                         |high                                                                         
 vdd                                                                          |vdd                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes sg13cmos5l_ocd_ip__voltgen_v2 and sg13cmos5l_ocd_ip__voltgen_v2 are equivalent.
 
 Final result: Circuits match uniquely.
-.
+Property errors were found.
+
+The following cells had property errors:
+ sg13cmos5l_ocd_ip__voltgen_v2

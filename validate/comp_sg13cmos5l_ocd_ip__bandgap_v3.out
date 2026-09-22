@@ -127,6 +127,19 @@ Circuit 1: sg13_lv_pmos                                                      |Ci
 Cell pin lists are equivalent.
 Device classes sg13_lv_pmos and sg13_lv_pmos are equivalent.
 
+Circuit 1 cell cap_cmomf and Circuit 2 cell cap_cmomf are black boxes.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_cmomf                                                         |Circuit 2: cap_cmomf                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_cmomf and cap_cmomf are equivalent.
+
 Subcircuit summary:
 Circuit 1: sg13cmos5l_antennanp                                              |Circuit 2: sg13cmos5l_antennanp                                              
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
@@ -247,40 +260,20 @@ Number of nets: 11                                                           |Nu
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Resolving symmetries by property value.
 Resolving symmetries by pin name.
-Netlists match uniquely with property errors.
-rhigh_SUDY2Y:XR1[22]/rhigh:0 vs. rhigh:R22:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[22]/rhigh:0 vs. rhigh:R22:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[21]/rhigh:0 vs. rhigh:R21:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[21]/rhigh:0 vs. rhigh:R21:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[2]/rhigh:0 vs. rhigh:R2:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[2]/rhigh:0 vs. rhigh:R2:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[1]/rhigh:0 vs. rhigh:R1:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[1]/rhigh:0 vs. rhigh:R1:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[0]/rhigh:0 vs. rhigh:R23:
-Property mm_ok in circuit2 has no matching property in circuit1
-rhigh_SUDY2Y:XR1[0]/rhigh:0 vs. rhigh:R23:
-Property mm_ok in circuit2 has no matching property in circuit1
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: bg_res                                                            |Circuit 2: bg_res                                                            
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 vss                                                                          |vss                                                                          
-a                                                                            |a                                                                            
-b                                                                            |b                                                                            
-c                                                                            |c                                                                            
 d                                                                            |d                                                                            
-e                                                                            |e                                                                            
-f                                                                            |f                                                                            
+c                                                                            |c                                                                            
+b                                                                            |b                                                                            
+a                                                                            |a                                                                            
 g                                                                            |g                                                                            
 h                                                                            |h                                                                            
+e                                                                            |e                                                                            
+f                                                                            |f                                                                            
 j                                                                            |j                                                                            
 k                                                                            |k                                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -298,79 +291,7 @@ rppd (18)                                                                    |rp
 Number of devices: 35                                                        |Number of devices: 35                                                        
 Number of nets: 34                                                           |Number of nets: 34                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Netlists match uniquely with property errors.
-rppd_Y8MW75_0[16]/rppd:0 vs. rppd:R19:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[16]/rppd:0 vs. rppd:R19:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[15]/rppd:0 vs. rppd:R1:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[15]/rppd:0 vs. rppd:R1:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[14]/rppd:0 vs. rppd:R2:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[14]/rppd:0 vs. rppd:R2:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[13]/rppd:0 vs. rppd:R3:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[13]/rppd:0 vs. rppd:R3:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[12]/rppd:0 vs. rppd:R4:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[12]/rppd:0 vs. rppd:R4:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[11]/rppd:0 vs. rppd:R5:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[11]/rppd:0 vs. rppd:R5:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[10]/rppd:0 vs. rppd:R6:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[10]/rppd:0 vs. rppd:R6:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[9]/rppd:0 vs. rppd:R7:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[9]/rppd:0 vs. rppd:R7:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[8]/rppd:0 vs. rppd:R8:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[8]/rppd:0 vs. rppd:R8:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[7]/rppd:0 vs. rppd:R9:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[7]/rppd:0 vs. rppd:R9:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[6]/rppd:0 vs. rppd:R10:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[6]/rppd:0 vs. rppd:R10:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[5]/rppd:0 vs. rppd:R11:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[5]/rppd:0 vs. rppd:R11:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[4]/rppd:0 vs. rppd:R12:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[4]/rppd:0 vs. rppd:R12:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[3]/rppd:0 vs. rppd:R13:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[3]/rppd:0 vs. rppd:R13:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[2]/rppd:0 vs. rppd:R14:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[2]/rppd:0 vs. rppd:R14:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[1]/rppd:0 vs. rppd:R15:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[1]/rppd:0 vs. rppd:R15:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[0]/rppd:0 vs. rppd:R16:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[0]/rppd:0 vs. rppd:R16:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[17]/rppd:0 vs. rppd:R17:
-Property mm_ok in circuit2 has no matching property in circuit1
-rppd_Y8MW75_0[17]/rppd:0 vs. rppd:R17:
-Property mm_ok in circuit2 has no matching property in circuit1
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: bg_trim                                                           |Circuit 2: bg_trim                                                           
@@ -426,8 +347,8 @@ Flattening unmatched subcell capacitor_C4E5CZ in circuit bandgap_unbuffered_v2 (
 Flattening unmatched subcell capacitor_P4YBHP in circuit bandgap_unbuffered_v2 (0)(1 instance)
 Flattening unmatched subcell capacitor_4HNWC9 in circuit bandgap_unbuffered_v2 (0)(1 instance)
 
-Class bandgap_unbuffered_v2 (0):  Merged 13 parallel devices.
-Class bandgap_unbuffered_v2 (1):  Merged 4 parallel devices.
+Class bandgap_unbuffered_v2 (0):  Merged 15 parallel devices.
+Class bandgap_unbuffered_v2 (1):  Merged 6 parallel devices.
 Subcircuit summary:
 Circuit 1: bandgap_unbuffered_v2                                             |Circuit 2: bandgap_unbuffered_v2                                             
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
@@ -439,13 +360,12 @@ sg13cmos5l_inv_2 (17)                                                        |sg
 bg_res (1)                                                                   |bg_res (1)                                                                   
 sg13_hv_pmos (7->5)                                                          |sg13_hv_pmos (7->5)                                                          
 sg13_hv_nmos (2)                                                             |sg13_hv_nmos (2)                                                             
-c (5)                                                                        |c (5)                                                                        
+cap_cmomf (5->3)                                                             |cap_cmomf (5->3)                                                             
 bg_trim (1)                                                                  |bg_trim (1)                                                                  
 sg13cmos5l_decap_4 (5->1)                                                    |sg13cmos5l_decap_4 (5->1)                                                    
-Number of devices: 69                                                        |Number of devices: 69                                                        
+Number of devices: 67                                                        |Number of devices: 67                                                        
 Number of nets: 65                                                           |Number of nets: 65                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Resolving symmetries by property value.
 Netlists match uniquely with port errors.
 
 Subcircuit pins:
@@ -495,20 +415,17 @@ Flattening unmatched subcell capacitor_W9X9FK in circuit se_folded_cascode_np_ab
 Flattening unmatched subcell sg13_hv_nmos_XAS6UC in circuit se_folded_cascode_np_ab (0)(2 instances)
 Flattening unmatched subcell sg13_hv_nmos_2G82VR in circuit se_folded_cascode_np_ab (0)(1 instance)
 
-Class se_folded_cascode_np_ab (0):  Merged 216 parallel devices.
+Class se_folded_cascode_np_ab (0):  Merged 217 parallel devices.
 Subcircuit summary:
 Circuit 1: se_folded_cascode_np_ab                                           |Circuit 2: se_folded_cascode_np_ab                                           
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 sg13_hv_pmos (108->12)                                                       |sg13_hv_pmos (108->12)                                                       
 sg13_hv_nmos (132->12)                                                       |sg13_hv_nmos (132->12)                                                       
-c (2)                                                                        |c (2)                                                                        
-Number of devices: 26                                                        |Number of devices: 26                                                        
+cap_cmomf (2->1)                                                             |cap_cmomf (2->1)                                                             
+Number of devices: 25                                                        |Number of devices: 25                                                        
 Number of nets: 19                                                           |Number of nets: 19                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Resolving symmetries by pin name.
-Resolving symmetries by net name.
-Netlists match with 1 symmetry.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: se_folded_cascode_np_ab                                           |Circuit 2: se_folded_cascode_np_ab                                           
@@ -567,7 +484,3 @@ Device classes sg13cmos5l_ocd_ip__bandgap_v3 and sg13cmos5l_ocd_ip__bandgap_v3 a
 
 Final result: Circuits match uniquely.
 .
-
-The following cells had property errors:
- bg_res
- bg_trim

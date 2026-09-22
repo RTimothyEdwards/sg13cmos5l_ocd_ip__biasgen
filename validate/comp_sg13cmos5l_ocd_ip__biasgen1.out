@@ -98,6 +98,19 @@ Circuit 1: dantenna                                                          |Ci
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes dantenna and dantenna are equivalent.
+
+Circuit 1 cell cap_cmomf and Circuit 2 cell cap_cmomf are black boxes.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_cmomf                                                         |Circuit 2: cap_cmomf                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_cmomf and cap_cmomf are equivalent.
 Flattening unmatched subcell sg13_hv_nmos_2RYP69 in circuit bias_nstack (0)(9 instances)
 
 Cell bias_nstack (0) disconnected node: shld2
@@ -447,7 +460,7 @@ rhigh (28->2)                                                                |rh
 sg13cmos5l_antennanp (6)                                                     |sg13cmos5l_antennanp (6)                                                     
 bias_pstack (24)                                                             |bias_pstack (24)                                                             
 bias_pset2 (1)                                                               |bias_pset2 (1)                                                               
-c (1)                                                                        |c (1)                                                                        
+cap_cmomf (1)                                                                |cap_cmomf (1)                                                                
 level_shift (8)                                                              |level_shift (8)                                                              
 sg13cmos5l_decap_4 (7->1)                                                    |sg13cmos5l_decap_4 (7->1)                                                    
 bias_nset (16)                                                               |bias_nset (16)                                                               

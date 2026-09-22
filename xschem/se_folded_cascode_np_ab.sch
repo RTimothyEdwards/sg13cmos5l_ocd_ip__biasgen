@@ -369,8 +369,6 @@ C {devices/lab_wire.sym} 1630 -420 0 1 {name=l35 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 1630 10 0 1 {name=l36 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 1360 -220 0 1 {name=l37 sig_type=std_logic lab=outs1
 }
-C {capa.sym} 1550 -220 3 0 {name=C1[1:0] value=1.30p
-}
 C {devices/lab_wire.sym} 1140 -120 0 1 {name=l3 sig_type=std_logic lab=vbn2
 }
 C {devices/lab_wire.sym} -410 -120 0 1 {name=l56 sig_type=std_logic lab=vbn2}
@@ -413,3 +411,14 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 1950 -120 0 0 {name=l22 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 2000 -120 0 1 {name=l38 sig_type=std_logic lab=vbn2}
+C {sg13cmos5l_pr/cap_cmomf.sym} 1550 -220 3 0 {name=C1
+model=cap_cmomf
+w=35.32e-6
+l=15.5e-6
+mmin=1
+mmax=4
+subblock=1
+m=2
+mm_ok=1
+spiceprefix=X
+}

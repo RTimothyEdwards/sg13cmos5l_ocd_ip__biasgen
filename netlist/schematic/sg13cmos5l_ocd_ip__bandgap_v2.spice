@@ -15,7 +15,6 @@ x2 vdd vbg vbg_unbuf vbg vss ibias2_1u ena_b_h se_folded_cascode_np_ab
 *.PININFO vdd:B vss:B vbg:O bias:B trim[15:0]:I dvss:B dvdd:B ena:I ena_b_h:O
 XQ2 vss vss net2 pnpMPA a=1.4e-12 p=5.4e-06 m=8
 XQ1 vss vss vn pnpMPA a=1.4e-12 p=5.4e-06 m=1
-C1 vss gate 1.77p m=1
 xres vbg comp vp vn vss net1 vss vss vp vss vss bg_res
 XM1 comp gate vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=2 mm_ok=1
 XM2 vbg gate vdd vdd sg13_hv_pmos w=4u l=1u ng=1 m=2 mm_ok=1
@@ -25,7 +24,6 @@ xamp vdd gate vp vn vss bias ena_b_h se_folded_cascode_p
 XM3 vs1 vbg vss vss sg13_hv_nmos w=1u l=1u ng=1 m=1 mm_ok=1
 XM4 gate vs1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=1 mm_ok=1
 XM5 vs1 vs2 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=1 mm_ok=1
-C2 vss vs2 252.9f m=1
 XM6 vs2 vs2 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=1 mm_ok=1
 XM7 vss vdd vs2 vs2 sg13_hv_pmos w=1u l=1u ng=1 m=1 mm_ok=1
 x1[15] net3[15] trim[15] net4[15] vdd vss level_shift
@@ -84,9 +82,11 @@ x4[3] trim[3] dvdd dvss sg13cmos5l_antennanp
 x4[2] trim[2] dvdd dvss sg13cmos5l_antennanp
 x4[1] trim[1] dvdd dvss sg13cmos5l_antennanp
 x4[0] trim[0] dvdd dvss sg13cmos5l_antennanp
-C3 vss vs2 116.8f m=1
-C4 vss vs2 538.6f m=1
-C5 vss vdd 307.3f m=1
+XC6 vss gate cap_cmomf w=48e-6 l=26.75e-6 mmin=1 mmax=4 subblock=0 m=1 mm_ok=1
+XC1 vss vs2 cap_cmomf w=20e-6 l=20e-6 mmin=1 mmax=4 subblock=0 m=1 mm_ok=1
+XC4 vss vdd cap_cmomf w=21.6e-6 l=10.8e-6 mmin=1 mmax=4 subblock=0 m=1 mm_ok=1
+XC5 vss vs2 cap_cmomf w=12.35e-6 l=16.1e-6 mmin=1 mmax=4 subblock=0 m=1 mm_ok=1
+XC2 vss vs2 cap_cmomf w=13.7e-6 l=7e-6 mmin=1 mmax=4 subblock=0 m=1 mm_ok=1
 .ends
 
 
@@ -115,12 +115,11 @@ XMIP3 outb1p inp diffb vdd sg13_hv_pmos w=4u l=1u ng=1 m=8 mm_ok=1
 XMIP1 diffb vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=16 mm_ok=1
 XMON out outs1 vss vss sg13_hv_nmos w=4u l=4u ng=1 m=4 mm_ok=1
 XMOP out outs1 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=4 mm_ok=1
-C1[1] outs1 out 1.30p m=1
-C1[0] outs1 out 1.30p m=1
 XMB6 vbn2 vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=4 mm_ok=1
 XMB3 bias ena_b net1 vdd sg13_hv_pmos w=1u l=4u ng=1 m=4 mm_ok=1
 XMDUM vss vss vss vss sg13_hv_nmos w=1u l=1u ng=1 m=12 mm_ok=1
 XMB7 vss vbn2 vss vss sg13_hv_nmos w=2u l=4u ng=1 m=4 mm_ok=1
+XC1 outs1 out cap_cmomf w=35.32e-6 l=15.5e-6 mmin=1 mmax=4 subblock=1 m=2 mm_ok=1
 .ends
 
 
@@ -177,25 +176,25 @@ XM8 net13 ctrl[8] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM9 net14 ctrl[9] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM10 net15 ctrl[10] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
 XM11 net10 ctrl[11] bot vss sg13_hv_nmos w=2u l=0.5u ng=1 m=1 mm_ok=1
-XR15 top net12 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR1 net2 net1 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR16 net1 bot vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR2 net3 net2 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR3 net4 net3 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR4 net5 net4 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR5 net6 net5 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR6 net7 net6 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR7 net8 net7 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR8 net13 net8 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR9 net14 net13 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR10 net15 net14 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR11 net10 net15 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR12 net9 net10 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR13 net11 net9 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR14 net12 net11 vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
 XM16 vss vss vss vss sg13_hv_nmos w=2u l=0.5u ng=1 m=2 mm_ok=1
-XR17 vss vss vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
-XR18 top top vss rhigh w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR19 top net12 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR1 net12 net11 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR2 net11 net9 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR3 net9 net10 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR4 net10 net15 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR5 net15 net14 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR6 net14 net13 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR7 net13 net8 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR8 net8 net7 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR9 net7 net6 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR10 net6 net5 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR11 net5 net4 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR12 net4 net3 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR13 net3 net2 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR14 net2 net1 vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR15 net1 bot vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR16 vss vss vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
+XR17 top top vss rppd w=1.41u l=3.4u m=1 b=0 mm_ok=1
 .ends
 
 

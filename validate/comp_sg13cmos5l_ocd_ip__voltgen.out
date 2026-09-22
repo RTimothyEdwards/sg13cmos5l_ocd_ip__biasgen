@@ -99,6 +99,19 @@ Circuit 1: dantenna                                                          |Ci
 Cell pin lists are equivalent.
 Device classes dantenna and dantenna are equivalent.
 
+Circuit 1 cell cap_cmomf and Circuit 2 cell cap_cmomf are black boxes.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_cmomf is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_cmomf                                                         |Circuit 2: cap_cmomf                                                         
+-----------------------------------------------------------------------------|-----------------------------------------------------------------------------
+1                                                                            |1                                                                            
+2                                                                            |2                                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_cmomf and cap_cmomf are equivalent.
+
 Class sg13cmos5l_inv_2 (0):  Merged 2 parallel devices.
 Subcircuit summary:
 Circuit 1: sg13cmos5l_inv_2                                                  |Circuit 2: sg13cmos5l_inv_2                                                  
@@ -374,7 +387,7 @@ rhigh (10->9)                                                                |rh
 sg13_hv_pmos (1)                                                             |sg13_hv_pmos (1)                                                             
 sg13cmos5l_antennanp (7)                                                     |sg13cmos5l_antennanp (7)                                                     
 sg13cmos5l_nand3_1 (8)                                                       |sg13cmos5l_nand3_1 (8)                                                       
-c (1)                                                                        |c (1)                                                                        
+cap_cmomf (1)                                                                |cap_cmomf (1)                                                                
 p_amp_large (1)                                                              |p_amp_large (1)                                                              
 level_shift (12)                                                             |level_shift (12)                                                             
 sg13cmos5l_decap_4 (1)                                                       |sg13cmos5l_decap_4 (1)                                                       

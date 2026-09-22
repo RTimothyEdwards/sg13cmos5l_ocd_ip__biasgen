@@ -180,7 +180,7 @@ Xsg13_hv_pmos_KGSGVN_0[8] avdd pbias pbias avdd sg13_hv_pmos_KGSGVN
 .ends
 
 .subckt capacitor_2JEBXB c1 c2
-C0 c1 c2 0.22481p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=16u w=6.75u
 .ends
 
 .subckt sg13_hv_pmos_DNCZKC D0 G0 S1 G1 w_n330_n224# a_138_n100#
@@ -272,8 +272,8 @@ X2 a_170_412# A VDD VDD sg13_lv_pmos ad=0.1176p pd=1.33u as=0.4032p ps=2.96u w=1
 X3 Y B a_170_412# VDD sg13_lv_pmos ad=0.3808p pd=2.92u as=0.1176p ps=1.33u w=1.12u l=0.13u
 .ends
 
-.subckt bias_generator_fe ena vbg src_test0 ena_src_test0 ref_sel_vbg ref_in pcasc
-+ pbias snk_test0 ena_snk_test0 ref_sel_fine ref_sel_coarse nbias ncasc x13[9]/shld2
+.subckt bias_generator_fe vbg src_test0 ena_src_test0 ref_sel_vbg ref_in pcasc pbias
++ snk_test0 ena_snk_test0 ref_sel_fine ref_sel_coarse nbias ena ncasc x13[9]/shld2
 + dvdd sub dvss avdd
 Xbias_nstack_0 sub sub sub bias_nstack_0/a_1030_2157# nbias ena_3v3 ncasc bias_pset_1/itail
 + bias_nstack
@@ -383,9 +383,9 @@ Xsg13cmos5l_nand2_1_4 sg13cmos5l_nand2_1_4/Y ref_sel_coarse ref_sel_fine dvdd dv
 + sg13cmos5l_nand2_1
 .ends
 
-.subckt bias_generator_be1n avdd avss sink_ena[7] sink_ena[5] sink_ena[3] sink_ibias
-+ sink_ena[4] sink_ena[0] nbias bias_nstack_6/shld2 sink_ena[1] sink_ena[6] sub sink_ena[2]
-+ bias_nstack_6/shld3 ncasc dvdd level_shift_7/vdd dvss
+.subckt bias_generator_be1n avdd avss sink_ibias sink_ena[2] sink_ena[3] sink_ena[5]
++ sink_ena[7] sink_ena[4] nbias bias_nstack_6/shld2 sink_ena[6] sub sink_ena[0] bias_nstack_6/shld3
++ ncasc dvdd level_shift_7/vdd sink_ena[1] dvss
 Xbias_nstack_0[0] bias_nstack_6/shld2 bias_nstack_6/shld3 sub sub nbias level_shift_1/out
 + ncasc sink_ibias bias_nstack
 Xbias_nstack_0[1] bias_nstack_6/shld2 bias_nstack_6/shld3 sub sub nbias level_shift_1/out
@@ -938,8 +938,8 @@ Xsg13cmos5l_decap_4_6 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_decap_4_7 dvdd dvss sg13cmos5l_decap_4
 .ends
 
-.subckt bias_generator_be0n avdd avss dvdd bias_nstack_3/shld2 sink_ena[3] sink_ena[2]
-+ bias_nstack_3/a_1030_2157# sink_ena[0] nbias sink_ena[1] ncasc level_shift_4/vdd
+.subckt bias_generator_be0n avdd avss sink_ena[3] sink_ena[0] bias_nstack_3/shld2
++ sink_ena[2] bias_nstack_3/a_1030_2157# dvdd nbias sink_ena[1] ncasc level_shift_4/vdd
 + sink_ibias sub sink_ena[4] dvss bias_nstack_3/shld3
 Xbias_nstack_0[0] bias_nstack_3/shld2 bias_nstack_3/shld3 sub sub nbias level_shift_2/out
 + ncasc sink_ibias bias_nstack
@@ -1030,9 +1030,9 @@ Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
 .ends
 
-.subckt bias_generator_be0p pcasc source_ibias source_ena[2] dvdd source_ena[1] bias_pstack_3/avdd
-+ source_ena[4] sub source_ena[0] avdd bias_pstack_3/shld3 source_ena[3] bias_pstack_3/shld2
-+ pbias dvss
+.subckt bias_generator_be0p pcasc source_ena[4] source_ena[1] source_ibias source_ena[2]
++ dvdd bias_pstack_3/avdd sub source_ena[0] avdd bias_pstack_3/shld3 source_ena[3]
++ bias_pstack_3/shld2 pbias dvss
 Xsg13cmos5l_inv_2_0 level_shift_0/in_p source_ena[1] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_inv_2_1 level_shift_2/in_p source_ena[3] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_inv_2_2 level_shift_3/in_p source_ena[4] dvdd dvss sg13cmos5l_inv_2
@@ -1117,8 +1117,8 @@ Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_decap_4_4 dvdd dvss sg13cmos5l_decap_4
 .ends
 
-.subckt bias_generator_be1p pcasc source_ena[6] source_ena[5] source_ena[1] source_ibias
-+ source_ena[4] sub source_ena[7] source_ena[3] source_ena[0] avdd dvdd source_ena[2]
+.subckt bias_generator_be1p pcasc source_ena[6] source_ena[5] source_ena[2] source_ena[1]
++ source_ibias sub source_ena[7] source_ena[4] avdd dvdd source_ena[3] source_ena[0]
 + dvss pbias bias_pstack_6/shld3 bias_pstack_6/avdd bias_pstack_6/shld2
 Xsg13cmos5l_inv_2_0 level_shift_2/in_p source_ena[5] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_inv_2_1 level_shift_4/in_p source_ena[3] dvdd dvss sg13cmos5l_inv_2
@@ -1703,31 +1703,31 @@ Xbias_nstack_0[10] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6
 + bias_nstack_0[9]/itail bias_nstack
 Xbias_nstack_0[11] avss avss avss bias_nstack_0[9]/a_1030_2157# x6/nbias avss x6/ncasc
 + bias_nstack_0[9]/itail bias_nstack
-Xx1 ena vbg x1/src_test0 dvss ref_sel_vbg ref_in x1/pcasc x1/pbias x1/snk_test0 dvss
-+ ref_sel_fine ref_sel_coarse x6/nbias x6/ncasc avdd dvdd avss dvss avdd bias_generator_fe
-Xx3 x6/avdd avss idac2_sink[7] idac2_sink[5] idac2_sink[3] idac2_sink idac2_sink[4]
-+ idac2_sink[0] x6/nbias avss idac2_sink[1] idac2_sink[6] avss idac2_sink[2] avss
-+ x6/ncasc dvdd avdd dvss bias_generator_be1n
-Xx2 x6/avdd avss dvdd avss voltgen_sink[3] voltgen_sink[2] avss voltgen_sink[0] x6/nbias
+Xx1 vbg x1/src_test0 dvss ref_sel_vbg ref_in x1/pcasc x1/pbias x1/snk_test0 dvss ref_sel_fine
++ ref_sel_coarse x6/nbias ena x6/ncasc avdd dvdd avss dvss avdd bias_generator_fe
+Xx3 x6/avdd avss idac2_sink idac2_sink[2] idac2_sink[3] idac2_sink[5] idac2_sink[7]
++ idac2_sink[4] x6/nbias avss idac2_sink[6] avss idac2_sink[0] avss x6/ncasc dvdd
++ avdd idac2_sink[1] dvss bias_generator_be1n
+Xx2 x6/avdd avss voltgen_sink[3] voltgen_sink[0] avss voltgen_sink[2] avss dvdd x6/nbias
 + voltgen_sink[1] x6/ncasc avdd voltgen_sink_ibias avss voltgen_sink[4] dvss avss
 + bias_generator_be0n
-Xx4 x6/avdd avss dvdd avss test_sink[3] test_sink[2] avss test_sink[0] x6/nbias test_sink[1]
+Xx4 x6/avdd avss test_sink[3] test_sink[0] avss test_sink[2] avss dvdd x6/nbias test_sink[1]
 + x6/ncasc avdd test_sink_ibias avss test_sink[4] dvss avss bias_generator_be0n
-Xx5 x6/avdd avss dvdd avss bandgap_sink[3] bandgap_sink[2] avss bandgap_sink[0] x6/nbias
+Xx5 x6/avdd avss bandgap_sink[3] bandgap_sink[0] avss bandgap_sink[2] avss dvdd x6/nbias
 + bandgap_sink[1] x6/ncasc avdd bandgap_sink_ibias avss bandgap_sink[4] dvss avss
 + bias_generator_be0n
-Xx6 x6/avdd avss idac1_sink[7] idac1_sink[5] idac1_sink[3] idac1_sink idac1_sink[4]
-+ idac1_sink[0] x6/nbias avss idac1_sink[1] idac1_sink[6] avss idac1_sink[2] avss
-+ x6/ncasc dvdd avdd dvss bias_generator_be1n
-Xbias_generator_be0p_0 x1/pcasc voltgen_source2_ibias voltgen_source2[2] dvdd voltgen_source2[1]
-+ avdd voltgen_source2[4] avss voltgen_source2[0] avdd avdd voltgen_source2[3] avdd
+Xx6 x6/avdd avss idac1_sink idac1_sink[2] idac1_sink[3] idac1_sink[5] idac1_sink[7]
++ idac1_sink[4] x6/nbias avss idac1_sink[6] avss idac1_sink[0] avss x6/ncasc dvdd
++ avdd idac1_sink[1] dvss bias_generator_be1n
+Xbias_generator_be0p_0 x1/pcasc voltgen_source2[4] voltgen_source2[1] voltgen_source2_ibias
++ voltgen_source2[2] dvdd avdd avss voltgen_source2[0] avdd avdd voltgen_source2[3]
++ avdd x1/pbias dvss bias_generator_be0p
+Xbias_generator_be0p_1 x1/pcasc bandgap_source[4] bandgap_source[1] bandgap_source_ibias
++ bandgap_source[2] dvdd avdd avss bandgap_source[0] avdd avdd bandgap_source[3] avdd
 + x1/pbias dvss bias_generator_be0p
-Xbias_generator_be0p_1 x1/pcasc bandgap_source_ibias bandgap_source[2] dvdd bandgap_source[1]
-+ avdd bandgap_source[4] avss bandgap_source[0] avdd avdd bandgap_source[3] avdd x1/pbias
-+ dvss bias_generator_be0p
-Xbias_generator_be0p_2 x1/pcasc voltgen_source1_ibias voltgen_source1[2] dvdd voltgen_source1[1]
-+ avdd voltgen_source1[4] avss voltgen_source1[0] avdd avdd voltgen_source1[3] avdd
-+ x1/pbias dvss bias_generator_be0p
+Xbias_generator_be0p_2 x1/pcasc voltgen_source1[4] voltgen_source1[1] voltgen_source1_ibias
++ voltgen_source1[2] dvdd avdd avss voltgen_source1[0] avdd avdd voltgen_source1[3]
++ avdd x1/pbias dvss bias_generator_be0p
 Xbias_pstack_0[0] avdd bias_pstack_0[9]/itail avdd avdd avdd x1/pbias x1/pcasc bias_pstack
 Xbias_pstack_0[1] avdd bias_pstack_0[9]/itail avdd avdd avdd x1/pbias x1/pcasc bias_pstack
 Xbias_pstack_0[2] avdd bias_pstack_0[9]/itail avdd avdd avdd x1/pbias x1/pcasc bias_pstack
@@ -1740,11 +1740,11 @@ Xbias_pstack_0[8] avdd bias_pstack_0[9]/itail avdd avdd avdd x1/pbias x1/pcasc b
 Xbias_pstack_0[9] avdd bias_pstack_0[9]/itail avdd avdd avdd x1/pbias x1/pcasc bias_pstack
 Xbias_pstack_0[10] avdd bias_pstack_0[9]/itail avdd avdd avdd x1/pbias x1/pcasc bias_pstack
 Xbias_pstack_0[11] avdd bias_pstack_0[9]/itail avdd avdd avdd x1/pbias x1/pcasc bias_pstack
-Xbias_generator_be1p_0 x1/pcasc idac1_source[6] idac1_source[5] idac1_source[1] idac1_source
-+ idac1_source[4] avss idac1_source[7] idac1_source[3] idac1_source[0] avdd dvdd idac1_source[2]
+Xbias_generator_be1p_0 x1/pcasc idac1_source[6] idac1_source[5] idac1_source[2] idac1_source[1]
++ idac1_source avss idac1_source[7] idac1_source[4] avdd dvdd idac1_source[3] idac1_source[0]
 + dvss x1/pbias avdd avdd avdd bias_generator_be1p
-Xbias_generator_be1p_1 x1/pcasc idac2_source[6] idac2_source[5] idac2_source[1] idac2_source
-+ idac2_source[4] avss idac2_source[7] idac2_source[3] idac2_source[0] avdd dvdd idac2_source[2]
+Xbias_generator_be1p_1 x1/pcasc idac2_source[6] idac2_source[5] idac2_source[2] idac2_source[1]
++ idac2_source avss idac2_source[7] idac2_source[4] avdd dvdd idac2_source[3] idac2_source[0]
 + dvss x1/pbias avdd avdd avdd bias_generator_be1p
 .ends
 

@@ -338,9 +338,9 @@ port 1 nsew
 rlabel via3 2626 5250 2626 5250 0 c2
 port 2 nsew
 << properties >>
-string device devcap None 0 0 1 1 1642.4300 c1 0 0 c2 0 0
+string device csubckt cap_cmomf 0 0 1 1 w=26.261u l=26.261u mmin=1 mmax=4 subblock=0 mm_ok=1 c1 0 0 c2 0 0
 string FIXED_BBOX 0 0 5252 5252
-string gencell capacitor
+string gencell cap_cmomf
 string library sg13cmos5l
 string parameters w 26.261 l 26.261 value 1600.0 class capacitor mmin 1 mmax 4 square 1 subblock 0 lmin 2.00 wmin 2.00 lmax 100.0 wmax 100.0 m 1
 << end >>

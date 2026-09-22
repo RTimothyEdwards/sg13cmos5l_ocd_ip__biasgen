@@ -139,8 +139,6 @@ C {devices/opin.sym} 540 -670 0 0 {name=p3 lab=vbg}
 C {devices/lab_wire.sym} 820 -450 0 0 {name=l6 sig_type=std_logic lab=gate}
 C {devices/lab_wire.sym} 270 -710 0 0 {name=l1 sig_type=std_logic lab=gate}
 C {devices/iopin.sym} 710 -370 1 0 {name=p4 lab=bias}
-C {capa.sym} 880 -350 0 0 {name=C1 value=1.69p
-}
 C {bg_res.sym} 280 -470 0 0 {name=xres
 }
 C {devices/lab_wire.sym} 310 -500 3 0 {name=l4 sig_type=std_logic lab=vss}
@@ -188,8 +186,6 @@ m=1
 }
 C {devices/lab_wire.sym} 1270 -530 0 0 {name=l13 sig_type=std_logic lab=vdd}
 C {devices/lab_wire.sym} 1230 -240 0 0 {name=l14 sig_type=std_logic lab=vbg}
-C {capa.sym} 1550 -340 0 0 {name=C2 value=440.32f
-}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1530 -530 0 0 {name=M6
 l=1u
 w=1u
@@ -224,7 +220,38 @@ C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -300 -525 0 0 {name=x1 VDD=dvdd
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -300 -140 0 0 {name=x4[15:0] VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {devices/lab_wire.sym} 490 -600 0 1 {name=l9 sig_type=std_logic lab=vss}
 C {devices/lab_wire.sym} 500 -500 0 1 {name=l20 sig_type=std_logic lab=vss}
-C {capa.sym} 1610 -280 0 1 {name=C3 value=203.19f
-}
 C {ammeter.sym} 390 -370 0 0 {name=Vmeas savecurrent=true spice_ignore=0}
 C {ammeter.sym} 160 -370 0 0 {name=Vmeas1 savecurrent=true spice_ignore=0}
+C {sg13cmos5l_pr/cap_cmomf.sym} 880 -350 0 0 {name=C4
+model=cap_cmomf
+w=26.75e-6
+l=26.75e-6
+mmin=1
+mmax=4
+subblock=0
+m=1
+mm_ok=1
+spiceprefix=X
+}
+C {sg13cmos5l_pr/cap_cmomf.sym} 1550 -340 0 0 {name=C1
+model=cap_cmomf
+w=12.35e-6
+l=16.1e-6
+mmin=1
+mmax=4
+subblock=0
+m=1
+mm_ok=1
+spiceprefix=X
+}
+C {sg13cmos5l_pr/cap_cmomf.sym} 1610 -280 0 0 {name=C2
+model=cap_cmomf
+w=13.7e-6
+l=7e-6
+mmin=1
+mmax=4
+subblock=0
+m=1
+mm_ok=1
+spiceprefix=X
+}

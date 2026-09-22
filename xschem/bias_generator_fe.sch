@@ -429,11 +429,6 @@ C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -2060 -30 0 0 {name=x8 VDD=dvdd
 C {devices/lab_pin.sym} -2190 -110 0 0 {name=p15 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} -2190 -70 0 0 {name=p16 sig_type=std_logic lab=ena_src_test0}
 C {devices/lab_pin.sym} -2190 -30 0 0 {name=p17 sig_type=std_logic lab=ena_snk_test0}
-C {capa.sym} -830 -1040 0 0 {name=C2
-m=1
-value=225f
-footprint=1206
-device="ceramic capacitor"}
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -2450 -390 0 0 {name=x9 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -2450 -320 0 0 {name=x10 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {level_shift.sym} -2010 -510 0 0 {name=x12 vdd=avdd vss=avss }
@@ -491,3 +486,14 @@ C {lab_pin.sym} -390 -1060 0 0 {name=p54 sig_type=std_logic lab=shld2}
 C {lab_pin.sym} -230 -430 0 0 {name=p55 sig_type=std_logic lab=shld2}
 C {devices/iopin.sym} -420 -580 0 1 {name=p56 lab=shld2}
 C {lab_pin.sym} -370 -580 0 1 {name=p57 sig_type=std_logic lab=shld2}
+C {sg13cmos5l_pr/cap_cmomf.sym} -830 -1040 0 0 {name=C1
+model=cap_cmomf
+w=6.75e-6
+l=16e-6
+mmin=1
+mmax=4
+subblock=0
+m=1
+mm_ok=1
+spiceprefix=X
+}

@@ -1,7 +1,7 @@
 * NGSPICE file created from sg13cmos5l_ocd_ip__voltgen_v2.ext - technology: ihp-sg13cmos5l
 
 .subckt capacitor_KK7B53 c1 c2
-C0 c1 c2 0.23325p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=23u w=8u
 .ends
 
 .subckt sg13cmos5l_inv_2 Y A VDD VSS
@@ -258,7 +258,7 @@ X5 Y A a_248_122# VSS sg13_lv_nmos ad=0.2516p pd=2.16u as=0.1406p ps=1.12u w=0.7
 .ends
 
 .subckt capacitor_BCZJG3 c1 c2
-C0 c1 c2 0.94184p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=26.261u w=26.261u
 .ends
 
 .subckt sg13_hv_pmos_MW6CUW D0 G0 S1 G1 D2 G2 S3 G3 D4 G4 S5 G5 D6 G6 S7 G7 D8 G8
@@ -391,7 +391,7 @@ Xsg13_hv_pmos_MW6CUW_0 sg13_hv_pmos_MW6CUW_0/D8 ena_b ibias ena_b sg13_hv_pmos_M
 .ends
 
 .subckt capacitor_M46PNM c1 c2
-C0 c1 c2 0.48082p
+X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=47u w=8u
 .ends
 
 .subckt sg13_hv_pmos_DNCZKC D0 G0 S1 G1 w_n330_n224# a_138_n100#
