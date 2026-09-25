@@ -62,7 +62,7 @@ C {devices/vsource.sym} 50 420 0 0 {name=Vdvdd value=1.2 savecurrent=false}
 C {lab_pin.sym} 50 210 0 0 {name=p5 sig_type=std_logic lab=dvdd}
 C {lab_pin.sym} 480 210 0 1 {name=p6 sig_type=std_logic lab=vbg}
 C {isource.sym} 200 420 0 0 {name=I1 value=1u}
-C {sg13cmos5l_ocd_ip__bandgap.sym} 270 290 0 0 {name=x3}
 C {devices/vsource.sym} -330 420 0 0 {name=Vtrim1[7:0] value=0 savecurrent=false}
 C {lab_pin.sym} -330 350 0 0 {name=p7 sig_type=std_logic lab=vtrim[15:8]}
 C {lab_pin.sym} -220 290 0 0 {name=p4 sig_type=std_logic lab=vtrim[7:0]}
+C {sg13cmos5l_ocd_ip__bandgap_v3.sym} 270 290 0 0 {name=x1}

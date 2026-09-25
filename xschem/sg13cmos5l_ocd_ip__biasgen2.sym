@@ -22,7 +22,6 @@ L 4 -150 -240 -130 -240 {}
 L 4 -130 -200 130 -200 {}
 L 4 -150 -220 -130 -220 {}
 L 4 -150 -180 -130 -180 {}
-L 4 -150 -160 -130 -160 {}
 L 4 -150 -120 -130 -120 {}
 L 4 -130 -70 130 -70 {}
 L 4 -130 -350 -130 -0 {}
@@ -59,7 +58,6 @@ B 5 -152.5 -32.5 -147.5 -27.5 {name=idac2_source[4:0] dir=in}
 B 5 -152.5 -242.5 -147.5 -237.5 {name=ref_sel_coarse dir=in}
 B 5 -152.5 -222.5 -147.5 -217.5 {name=ref_sel_fine dir=in}
 B 5 -152.5 -182.5 -147.5 -177.5 {name=bandgap_sink1[2:0] dir=in}
-B 5 -152.5 -162.5 -147.5 -157.5 {name=voltgen_source[4:0] dir=in}
 B 5 147.5 -182.5 152.5 -177.5 {name=bandgap_sink1_ibias dir=inout}
 B 5 -152.5 -122.5 -147.5 -117.5 {name=voltgen_sink2[2:0] dir=in}
 B 5 147.5 -122.5 152.5 -117.5 {name=voltgen_sink2_ibias dir=inout}
