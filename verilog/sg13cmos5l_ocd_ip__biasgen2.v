@@ -7,8 +7,9 @@ module sg13cmos5l_ocd_ip__biasgen2 (
     `ifdef USE_POWER_PINS
 	inout wire dvdd,
 	inout wire dvss,
-	inout wire vdd,
-	inout wire vss,
+	inout wire avdd,		// analog 3.3V supply (named avdd
+				// in the schematic, symbol and layout)
+	inout wire avss,
     `endif 
 
     input wire ena,		// Circuit enable
@@ -25,7 +26,7 @@ module sg13cmos5l_ocd_ip__biasgen2 (
     input wire [4:0] idac1_source,	// 1st iDAC output value setting
     input wire [4:0] idac2_source,	// 2nd iDAC output value setting
 
-    input wire real ref_in,	// Reference, normally tied to vdd 
+    input wire real ref_in,	// Reference, normally tied to avdd 
     input wire real vbg,	// Bandgap voltage in
 
     output wire real bandgap_sink1_ibias,	// bandgap 1uA sink bias

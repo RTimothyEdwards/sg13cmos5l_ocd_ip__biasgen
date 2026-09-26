@@ -6,7 +6,7 @@
  * schematic and this model are unchanged between them.
  */
 
-module sg13cmos5l_ocd_ip__bandgap_v2 (
+module sg13cmos5l_ocd_ip__bandgap_v3 (
     `ifdef USE_POWER_PINS
 	inout wire dvdd,
 	inout wire dvss,
@@ -18,7 +18,7 @@ module sg13cmos5l_ocd_ip__bandgap_v2 (
     input wire [15:0] trim,	// Thermometer code
 
     input wire real ibias1_250n,	// Current bias
-    input wire real ibias2_1,		// Current bias
+    input wire real ibias2_1u,		// Current bias
 
     output wire real vbg		// Bandgap voltage out
 );
@@ -26,7 +26,7 @@ module sg13cmos5l_ocd_ip__bandgap_v2 (
 /* Bias range check.
  *
  * The circuit behaviour has only been characterised with ibias1_250n at
- * -250 nA and ibias2_1 at -1 uA;  away from those the output below means
+ * -250 nA and ibias2_1u at -1 uA;  away from those the output below means
  * nothing, so a testbench that quietly supplies something else is
  * measuring a number the model is not entitled to produce.
  *
@@ -47,16 +47,16 @@ localparam real BIAS_TOL   = 0.10;	/* fractional, on each bias */
 /* NOMINALS ARE NEGATIVE, so the "low" bound is the more negative one. */
 wire bias1_ok = (ibias1_250n >= IBIAS1_NOM * (1.0 + BIAS_TOL)) &&
 		(ibias1_250n <= IBIAS1_NOM * (1.0 - BIAS_TOL));
-wire bias2_ok = (ibias2_1    >= IBIAS2_NOM * (1.0 + BIAS_TOL)) &&
-		(ibias2_1    <= IBIAS2_NOM * (1.0 - BIAS_TOL));
+wire bias2_ok = (ibias2_1u    >= IBIAS2_NOM * (1.0 + BIAS_TOL)) &&
+		(ibias2_1u    <= IBIAS2_NOM * (1.0 - BIAS_TOL));
 
 wire bias_ok = bias1_ok & bias2_ok;
 
 always @(bias_ok or ena) begin
     if ((ena === 1'b1) && (bias_ok !== 1'b1))
-	$display("WARNING: %m at %0t: bandgap bias out of range: ibias1_250n = %g A (want %g +/-%0.0f%%), ibias2_1 = %g A (want %g)",
+	$display("WARNING: %m at %0t: bandgap bias out of range: ibias1_250n = %g A (want %g +/-%0.0f%%), ibias2_1u = %g A (want %g)",
 		 $time, ibias1_250n, IBIAS1_NOM, BIAS_TOL * 100.0,
-		 ibias2_1, IBIAS2_NOM);
+		 ibias2_1u, IBIAS2_NOM);
 end
 
 /* Circuit behaviour:  the trim curve, straight from simulation.

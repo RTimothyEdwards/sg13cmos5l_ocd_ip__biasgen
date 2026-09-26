@@ -30,25 +30,32 @@ module sg13cmos5l_ocd_ip__voltgen_v2 (
  * this is a readable flag and a warning rather than a clamp or an
  * error.  The two sinks are nominally -1 uA and the source +1 uA;  the
  * behaviour away from those has not been characterised.
+ *
+ * WHICH PIN IS WHICH:  ibias1u_1 is the SOURCE;  ibias1u_2 and ibias1u_3
+ * are the two SINKS.  This block previously had 1 and 3 the other way
+ * round, which is why it stayed quiet while chipalooza_frame had
+ * voltgen_source_ibias and voltgen_sink1_ibias crossed -- the check
+ * agreed with the wrong wiring, so simulation passed and the error only
+ * surfaced in LVS against the schematic.
  */
 localparam real ISINK_NOM   = -1e-6;
 localparam real ISOURCE_NOM =  1e-6;
 localparam real BIAS_TOL    = 0.10;	/* fractional, on each bias */
 
-wire bias1_ok = (ibias1u_1 >= ISINK_NOM * (1.0 + BIAS_TOL)) &&
-		(ibias1u_1 <= ISINK_NOM * (1.0 - BIAS_TOL));
+wire bias1_ok = (ibias1u_1 >= ISOURCE_NOM * (1.0 - BIAS_TOL)) &&
+		(ibias1u_1 <= ISOURCE_NOM * (1.0 + BIAS_TOL));
 wire bias2_ok = (ibias1u_2 >= ISINK_NOM * (1.0 + BIAS_TOL)) &&
 		(ibias1u_2 <= ISINK_NOM * (1.0 - BIAS_TOL));
-wire bias3_ok = (ibias1u_3 >= ISOURCE_NOM * (1.0 - BIAS_TOL)) &&
-		(ibias1u_3 <= ISOURCE_NOM * (1.0 + BIAS_TOL));
+wire bias3_ok = (ibias1u_3 >= ISINK_NOM * (1.0 + BIAS_TOL)) &&
+		(ibias1u_3 <= ISINK_NOM * (1.0 - BIAS_TOL));
 
 wire bias_ok = bias1_ok & bias2_ok & bias3_ok;
 
 always @(bias_ok or ena) begin
     if ((ena === 1'b1) && (bias_ok !== 1'b1))
-	$display("WARNING: %m at %0t: voltgen bias out of range: ibias1u_1 = %g A, ibias1u_2 = %g A (want %g each), ibias1u_3 = %g A (want %g)",
-		 $time, ibias1u_1, ibias1u_2, ISINK_NOM,
-		 ibias1u_3, ISOURCE_NOM);
+	$display("WARNING: %m at %0t: voltgen bias out of range: ibias1u_1 = %g A (source, want %g), ibias1u_2 = %g A, ibias1u_3 = %g A (sinks, want %g each)",
+		 $time, ibias1u_1, ISOURCE_NOM,
+		 ibias1u_2, ibias1u_3, ISINK_NOM);
 end
 
 /* Circuit behavior:  Selection "s" multiplexes from a resistor change;
