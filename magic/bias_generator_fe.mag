@@ -405,7 +405,7 @@ use rhigh_AFSZTU  rhigh_AFSZTU_0 paramcells
 timestamp 1774721386
 transform 1 0 4080 0 1 5112
 box -2116 -1976 2116 1976
-use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform 1 0 2720 0 1 9199
 box -48 -56 336 834
@@ -429,7 +429,7 @@ use sg13cmos5l_antennanp  sg13cmos5l_antennanp_5
 timestamp 1774721386
 transform -1 0 8889 0 1 9199
 box -48 -56 336 834
-use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 4953 0 1 9199
 box -48 -56 432 834
@@ -457,7 +457,7 @@ use sg13cmos5l_decap_4  sg13cmos5l_decap_4_6
 timestamp 1774721386
 transform 1 0 7833 0 1 9199
 box -48 -56 432 834
-use sg13cmos5l_fill_2  sg13cmos5l_fill_2_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_fill_2  sg13cmos5l_fill_2_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 7065 0 1 9199
 box -48 -56 240 834
@@ -473,7 +473,7 @@ use sg13cmos5l_fill_2  sg13cmos5l_fill_2_3
 timestamp 1774721386
 transform -1 0 2336 0 1 9199
 box -48 -56 240 834
-use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 5337 0 1 9199
 box -48 -56 432 834
@@ -505,7 +505,7 @@ use sg13cmos5l_inv_2  sg13cmos5l_inv_2_7
 timestamp 1774721386
 transform -1 0 8601 0 1 9199
 box -48 -56 432 834
-use sg13cmos5l_nand2_1  sg13cmos5l_nand2_1_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_nand2_1  sg13cmos5l_nand2_1_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 5721 0 1 9199
 box -48 -56 432 834
@@ -525,7 +525,7 @@ use sg13cmos5l_nand2_1  sg13cmos5l_nand2_1_4
 timestamp 1774721386
 transform 1 0 2336 0 1 9199
 box -48 -56 432 834
-use sg13cmos5l_nor2_1  sg13cmos5l_nor2_1_1 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_nor2_1  sg13cmos5l_nor2_1_1 sg13cmos5l_stdcell
 timestamp 1774721386
 transform 1 0 6489 0 1 9199
 box -48 -56 432 834

@@ -212,7 +212,7 @@ use level_shift  level_shift_7
 timestamp 1787966249
 transform 0 -1 6406 -1 0 3706
 box -12 -1978 1519 918
-use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 21060 0 1 4094
 box -48 -56 336 834
@@ -244,7 +244,7 @@ use sg13cmos5l_antennanp  sg13cmos5l_antennanp_7
 timestamp 1774721386
 transform 1 0 12290 0 1 4094
 box -48 -56 336 834
-use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 14822 0 1 4094
 box -48 -56 432 834
@@ -276,7 +276,7 @@ use sg13cmos5l_decap_4  sg13cmos5l_decap_4_7
 timestamp 1774721386
 transform 1 0 12962 0 1 4094
 box -48 -56 432 834
-use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 sg13cmos5l_stdcell
 timestamp 1774721386
 transform -1 0 20772 0 1 4094
 box -48 -56 432 834

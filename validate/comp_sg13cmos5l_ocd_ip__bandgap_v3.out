@@ -249,40 +249,320 @@ Cell pin lists are equivalent.
 Device classes sg13cmos5l_inv_2 and sg13cmos5l_inv_2 are equivalent.
 Flattening unmatched subcell rhigh_SUDY2Y in circuit bg_res (0)(23 instances)
 
-Class bg_res (0):  Merged 18 series devices.
 Class bg_res (1):  Merged 18 series devices.
 Subcircuit summary:
 Circuit 1: bg_res                                                            |Circuit 2: bg_res                                                            
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
-rhigh (23->5)                                                                |rhigh (23->5)                                                                
-Number of devices: 5                                                         |Number of devices: 5                                                         
-Number of nets: 11                                                           |Number of nets: 11                                                           
+rhigh (23)                                                                   |rhigh (23->5) **Mismatch**                                                   
+Number of devices: 23 **Mismatch**                                           |Number of devices: 5 **Mismatch**                                            
+Number of nets: 29 **Mismatch**                                              |Number of nets: 11 **Mismatch**                                              
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Resolving symmetries by property value.
-Resolving symmetries by pin name.
-Netlists match uniquely.
-
-Subcircuit pins:
+NET mismatches: Class fragments follow (with fanout counts):
 Circuit 1: bg_res                                                            |Circuit 2: bg_res                                                            
------------------------------------------------------------------------------|-----------------------------------------------------------------------------
-vss                                                                          |vss                                                                          
-d                                                                            |d                                                                            
-c                                                                            |c                                                                            
-b                                                                            |b                                                                            
-a                                                                            |a                                                                            
-g                                                                            |g                                                                            
-h                                                                            |h                                                                            
-e                                                                            |e                                                                            
-f                                                                            |f                                                                            
-j                                                                            |j                                                                            
-k                                                                            |k                                                                            
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes bg_res and bg_res are equivalent.
+Net: vss                                                                     |Net: vss                                                                     
+  rhigh/3 = 23                                                               |  rhigh/3 = 5                                                                
+                                                                             |                                                                             
+Net: XR1[3]/R1                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[4]/R1                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[19]/R1                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[20]/R1                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[5]/R2                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[6]/R2                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[7]/R1                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[8]/R1                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[9]/R2                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[8]/R2                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[9]/R1                                                               |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[12]/R1                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[13]/R2                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[14]/R2                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[15]/R1                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[16]/R1                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[17]/R2                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+                                                                             |                                                                             
+Net: XR1[18]/R2                                                              |(no matching net)                                                            
+  rhigh/(1|2) = 2                                                            |                                                                             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Net: k                                                                       |Net: k                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: j                                                                       |Net: j                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: h                                                                       |Net: h                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: g                                                                       |Net: g                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: f                                                                       |Net: f                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: e                                                                       |Net: e                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: d                                                                       |Net: d                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: c                                                                       |Net: c                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: b                                                                       |Net: b                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+                                                                             |                                                                             
+Net: a                                                                       |Net: a                                                                       
+  rhigh/(1|2) = 1                                                            |  rhigh/(1|2) = 1                                                            
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: bg_res                                                            |Circuit 2: bg_res                                                            
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Instance: rhigh_SUDY2Y:XR1[0]/rhigh:0                                        |Instance: rhigh:R1                                                           
+  (1,2) = (1,1)                                                              |  (1,2) = (1,1)                                                              
+  3 = 23                                                                     |  3 = 5                                                                      
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[21]/rhigh:0                                       |Instance: rhigh:R2                                                           
+  (1,2) = (1,1)                                                              |  (1,2) = (1,1)                                                              
+  3 = 23                                                                     |  3 = 5                                                                      
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[22]/rhigh:0                                       |Instance: rhigh:R21                                                          
+  (1,2) = (1,1)                                                              |  (1,2) = (1,1)                                                              
+  3 = 23                                                                     |  3 = 5                                                                      
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[1]/rhigh:0                                        |Instance: rhigh:R22                                                          
+  (1,2) = (2,1)                                                              |  (1,2) = (1,1)                                                              
+  3 = 23                                                                     |  3 = 5                                                                      
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[2]/rhigh:0                                        |Instance: rhigh:R23                                                          
+  (1,2) = (2,1)                                                              |  (1,2) = (1,1)                                                              
+  3 = 23                                                                     |  3 = 5                                                                      
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[19]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,1)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[20]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,1)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[3]/rhigh:0                                        |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[4]/rhigh:0                                        |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[5]/rhigh:0                                        |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[6]/rhigh:0                                        |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[7]/rhigh:0                                        |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[8]/rhigh:0                                        |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[9]/rhigh:0                                        |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[10]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[11]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[12]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[13]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[14]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[15]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[16]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[17]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+                                                                             |                                                                             
+Instance: rhigh_SUDY2Y:XR1[18]/rhigh:0                                       |(no matching instance)                                                       
+  (1,2) = (2,2)                                                              |                                                                             
+  3 = 23                                                                     |                                                                             
+                                                                             |                                                                             
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+  Flattening non-matched subcircuits bg_res bg_res
 Flattening unmatched subcell sg13_hv_nmos_2UD3QN in circuit bg_trim (0)(18 instances)
 Flattening unmatched subcell rppd_Y8MW75 in circuit bg_trim (0)(18 instances)
 
+Cell bg_trim (0) disconnected node: m1_13078_n9645#
+Cell bg_trim (0) disconnected node: m1_13078_n10923#
+Cell bg_trim (0) disconnected node: m1_8992_n8367#
+Cell bg_trim (0) disconnected node: m1_8992_n10284#
+Cell bg_trim (0) disconnected node: m1_13078_n8793#
+Cell bg_trim (0) disconnected node: m1_8992_n9006#
+Cell bg_trim (0) disconnected node: m1_13078_n9432#
+Cell bg_trim (0) disconnected node: m1_13078_n10710#
+Cell bg_trim (0) disconnected node: m1_8992_n11988#
+Cell bg_trim (0) disconnected node: m1_8992_n10071#
+Cell bg_trim (0) disconnected node: m1_13078_n8580#
+Cell bg_trim (0) disconnected node: m1_8992_n12627#
+Cell bg_trim (0) disconnected node: m1_8992_n9858#
+Cell bg_trim (0) disconnected node: m1_8992_n11775#
+Cell bg_trim (0) disconnected node: m1_8992_n12414#
+Cell bg_trim (0) disconnected node: m1_8992_n9645#
+Cell bg_trim (0) disconnected node: m1_8992_n11562#
+Cell bg_trim (0) disconnected node: m1_8992_n8793#
+Cell bg_trim (0) disconnected node: m1_8992_n12201#
+Cell bg_trim (0) disconnected node: m1_8992_n9432#
+Cell bg_trim (0) disconnected node: m1_8992_n8580#
+Cell bg_trim (0) disconnected node: m1_8992_n12840#
+Cell bg_trim (0) disconnected node: m1_8992_n10923#
+Cell bg_trim (0) disconnected node: m1_8992_n10710#
+Cell bg_trim (0) disconnected node: m1_13078_n11349#
+Cell bg_trim (0) disconnected node: m1_13078_n13053#
+Cell bg_trim (0) disconnected node: m1_13078_n10497#
+Cell bg_trim (0) disconnected node: m1_13078_n11136#
+Cell bg_trim (0) disconnected node: m1_13078_n10284#
+Cell bg_trim (0) disconnected node: m1_13078_n11988#
+Cell bg_trim (0) disconnected node: m1_13078_n10071#
+Cell bg_trim (0) disconnected node: m1_13078_n12627#
+Cell bg_trim (0) disconnected node: m1_13078_n11775#
+Cell bg_trim (0) disconnected node: m1_13078_n12414#
+Cell bg_trim (0) disconnected node: m1_13078_n11562#
+Cell bg_trim (0) disconnected node: m1_13078_n9219#
+Cell bg_trim (0) disconnected node: m1_13078_n12201#
+Cell bg_trim (0) disconnected node: m1_13078_n8367#
+Cell bg_trim (0) disconnected node: m1_13078_n9006#
+Cell bg_trim (0) disconnected node: m1_8992_n11349#
+Cell bg_trim (0) disconnected node: m1_13078_n9858#
+Cell bg_trim (0) disconnected node: m1_8992_n13053#
+Cell bg_trim (0) disconnected node: m1_8992_n10497#
+Cell bg_trim (0) disconnected node: m1_13078_n12840#
+Cell bg_trim (0) disconnected node: m1_8992_n11136#
+Cell bg_trim (0) disconnected node: m1_8992_n9219#
 Class bg_trim (0):  Merged 1 parallel devices.
+Cell bg_trim (0) disconnected node: m1_13078_n9645#
+Cell bg_trim (0) disconnected node: m1_13078_n10923#
+Cell bg_trim (0) disconnected node: m1_8992_n8367#
+Cell bg_trim (0) disconnected node: m1_8992_n10284#
+Cell bg_trim (0) disconnected node: m1_13078_n8793#
+Cell bg_trim (0) disconnected node: m1_8992_n9006#
+Cell bg_trim (0) disconnected node: m1_13078_n9432#
+Cell bg_trim (0) disconnected node: m1_13078_n10710#
+Cell bg_trim (0) disconnected node: m1_8992_n11988#
+Cell bg_trim (0) disconnected node: m1_8992_n10071#
+Cell bg_trim (0) disconnected node: m1_13078_n8580#
+Cell bg_trim (0) disconnected node: m1_8992_n12627#
+Cell bg_trim (0) disconnected node: m1_8992_n9858#
+Cell bg_trim (0) disconnected node: m1_8992_n11775#
+Cell bg_trim (0) disconnected node: m1_8992_n12414#
+Cell bg_trim (0) disconnected node: m1_8992_n9645#
+Cell bg_trim (0) disconnected node: m1_8992_n11562#
+Cell bg_trim (0) disconnected node: m1_8992_n8793#
+Cell bg_trim (0) disconnected node: m1_8992_n12201#
+Cell bg_trim (0) disconnected node: m1_8992_n9432#
+Cell bg_trim (0) disconnected node: m1_8992_n8580#
+Cell bg_trim (0) disconnected node: m1_8992_n12840#
+Cell bg_trim (0) disconnected node: m1_8992_n10923#
+Cell bg_trim (0) disconnected node: m1_8992_n10710#
+Cell bg_trim (0) disconnected node: m1_13078_n11349#
+Cell bg_trim (0) disconnected node: m1_13078_n13053#
+Cell bg_trim (0) disconnected node: m1_13078_n10497#
+Cell bg_trim (0) disconnected node: m1_13078_n11136#
+Cell bg_trim (0) disconnected node: m1_13078_n10284#
+Cell bg_trim (0) disconnected node: m1_13078_n11988#
+Cell bg_trim (0) disconnected node: m1_13078_n10071#
+Cell bg_trim (0) disconnected node: m1_13078_n12627#
+Cell bg_trim (0) disconnected node: m1_13078_n11775#
+Cell bg_trim (0) disconnected node: m1_13078_n12414#
+Cell bg_trim (0) disconnected node: m1_13078_n11562#
+Cell bg_trim (0) disconnected node: m1_13078_n9219#
+Cell bg_trim (0) disconnected node: m1_13078_n12201#
+Cell bg_trim (0) disconnected node: m1_13078_n8367#
+Cell bg_trim (0) disconnected node: m1_13078_n9006#
+Cell bg_trim (0) disconnected node: m1_8992_n11349#
+Cell bg_trim (0) disconnected node: m1_13078_n9858#
+Cell bg_trim (0) disconnected node: m1_8992_n13053#
+Cell bg_trim (0) disconnected node: m1_8992_n10497#
+Cell bg_trim (0) disconnected node: m1_13078_n12840#
+Cell bg_trim (0) disconnected node: m1_8992_n11136#
+Cell bg_trim (0) disconnected node: m1_8992_n9219#
 Subcircuit summary:
 Circuit 1: bg_trim                                                           |Circuit 2: bg_trim                                                           
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
@@ -291,7 +571,7 @@ rppd (18)                                                                    |rp
 Number of devices: 35                                                        |Number of devices: 35                                                        
 Number of nets: 34                                                           |Number of nets: 34                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-Netlists match uniquely.
+Netlists match uniquely with port errors.
 
 Subcircuit pins:
 Circuit 1: bg_trim                                                           |Circuit 2: bg_trim                                                           
@@ -315,6 +595,52 @@ ctrl[2]                                                                      |ct
 ctrl[0]                                                                      |ctrl[0]                                                                      
 bot                                                                          |bot                                                                          
 vss                                                                          |vss                                                                          
+m1_13078_n9645#                                                              |(no matching pin)                                                            
+m1_13078_n10923#                                                             |(no matching pin)                                                            
+m1_8992_n8367#                                                               |(no matching pin)                                                            
+m1_8992_n10284#                                                              |(no matching pin)                                                            
+m1_13078_n8793#                                                              |(no matching pin)                                                            
+m1_8992_n9006#                                                               |(no matching pin)                                                            
+m1_13078_n9432#                                                              |(no matching pin)                                                            
+m1_13078_n10710#                                                             |(no matching pin)                                                            
+m1_8992_n11988#                                                              |(no matching pin)                                                            
+m1_8992_n10071#                                                              |(no matching pin)                                                            
+m1_13078_n8580#                                                              |(no matching pin)                                                            
+m1_8992_n12627#                                                              |(no matching pin)                                                            
+m1_8992_n9858#                                                               |(no matching pin)                                                            
+m1_8992_n11775#                                                              |(no matching pin)                                                            
+m1_8992_n12414#                                                              |(no matching pin)                                                            
+m1_8992_n9645#                                                               |(no matching pin)                                                            
+m1_8992_n11562#                                                              |(no matching pin)                                                            
+m1_8992_n8793#                                                               |(no matching pin)                                                            
+m1_8992_n12201#                                                              |(no matching pin)                                                            
+m1_8992_n9432#                                                               |(no matching pin)                                                            
+m1_8992_n8580#                                                               |(no matching pin)                                                            
+m1_8992_n12840#                                                              |(no matching pin)                                                            
+m1_8992_n10923#                                                              |(no matching pin)                                                            
+m1_8992_n10710#                                                              |(no matching pin)                                                            
+m1_13078_n11349#                                                             |(no matching pin)                                                            
+m1_13078_n13053#                                                             |(no matching pin)                                                            
+m1_13078_n10497#                                                             |(no matching pin)                                                            
+m1_13078_n11136#                                                             |(no matching pin)                                                            
+m1_13078_n10284#                                                             |(no matching pin)                                                            
+m1_13078_n11988#                                                             |(no matching pin)                                                            
+m1_13078_n10071#                                                             |(no matching pin)                                                            
+m1_13078_n12627#                                                             |(no matching pin)                                                            
+m1_13078_n11775#                                                             |(no matching pin)                                                            
+m1_13078_n12414#                                                             |(no matching pin)                                                            
+m1_13078_n11562#                                                             |(no matching pin)                                                            
+m1_13078_n9219#                                                              |(no matching pin)                                                            
+m1_13078_n12201#                                                             |(no matching pin)                                                            
+m1_13078_n8367#                                                              |(no matching pin)                                                            
+m1_13078_n9006#                                                              |(no matching pin)                                                            
+m1_8992_n11349#                                                              |(no matching pin)                                                            
+m1_13078_n9858#                                                              |(no matching pin)                                                            
+m1_8992_n13053#                                                              |(no matching pin)                                                            
+m1_8992_n10497#                                                              |(no matching pin)                                                            
+m1_13078_n12840#                                                             |(no matching pin)                                                            
+m1_8992_n11136#                                                              |(no matching pin)                                                            
+m1_8992_n9219#                                                               |(no matching pin)                                                            
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes bg_trim and bg_trim are equivalent.
@@ -347,8 +673,9 @@ Flattening unmatched subcell capacitor_C4E5CZ in circuit bandgap_unbuffered_v2 (
 Flattening unmatched subcell capacitor_P4YBHP in circuit bandgap_unbuffered_v2 (0)(1 instance)
 Flattening unmatched subcell capacitor_4HNWC9 in circuit bandgap_unbuffered_v2 (0)(1 instance)
 
-Class bandgap_unbuffered_v2 (0):  Merged 15 parallel devices.
-Class bandgap_unbuffered_v2 (1):  Merged 6 parallel devices.
+Class bandgap_unbuffered_v2 (0):  Merged 16 parallel devices.
+Class bandgap_unbuffered_v2 (0):  Merged 18 series devices.
+Class bandgap_unbuffered_v2 (1):  Merged 7 parallel devices.
 Subcircuit summary:
 Circuit 1: bandgap_unbuffered_v2                                             |Circuit 2: bandgap_unbuffered_v2                                             
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
@@ -357,13 +684,13 @@ pnpMPA (9->2)                                                                |pn
 level_shift (17)                                                             |level_shift (17)                                                             
 se_folded_cascode_p (1)                                                      |se_folded_cascode_p (1)                                                      
 sg13cmos5l_inv_2 (17)                                                        |sg13cmos5l_inv_2 (17)                                                        
-bg_res (1)                                                                   |bg_res (1)                                                                   
+rhigh (23->4)                                                                |rhigh (23->4)                                                                
 sg13_hv_pmos (7->5)                                                          |sg13_hv_pmos (7->5)                                                          
 sg13_hv_nmos (2)                                                             |sg13_hv_nmos (2)                                                             
 cap_cmomf (5->3)                                                             |cap_cmomf (5->3)                                                             
 bg_trim (1)                                                                  |bg_trim (1)                                                                  
 sg13cmos5l_decap_4 (5->1)                                                    |sg13cmos5l_decap_4 (5->1)                                                    
-Number of devices: 67                                                        |Number of devices: 67                                                        
+Number of devices: 70                                                        |Number of devices: 70                                                        
 Number of nets: 65                                                           |Number of nets: 65                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Netlists match uniquely with port errors.

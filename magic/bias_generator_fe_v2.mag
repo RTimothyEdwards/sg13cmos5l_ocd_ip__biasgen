@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1790458259
+timestamp 1790543904
 << digisub >>
 rect -11127 10498 14306 10882
 << hvpsubdiff >>
@@ -670,7 +670,7 @@ use sg13cmos5l_inv_2  sg13cmos5l_inv_2_7
 timestamp 1789591744
 transform -1 0 12401 0 1 10559
 box -48 -56 432 834
-use sg13cmos5l_nand2_1  sg13cmos5l_nand2_1_0 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_nand2_1  sg13cmos5l_nand2_1_0 sg13cmos5l_stdcell
 timestamp 1789591744
 transform -1 0 9521 0 1 10559
 box -48 -56 432 834
@@ -690,7 +690,7 @@ use sg13cmos5l_nand2_1  sg13cmos5l_nand2_1_4
 timestamp 1789591744
 transform 1 0 7090 0 1 10559
 box -48 -56 432 834
-use sg13cmos5l_nor2_1  sg13cmos5l_nor2_1_1 ../../../magic/sg13cmos5l_stdcell
+use sg13cmos5l_nor2_1  sg13cmos5l_nor2_1_1 sg13cmos5l_stdcell
 timestamp 1789591744
 transform 1 0 10289 0 1 10559
 box -48 -56 432 834
@@ -1217,4 +1217,6 @@ flabel metal2 -6661 11437 -6616 11616 0 FreeSans 1600 90 0 0 ena
 port 1 nsew
 flabel metal2 -9188 11442 -9143 11582 0 FreeSans 1600 90 0 0 ena_snk_test0
 port 15 nsew
+<< properties >>
+string MASKHINTS_THKOX -1825 9824 1769 9996
 << end >>

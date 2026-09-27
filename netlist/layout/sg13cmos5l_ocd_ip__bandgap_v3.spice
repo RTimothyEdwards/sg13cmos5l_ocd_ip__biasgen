@@ -241,7 +241,9 @@ X3 VDD A Y VDD sg13_lv_pmos ad=0.3864p pd=2.93u as=0.2128p ps=1.5u w=1.12u l=0.1
 X0 R1 R2 sub rhigh l=20u w=0.69u
 .ends
 
-.subckt bg_res b a d c vss e f g h j k
+.subckt bg_res b a d c vss e f g h j k XR1[20]/R1 XR1[14]/R2 XR1[8]/R1 XR1[9]/R2 XR1[15]/R1
++ XR1[6]/R2 XR1[12]/R1 XR1[3]/R1 XR1[17]/R2 XR1[19]/R1 XR1[8]/R2 XR1[16]/R1 XR1[5]/R2
++ XR1[9]/R1 XR1[13]/R2 XR1[7]/R1 XR1[4]/R1 XR1[18]/R2
 XXR1[0] k j vss rhigh_SUDY2Y
 XXR1[1] XR1[3]/R1 a vss rhigh_SUDY2Y
 XXR1[2] XR1[4]/R1 b vss rhigh_SUDY2Y
@@ -301,7 +303,16 @@ X0 R1 R2 sub rppd l=3.4u w=1.41u
 .ends
 
 .subckt bg_trim top bot ctrl[15] ctrl[14] ctrl[13] ctrl[12] ctrl[11] ctrl[10] ctrl[9]
-+ ctrl[8] ctrl[7] ctrl[6] ctrl[5] ctrl[4] ctrl[3] ctrl[2] ctrl[1] ctrl[0] vss
++ ctrl[8] ctrl[7] ctrl[6] ctrl[5] ctrl[4] ctrl[3] ctrl[2] ctrl[1] ctrl[0] m1_13078_n9645#
++ m1_13078_n10923# m1_8992_n8367# m1_8992_n10284# m1_13078_n8793# m1_8992_n9006# m1_13078_n9432#
++ m1_13078_n10710# m1_8992_n11988# m1_8992_n10071# m1_13078_n8580# m1_8992_n12627#
++ m1_8992_n9858# m1_8992_n11775# m1_8992_n12414# m1_8992_n9645# m1_8992_n11562# m1_8992_n8793#
++ m1_8992_n12201# m1_8992_n9432# m1_8992_n8580# m1_8992_n12840# m1_8992_n10923# m1_8992_n10710#
++ m1_13078_n11349# m1_13078_n13053# m1_13078_n10497# m1_13078_n11136# m1_13078_n10284#
++ m1_13078_n11988# m1_13078_n10071# m1_13078_n12627# m1_13078_n11775# m1_13078_n12414#
++ m1_13078_n11562# m1_13078_n9219# m1_13078_n12201# m1_13078_n8367# vss m1_13078_n9006#
++ m1_8992_n11349# m1_13078_n9858# m1_8992_n13053# m1_8992_n10497# m1_13078_n12840#
++ m1_8992_n11136# m1_8992_n9219#
 XXM0[0] vss vss vss vss sg13_hv_nmos_2UD3QN
 XXM0[1] bot XM0[1]/S ctrl[0] vss sg13_hv_nmos_2UD3QN
 XXM0[2] bot XM0[2]/S ctrl[1] vss sg13_hv_nmos_2UD3QN
@@ -355,7 +366,7 @@ X0 c1 c2 cap_cmomf mm_ok=1 subblock=0 mmax=4 mmin=1 l=10.8u w=21.6u
 
 .subckt bandgap_unbuffered_v2 vbg bias trim[15] trim[14] trim[13] trim[12] trim[11]
 + trim[10] trim[9] trim[8] trim[7] trim[6] trim[5] trim[4] trim[3] trim[2] trim[1]
-+ trim[0] dvdd ena ena_b_h XM4/S dvss vss vdd
++ trim[0] dvdd ena ena_b_h XM4/S dvss vdd vss
 Xsg13cmos5l_antennanp_16 ena dvdd dvss sg13cmos5l_antennanp
 XXQ2_1 vss vss xtr/bot pnpMPA_9DZCCL
 Xx1[0] ena x1[0]/in_p ena_b_h vss vdd level_shift
@@ -372,11 +383,14 @@ Xsg13cmos5l_inv_2_0 x1[1]/in_n trim[15] dvdd dvss sg13cmos5l_inv_2
 XXQ2_2 vss vss xtr/bot pnpMPA_9DZCCL
 Xsg13cmos5l_inv_2_1 sg13cmos5l_inv_2_1/Y trim[14] dvdd dvss sg13cmos5l_inv_2
 XXQ2_3 vss vss xtr/bot pnpMPA_9DZCCL
-Xxres vbg xres/a xres/e XQ1/E vss xres/e xres/f vss vss vss vss bg_res
+Xxres vbg xres/a xres/e XQ1/E vss xres/e xres/f vss vss vss vss xres/XR1[20]/R1 xres/XR1[14]/R2
++ xres/XR1[8]/R1 xres/XR1[9]/R2 xres/XR1[15]/R1 xres/XR1[6]/R2 xres/XR1[12]/R1 xres/XR1[3]/R1
++ xres/XR1[17]/R2 xres/XR1[19]/R1 xres/XR1[8]/R2 xres/XR1[16]/R1 xres/XR1[5]/R2 xres/XR1[9]/R1
++ xres/XR1[13]/R2 xres/XR1[7]/R1 xres/XR1[4]/R1 xres/XR1[18]/R2 bg_res
 Xsg13cmos5l_inv_2_2 x1[2]/in_n trim[13] dvdd dvss sg13cmos5l_inv_2
 XXQ2_4 vss vss xtr/bot pnpMPA_9DZCCL
-XXQ2_5 vss vss xtr/bot pnpMPA_9DZCCL
 Xsg13cmos5l_inv_2_3 sg13cmos5l_inv_2_3/Y trim[12] dvdd dvss sg13cmos5l_inv_2
+XXQ2_5 vss vss xtr/bot pnpMPA_9DZCCL
 Xsg13cmos5l_inv_2_4 x1[3]/in_n trim[11] dvdd dvss sg13cmos5l_inv_2
 XXQ2_6 vss vss xtr/bot pnpMPA_9DZCCL
 XXQ2_7 vss vss xtr/bot pnpMPA_9DZCCL
@@ -387,16 +401,16 @@ Xsg13cmos5l_inv_2_7 sg13cmos5l_inv_2_7/Y trim[8] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_inv_2_8 x1[5]/in_n trim[7] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_inv_2_9 sg13cmos5l_inv_2_9/Y trim[6] dvdd dvss sg13cmos5l_inv_2
 XXM1 vdd xres/a XM4/S vbg vdd XM4/S vdd sg13_hv_pmos_NWA9LU
-XXM2 vdd xres/a XM4/S vbg vdd XM4/S vdd sg13_hv_pmos_NWA9LU
 Xsg13cmos5l_antennanp_0 trim[15] dvdd dvss sg13cmos5l_antennanp
+XXM2 vdd xres/a XM4/S vbg vdd XM4/S vdd sg13_hv_pmos_NWA9LU
 Xsg13cmos5l_antennanp_1 trim[14] dvdd dvss sg13cmos5l_antennanp
 XXM3 vss vs1 vbg vss sg13_hv_nmos_BEVMZW
-XXM4 vss XM4/S vs1 vss sg13_hv_nmos_BEVMZW
 Xsg13cmos5l_antennanp_2 trim[13] dvdd dvss sg13cmos5l_antennanp
+XXM4 vss XM4/S vs1 vss sg13_hv_nmos_BEVMZW
 Xsg13cmos5l_antennanp_3 trim[12] dvdd dvss sg13cmos5l_antennanp
 XXM5 vdd vs1 vs2 vdd sg13_hv_pmos_WYN5QB
-XXM6 vdd vs2 vs2 vdd sg13_hv_pmos_WYN5QB
 Xsg13cmos5l_antennanp_4 trim[11] dvdd dvss sg13cmos5l_antennanp
+XXM6 vdd vs2 vs2 vdd sg13_hv_pmos_WYN5QB
 Xsg13cmos5l_antennanp_5 trim[10] dvdd dvss sg13cmos5l_antennanp
 XC1 vss XM4/S capacitor_UEBLR3
 XXM7 vs2 vss vdd vs2 sg13_hv_pmos_WYN5QB
@@ -416,22 +430,29 @@ Xlevel_shift_0[7] sg13cmos5l_inv_2_15/Y trim[0] xtr/ctrl[0] vss vdd level_shift
 Xcapacitor_C4E5CZ_0 vss vs2 capacitor_C4E5CZ
 Xxtr xres/f xtr/bot x1[1]/out xtr/ctrl[14] x1[2]/out xtr/ctrl[12] x1[3]/out xtr/ctrl[10]
 + x1[4]/out xtr/ctrl[8] x1[5]/out xtr/ctrl[6] x1[6]/out xtr/ctrl[4] x1[7]/out xtr/ctrl[2]
-+ x1[8]/out xtr/ctrl[0] vss bg_trim
++ x1[8]/out xtr/ctrl[0] xres/XR1[6]/R2 xres/XR1[14]/R2 vss xres/XR1[9]/R1 vbg xres/XR1[3]/R1
++ xres/XR1[5]/R2 xres/XR1[13]/R2 xres/XR1[19]/R1 xres/XR1[8]/R1 xres/a xres/XR1[20]/R1
++ xres/XR1[7]/R1 xres/XR1[16]/R1 xres/XR1[19]/R1 xres/XR1[8]/R1 xres/XR1[15]/R1 xres/XR1[4]/R1
++ xres/XR1[20]/R1 xres/XR1[7]/R1 xres/XR1[3]/R1 xres/f xres/XR1[12]/R1 xres/XR1[9]/R1
++ xres/XR1[14]/R2 vss xres/XR1[8]/R2 xres/XR1[13]/R2 xres/XR1[9]/R2 xres/XR1[17]/R2
++ xres/XR1[8]/R2 xres/e xres/XR1[18]/R2 XQ1/E xres/XR1[17]/R2 xres/XR1[6]/R2 xres/XR1[18]/R2
++ vss vss xres/XR1[5]/R2 xres/XR1[16]/R1 xres/XR1[9]/R2 vss xres/XR1[12]/R1 xres/e
++ xres/XR1[15]/R1 xres/XR1[4]/R1 bg_trim
 Xsg13cmos5l_decap_4_0 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_decap_4_3 dvdd dvss sg13cmos5l_decap_4
-Xsg13cmos5l_inv_2_10 x1[6]/in_n trim[5] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_decap_4_5 dvdd dvss sg13cmos5l_decap_4
+Xsg13cmos5l_inv_2_10 x1[6]/in_n trim[5] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_antennanp_10 trim[5] dvdd dvss sg13cmos5l_antennanp
 Xsg13cmos5l_inv_2_11 sg13cmos5l_inv_2_11/Y trim[4] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_antennanp_11 trim[4] dvdd dvss sg13cmos5l_antennanp
 Xsg13cmos5l_decap_4_7 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_inv_2_12 x1[7]/in_n trim[3] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_antennanp_12 trim[3] dvdd dvss sg13cmos5l_antennanp
-Xsg13cmos5l_decap_4_8 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_inv_2_13 sg13cmos5l_inv_2_13/Y trim[2] dvdd dvss sg13cmos5l_inv_2
+Xsg13cmos5l_decap_4_8 dvdd dvss sg13cmos5l_decap_4
 Xsg13cmos5l_antennanp_13 trim[2] dvdd dvss sg13cmos5l_antennanp
-Xcapacitor_P4YBHP_0 vss vs2 capacitor_P4YBHP
 Xsg13cmos5l_inv_2_14 x1[8]/in_n trim[1] dvdd dvss sg13cmos5l_inv_2
+Xcapacitor_P4YBHP_0 vss vs2 capacitor_P4YBHP
 Xsg13cmos5l_antennanp_14 trim[1] dvdd dvss sg13cmos5l_antennanp
 Xsg13cmos5l_inv_2_15 sg13cmos5l_inv_2_15/Y trim[0] dvdd dvss sg13cmos5l_inv_2
 Xsg13cmos5l_antennanp_15 trim[0] dvdd dvss sg13cmos5l_antennanp
@@ -704,7 +725,7 @@ XXM11 vss outb1p vbn1 vss outb1p vbn1 outb1n vss vbn1 outb1n vss vbn1 vss outb1p
 + trim[2] trim[1] trim[0] dvss dvdd ena ibias2_1u
 Xx1 x2/inp ibias1_250n trim[15] trim[14] trim[13] trim[12] trim[11] trim[10] trim[9]
 + trim[8] trim[7] trim[6] trim[5] trim[4] trim[3] trim[2] trim[1] trim[0] dvdd ena
-+ x2/ena_b x1/XM4/S dvss vss vdd bandgap_unbuffered_v2
++ x2/ena_b x1/XM4/S dvss vdd vss bandgap_unbuffered_v2
 Xx2 vdd vbg x2/inp vbg vss ibias2_1u x2/ena_b se_folded_cascode_np_ab
 .ends
 
