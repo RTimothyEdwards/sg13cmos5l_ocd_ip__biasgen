@@ -1,0 +1,439 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sg13cmos5l_ocd_ip__biasgen2
+  CLASS BLOCK ;
+  FOREIGN sg13cmos5l_ocd_ip__biasgen2 ;
+  ORIGIN -39.760 -5.070 ;
+  SIZE 378.660 BY 42.595 ;
+  PIN ena
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 159.530 46.385 160.025 47.375 ;
+    END
+  END ena
+  PIN ref_in
+    PORT
+      LAYER Metal2 ;
+        RECT 179.060 5.155 179.545 6.155 ;
+    END
+  END ref_in
+  PIN dvdd
+    ANTENNAGATEAREA 13.860000 ;
+    ANTENNADIFFAREA 109.759995 ;
+    PORT
+      LAYER Metal4 ;
+        RECT 139.405 44.400 141.405 46.260 ;
+    END
+  END dvdd
+  PIN vbg
+    ANTENNAGATEAREA 10.000000 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 200.285 5.145 200.770 6.165 ;
+    END
+  END vbg
+  PIN ref_sel_vbg
+    ANTENNAGATEAREA 9.209000 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 217.320 46.365 217.805 47.365 ;
+    END
+  END ref_sel_vbg
+  PIN dvss
+    ANTENNAGATEAREA 41.967197 ;
+    ANTENNADIFFAREA 91.320801 ;
+    PORT
+      LAYER Metal4 ;
+        RECT 139.455 41.890 141.490 43.670 ;
+    END
+  END dvss
+  PIN idac1_source_ibias
+    ANTENNADIFFAREA 31.619999 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 309.270 23.980 310.660 40.300 ;
+    END
+  END idac1_source_ibias
+  PIN idac2_source[4]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 352.700 46.480 353.185 47.480 ;
+    END
+  END idac2_source[4]
+  PIN idac2_source[3]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 343.730 46.540 344.170 47.540 ;
+    END
+  END idac2_source[3]
+  PIN idac2_source[2]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 334.720 46.520 335.160 47.520 ;
+    END
+  END idac2_source[2]
+  PIN idac2_source[1]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 325.700 46.480 326.140 47.480 ;
+    END
+  END idac2_source[1]
+  PIN idac2_source[0]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 316.720 46.520 317.160 47.520 ;
+    END
+  END idac2_source[0]
+  PIN idac2_source_ibias
+    ANTENNADIFFAREA 31.619999 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 355.615 23.880 357.005 40.175 ;
+    END
+  END idac2_source_ibias
+  PIN idac1_source[0]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 270.630 46.520 271.070 47.520 ;
+    END
+  END idac1_source[0]
+  PIN idac1_source[1]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 279.600 46.470 280.040 47.470 ;
+    END
+  END idac1_source[1]
+  PIN idac1_source[2]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 288.650 46.520 289.090 47.520 ;
+    END
+  END idac1_source[2]
+  PIN idac1_source[3]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 297.640 46.550 298.080 47.550 ;
+    END
+  END idac1_source[3]
+  PIN idac1_source[4]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 306.590 46.480 307.075 47.480 ;
+    END
+  END idac1_source[4]
+  PIN voltgen_source[4]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 398.830 46.480 399.200 47.480 ;
+    END
+  END voltgen_source[4]
+  PIN voltgen_source[3]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 389.780 46.540 390.330 47.540 ;
+    END
+  END voltgen_source[3]
+  PIN voltgen_source[2]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 380.850 46.515 381.200 47.520 ;
+    END
+  END voltgen_source[2]
+  PIN voltgen_source[1]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 371.750 46.470 372.300 47.470 ;
+    END
+  END voltgen_source[1]
+  PIN voltgen_source[0]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 362.770 46.520 363.320 47.520 ;
+    END
+  END voltgen_source[0]
+  PIN voltgen_source_ibias
+    ANTENNADIFFAREA 31.619999 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 402.130 23.885 403.405 40.945 ;
+    END
+  END voltgen_source_ibias
+  PIN ref_sel_coarse
+    ANTENNAGATEAREA 0.725400 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 230.170 46.665 230.685 47.665 ;
+    END
+  END ref_sel_coarse
+  PIN ref_sel_fine
+    ANTENNAGATEAREA 0.725400 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 254.700 46.380 255.215 47.380 ;
+    END
+  END ref_sel_fine
+  PIN bandgap_sink2_ibias
+    ANTENNADIFFAREA 2.040000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 53.440 25.950 53.855 44.775 ;
+    END
+  END bandgap_sink2_ibias
+  PIN bandgap_sink2[0]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 59.295 46.440 59.770 47.440 ;
+    END
+  END bandgap_sink2[0]
+  PIN bandgap_sink2[1]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 66.665 46.440 67.025 47.440 ;
+    END
+  END bandgap_sink2[1]
+  PIN bandgap_sink1[0]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 74.760 46.430 75.225 47.430 ;
+    END
+  END bandgap_sink1[0]
+  PIN bandgap_sink1[1]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 82.230 46.440 82.555 47.440 ;
+    END
+  END bandgap_sink1[1]
+  PIN bandgap_sink1[2]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 89.365 46.440 89.770 47.440 ;
+    END
+  END bandgap_sink1[2]
+  PIN voltgen_sink1[0]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 97.515 46.440 97.985 47.440 ;
+    END
+  END voltgen_sink1[0]
+  PIN voltgen_sink1[1]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 104.990 46.440 105.315 47.450 ;
+    END
+  END voltgen_sink1[1]
+  PIN voltgen_sink1[2]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 112.125 46.440 112.530 47.440 ;
+    END
+  END voltgen_sink1[2]
+  PIN voltgen_sink2[0]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 120.275 46.440 120.745 47.440 ;
+    END
+  END voltgen_sink2[0]
+  PIN voltgen_sink2[1]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 127.750 46.440 128.075 47.440 ;
+    END
+  END voltgen_sink2[1]
+  PIN voltgen_sink2[2]
+    ANTENNAGATEAREA 4.483600 ;
+    ANTENNADIFFAREA 2.015400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 134.885 46.440 135.290 47.440 ;
+    END
+  END voltgen_sink2[2]
+  PIN voltgen_sink2_ibias
+    ANTENNADIFFAREA 5.100000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 114.410 25.215 114.810 45.160 ;
+    END
+  END voltgen_sink2_ibias
+  PIN voltgen_sink1_ibias
+    ANTENNADIFFAREA 5.100000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 91.660 25.790 92.075 45.290 ;
+    END
+  END voltgen_sink1_ibias
+  PIN bandgap_sink1_ibias
+    ANTENNADIFFAREA 5.100000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 68.935 25.835 69.350 45.355 ;
+    END
+  END bandgap_sink1_ibias
+  PIN avdd
+    ANTENNAGATEAREA 23.000000 ;
+    ANTENNADIFFAREA 673.779663 ;
+    PORT
+      LAYER Metal4 ;
+        RECT 412.235 5.825 418.405 26.675 ;
+    END
+  END avdd
+  PIN avss
+    ANTENNAGATEAREA 135.000000 ;
+    ANTENNADIFFAREA 696.353577 ;
+    PORT
+      LAYER Metal4 ;
+        RECT 39.760 5.870 45.760 41.000 ;
+    END
+  END avss
+  OBS
+      LAYER GatPoly ;
+        RECT 46.595 5.390 410.415 46.125 ;
+      LAYER Metal1 ;
+        RECT 46.585 5.070 410.480 46.255 ;
+      LAYER Metal2 ;
+        RECT 46.585 46.230 59.085 47.515 ;
+        RECT 59.980 46.230 66.455 47.515 ;
+        RECT 67.235 46.230 74.550 47.515 ;
+        RECT 46.585 46.220 74.550 46.230 ;
+        RECT 75.435 46.230 82.020 47.515 ;
+        RECT 82.765 46.230 89.155 47.515 ;
+        RECT 89.980 46.230 97.305 47.515 ;
+        RECT 98.195 46.230 104.780 47.515 ;
+        RECT 105.525 46.230 111.915 47.515 ;
+        RECT 112.740 46.230 120.065 47.515 ;
+        RECT 120.955 46.230 127.540 47.515 ;
+        RECT 128.285 46.230 134.675 47.515 ;
+        RECT 135.500 46.230 159.320 47.515 ;
+        RECT 75.435 46.220 159.320 46.230 ;
+        RECT 46.585 46.175 159.320 46.220 ;
+        RECT 160.235 46.175 217.110 47.515 ;
+        RECT 46.585 46.155 217.110 46.175 ;
+        RECT 218.015 46.455 229.960 47.515 ;
+        RECT 230.895 46.455 254.490 47.515 ;
+        RECT 218.015 46.170 254.490 46.455 ;
+        RECT 255.425 46.310 270.420 47.515 ;
+        RECT 271.280 46.310 279.390 47.515 ;
+        RECT 255.425 46.260 279.390 46.310 ;
+        RECT 280.250 46.310 288.440 47.515 ;
+        RECT 289.300 46.340 297.430 47.515 ;
+        RECT 298.290 46.340 306.380 47.515 ;
+        RECT 289.300 46.310 306.380 46.340 ;
+        RECT 280.250 46.270 306.380 46.310 ;
+        RECT 307.285 46.310 316.510 47.515 ;
+        RECT 317.370 46.310 325.490 47.515 ;
+        RECT 307.285 46.270 325.490 46.310 ;
+        RECT 326.350 46.310 334.510 47.515 ;
+        RECT 335.370 46.330 343.520 47.515 ;
+        RECT 344.380 46.330 352.490 47.515 ;
+        RECT 335.370 46.310 352.490 46.330 ;
+        RECT 326.350 46.270 352.490 46.310 ;
+        RECT 353.395 46.310 362.560 47.515 ;
+        RECT 363.530 46.310 371.540 47.515 ;
+        RECT 353.395 46.270 371.540 46.310 ;
+        RECT 280.250 46.260 371.540 46.270 ;
+        RECT 372.510 46.305 380.640 47.515 ;
+        RECT 381.410 46.330 389.570 47.515 ;
+        RECT 390.540 46.330 398.620 47.515 ;
+        RECT 381.410 46.305 398.620 46.330 ;
+        RECT 372.510 46.270 398.620 46.305 ;
+        RECT 399.410 46.270 410.415 47.515 ;
+        RECT 372.510 46.260 410.415 46.270 ;
+        RECT 255.425 46.170 410.415 46.260 ;
+        RECT 218.015 46.155 410.415 46.170 ;
+        RECT 46.585 6.375 410.415 46.155 ;
+        RECT 46.585 6.365 200.075 6.375 ;
+        RECT 46.585 5.145 178.850 6.365 ;
+        RECT 179.755 5.145 200.075 6.365 ;
+        RECT 200.980 5.145 410.415 6.375 ;
+      LAYER Metal3 ;
+        RECT 44.650 45.565 410.415 46.175 ;
+        RECT 44.650 44.985 68.725 45.565 ;
+        RECT 44.650 25.740 53.230 44.985 ;
+        RECT 54.065 25.740 68.725 44.985 ;
+        RECT 44.650 25.625 68.725 25.740 ;
+        RECT 69.560 45.500 410.415 45.565 ;
+        RECT 69.560 25.625 91.450 45.500 ;
+        RECT 44.650 25.580 91.450 25.625 ;
+        RECT 92.285 45.370 410.415 45.500 ;
+        RECT 92.285 25.580 114.200 45.370 ;
+        RECT 44.650 25.005 114.200 25.580 ;
+        RECT 115.020 41.155 410.415 45.370 ;
+        RECT 115.020 40.510 401.920 41.155 ;
+        RECT 115.020 25.005 309.060 40.510 ;
+        RECT 44.650 23.770 309.060 25.005 ;
+        RECT 310.870 40.385 401.920 40.510 ;
+        RECT 310.870 23.770 355.405 40.385 ;
+        RECT 44.650 23.670 355.405 23.770 ;
+        RECT 357.215 23.675 401.920 40.385 ;
+        RECT 403.615 23.675 410.415 41.155 ;
+        RECT 357.215 23.670 410.415 23.675 ;
+        RECT 44.650 5.275 410.415 23.670 ;
+      LAYER Metal4 ;
+        RECT 40.005 44.190 139.195 46.260 ;
+        RECT 141.615 44.190 418.420 46.260 ;
+        RECT 40.005 43.880 418.420 44.190 ;
+        RECT 40.005 41.680 139.245 43.880 ;
+        RECT 141.700 41.680 418.420 43.880 ;
+        RECT 40.005 41.210 418.420 41.680 ;
+        RECT 45.970 26.885 418.420 41.210 ;
+        RECT 45.970 5.825 412.025 26.885 ;
+  END
+END sg13cmos5l_ocd_ip__biasgen2
+END LIBRARY
+
