@@ -11,6 +11,8 @@ T {Dummies} 1770 -880 0 0 0.4 0.4 {}
 T {input array} 1860 -830 0 0 0.3 0.3 {}
 T {pbias} 2150 -830 0 0 0.3 0.3 {}
 T {nbias} 1890 -640 0 0 0.3 0.3 {}
+T {Note: "ena" low does not stop the bias current, so the bias
+current must be disabled as well as disabling the amp.} 480 -780 0 0 0.3 0.3 {}
 N 990 -450 1010 -450 { lab=inn}
 N 670 -450 710 -450 { lab=inp}
 N 750 -450 780 -450 { lab=vdd}
@@ -35,7 +37,7 @@ N 1460 -410 1490 -410 { lab=vss}
 N 1170 -410 1200 -410 { lab=vss}
 N 1200 -480 1200 -440 { lab=mirr}
 N 1460 -480 1460 -440 { lab=out}
-N 1240 -530 1420 -530 { lab=vbp2}
+N 1240 -530 1420 -530 { lab=bias}
 N 1330 -630 1420 -630 { lab=mirr}
 N 1200 -600 1200 -560 { lab=nd10}
 N 1460 -600 1460 -560 { lab=nd11}
@@ -55,7 +57,7 @@ N 280 -630 280 -570 { lab=vbp1}
 N 190 -570 280 -570 { lab=vbp1}
 N 190 -600 190 -570 { lab=vbp1}
 N 160 -630 190 -630 { lab=vdd}
-N 230 -510 280 -510 { lab=vbp2}
+N 230 -510 280 -510 { lab=bias}
 N 160 -510 190 -510 { lab=vdd}
 N 190 -570 190 -540 { lab=vbp1}
 N 130 -710 190 -710 { lab=vdd}
@@ -71,7 +73,7 @@ N 330 -180 380 -180 { lab=vbn1}
 N 120 -90 420 -90 { lab=vss}
 N 420 -180 450 -180 { lab=vss}
 N 420 -90 1200 -90 { lab=vss}
-N 420 -710 850 -710 { lab=vdd}
+N 720 -710 850 -710 { lab=vdd}
 N 330 -470 330 -410 { lab=vbn2}
 N 330 -470 420 -470 { lab=vbn2}
 N 420 -150 420 -90 { lab=vss}
@@ -90,13 +92,9 @@ N 1460 -500 1460 -480 { lab=out}
 N 850 -710 1200 -710 { lab=vdd}
 N 420 -600 420 -470 { lab=vbn2}
 N 420 -380 420 -250 { lab=vbn1}
-N 190 -370 190 -320 {lab=bias}
-N 190 -460 190 -430 {lab=vbp2}
-N 100 -400 150 -400 {lab=ena_b}
-N 280 -510 280 -460 {lab=vbp2}
-N 190 -460 280 -460 {lab=vbp2}
-N 190 -480 190 -460 {lab=vbp2}
-N 190 -400 270 -400 {lab=vdd}
+N 280 -510 280 -460 {lab=bias}
+N 190 -460 280 -460 {lab=bias}
+N 190 -480 190 -460 {lab=bias}
 N 1900 -740 1960 -740 { lab=vdd}
 N 1900 -710 1900 -690 {lab=vdd}
 N 1830 -690 1900 -690 {lab=vdd}
@@ -127,6 +125,23 @@ N 1980 -600 1980 -530 {lab=vss}
 N 1930 -500 1930 -480 {lab=vss}
 N 1840 -480 1930 -480 {lab=vss}
 N 1840 -530 1840 -480 {lab=vss}
+N 190 -460 190 -320 {lab=bias}
+N 670 -610 720 -610 {lab=vdd}
+N 670 -710 670 -640 {lab=vdd}
+N 720 -710 720 -610 {lab=vdd}
+N 670 -710 720 -710 { lab=vdd}
+N 420 -710 670 -710 {lab=vdd}
+N 600 -610 630 -610 {lab=ena}
+N 670 -580 670 -540 {lab=bias}
+N 630 -540 670 -540 {lab=bias}
+N 2240 -560 2270 -560 {lab=vdd}
+N 2270 -590 2270 -560 {lab=vdd}
+N 2110 -590 2270 -590 {lab=vdd}
+N 2110 -560 2110 -500 {lab=vdd}
+N 2110 -500 2200 -500 {lab=vdd}
+N 2200 -530 2200 -500 {lab=vdd}
+N 2110 -560 2200 -560 {lab=vdd}
+N 2110 -590 2110 -560 {lab=vdd}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 970 -450 0 1 {name=M3
 l=1u
 w=4u
@@ -206,7 +221,7 @@ C {devices/lab_wire.sym} 1000 -310 0 1 {name=l37 sig_type=std_logic lab=out1n}
 C {devices/lab_wire.sym} 1000 -350 0 1 {name=l38 sig_type=std_logic lab=out1p}
 C {devices/lab_wire.sym} 1280 -630 0 1 {name=l39 sig_type=std_logic lab=mirr
 }
-C {devices/lab_wire.sym} 1290 -530 0 1 {name=l40 sig_type=std_logic lab=vbp2
+C {devices/lab_wire.sym} 1290 -530 0 1 {name=l40 sig_type=std_logic lab=bias
 }
 C {devices/lab_wire.sym} 1310 -410 0 1 {name=l41 sig_type=std_logic lab=vbn2}
 C {devices/lab_wire.sym} 1340 -180 0 1 {name=l42 sig_type=std_logic lab=vbn1}
@@ -263,15 +278,13 @@ C {devices/lab_wire.sym} 1200 -580 0 1 {name=l6 sig_type=std_logic lab=nd10
 }
 C {devices/lab_wire.sym} 1460 -580 0 1 {name=l7 sig_type=std_logic lab=nd11
 }
-C {ipin.sym} 100 -400 0 0 {name=p1 lab=ena_b}
-C {sg13cmos5l_pr/sg13_hv_pmos.sym} 170 -400 0 0 {name=MB6
-l=4u
-w=2u
+C {ipin.sym} 600 -610 0 0 {name=p1 lab=ena}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 650 -610 0 0 {name=MB6
+l=1u
+w=1u
 ng=1
-m=4
+m=1
 }
-C {devices/lab_wire.sym} 270 -400 0 0 {name=l15 sig_type=std_logic lab=vdd}
-C {devices/lab_wire.sym} 230 -510 0 1 {name=l22 sig_type=std_logic lab=vbp2}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1880 -740 0 0 {name=M12
 l=1u
 w=4u
@@ -283,7 +296,7 @@ C {sg13cmos5l_pr/sg13_hv_pmos.sym} 2160 -740 0 0 {name=M13
 l=1u
 w=1u
 ng=1
-m=2
+m=1
 }
 C {devices/lab_wire.sym} 2180 -740 0 1 {name=l13 sig_type=std_logic lab=vdd}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1910 -530 0 0 {name=MB7
@@ -292,3 +305,11 @@ w=1u
 ng=1
 m=16}
 C {devices/lab_wire.sym} 1930 -530 0 1 {name=l14 sig_type=std_logic lab=vss}
+C {lab_pin.sym} 630 -540 0 0 {name=p2 sig_type=std_logic lab=bias}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 2220 -560 0 1 {name=MB8
+l=4u
+w=2u
+ng=1
+m=4
+}
+C {lab_pin.sym} 2110 -590 0 0 {name=p5 sig_type=std_logic lab=vdd}

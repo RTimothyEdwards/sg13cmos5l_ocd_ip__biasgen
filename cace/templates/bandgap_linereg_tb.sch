@@ -5,22 +5,14 @@ V {}
 S {}
 E {}
 T {Note:  Vtrim and ena are both in the digital 1.2V domain} -150 490 0 0 0.3 0.3 {}
-T {CACE TEMPLATE: PSRR} -420 0 0 0 0.4 0.4 {}
+T {CACE TEMPLATE: LINEREG} -420 0 0 0 0.4 0.4 {}
 N 200 350 250 350 {lab=#net1}
-N 200 350 200 390 {lab=#net1}
-N 130 330 250 330 {lab=#net2}
-N 130 330 130 390 {lab=#net2}
 N 170 290 250 290 {lab=vtrim[15:0]}
-N 10 70 10 100 {lab=dvdd}
 N -300 310 -300 390 {lab=vss}
-N 10 210 250 210 {lab=#net3}
-N 10 160 10 210 {lab=#net3}
-N -220 190 250 190 {lab=#net4}
-N -220 150 -220 190 {lab=#net4}
-N -220 60 -220 90 {lab=vdd}
+N 10 210 250 210 {lab=dvdd}
+N -220 190 250 190 {lab=vdd}
 N -300 310 250 310 {lab=vss}
 N -300 450 480 450 {lab=GND}
-N -220 270 -220 330 {lab=vdd}
 N -300 230 250 230 {lab=vss}
 N -300 230 -300 310 {lab=vss}
 N 10 250 250 250 {lab=dvdd}
@@ -34,14 +26,26 @@ N 590 290 590 310 {lab=GND}
 N 480 310 590 310 {lab=GND}
 N 480 290 480 310 {lab=GND}
 N 480 310 480 450 {lab=GND}
+N -220 190 -220 390 {lab=vdd}
+N 10 210 10 250 {lab=dvdd}
+N 50 330 250 330 {lab=#net2}
+N 50 170 50 330 {lab=#net2}
+N 200 170 200 350 {lab=#net1}
+N 200 80 200 110 {lab=vdd}
+N 50 80 200 80 {lab=vdd}
+N -220 80 -220 190 {lab=vdd}
+N 50 80 50 110 {lab=vdd}
+N -220 80 50 80 {lab=vdd}
 C {devices/vsource.sym} -300 420 0 0 {name=Vvss value=0 savecurrent=false}
 C {devices/gnd.sym} -180 450 0 0 {name=l1 lab=GND}
 C {devices/code_shown.sym} -390 1630 0 0 {name=s1 only_toplevel=false value=".option savecurrents
 .option TEMP=CACE\{temperature\}
 .control
 save all
+* NOTE:  Copied from PSRR schematic, needs to be revised for load/line
+* regulation.
 tran 10u 10m
-let psrr = maximum(vbg) - minimum(vbg) / 0.02
+let psrr = (maximum(vbg) - minimum(vbg)) / 0.02
 let psrrdb = 20 * log(abs($&psrr))
 
 echo $&psrrdb > CACE\{simpath\}/CACE\{filename\}_\{N\}.data
@@ -63,13 +67,13 @@ C {devices/code_shown.sym} -380 550 0 0 {name=s2 only_toplevel=false value=".lib
 "}
 C {devices/vsource.sym} -220 420 0 0 {name=Vvdd value="DC CACE\{Vavdd\}" savecurrent=false}
 C {lab_pin.sym} -300 310 0 0 {name=p1 sig_type=std_logic lab=vss}
-C {lab_pin.sym} -220 270 0 0 {name=p2 sig_type=std_logic lab=vdd}
-C {isource.sym} 130 420 0 0 {name=I0 value=250n}
+C {lab_pin.sym} -220 330 0 0 {name=p2 sig_type=std_logic lab=vdd}
+C {isource.sym} 50 140 0 0 {name=I0 value=250n}
 C {lab_pin.sym} 170 290 0 0 {name=p3 sig_type=std_logic lab=vtrim[15:0]}
 C {devices/vsource.sym} 10 420 0 0 {name=Vdvdd value="DC CACE\{Vdvdd\}" savecurrent=false}
 C {lab_pin.sym} 10 330 0 0 {name=p5 sig_type=std_logic lab=dvdd}
 C {lab_pin.sym} 600 210 0 1 {name=p6 sig_type=std_logic lab=vbg}
-C {isource.sym} 200 420 0 0 {name=I1 value=1u}
+C {isource.sym} 200 140 0 0 {name=I1 value=1u}
 C {sg13cmos5l_ocd_ip__bandgap_v3.sym} 270 290 0 0 {name=x3}
 C {devices/code_shown.sym} -390 900 0 0 {name=s3 only_toplevel=false value="*** Trim thermometer code, one source per bit.
 *** The condition is the NUMBER OF BITS SET, 0 to 16, which is all a
@@ -103,11 +107,6 @@ Vt13 vtrim[13] GND CACE[1.2 * (1 + copysign(1, CACE\{trim\} - 13 - 0.5)) / 2]
 Vt14 vtrim[14] GND CACE[1.2 * (1 + copysign(1, CACE\{trim\} - 14 - 0.5)) / 2]
 Vt15 vtrim[15] GND CACE[1.2 * (1 + copysign(1, CACE\{trim\} - 15 - 0.5)) / 2]
 "}
-C {devices/vsource.sym} 10 130 0 0 {name=Vsense2 value="dc 0" savecurrent=false}
-C {lab_pin.sym} 10 70 0 0 {name=p4 sig_type=std_logic lab=dvdd}
-C {devices/vsource.sym} -220 360 0 0 {name=Vin value="AC 1 sin( 0.1 CACE\{frequency\})" savecurrent=false}
-C {devices/vsource.sym} -220 120 0 0 {name=Vsense1 value="dc 0" savecurrent=false}
-C {lab_pin.sym} -220 60 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {capa.sym} 480 260 0 0 {name=C1
 m=1
 value=CACE\{Cload\}

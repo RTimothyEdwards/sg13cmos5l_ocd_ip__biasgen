@@ -1,0 +1,74 @@
+magic
+tech ihp-sg13cmos5l
+magscale 1 2
+timestamp 1791319204
+<< error_p >>
+rect -41 428 -31 460
+rect -41 -460 -31 -428
+<< hvnmos >>
+rect -45 -400 45 400
+<< hvndiff >>
+rect -113 386 -45 400
+rect -113 -386 -99 386
+rect -67 -386 -45 386
+rect -113 -400 -45 -386
+rect 45 386 113 400
+rect 45 -386 67 386
+rect 99 -386 113 386
+rect 45 -400 113 -386
+<< hvndiffc >>
+rect -99 -386 -67 386
+rect 67 -386 99 386
+<< poly >>
+rect -45 460 45 474
+rect -45 428 -31 460
+rect 31 428 45 460
+rect -45 400 45 428
+rect -45 -428 45 -400
+rect -45 -460 -31 -428
+rect 31 -460 45 -428
+rect -45 -474 45 -460
+<< polycont >>
+rect -31 428 31 460
+rect -31 -460 31 -428
+<< metal1 >>
+rect -41 428 -31 460
+rect 31 428 41 460
+rect -113 385 -99 386
+rect -67 385 -53 386
+rect -113 -385 -103 385
+rect -63 -385 -53 385
+rect -113 -386 -99 -385
+rect -67 -386 -53 -385
+rect 53 385 67 386
+rect 99 385 113 386
+rect 53 -385 63 385
+rect 103 -385 113 385
+rect 53 -386 67 -385
+rect 99 -386 113 -385
+rect -41 -460 -31 -428
+rect 31 -460 41 -428
+<< via1 >>
+rect -103 -385 -99 385
+rect -99 -385 -67 385
+rect -67 -385 -63 385
+rect 63 -385 67 385
+rect 67 -385 99 385
+rect 99 -385 103 385
+<< metal2 >>
+rect -103 385 -63 394
+rect -103 -394 -63 -385
+rect 63 385 103 394
+rect 63 -394 103 -385
+<< labels >>
+rlabel hvndiffc -83 0 -83 0 0 D
+port 1 nsew
+rlabel hvndiffc 83 0 83 0 0 S
+port 2 nsew
+rlabel polycont 0 444 0 444 0 G
+port 3 nsew
+<< properties >>
+string gencell sg13_hv_nmos
+string library sg13cmos5l
+string parameters w 4 l 0.45 m 1 ng 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 0 lmin 0.45 wmin 0.15 class mosfet compatible {sg13_lv_nmos sg13_hv_nmos} full_metal 0 conn_gates 0 gate_ring 0 doports 1 viasrc 100 viadrn 100 viagate 0 ccols 1 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>

@@ -41,14 +41,14 @@ N -350 -190 -350 -120 { lab=vbn2}
 N -460 -190 -350 -190 { lab=vbn2}
 N 390 70 450 70 { lab=vbn1}
 N -150 -330 -120 -330 { lab=vdd}
-N -80 -330 -10 -330 { lab=#net1}
+N -80 -330 -10 -330 { lab=bias}
 N 270 -420 270 -310 { lab=outa1n}
 N 690 -390 690 -310 { lab=outa1p}
-N -10 -330 -10 -260 { lab=#net1}
+N -10 -330 -10 -260 { lab=bias}
 N -460 10 -460 40 { lab=vbn1}
 N -10 -500 -10 -430 { lab=vbp1}
 N -120 -560 -120 -530 { lab=vdd}
-N -120 -260 -10 -260 { lab=#net1}
+N -120 -260 -10 -260 { lab=bias}
 N -120 -430 -120 -360 { lab=vbp1}
 N -120 -430 -10 -430 { lab=vbp1}
 N 170 -210 210 -210 { lab=inn}
@@ -109,20 +109,19 @@ N 1630 -390 1630 -220 { lab=out}
 N 1630 -220 1670 -220 { lab=out}
 N 1470 -220 1520 -220 { lab=outs1}
 N 1580 -220 1630 -220 { lab=out}
-N 1290 -560 1630 -560 { lab=vdd}
+N 1440 -560 1630 -560 { lab=vdd}
 N 1630 -560 1630 -450 { lab=vdd}
 N 1290 130 1630 130 { lab=vss}
-N 1630 40 1630 130 { lab=vss}
 N 1030 -420 1160 -420 { lab=outa1n}
 N 1160 -500 1160 -420 { lab=outa1n}
 N 1030 -230 1160 -230 { lab=mirr}
 N 1160 -310 1160 -230 { lab=mirr}
 N 1290 -280 1290 -220 { lab=outs1}
 N -460 -90 -460 10 { lab=vbn1}
-N -120 -300 -120 -260 { lab=#net1}
+N -120 -300 -120 -260 { lab=bias}
 N -120 -470 -120 -430 { lab=vbp1}
 N 210 -280 210 -210 { lab=inn}
-N -120 -560 480 -560 { lab=vdd}
+N 130 -560 480 -560 { lab=vdd}
 N 750 -280 750 -210 { lab=inp}
 N 1030 -470 1030 -420 { lab=outa1n}
 N 1290 -470 1290 -390 { lab=outa1p}
@@ -140,10 +139,6 @@ N -510 -490 -460 -490 {lab=vdd}
 N -420 -490 -380 -490 {lab=vbp1}
 N -590 -560 -460 -560 {lab=vdd}
 N -460 -460 -460 -190 {lab=vbn2}
-N -120 -260 -120 -210 {lab=#net1}
-N -180 -180 -120 -180 {lab=vdd}
-N -120 -150 -120 -90 {lab=bias}
-N -80 -180 -40 -180 {lab=ena_b}
 N 1990 50 2080 50 { lab=vss}
 N 1900 50 1960 50 { lab=vss}
 N 2080 -10 2080 50 {lab=vss}
@@ -162,6 +157,35 @@ N 1840 -40 1950 -40 {lab=vss}
 N 1950 -90 1950 -40 {lab=vss}
 N 1840 -120 1950 -120 {lab=vss}
 N 1840 -200 1840 -120 {lab=vss}
+N -120 -260 -120 -90 {lab=bias}
+N 0 -400 30 -400 {lab=ena}
+N 70 -560 70 -430 {lab=vdd}
+N -120 -560 70 -560 { lab=vdd}
+N 70 -370 70 -330 {lab=bias}
+N -10 -330 70 -330 {lab=bias}
+N 70 -400 130 -400 {lab=vdd}
+N 130 -560 130 -400 {lab=vdd}
+N 70 -560 130 -560 { lab=vdd}
+N 1950 -420 1950 -390 {lab=vdd}
+N 1950 -420 2030 -420 {lab=vdd}
+N 2030 -360 2030 -330 {lab=vdd}
+N 1850 -330 2030 -330 {lab=vdd}
+N 1850 -360 1850 -330 {lab=vdd}
+N 1850 -360 1950 -360 {lab=vdd}
+N 1990 -360 2030 -360 {lab=vdd}
+N 2030 -420 2030 -360 {lab=vdd}
+N 1550 90 1590 90 {lab=ena}
+N 1630 120 1630 130 {lab=vss}
+N 1630 40 1630 60 {lab=onsrc}
+N 1630 90 1660 90 {lab=vss}
+N 1480 -480 1520 -480 {lab=ena}
+N 1440 -560 1440 -510 {lab=vdd}
+N 1390 -560 1440 -560 { lab=vdd}
+N 1390 -480 1440 -480 {lab=vdd}
+N 1390 -560 1390 -480 {lab=vdd}
+N 1290 -560 1390 -560 { lab=vdd}
+N 1440 -420 1470 -420 {lab=outs1}
+N 1440 -450 1440 -420 {lab=outs1}
 C {devices/iopin.sym} -590 -560 2 0 {name=p5 lab=vdd}
 C {devices/iopin.sym} -120 -90 1 0 {name=p2 lab=bias}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1050 -500 0 1 {name=M4
@@ -382,16 +406,7 @@ spiceprefix=X
 }
 C {lab_pin.sym} -380 -490 0 1 {name=p3 sig_type=std_logic lab=vbp1}
 C {lab_wire.sym} -510 -490 0 0 {name=p6 sig_type=std_logic lab=vdd}
-C {sg13cmos5l_pr/sg13_hv_pmos.sym} -100 -180 0 1 {name=MB3
-l=4u
-w=1u
-ng=1
-m=4
-model=sg13_hv_pmos
-spiceprefix=X
-}
-C {devices/lab_wire.sym} -180 -180 0 0 {name=l2 sig_type=std_logic lab=vdd}
-C {devices/ipin.sym} -40 -180 2 0 {name=p4 lab=ena_b}
+C {devices/ipin.sym} 0 -400 2 1 {name=p4 lab=ena}
 C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1970 50 0 0 {name=MDUM
 l=1u
 w=1u
@@ -422,3 +437,40 @@ m=2
 mm_ok=1
 spiceprefix=X
 }
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 50 -400 0 0 {name=MB3
+l=0.5u
+w=0.5u
+ng=1
+m=1
+model=sg13_hv_pmos
+spiceprefix=X
+}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1970 -360 0 1 {name=MB8
+l=4u
+w=1u
+ng=1
+m=4
+model=sg13_hv_pmos
+spiceprefix=X
+}
+C {lab_pin.sym} 1950 -420 0 0 {name=p9 sig_type=std_logic lab=vdd}
+C {sg13cmos5l_pr/sg13_hv_nmos.sym} 1610 90 0 0 {name=MOSW
+l=0.45u
+w=4u
+ng=1
+m=4
+model=sg13_hv_nmos
+spiceprefix=X
+}
+C {lab_pin.sym} 1550 90 0 0 {name=p11 sig_type=std_logic lab=ena}
+C {devices/lab_wire.sym} 1630 90 0 1 {name=l2 sig_type=std_logic lab=vss}
+C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1460 -480 0 1 {name=M1
+l=0.5u
+w=1u
+ng=1
+m=1
+model=sg13_hv_pmos
+spiceprefix=X
+}
+C {lab_pin.sym} 1520 -480 0 1 {name=p12 sig_type=std_logic lab=ena}
+C {lab_pin.sym} 1630 50 0 1 {name=p13 sig_type=std_logic lab=onsrc}

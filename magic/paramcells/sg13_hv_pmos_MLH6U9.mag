@@ -1,0 +1,90 @@
+magic
+tech ihp-sg13cmos5l
+magscale 1 2
+timestamp 1791319204
+<< error_p >>
+rect -28 115 28 173
+rect -28 -173 28 -115
+<< nwell >>
+rect -242 -224 242 224
+<< hvpmos >>
+rect -50 -100 50 100
+<< hvpdiff >>
+rect -118 86 -50 100
+rect -118 -86 -104 86
+rect -72 -86 -50 86
+rect -118 -100 -50 -86
+rect 50 86 118 100
+rect 50 -86 72 86
+rect 104 -86 118 86
+rect 50 -100 118 -86
+<< hvpdiffc >>
+rect -104 -86 -72 86
+rect 72 -86 104 86
+<< poly >>
+rect -50 160 50 174
+rect -50 128 -28 160
+rect 28 128 50 160
+rect -50 100 50 128
+rect -50 -128 50 -100
+rect -50 -160 -28 -128
+rect 28 -160 50 -128
+rect -50 -174 50 -160
+<< polycont >>
+rect -28 128 28 160
+rect -28 -160 28 -128
+<< metal1 >>
+rect -43 164 43 165
+rect -43 124 -28 164
+rect 28 124 43 164
+rect -43 123 43 124
+rect -118 85 -104 86
+rect -72 85 -58 86
+rect -118 -85 -108 85
+rect -68 -85 -58 85
+rect -118 -86 -104 -85
+rect -72 -86 -58 -85
+rect 58 85 72 86
+rect 104 85 118 86
+rect 58 -85 68 85
+rect 108 -85 118 85
+rect 58 -86 72 -85
+rect 104 -86 118 -85
+rect -43 -124 43 -123
+rect -43 -164 -28 -124
+rect 28 -164 43 -124
+rect -43 -165 43 -164
+<< via1 >>
+rect -28 160 28 164
+rect -28 128 28 160
+rect -28 124 28 128
+rect -108 -85 -104 85
+rect -104 -85 -72 85
+rect -72 -85 -68 85
+rect 68 -85 72 85
+rect 72 -85 104 85
+rect 104 -85 108 85
+rect -28 -128 28 -124
+rect -28 -160 28 -128
+rect -28 -164 28 -160
+<< metal2 >>
+rect -28 164 28 173
+rect -28 115 28 124
+rect -108 85 -68 94
+rect -108 -94 -68 -85
+rect 68 85 108 94
+rect 68 -94 108 -85
+rect -28 -124 28 -115
+rect -28 -173 28 -164
+<< labels >>
+rlabel hvpdiffc -88 0 -88 0 0 D
+port 1 nsew
+rlabel hvpdiffc 88 0 88 0 0 S
+port 2 nsew
+rlabel polycont 0 144 0 144 0 G
+port 3 nsew
+<< properties >>
+string gencell sg13_hv_pmos
+string library sg13cmos5l
+string parameters w 1 l 0.5 m 1 ng 1 diffcov 100 polycov 100 guard 0 glc 0 grc 0 gtc 0 gbc 0 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.4 wmin 0.15 class mosfet compatible {sg13_lv_pmos sg13_hv_pmos} full_metal 0 conn_gates 0 gate_ring 0 ccols 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0 doports 1
+<< end >>

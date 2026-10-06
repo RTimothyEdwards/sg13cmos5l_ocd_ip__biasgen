@@ -6,23 +6,23 @@ S {}
 E {}
 N 150 260 210 260 {lab=dvdd}
 N 360 260 510 260 {lab=vbg_unbuf}
-N 690 290 710 290 {lab=#net1}
+N 690 290 710 290 {lab=vbg}
 N 580 330 580 360 {lab=vss}
 N 580 360 600 360 {lab=vss}
 N 580 220 580 250 {lab=vdd}
 N 580 220 600 220 {lab=vdd}
-N 690 290 690 390 {lab=#net1}
-N 630 290 690 290 {lab=#net1}
-N 510 390 690 390 {lab=#net1}
-N 510 320 510 390 {lab=#net1}
+N 690 290 690 390 {lab=vbg}
+N 630 290 690 290 {lab=vbg}
+N 510 390 690 390 {lab=vbg}
+N 510 320 510 390 {lab=vbg}
 N 560 340 560 410 {lab=ibias2_1u}
-N 470 290 510 290 {lab=ena_b_h}
+N 470 290 510 290 {lab=ena_b}
 N 150 300 210 300 {lab=trim[15:0]}
 N 150 280 210 280 {lab=dvss}
 N 150 240 210 240 {lab=vdd}
 N 150 360 210 360 {lab=vss}
-N 360 340 470 340 {lab=ena_b_h}
-N 470 290 470 340 {lab=ena_b_h}
+N 360 340 470 340 {lab=ena_b}
+N 470 290 470 340 {lab=ena_b}
 N 170 320 210 320 {lab=ibias1_250n}
 N 170 320 170 400 {lab=ibias1_250n}
 N 150 330 160 330 {lab=ena}
@@ -33,7 +33,7 @@ C {se_folded_cascode_np_ab.sym} 660 290 0 0 {name=x2}
 C {lab_wire.sym} 450 260 0 0 {name=p7 sig_type=std_logic lab=vbg_unbuf}
 C {lab_pin.sym} 600 220 0 1 {name=p4 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 600 360 0 1 {name=p8 sig_type=std_logic lab=vss}
-C {lab_wire.sym} 450 340 0 0 {name=p1 sig_type=std_logic lab=ena_b_h}
+C {lab_wire.sym} 450 340 0 0 {name=p1 sig_type=std_logic lab=ena_h}
 C {ipin.sym} 150 300 0 0 {name=p2 lab=trim[15:0]}
 C {ipin.sym} 150 330 0 0 {name=p3 lab=ena}
 C {opin.sym} 710 290 0 0 {name=p5 lab=vbg}

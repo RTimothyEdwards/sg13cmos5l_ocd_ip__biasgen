@@ -201,14 +201,14 @@ Flattening unmatched subcell sg13_hv_pmos_N8UDLU in circuit se_folded_cascode_p 
 Flattening unmatched subcell sg13_hv_nmos_BEDTUZ in circuit se_folded_cascode_p (0)(1 instance)
 
 Class se_folded_cascode_p (0):  Merged 143 parallel devices.
-Class se_folded_cascode_p (1):  Merged 1 parallel devices.
+Class se_folded_cascode_p (1):  Merged 2 parallel devices.
 Subcircuit summary:
 Circuit 1: se_folded_cascode_p                                               |Circuit 2: se_folded_cascode_p                                               
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 sg13_hv_pmos (90->12)                                                        |sg13_hv_pmos (90->12)                                                        
 sg13_hv_nmos (72->7)                                                         |sg13_hv_nmos (72->7)                                                         
 Number of devices: 19                                                        |Number of devices: 19                                                        
-Number of nets: 17                                                           |Number of nets: 17                                                           
+Number of nets: 16                                                           |Number of nets: 16                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Netlists match uniquely.
 
@@ -219,8 +219,8 @@ out                                                                          |ou
 vss                                                                          |vss                                                                          
 inn                                                                          |inn                                                                          
 inp                                                                          |inp                                                                          
+ena                                                                          |ena                                                                          
 bias                                                                         |bias                                                                         
-ena_b                                                                        |ena_b                                                                        
 vdd                                                                          |vdd                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
@@ -701,7 +701,7 @@ Circuit 1: bandgap_unbuffered_v2                                             |Ci
 bias                                                                         |bias                                                                         
 XM4/S                                                                        |(no pin, node is gate)                                                       
 vdd                                                                          |vdd                                                                          
-ena_b_h                                                                      |ena_b_h                                                                      
+ena_h                                                                        |ena_h                                                                        
 vss                                                                          |vss                                                                          
 dvdd                                                                         |dvdd                                                                         
 dvss                                                                         |dvss                                                                         
@@ -727,6 +727,8 @@ ena                                                                          |en
 Cell pin lists for bandgap_unbuffered_v2 and bandgap_unbuffered_v2 altered to match.
 Device classes bandgap_unbuffered_v2 and bandgap_unbuffered_v2 are equivalent.
 Flattening unmatched subcell sg13_hv_pmos_QWE845 in circuit se_folded_cascode_np_ab (0)(1 instance)
+Flattening unmatched subcell sg13_hv_pmos_FJG4RK in circuit se_folded_cascode_np_ab (0)(1 instance)
+Flattening unmatched subcell sg13_hv_pmos_MLH6U9 in circuit se_folded_cascode_np_ab (0)(1 instance)
 Flattening unmatched subcell sg13_hv_nmos_BEHQUZ in circuit se_folded_cascode_np_ab (0)(2 instances)
 Flattening unmatched subcell sg13_hv_nmos_BEZCVZ in circuit se_folded_cascode_np_ab (0)(2 instances)
 Flattening unmatched subcell sg13_hv_pmos_ZK4LW2 in circuit se_folded_cascode_np_ab (0)(2 instances)
@@ -739,17 +741,18 @@ Flattening unmatched subcell sg13_hv_pmos_NED9LU in circuit se_folded_cascode_np
 Flattening unmatched subcell sg13_hv_pmos_NQUDLU in circuit se_folded_cascode_np_ab (0)(2 instances)
 Flattening unmatched subcell sg13_hv_nmos_BENXUZ in circuit se_folded_cascode_np_ab (0)(2 instances)
 Flattening unmatched subcell capacitor_W9X9FK in circuit se_folded_cascode_np_ab (0)(2 instances)
+Flattening unmatched subcell sg13_hv_nmos_QMKJVU in circuit se_folded_cascode_np_ab (0)(4 instances)
 Flattening unmatched subcell sg13_hv_nmos_XAS6UC in circuit se_folded_cascode_np_ab (0)(2 instances)
 Flattening unmatched subcell sg13_hv_nmos_2G82VR in circuit se_folded_cascode_np_ab (0)(1 instance)
 
-Class se_folded_cascode_np_ab (0):  Merged 217 parallel devices.
+Class se_folded_cascode_np_ab (0):  Merged 220 parallel devices.
 Subcircuit summary:
 Circuit 1: se_folded_cascode_np_ab                                           |Circuit 2: se_folded_cascode_np_ab                                           
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
-sg13_hv_pmos (108->12)                                                       |sg13_hv_pmos (108->12)                                                       
-sg13_hv_nmos (132->12)                                                       |sg13_hv_nmos (132->12)                                                       
+sg13_hv_pmos (110->14)                                                       |sg13_hv_pmos (110->14)                                                       
+sg13_hv_nmos (136->13)                                                       |sg13_hv_nmos (136->13)                                                       
 cap_cmomf (2->1)                                                             |cap_cmomf (2->1)                                                             
-Number of devices: 25                                                        |Number of devices: 25                                                        
+Number of devices: 28                                                        |Number of devices: 28                                                        
 Number of nets: 19                                                           |Number of nets: 19                                                           
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Netlists match uniquely.
@@ -759,11 +762,11 @@ Circuit 1: se_folded_cascode_np_ab                                           |Ci
 -----------------------------------------------------------------------------|-----------------------------------------------------------------------------
 inn                                                                          |inn                                                                          
 inp                                                                          |inp                                                                          
-bias                                                                         |bias                                                                         
-ena_b                                                                        |ena_b                                                                        
 vss                                                                          |vss                                                                          
 vdd                                                                          |vdd                                                                          
+bias                                                                         |bias                                                                         
 out                                                                          |out                                                                          
+ena                                                                          |ena                                                                          
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 Cell pin lists are equivalent.
 Device classes se_folded_cascode_np_ab and se_folded_cascode_np_ab are equivalent.

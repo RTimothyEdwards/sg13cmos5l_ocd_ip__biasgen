@@ -1,16 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1774369900
-<< error_p >>
-rect -357 94 -289 294
-rect -89 94 -21 294
-rect 21 94 89 294
-rect 289 94 357 294
-rect -357 -294 -289 -94
-rect -89 -294 -21 -94
-rect 21 -294 89 -94
-rect 289 -294 357 -94
+timestamp 1791300016
 << hvnmos >>
 rect -289 94 -89 294
 rect 89 94 289 294

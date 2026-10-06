@@ -1,0 +1,35 @@
+magic
+tech ihp-sg13cmos5l
+magscale 1 2
+timestamp 1791319674
+<< error_s >>
+rect 289 6990 290 6998
+rect 289 5967 290 6868
+rect 17324 6527 17326 7182
+<< metal3 >>
+rect -4 7502 24558 7926
+rect 24355 7150 24555 7350
+rect 32 5908 232 5996
+rect 30 5735 230 5823
+rect 2 3407 229 3544
+rect 141 490 225 1876
+rect 141 307 15091 490
+rect -14 -264 24548 160
+use se_folded_cascode_np_ab  se_folded_cascode_np_ab_0
+timestamp 1791319547
+transform 1 0 -1460 0 1 3434
+box 1460 -3434 26037 4230
+<< labels >>
+flabel metal3 s -4 7502 24558 7926 0 FreeSans 1200 0 0 0 vdd
+port 0 nsew
+flabel metal3 s -14 -264 24548 160 0 FreeSans 1200 0 0 0 vss
+port 1 nsew
+flabel metal3 s 2 3407 229 3544 0 FreeSans 960 0 0 0 inp
+port 2 nsew
+flabel metal3 s 32 5908 232 5996 0 FreeSans 960 0 0 0 ena
+port 3 nsew
+flabel metal3 s 30 5735 230 5823 0 FreeSans 960 0 0 0 bias
+port 4 nsew
+flabel metal3 s 24355 7150 24555 7350 0 FreeSans 960 0 0 0 out
+port 5 nsew
+<< end >>

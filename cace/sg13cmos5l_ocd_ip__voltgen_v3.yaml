@@ -1,0 +1,481 @@
+name: sg13cmos5l_ocd_ip__voltgen_v3
+description: >
+  Tapped-resistor voltage bias generator, revision 3:  one on-board
+  folded-cascode output buffer, plus an unbuffered output taken to an
+  external class-AB buffer that sits beside it in chipalooza_frame.
+PDK: ihp-sg13cmos5l
+cace_format: 5.2
+
+authorship:
+  designer: R. Timothy Edwards
+  company: Open Circuit Design, LLC
+  creation_date: October 6, 2026
+  license: Apache 2.0
+
+paths:
+  root: ..
+  schematic: xschem
+  magic: magic
+  layout: gds
+  netlist: netlist
+  documentation: doc
+  runs: cace/runs
+
+# ---------------------------------------------------------------------
+# WHAT CHANGED FROM v2, AND WHY THESE PARAMETERS EXIST.
+#
+# v2 had two on-board buffers, both single-stage, and both took their
+# bias through a series stack of three pFETs that could not pass the
+# 1 uA they were given.  The stacks saturated -- se_folded_cascode_p at
+# 766 nA, se_folded_cascode_np_ab at 494 nA -- so the external bias had
+# no control at all and the iDAC trimming it did nothing.  Nothing in
+# any performance measurement showed this.
+#
+# v3 removes the series enable switch from both stacks and disables
+# instead with a shunt pFET that pulls the bias node to vdd, which is
+# why the enables are now sense-positive.  One buffer was removed
+# entirely and the unbuffered tap exported, so the class-AB buffer that
+# now drives it can live outside the cell.
+#
+# TWO CONSEQUENCES THAT NEED CHECKING ON EVERY RUN:
+#
+#   1. The bias stacks must actually accept their current.  That is
+#      voltgen_bias_headroom, and it is a regression test for the
+#      original defect.
+#
+#   2. The two buffers now share one output node, so whichever is not
+#      selected must let go of it.  That is voltgen_disabled_z.
+#
+# A disabled amplifier must also have its bias current removed:  the
+# shunt pFET holds the bias node at vdd, and a current source would
+# simply fight it.  That is why the bias currents are separate
+# conditions rather than one.
+# ---------------------------------------------------------------------
+
+pins:
+  vdd:
+    description: 3.3 V analog supply
+    direction: inout
+    type: power
+    Vmin: 3.0
+    Vmax: 3.6
+  vss:
+    description: Analog ground
+    direction: inout
+    type: ground
+  dvdd:
+    description: 1.2 V digital supply for the enables and the tap select
+    direction: inout
+    type: power
+    Vmin: 1.08
+    Vmax: 1.32
+  dvss:
+    description: Digital ground
+    direction: inout
+    type: ground
+  ena:
+    description: Master enable, active high
+    direction: input
+    type: digital
+  ena1:
+    description: Enable the on-board folded-cascode buffer, active high
+    direction: input
+    type: digital
+  ena2:
+    description: >
+      Enable the external class-AB buffer, active high.  Level shifted
+      inside this cell and exported as vgen_ena2_h.
+    direction: input
+    type: digital
+  high:
+    description: Range select.  0 gives vbg/4 steps, 1 gives vbg/3 steps.
+    direction: input
+    type: digital
+  s[2:0]:
+    description: Tap select, binary, 0 to 7
+    direction: input
+    type: digital
+  vbg:
+    description: Bandgap reference input, nominally 1.2 V
+    direction: input
+    type: signal
+  ibias1u_1:
+    description: 1 uA bias SOURCE for the feedback amplifier
+    direction: inout
+    type: signal
+  ibias1u_2:
+    description: 1 uA bias SINK for the folded-cascode buffer
+    direction: inout
+    type: signal
+  vout_buf:
+    description: >
+      Folded-cascode buffered output.  Tied in chipalooza_frame to the
+      output of the external class-AB buffer.
+    direction: output
+    type: signal
+  vout_unbuf:
+    description: >
+      Unbuffered resistor tap, taken to the external class-AB buffer.
+      High impedance:  any load on it is an uncorrected error, since it
+      sits outside the feedback loop that regulates the chain.
+    direction: output
+    type: signal
+  vgen_ena2_h:
+    description: Level-shifted ena2, for the external class-AB buffer
+    direction: output
+    type: digital
+
+default_conditions:
+  corner:
+    display: Corner
+    description: MOS process corner
+    typical: tt
+  corner_res:
+    display: Resistor corner
+    description: >
+      Matters more here than in most blocks:  the output is set by
+      ratios along a tapped rhigh chain, so the ratio tracks but the
+      absolute value moves the chain current and the loop gain with it.
+    typical: typ
+  corner_cap:
+    display: Capacitor corner
+    description: MOM capacitor corner
+    typical: typ
+  corner_dio:
+    display: Diode corner
+    description: Antenna tie-downs on the digital inputs only
+    typical: tt
+  temperature:
+    display: Temperature
+    unit: °C
+    typical: 27
+  Vdd:
+    display: Analog supply
+    unit: V
+    typical: 3.3
+  Vdvdd:
+    display: Digital supply
+    unit: V
+    typical: 1.2
+  Vbg:
+    display: Reference voltage
+    description: Ideal bandgap reference presented to vbg
+    unit: V
+    typical: 1.2
+  Ibias:
+    display: Feedback amp bias
+    description: >
+      Bias SOURCE into ibias1u_1.  Plain numeric rather than 1u because
+      bracket expressions go through safe_eval, which reads 1u as a
+      malformed Python literal rather than a SPICE suffix.
+    unit: A
+    typical: 1e-6
+  Ibias2:
+    display: Cascode buffer bias
+    description: Bias SINK from ibias1u_2.  Set to 0 when ena1 is 0.
+    unit: A
+    typical: 1e-6
+  Ibias3:
+    display: Class-AB buffer bias
+    description: Bias SINK from the class-AB buffer.  Set to 0 when ena2 is 0.
+    unit: A
+    typical: 1e-6
+  Ena:
+    display: Master enable
+    typical: 1
+  Ena1:
+    display: Cascode buffer enable
+    typical: 1
+  Ena2:
+    display: Class-AB buffer enable
+    typical: 1
+  Istep:
+    display: Load step
+    description: >
+      Load current step for the settling parameter.  Kept to 100 nA
+      because that is inside what this buffer can drive:  it is class A
+      at 1 uA, and the +/-1% load limit is a few hundred nA.  Plain
+      numeric for the same reason as Ibias.
+    unit: A
+    typical: 100e-9
+  Cload:
+    display: Load capacitance
+    description: Stands in for the shared vbias trunk and its 18 slot switches
+    unit: F
+    typical: 1p
+  s:
+    display: Tap select
+    typical: 3
+  high:
+    display: Range select
+    typical: 0
+
+parameters:
+
+  # -------------------------------------------------------------------
+  # 1.  Bias stack headroom -- the regression test for the v2 defect.
+  # -------------------------------------------------------------------
+  voltgen_bias_headroom:
+    display: Bias stack headroom
+    description: >
+      Voltage on each of the three bias pins at the nominal bias current
+      and at twice it.  Sink pins are pulled down by an nstack and must
+      stay above about 0.6 V;  the source pin is driven by a pstack and
+      must stay below vdd - 0.6 V.  A saturated stack is driven outside
+      the rails, so the result is unambiguous rather than marginal.
+    unit: V
+    spec:
+      vb1_2x:
+        display: ibias1u_1 at 2x bias
+        unit: V
+        maximum:
+          value: 2.7
+      vb2_2x:
+        display: ibias1u_2 at 2x bias
+        unit: V
+        minimum:
+          value: 0.6
+      vb3_2x:
+        display: class-AB bias at 2x bias
+        unit: V
+        minimum:
+          value: 0.6
+    tool:
+      ngspice:
+        template: v3_bias_tb.sch
+        format: ascii
+        suffix: .data
+        variables: [vb1_1x, vb1_2x, vb2_1x, vb2_2x, vb3_1x, vb3_2x]
+    conditions:
+      corner:
+        enumerate: [tt, ss, ff]
+      s:
+        typical: 3
+      high:
+        typical: 0
+
+  # -------------------------------------------------------------------
+  # 2.  Disabled output impedance -- both buffers share one node.
+  #
+  # Enumerated over the three configurations that matter.  The bias of a
+  # disabled amplifier is set to zero in each case, because that is the
+  # required usage:  its shunt pFET holds the bias node at vdd and a
+  # live current source would fight it.
+  # -------------------------------------------------------------------
+  # -------------------------------------------------------------------
+  # Performance of the BUFFERED output.
+  #
+  # All of these measure vout_buf, the on-board folded-cascode buffer.
+  # The high-drive class-AB buffer lives outside this cell and belongs to
+  # the frame-level characterisation;  vout_unbuf is the bare resistor
+  # tap it consumes, outside the feedback loop, and nothing here loads it.
+  #
+  # Spec limits are PLACEHOLDERS -- set them from the first clean run,
+  # not from v2 numbers, since the output stage and the bias stack both
+  # changed.
+  # -------------------------------------------------------------------
+  voltgen_accuracy_tt:
+    display: Output accuracy and line regulation (tt, all codes)
+    description: >
+      Buffered output against the design equation
+      vout = (s+1)*vbg/(4-high), and line regulation over a 3.0 to 3.6 V
+      supply, for every tap and both ranges at the typical corner.
+    unit: V
+    spec:
+      err_V:
+        display: Output error
+        unit: mV
+        minimum:
+          value: -100         # PLACEHOLDER
+        maximum:
+          value: 100
+      linereg_VperV:
+        display: Line regulation
+        unit: mV/V
+        minimum:
+          value: -10          # PLACEHOLDER
+        maximum:
+          value: 10
+    tool:
+      ngspice:
+        template: v3_dc_tb.sch
+        format: ascii
+        suffix: .data
+        variables: [vout_V, err_V, linereg_VperV]
+    conditions:
+      corner:
+        typical: tt
+      s:
+        enumerate: [0, 1, 2, 3, 4, 5, 6, 7]
+      high:
+        enumerate: [0, 1]
+
+  voltgen_accuracy_corners:
+    display: Output accuracy and line regulation (corners, extreme codes)
+    description: >
+      The four codes that stress headroom:  s=0 and s=7 in both ranges,
+      giving 0.3, 2.4, 0.4 and 3.2 V.  The last sits 100 mV below a
+      nominal supply.
+    unit: V
+    spec:
+      err_V:
+        display: Output error
+        unit: mV
+        minimum:
+          value: -200         # PLACEHOLDER
+        maximum:
+          value: 200
+    tool:
+      ngspice:
+        template: v3_dc_tb.sch
+        format: ascii
+        suffix: .data
+        variables: [vout_V, err_V, linereg_VperV]
+    conditions:
+      corner:
+        enumerate: [tt, ss, ff, sf, fs]
+      corner_res:
+        enumerate: [typ, bcs, wcs]
+      s:
+        enumerate: [0, 7]
+      high:
+        enumerate: [0, 1]
+
+  voltgen_load:
+    display: Output impedance and load capability
+    description: >
+      Small-signal output impedance at zero load, and the source and sink
+      currents at which the output leaves a +/-1% window about its own
+      no-load value.  Reported as capability rather than against an
+      assumed load, because nothing specifies what a project will draw.
+    unit: Ω
+    spec:
+      rout_ohm:
+        display: Output impedance
+        unit: kΩ
+        maximum:
+          value: 200          # PLACEHOLDER
+      ilim_src:
+        display: Source limit
+        unit: nA
+        minimum:
+          value: 100          # PLACEHOLDER
+    tool:
+      ngspice:
+        template: v3_loadreg_tb.sch
+        format: ascii
+        suffix: .data
+        variables: [rout_ohm, ilim_src, ilim_snk]
+    conditions:
+      corner:
+        typical: tt
+      s:
+        enumerate: [0, 1, 2, 3, 4, 5, 6, 7]
+      high:
+        enumerate: [0, 1]
+
+  voltgen_psrr:
+    display: Supply rejection
+    description: >
+      Rejection from the 3.3 V analog supply to the buffered output at
+      10 Hz, 1 kHz and 100 kHz.  Expect high mode to be far worse at
+      every code:  the chain top sits near the rail there regardless of
+      which tap is selected.
+    unit: dB
+    spec:
+      psrr_1kHz:
+        display: PSRR at 1 kHz
+        unit: dB
+        minimum:
+          value: 40           # PLACEHOLDER
+    tool:
+      ngspice:
+        template: v3_psrr_tb.sch
+        format: ascii
+        suffix: .data
+        variables: [psrr_10Hz, psrr_1kHz, psrr_100kHz]
+    conditions:
+      corner:
+        typical: tt
+      s:
+        enumerate: [0, 3, 7]
+      high:
+        enumerate: [0, 1]
+
+  voltgen_settling:
+    display: Load step settling
+    description: >
+      Response to a 100 nA load step into Cload:  the DC shift, and the
+      overshoot and undershoot about the settled value.  The only
+      parameter here that would catch ringing into a capacitive trunk.
+    unit: V
+    spec:
+      over_V:
+        display: Overshoot
+        unit: mV
+        maximum:
+          value: 20           # PLACEHOLDER
+    tool:
+      ngspice:
+        template: v3_step_tb.sch
+        format: ascii
+        suffix: .data
+        variables: [dstep_V, over_V, under_V]
+    conditions:
+      corner:
+        typical: tt
+      corner_cap:
+        enumerate: [typ, bcs, wcs]
+      s:
+        enumerate: [0, 3, 7]
+      high:
+        enumerate: [0, 1]
+
+  # UNITS CONVENTION, learned the hard way on this parameter:  the
+  # testbench emits BASE SI units (amps, ohms) and CACE scales them for
+  # display using the unit: field -- but the spec LIMITS are read in
+  # that display unit, not in base units.  So a leakage limit of one
+  # nanoamp under unit: nA is written as 1.0, not as 1e-9.  Getting
+  # either half of this wrong fails a working circuit by nine orders of
+  # magnitude.
+  voltgen_disabled_z:
+    display: Disabled output impedance
+    description: >
+      Current drawn from the shared output node when it is forced to
+      0.3, 1.2, 2.4 and 3.0 V, plus the equivalent shunt resistance at
+      mid-rail.  With both buffers disabled the node must be genuinely
+      high impedance;  with one enabled, the other must not drag it.
+    unit: nA
+    spec:
+      leak_1v2_A:
+        display: Leakage at 1.2 V
+        unit: nA
+        minimum:
+          value: -1.0
+        maximum:
+          value: 1.0
+      rshunt_ohm:
+        display: Shunt resistance at mid-rail
+        unit: MΩ
+        minimum:
+          value: 100
+    tool:
+      ngspice:
+        template: v3_disabled_tb.sch
+        format: ascii
+        suffix: .data
+        variables: [leak_0v3_A, leak_1v2_A, leak_2v4_A, leak_3v0_A,
+                    rshunt_ohm]
+    conditions:
+      corner:
+        enumerate: [tt, ss, ff]
+      Ena:
+        typical: 1
+      Ena1:
+        typical: 0
+      Ena2:
+        typical: 0
+      Ibias2:
+        typical: 0
+      Ibias3:
+        typical: 0

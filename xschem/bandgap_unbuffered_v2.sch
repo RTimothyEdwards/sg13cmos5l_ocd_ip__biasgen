@@ -86,18 +86,14 @@ N -250 -220 -220 -220 {lab=trim[15:0]}
 N -70 -240 380 -240 {lab=#net4}
 N -360 -350 -310 -350 {lab=dvdd}
 N -360 -320 -310 -320 {lab=dvss}
-N -280 -430 -220 -430 {lab=#net5}
-N -390 -430 -360 -430 {lab=ena}
-N -390 -480 -390 -430 {lab=ena}
 N -430 -430 -390 -430 {lab=ena}
-N -390 -480 -240 -480 {lab=ena}
-N -240 -480 -240 -450 {lab=ena}
-N -240 -450 -220 -450 {lab=ena}
+N -240 -480 -240 -450 {lab=#net5}
+N -240 -450 -220 -450 {lab=#net5}
 N -40 -450 660 -450 {lab=ena_b_h}
 N -40 -530 -40 -450 {lab=ena_b_h}
 N -70 -450 -40 -450 {lab=ena_b_h}
 N -80 -530 -40 -530 {lab=ena_b_h}
-N -390 -530 -390 -480 {lab=ena}
+N -390 -480 -390 -430 {lab=ena}
 N -390 -200 -390 -140 {lab=trim[15:0]}
 N 160 -800 340 -800 {lab=vdd}
 N 200 -710 300 -710 {lab=gate}
@@ -125,6 +121,10 @@ N 1610 -460 1660 -460 {lab=vs2}
 N 1550 -800 1720 -800 {lab=vdd}
 N 1720 -290 1720 -0 {lab=vss}
 N 1720 -800 1720 -350 {lab=vdd}
+N -390 -480 -360 -480 {lab=ena}
+N -390 -530 -390 -480 {lab=ena}
+N -280 -480 -240 -480 {lab=#net5}
+N -390 -430 -220 -430 {lab=ena}
 C {sg13cmos5l_pr/pnpMPA.sym} 430 -110 0 0 {name=Q2
 m=8
 a=1.4p
@@ -217,8 +217,8 @@ C {lab_pin.sym} -310 -320 0 1 {name=p9 sig_type=std_logic lab=dvss}
 C {devices/ipin.sym} -430 -430 0 0 {name=p10 lab=ena
 }
 C {level_shift.sym} -70 -410 0 0 {name=x3 vdd=vdd vss=vss}
-C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -320 -430 0 0 {name=x4 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
-C {devices/opin.sym} -80 -530 0 1 {name=p11 lab=ena_b_h}
+C {sg13cmos5l_stdcells/sg13cmos5l_inv_2.sym} -320 -480 0 0 {name=x4 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
+C {devices/opin.sym} -80 -530 0 1 {name=p11 lab=ena_h}
 C {sg13cmos5l_stdcells/sg13cmos5l_decap_4.sym} -390 -705 0 0 {name=x3[4:0] VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -300 -525 0 0 {name=x1 VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }
 C {sg13cmos5l_stdcells/sg13cmos5l_antennanp.sym} -300 -140 0 0 {name=x4[15:0] VDD=dvdd VSS=dvss prefix=sg13cmos5l_ }

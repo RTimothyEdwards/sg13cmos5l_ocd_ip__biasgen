@@ -2,8 +2,8 @@
 #
 # Run layout extraction on the voltage bias generator
 #
-echo ${PDK_ROOT:=/home/tim/gits} > /dev/null
-echo ${PDK:=ihp-sg13cmos5l} > /dev/null
+export PDK_ROOT=${PDK_ROOT:-/home/tim/gits}
+export PDK=${PDK:-ihp-sg13cmos5l}
 
 project=sg13cmos5l_ocd_ip__voltgen_v2
 

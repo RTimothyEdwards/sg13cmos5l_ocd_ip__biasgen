@@ -1,0 +1,78 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sg13cmos5l_ocd_ip__classab_buffer
+  CLASS BLOCK ;
+  FOREIGN sg13cmos5l_ocd_ip__classab_buffer ;
+  ORIGIN 0.070 1.320 ;
+  SIZE 122.955 BY 40.950 ;
+  PIN vdd
+    ANTENNAGATEAREA 16.000000 ;
+    ANTENNADIFFAREA 122.487297 ;
+    PORT
+      LAYER Metal3 ;
+        RECT -0.020 37.510 122.790 39.630 ;
+    END
+  END vdd
+  PIN vss
+    ANTENNAGATEAREA 12.000000 ;
+    ANTENNADIFFAREA 162.887344 ;
+    PORT
+      LAYER Metal3 ;
+        RECT -0.070 -1.320 122.740 0.800 ;
+    END
+  END vss
+  PIN inp
+    ANTENNAGATEAREA 48.000000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.010 17.035 1.145 17.720 ;
+    END
+  END inp
+  PIN ena
+    ANTENNAGATEAREA 0.250000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.160 29.540 1.160 29.980 ;
+    END
+  END ena
+  PIN bias
+    ANTENNAGATEAREA 16.000000 ;
+    ANTENNADIFFAREA 1.530000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.150 28.675 17.750 29.115 ;
+    END
+  END bias
+  PIN out
+    ANTENNAGATEAREA 48.000000 ;
+    ANTENNADIFFAREA 10.880000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 121.775 35.750 122.775 36.750 ;
+    END
+  END out
+  OBS
+      LAYER GatPoly ;
+        RECT 0.710 2.185 86.010 35.910 ;
+      LAYER Metal1 ;
+        RECT 0.085 0.035 122.790 38.280 ;
+      LAYER Metal2 ;
+        RECT 0.090 0.000 122.710 38.320 ;
+      LAYER Metal3 ;
+        RECT 0.000 36.960 122.710 37.300 ;
+        RECT 0.000 35.540 121.565 36.960 ;
+        RECT 0.000 30.190 122.710 35.540 ;
+        RECT 1.370 29.330 122.710 30.190 ;
+        RECT 0.000 29.325 122.710 29.330 ;
+        RECT 17.960 28.465 122.710 29.325 ;
+        RECT 0.000 17.930 122.710 28.465 ;
+        RECT 1.355 16.825 122.710 17.930 ;
+        RECT 0.000 1.010 122.710 16.825 ;
+      LAYER Metal4 ;
+        RECT 75.485 0.030 122.575 38.305 ;
+  END
+END sg13cmos5l_ocd_ip__classab_buffer
+END LIBRARY
+

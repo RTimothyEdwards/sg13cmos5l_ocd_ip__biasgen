@@ -1,0 +1,41 @@
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/sg13cmos5l_ocd_ip__classab_buffer.sch
+.subckt sg13cmos5l_ocd_ip__classab_buffer vdd out inp vss bias ena
+*.PININFO inp:I ena:I vdd:B vss:B out:O bias:B
+x1 vdd out inp out vss bias ena se_folded_cascode_np_ab
+.ends
+
+* expanding   symbol:  se_folded_cascode_np_ab.sym # of pins=7
+** sym_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/se_folded_cascode_np_ab.sym
+** sch_path: /home/tim/gits/sg13cmos5l_ocd_chipalooza/dependencies/sg13cmos5l_ocd_ip__biasgen/xschem/se_folded_cascode_np_ab.sch
+.subckt se_folded_cascode_np_ab vdd out inp inn vss bias ena
+*.PININFO vdd:B bias:B inp:I inn:I vss:B out:O ena:I
+XM4 outa1n outa1n vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=12 mm_ok=1
+XM5 outa1p outa1n vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=12 mm_ok=1
+XMIN1 diffa vbn1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=8 mm_ok=1
+XMB2 vbn1 vbn1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=4 mm_ok=1
+XMB1 vbn2 vbn2 vbn1 vss sg13_hv_nmos w=2u l=4u ng=1 m=4 mm_ok=1
+XMIN2 outa1n inn diffa vss sg13_hv_nmos w=2u l=1u ng=1 m=8 mm_ok=1
+XMIN3 outa1p inp diffa vss sg13_hv_nmos w=2u l=1u ng=1 m=8 mm_ok=1
+XMB5 vbp1 vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=4 mm_ok=1
+XM7 outs1 mirr outa1p vdd sg13_hv_pmos w=1u l=4u ng=1 m=16 mm_ok=1
+XM6 mirr mirr outa1n vdd sg13_hv_pmos w=1u l=4u ng=1 m=16 mm_ok=1
+XM8 mirr vbn2 outb1n vss sg13_hv_nmos w=2u l=4u ng=1 m=16 mm_ok=1
+XM9 outs1 vbn2 outb1p vss sg13_hv_nmos w=2u l=4u ng=1 m=16 mm_ok=1
+XM10 outb1n vbn1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=24 mm_ok=1
+XM11 outb1p vbn1 vss vss sg13_hv_nmos w=1u l=1u ng=1 m=24 mm_ok=1
+XMB4 bias bias vbp1 vdd sg13_hv_pmos w=1u l=4u ng=1 m=4 mm_ok=1
+XMIP2 outb1n inn diffb vdd sg13_hv_pmos w=4u l=1u ng=1 m=8 mm_ok=1
+XMIP3 outb1p inp diffb vdd sg13_hv_pmos w=4u l=1u ng=1 m=8 mm_ok=1
+XMIP1 diffb vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=16 mm_ok=1
+XMON out outs1 onsrc vss sg13_hv_nmos w=4u l=4u ng=1 m=4 mm_ok=1
+XMOP out outs1 vdd vdd sg13_hv_pmos w=4u l=4u ng=1 m=4 mm_ok=1
+XMB6 vbn2 vbp1 vdd vdd sg13_hv_pmos w=1u l=1u ng=1 m=4 mm_ok=1
+XMDUM vss vss vss vss sg13_hv_nmos w=1u l=1u ng=1 m=12 mm_ok=1
+XMB7 vss vbn2 vss vss sg13_hv_nmos w=2u l=4u ng=1 m=4 mm_ok=1
+XC1 outs1 out cap_cmomf w=35.32e-6 l=15.5e-6 mmin=1 mmax=4 subblock=1 m=2 mm_ok=1
+XMB3 bias ena vdd vdd sg13_hv_pmos w=0.5u l=0.5u ng=1 m=1 mm_ok=1
+XMB8 vdd vdd vdd vdd sg13_hv_pmos w=1u l=4u ng=1 m=4 mm_ok=1
+XMOSW onsrc ena vss vss sg13_hv_nmos w=4u l=0.45u ng=1 m=4 mm_ok=1
+XM1 outs1 ena vdd vdd sg13_hv_pmos w=1u l=0.5u ng=1 m=1 mm_ok=1
+.ends
+

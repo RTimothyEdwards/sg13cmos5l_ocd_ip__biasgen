@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1790541753
+timestamp 1791246300
 << digisub >>
 rect -9868 -16599 -9462 -3181
 << nwell >>
@@ -637,8 +637,12 @@ rect 5724 -14268 5838 -13322
 rect 7666 -14268 7780 -13322
 rect -957 -14384 3217 -14282
 rect -9853 -15302 -9335 -15255
-rect -9842 -16058 -8288 -16011
-rect -9883 -16229 -8269 -16182
+rect -10007 -15844 -8275 -15797
+rect -10007 -16182 -9960 -15844
+rect -9872 -16070 -8405 -16023
+rect -8452 -16130 -8405 -16070
+rect -8452 -16177 -8271 -16130
+rect -10007 -16229 -9820 -16182
 rect -9882 -16478 -9822 -16229
 rect -7950 -16404 -7896 -15350
 rect -957 -15484 3217 -15382
@@ -670,9 +674,8 @@ rect -4853 -5020 -3677 -4976
 rect -4853 -5060 -4809 -5020
 rect -7952 -5104 -4809 -5060
 rect -4959 -5392 -3671 -5348
-rect 10522 -5359 10565 -5146
 rect -4959 -6321 -4915 -5392
-rect 7989 -5402 10565 -5359
+rect 7989 -5402 12523 -5359
 rect -5207 -6365 -4915 -6321
 rect -4855 -5758 -3669 -5714
 rect -7952 -6535 -7908 -6377
@@ -773,7 +776,7 @@ transform -1 0 -1176 0 1 -16534
 box 0 0 2470 3220
 use level_shift  level_shift_0
 array 0 7 1471 0 0 -2896
-timestamp 1788122513
+timestamp 1791245938
 transform 0 -1 -5741 1 0 -15079
 box -12 -1978 1519 918
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_stdcell
@@ -1474,7 +1477,7 @@ transform 1 0 3570 0 1 -13160
 box -29 -70 29 70
 use via_Y6HY9Q  via_Y6HY9Q_2
 timestamp 1774400289
-transform 1 0 10539 0 1 -5206
+transform 1 0 12497 0 1 -5418
 box -29 -70 29 70
 use via_Y6HY9Q  via_Y6HY9Q_3
 timestamp 1774400289
@@ -1606,11 +1609,11 @@ transform 0 1 -3480 -1 0 -12989
 box -70 -29 70 29
 use level_shift  x1
 array 0 8 1471 0 0 2896
-timestamp 1788122513
+timestamp 1791245938
 transform 0 1 -7463 1 0 -16550
 box -12 -1978 1519 918
 use se_folded_cascode_p  xamp
-timestamp 1788127702
+timestamp 1791245938
 transform 0 1 10419 1 0 -17718
 box 1134 -2464 14645 3763
 use sg13_hv_pmos_NWA9LU  XM1 paramcells
@@ -1726,8 +1729,6 @@ flabel metal2 -10349 -14640 -10149 -14580 0 FreeSans 1600 0 0 0 trim[14]
 port 5 nsew
 flabel metal2 -10346 -15311 -10146 -15251 0 FreeSans 1600 0 0 0 trim[15]
 port 4 nsew
-flabel metal3 -7952 -16604 -7892 -16404 0 FreeSans 1600 90 0 0 ena_b_h
-port 24 nsew
 flabel metal2 -10350 -16069 -10150 -16009 0 FreeSans 1600 0 0 0 ena
 port 23 nsew
 flabel metal3 11755 -3275 11955 -3075 0 FreeSans 1600 0 0 0 bias
@@ -1736,4 +1737,6 @@ flabel metal3 8023 -3790 8223 -3590 0 FreeSans 1600 0 0 0 vss
 port 2 nsew
 flabel metal3 13915 -3600 14115 -3400 0 FreeSans 1600 0 0 0 vdd
 port 0 nsew
+flabel metal3 -7952 -16604 -7892 -16404 0 FreeSans 1600 90 0 0 ena_h
+port 24 nsew
 << end >>
