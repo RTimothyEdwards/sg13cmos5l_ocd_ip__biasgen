@@ -27,7 +27,7 @@ N -330 450 200 450 {lab=GND}
 N -330 350 -330 390 {lab=vtrim[15:8]}
 C {devices/vsource.sym} -110 420 0 0 {name=Vvss value=0 savecurrent=false}
 C {devices/gnd.sym} -160 450 0 0 {name=l1 lab=GND}
-C {devices/code_shown.sym} -380 750 0 0 {name=s1 only_toplevel=false value=".option savecurrents
+C {devices/code_shown.sym} -380 790 0 0 {name=s1 only_toplevel=false value=".option savecurrents
 .control
 save all
 dc temp -40 125 1
@@ -49,6 +49,7 @@ C {devices/code_shown.sym} -380 550 0 0 {name=s2 only_toplevel=false value=".lib
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerPNP.lib typ
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerDIO.lib dio_tt
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerRES.lib res_typ
+.lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 
 .include $PDK_ROOT/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/spice/sg13cmos5l_stdcell.spice
 "}

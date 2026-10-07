@@ -30,13 +30,14 @@ C {devices/code_shown.sym} -170 580 0 0 {name=s1 only_toplevel=false value=".opt
 .control
 save all
 tran 1n 1u
-plot V(x3.vbg_unbuf) V(vbg)
+plot V(x1.vbg_unbuf) V(vbg)
 .endc"}
 C {devices/code_shown.sym} -170 750 0 0 {name=s2 only_toplevel=false value=".lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerMOShv.lib mos_tt
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerMOSlv.lib mos_tt
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerPNP.lib typ
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerDIO.lib dio_tt
 .lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerRES.lib res_typ
+.lib $PDK_ROOT/ihp-sg13cmos5l/libs.tech/ngspice/models/cornerCAP.lib cap_typ
 
 .include $PDK_ROOT/ihp-sg13cmos5l/libs.ref/sg13cmos5l_stdcell/spice/sg13cmos5l_stdcell.spice
 "}
