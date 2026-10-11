@@ -176,7 +176,6 @@ N 1990 -360 2030 -360 {lab=vdd}
 N 2030 -420 2030 -360 {lab=vdd}
 N 1550 90 1590 90 {lab=ena}
 N 1630 120 1630 130 {lab=vss}
-N 1630 40 1630 60 {lab=onsrc}
 N 1630 90 1660 90 {lab=vss}
 N 1480 -480 1520 -480 {lab=ena}
 N 1440 -560 1440 -510 {lab=vdd}
@@ -186,6 +185,7 @@ N 1390 -560 1390 -480 {lab=vdd}
 N 1290 -560 1390 -560 { lab=vdd}
 N 1440 -420 1470 -420 {lab=outs1}
 N 1440 -450 1440 -420 {lab=outs1}
+N 1630 40 1630 60 {lab=onsrc}
 C {devices/iopin.sym} -590 -560 2 0 {name=p5 lab=vdd}
 C {devices/iopin.sym} -120 -90 1 0 {name=p2 lab=bias}
 C {sg13cmos5l_pr/sg13_hv_pmos.sym} 1050 -500 0 1 {name=M4
