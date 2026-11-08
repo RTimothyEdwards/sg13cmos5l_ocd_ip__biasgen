@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1790458259
+timestamp 1794174008
 << digisub >>
 rect -392 3211 9184 3594
 << metal1 >>
@@ -137,67 +137,67 @@ transform 1 0 3316 0 -1 -1709
 box 898 -1502 1500 2379
 use level_shift  level_shift_4
 array 0 4 1800 0 0 -2896
-timestamp 1788122513
+timestamp 1794173328
 transform -1 0 8635 0 -1 923
 box -12 -1978 1519 918
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_0 sg13cmos5l_stdcell
-timestamp 1789591744
+timestamp 2058827019
 transform 1 0 2491 0 1 3272
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_1
-timestamp 1789591744
+timestamp 2058827019
 transform 1 0 4291 0 1 3272
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_2
-timestamp 1789591744
+timestamp 2058827019
 transform 1 0 6091 0 1 3272
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_3
-timestamp 1789591744
+timestamp 2058827019
 transform 1 0 691 0 1 3272
 box -48 -56 336 834
 use sg13cmos5l_antennanp  sg13cmos5l_antennanp_4
-timestamp 1789591744
+timestamp 2058827019
 transform 1 0 7891 0 1 3272
 box -48 -56 336 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_0 sg13cmos5l_stdcell
-timestamp 1789591744
+timestamp 1549385345
 transform 1 0 3163 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_1
-timestamp 1789591744
+timestamp 1549385345
 transform 1 0 4963 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_2
-timestamp 1789591744
+timestamp 1549385345
 transform 1 0 6763 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_3
-timestamp 1789591744
+timestamp 1549385345
 transform 1 0 1363 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_decap_4  sg13cmos5l_decap_4_4
-timestamp 1789591744
+timestamp 1549385345
 transform 1 0 8563 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_0 sg13cmos5l_stdcell
-timestamp 1789591744
+timestamp 820933943
 transform 1 0 2779 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_1
-timestamp 1789591744
+timestamp 820933943
 transform 1 0 4579 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_2
-timestamp 1789591744
+timestamp 820933943
 transform 1 0 6379 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_3
-timestamp 1789591744
+timestamp 820933943
 transform 1 0 979 0 1 3272
 box -48 -56 432 834
 use sg13cmos5l_inv_2  sg13cmos5l_inv_2_4
-timestamp 1789591744
+timestamp 820933943
 transform 1 0 8179 0 1 3272
 box -48 -56 432 834
 use via_Y6HC2N  via_Y6HC2N_0 paramcells
@@ -261,43 +261,43 @@ timestamp 1774721386
 transform 0 1 8162 -1 0 3608
 box -29 -70 29 70
 use via_Y6Z2DQ  via_Y6Z2DQ_0 paramcells
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 2836 -1 0 3041
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_1
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 1198 -1 0 3042
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_2
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 1036 -1 0 3041
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_3
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 2998 -1 0 3042
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_4
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 4636 -1 0 3041
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_5
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 4798 -1 0 3042
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_6
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 6436 -1 0 3041
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_7
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 6598 -1 0 3042
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_8
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 8236 -1 0 3041
 box -70 -29 70 29
 use via_Y6Z2DQ  via_Y6Z2DQ_9
-timestamp 1774721386
+timestamp 1791300016
 transform 0 -1 8398 -1 0 3042
 box -70 -29 70 29
 use via_Z2RFBL  via_Z2RFBL_1 paramcells
@@ -397,4 +397,6 @@ flabel metal2 997 4134 1069 4334 0 FreeSans 1120 180 0 0 source_ena[0]
 port 9 nsew
 flabel metal2 8195 4128 8269 4328 0 FreeSans 1120 180 0 0 source_ena[4]
 port 5 nsew
+<< properties >>
+string MASKHINTS_THKOX -236 -55 8910 2841
 << end >>
