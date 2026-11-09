@@ -1,7 +1,7 @@
 magic
 tech ihp-sg13cmos5l
 magscale 1 2
-timestamp 1790458259
+timestamp 1794185742
 << metal1 >>
 rect 9345 4414 9377 4807
 << metal2 >>
@@ -81,15 +81,15 @@ rect 82447 2399 83681 2534
 rect 7952 1174 9333 2397
 rect 82083 1165 83681 2399
 use bias_generator_be0p_v2  bias_generator_be0p_v2_0
-timestamp 1790458259
+timestamp 1794174008
 transform 1 0 71573 0 1 5167
 box -394 -4088 9184 4340
 use bias_generator_be0p_v2  bias_generator_be0p_v2_1
-timestamp 1790458259
+timestamp 1794174008
 transform 1 0 62355 0 1 5167
 box -394 -4088 9184 4340
 use bias_generator_be0p_v2  bias_generator_be0p_v2_2
-timestamp 1790458259
+timestamp 1794174008
 transform 1 0 53137 0 1 5167
 box -394 -4088 9184 4340
 use bias_generator_ben1um  bias_generator_ben1um_0
@@ -109,7 +109,7 @@ timestamp 1790458259
 transform 1 0 12763 0 1 5362
 box -2034 -4191 1134 4126
 use bias_generator_fe_v2  bias_generator_fe_v2_0
-timestamp 1790458259
+timestamp 1790543904
 transform 1 0 38602 0 1 -2120
 box -11127 3134 14453 11631
 use bias_nstack  bias_nstack_0
@@ -225,4 +225,6 @@ flabel metal4 82447 1165 83681 5335 0 FreeSans 8000 90 0 0 avdd
 port 106 nsew
 flabel metal4 7952 1174 9152 4794 0 FreeSans 8000 90 0 0 avss
 port 107 nsew
+<< properties >>
+string MASKHINTS_THKOX 10678 5090 32386 8036 40360 5106 80492 8018
 << end >>
